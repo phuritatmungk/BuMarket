@@ -33,7 +33,6 @@ public class Home extends javax.swing.JFrame {
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
@@ -43,10 +42,11 @@ public class Home extends javax.swing.JFrame {
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1280, 769));
@@ -87,10 +87,7 @@ public class Home extends javax.swing.JFrame {
 
         jSeparator3.setBackground(new java.awt.Color(121, 121, 121));
         jSeparator3.setForeground(new java.awt.Color(121, 121, 121));
-        jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 440, 980, 10));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/db16f1656125dbf7ee69a82baa446ec9.jpg"))); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, 490, 220));
+        jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, 1140, 10));
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 380, -1, -1));
 
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -132,8 +129,14 @@ public class Home extends javax.swing.JFrame {
         jButton7.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 300, 100, 60));
 
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/—Pngtree—t shirt line icon vector_5074690.png"))); // NOI18N
         jButton8.setText("jButton7");
         jButton8.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 300, 100, 60));
 
         jButton9.setText("jButton7");
@@ -144,28 +147,40 @@ public class Home extends javax.swing.JFrame {
         jButton10.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel1.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 300, 100, 60));
 
-        jLabel4.setText("jLabel4");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 530, 200, 170));
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/pin (1).png"))); // NOI18N
+        jLabel6.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 470, 190, 170));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/fash-pro-back-school-detail6-1200x1200-1.jpg"))); // NOI18N
-        jLabel5.setText("jLabel4");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 500, 260, 230));
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/pin (1).png"))); // NOI18N
+        jLabel8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 470, 190, 170));
 
-        jLabel6.setText("jLabel4");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 520, 200, 170));
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/pin (1).png"))); // NOI18N
+        jLabel9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 470, 190, 170));
 
-        jLabel7.setText("jLabel4");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 520, 200, 170));
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/pin (1).png"))); // NOI18N
+        jLabel10.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 470, 190, 170));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/FINAL_ELEPHANT1415x1029.jpg"))); // NOI18N
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, 720, 270));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
@@ -190,6 +205,10 @@ public class Home extends javax.swing.JFrame {
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton8ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -238,12 +257,12 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
