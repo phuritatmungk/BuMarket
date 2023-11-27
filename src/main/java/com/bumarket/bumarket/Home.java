@@ -38,16 +38,16 @@ public class Home extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(261, 261, 261)
+                .addGap(172, 172, 172)
                 .addComponent(jButton1)
-                .addContainerGap(502, Short.MAX_VALUE))
+                .addContainerGap(591, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(224, 224, 224)
+                .addGap(32, 32, 32)
                 .addComponent(jButton1)
-                .addContainerGap(276, Short.MAX_VALUE))
+                .addContainerGap(468, Short.MAX_VALUE))
         );
 
         pack();
