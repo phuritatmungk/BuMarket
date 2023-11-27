@@ -11,8 +11,7 @@ package com.bumarket.bumarket;
 public class BuMarket {
 
     public static void main(String[] args) {
-         Home homepage = new Home();
-         Forget_Pwd forget = new Forget_Pwd();
-         forget.setVisible(true);
+        Login login = new Login();
+        login.setVisible(true);
     }
 }

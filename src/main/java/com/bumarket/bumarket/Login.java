@@ -30,15 +30,15 @@ public class Login extends javax.swing.JFrame {
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jPanel11 = new javax.swing.JPanel();
-        jButton10 = new javax.swing.JButton();
+        LoginBtn = new javax.swing.JButton();
         jLabel20 = new javax.swing.JLabel();
-        jButton11 = new javax.swing.JButton();
+        ForgetBtn = new javax.swing.JButton();
         jLabel21 = new javax.swing.JLabel();
         jTextField15 = new javax.swing.JTextField();
         jTextField16 = new javax.swing.JTextField();
         jSeparator16 = new javax.swing.JSeparator();
         jSeparator17 = new javax.swing.JSeparator();
-        jButton12 = new javax.swing.JButton();
+        SignupBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(1280, 720));
@@ -63,27 +63,32 @@ public class Login extends javax.swing.JFrame {
         jPanel11.setAlignmentY(0.0F);
         jPanel11.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        jButton10.setBackground(new java.awt.Color(0, 0, 0));
-        jButton10.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
-        jButton10.setForeground(new java.awt.Color(255, 255, 255));
-        jButton10.setText("Confirm");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
+        LoginBtn.setBackground(new java.awt.Color(0, 0, 0));
+        LoginBtn.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
+        LoginBtn.setForeground(new java.awt.Color(255, 255, 255));
+        LoginBtn.setText("Confirm");
+        LoginBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                LoginBtnMouseClicked(evt);
+            }
+        });
+        LoginBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                LoginBtnActionPerformed(evt);
             }
         });
 
         jLabel20.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel20.setText("Don't have an Account?");
 
-        jButton11.setBackground(new java.awt.Color(208, 204, 204));
-        jButton11.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jButton11.setForeground(new java.awt.Color(255, 153, 0));
-        jButton11.setText("Forget Password?");
-        jButton11.setBorder(null);
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
+        ForgetBtn.setBackground(new java.awt.Color(208, 204, 204));
+        ForgetBtn.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        ForgetBtn.setForeground(new java.awt.Color(255, 153, 0));
+        ForgetBtn.setText("Forget Password?");
+        ForgetBtn.setBorder(null);
+        ForgetBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
+                ForgetBtnActionPerformed(evt);
             }
         });
 
@@ -116,14 +121,19 @@ public class Login extends javax.swing.JFrame {
         jSeparator17.setForeground(new java.awt.Color(0, 0, 0));
         jSeparator17.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
 
-        jButton12.setBackground(new java.awt.Color(208, 204, 204));
-        jButton12.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jButton12.setForeground(new java.awt.Color(255, 153, 0));
-        jButton12.setText("Sign Up");
-        jButton12.setBorder(null);
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
+        SignupBtn.setBackground(new java.awt.Color(208, 204, 204));
+        SignupBtn.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        SignupBtn.setForeground(new java.awt.Color(255, 153, 0));
+        SignupBtn.setText("Sign Up");
+        SignupBtn.setBorder(null);
+        SignupBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SignupBtnMouseClicked(evt);
+            }
+        });
+        SignupBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
+                SignupBtnActionPerformed(evt);
             }
         });
 
@@ -133,7 +143,7 @@ public class Login extends javax.swing.JFrame {
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel11Layout.createSequentialGroup()
                 .addGap(48, 48, 48)
-                .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(LoginBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
                 .addContainerGap(13, Short.MAX_VALUE)
@@ -148,8 +158,8 @@ public class Login extends javax.swing.JFrame {
                             .addGroup(jPanel11Layout.createSequentialGroup()
                                 .addComponent(jLabel20)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton12))
-                            .addComponent(jButton11))
+                                .addComponent(SignupBtn))
+                            .addComponent(ForgetBtn))
                         .addContainerGap())))
         );
         jPanel11Layout.setVerticalGroup(
@@ -164,15 +174,15 @@ public class Login extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator16, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton11)
+                .addComponent(ForgetBtn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
                 .addComponent(jLabel21)
                 .addGap(20, 20, 20)
-                .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(LoginBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton12))
+                    .addComponent(SignupBtn))
                 .addGap(23, 23, 23))
         );
 
@@ -206,17 +216,34 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField15ActionPerformed
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+    private void ForgetBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ForgetBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton11ActionPerformed
+        Forget_Pwd forget = new Forget_Pwd();
+        forget.setVisible(true);
+    }//GEN-LAST:event_ForgetBtnActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void LoginBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_LoginBtnActionPerformed
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+    private void SignupBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignupBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton12ActionPerformed
+    }//GEN-LAST:event_SignupBtnActionPerformed
+
+    private void LoginBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LoginBtnMouseClicked
+        // TODO add your handling code here:
+        
+        
+        Home home = new Home();
+        home.setVisible(true);
+    }//GEN-LAST:event_LoginBtnMouseClicked
+
+    private void SignupBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SignupBtnMouseClicked
+        // TODO add your handling code here:
+        
+        Register regis = new Register();
+        regis.setVisible(true);
+    }//GEN-LAST:event_SignupBtnMouseClicked
 
     /**
      * @param args the command line arguments
@@ -254,9 +281,9 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
+    private javax.swing.JButton ForgetBtn;
+    private javax.swing.JButton LoginBtn;
+    private javax.swing.JButton SignupBtn;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
