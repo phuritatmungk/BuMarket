@@ -86,9 +86,9 @@ public class Login extends javax.swing.JFrame {
         ForgetBtn.setForeground(new java.awt.Color(255, 153, 0));
         ForgetBtn.setText("Forget Password?");
         ForgetBtn.setBorder(null);
-        ForgetBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ForgetBtnActionPerformed(evt);
+        ForgetBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ForgetBtnMouseClicked(evt);
             }
         });
 
@@ -216,12 +216,6 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField15ActionPerformed
 
-    private void ForgetBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ForgetBtnActionPerformed
-        // TODO add your handling code here:
-        Forget_Pwd forget = new Forget_Pwd();
-        forget.setVisible(true);
-    }//GEN-LAST:event_ForgetBtnActionPerformed
-
     private void LoginBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginBtnActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_LoginBtnActionPerformed
@@ -233,7 +227,6 @@ public class Login extends javax.swing.JFrame {
     private void LoginBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LoginBtnMouseClicked
         // TODO add your handling code here:
         
-        
         Home home = new Home();
         home.setVisible(true);
     }//GEN-LAST:event_LoginBtnMouseClicked
@@ -244,6 +237,13 @@ public class Login extends javax.swing.JFrame {
         Register regis = new Register();
         regis.setVisible(true);
     }//GEN-LAST:event_SignupBtnMouseClicked
+
+    private void ForgetBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ForgetBtnMouseClicked
+        // TODO add your handling code here:
+        
+        Forget_Pwd forget = new Forget_Pwd();
+        forget.setVisible(true);
+    }//GEN-LAST:event_ForgetBtnMouseClicked
 
     /**
      * @param args the command line arguments
