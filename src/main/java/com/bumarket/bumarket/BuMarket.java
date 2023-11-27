@@ -6,11 +6,12 @@ package com.bumarket.bumarket;
 
 /**
  *
- * @author chait
+ * @author Phuritat
  */
 public class BuMarket {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Login login = new Login();
+        login.setVisible(true);
     }
 }
