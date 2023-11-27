@@ -30,9 +30,9 @@ public class Register extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        RegisterBtn = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        SignInBtn = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
@@ -68,20 +68,30 @@ public class Register extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(202, 202, 202));
         jPanel3.setForeground(new java.awt.Color(51, 51, 51));
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 0));
-        jButton1.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Register");
-        jButton1.setToolTipText("");
+        RegisterBtn.setBackground(new java.awt.Color(0, 0, 0));
+        RegisterBtn.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
+        RegisterBtn.setForeground(new java.awt.Color(255, 255, 255));
+        RegisterBtn.setText("Register");
+        RegisterBtn.setToolTipText("");
+        RegisterBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                RegisterBtnMouseClicked(evt);
+            }
+        });
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel3.setText("Already A Member?");
 
-        jButton2.setBackground(new java.awt.Color(208, 204, 204));
-        jButton2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 153, 0));
-        jButton2.setText("Sign In");
-        jButton2.setBorder(null);
+        SignInBtn.setBackground(new java.awt.Color(208, 204, 204));
+        SignInBtn.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        SignInBtn.setForeground(new java.awt.Color(255, 153, 0));
+        SignInBtn.setText("Sign In");
+        SignInBtn.setBorder(null);
+        SignInBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SignInBtnMouseClicked(evt);
+            }
+        });
 
         jTextField1.setBackground(new java.awt.Color(202, 202, 202));
         jTextField1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -199,11 +209,11 @@ public class Register extends javax.swing.JFrame {
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
                                     .addGap(22, 22, 22)
                                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(RegisterBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGroup(jPanel3Layout.createSequentialGroup()
                                             .addComponent(jLabel3)
                                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(jButton2)))))
+                                            .addComponent(SignInBtn)))))
                             .addContainerGap()))))
         );
         jPanel3Layout.setVerticalGroup(
@@ -240,11 +250,11 @@ public class Register extends javax.swing.JFrame {
                         .addGap(122, 122, 122))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(RegisterBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel3)
-                            .addComponent(jButton2))
+                            .addComponent(SignInBtn))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
@@ -294,6 +304,16 @@ public class Register extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField6ActionPerformed
 
+    private void SignInBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SignInBtnMouseClicked
+        // TODO add your handling code here:
+        new Login().setVisible(true);
+    }//GEN-LAST:event_SignInBtnMouseClicked
+
+    private void RegisterBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RegisterBtnMouseClicked
+        // TODO add your handling code here:
+        new Home().setVisible(true);
+    }//GEN-LAST:event_RegisterBtnMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -330,8 +350,8 @@ public class Register extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton RegisterBtn;
+    private javax.swing.JButton SignInBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
