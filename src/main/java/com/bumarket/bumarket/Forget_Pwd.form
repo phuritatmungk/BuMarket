@@ -329,6 +329,8 @@
                 </Property>
               </Properties>
             </Component>
+            <Component class="javax.swing.JSeparator" name="jSeparator1">
+            </Component>
           </SubComponents>
         </Container>
       </SubComponents>
