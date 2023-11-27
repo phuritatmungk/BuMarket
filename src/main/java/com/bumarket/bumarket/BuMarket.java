@@ -6,7 +6,7 @@ package com.bumarket.bumarket;
 
 /**
  *
- * @author chait
+ * @author Phuritat
  */
 public class BuMarket {
 
