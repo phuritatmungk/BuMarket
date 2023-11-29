@@ -28,7 +28,6 @@ public class Home extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
@@ -40,13 +39,14 @@ public class Home extends javax.swing.JFrame {
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jButton11 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1280, 769));
@@ -62,38 +62,32 @@ public class Home extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 360, 120, 49));
-
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/61409939b92aa1006984894e.png"))); // NOI18N
-        jButton2.setText("ประวัติการสั่งซื้อ");
-        jButton2.setToolTipText("");
-        jButton2.setBorder(null);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 150, 170, 50));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 370, 120, 49));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setText("BU Market");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 220, 110, 30));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 220, 110, 30));
 
         jSeparator1.setBackground(new java.awt.Color(121, 121, 121));
         jSeparator1.setForeground(new java.awt.Color(121, 121, 121));
-        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 250, 460, 10));
+        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 250, 460, 10));
         jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 133, -1, 220));
 
         jSeparator3.setBackground(new java.awt.Color(121, 121, 121));
         jSeparator3.setForeground(new java.awt.Color(121, 121, 121));
-        jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, 1140, 10));
+        jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 440, 960, 10));
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 380, -1, -1));
 
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/Picture2 (1).png"))); // NOI18N
         jButton3.setText("ยอดพอยท์คงเหลือ");
-        jButton3.setBorder(null);
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 150, -1, 49));
+        jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 140, 180, 49));
 
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton4.setText("เสื้อผ้าBU");
@@ -103,7 +97,7 @@ public class Home extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 359, 80, 50));
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 360, 60, 20));
 
         jButton5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton5.setText("เครื่องเขียน");
@@ -113,7 +107,7 @@ public class Home extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 360, 80, 49));
+        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 360, 80, 20));
 
         jButton6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton6.setText("ขนม/เครื่องดื่ม");
@@ -123,48 +117,63 @@ public class Home extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 360, 120, 49));
+        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 360, 90, 20));
 
         jButton7.setText("jButton7");
         jButton7.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 300, 100, 60));
+        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 300, 100, 60));
 
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/—Pngtree—t shirt line icon vector_5074690.png"))); // NOI18N
-        jButton8.setText("jButton7");
-        jButton8.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/Pngtreevector-stationery-icon-41.png"))); // NOI18N
+        jButton8.setBorder(null);
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 300, 100, 60));
+        jPanel1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 270, 90, 80));
 
-        jButton9.setText("jButton7");
-        jButton9.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel1.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 300, 100, 60));
-
-        jButton10.setText("jButton7");
-        jButton10.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel1.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 300, 100, 60));
+        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/Picture3 (1).png"))); // NOI18N
+        jButton10.setBorder(null);
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 270, 90, -1));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/pin (1).png"))); // NOI18N
         jLabel6.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 470, 190, 170));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 460, 190, 170));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/pin (1).png"))); // NOI18N
         jLabel8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 470, 190, 170));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 460, 210, 170));
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/pin (1).png"))); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/QT-S-series-new-1 (2).jpg"))); // NOI18N
         jLabel9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 470, 190, 170));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 460, 190, 170));
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/pin (1).png"))); // NOI18N
         jLabel10.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 470, 190, 170));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 460, 190, 170));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/FINAL_ELEPHANT1415x1029.jpg"))); // NOI18N
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, 720, 270));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/All-Pen-Content-post-1024x763-1.jpg"))); // NOI18N
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 140, 370, 270));
+
+        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/Picture1-1 (1).png"))); // NOI18N
+        jButton11.setBorder(null);
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 270, 90, 80));
+
+        jButton12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/Picture2 (1).png"))); // NOI18N
+        jButton12.setText("ประวัติการสั่งซื้อ");
+        jButton12.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 140, 180, 50));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -186,10 +195,6 @@ public class Home extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -209,6 +214,18 @@ public class Home extends javax.swing.JFrame {
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton10ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -248,14 +265,14 @@ public class Home extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel3;
