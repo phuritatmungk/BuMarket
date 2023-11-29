@@ -236,6 +236,9 @@ public class Login extends javax.swing.JFrame {
         
         Register regis = new Register();
         regis.setVisible(true);
+        regis.pack();
+        regis.setLocationRelativeTo(null);
+        this.dispose();
     }//GEN-LAST:event_SignupBtnMouseClicked
 
     private void ForgetBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ForgetBtnMouseClicked
@@ -243,6 +246,9 @@ public class Login extends javax.swing.JFrame {
         
         Forget_Pwd forget = new Forget_Pwd();
         forget.setVisible(true);
+        forget.pack();
+        forget.setLocationRelativeTo(null);
+        this.dispose();
     }//GEN-LAST:event_ForgetBtnMouseClicked
 
     /**
