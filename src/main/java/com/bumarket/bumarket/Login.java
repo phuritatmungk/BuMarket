@@ -227,7 +227,7 @@ public class Login extends javax.swing.JFrame {
     private void LoginBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LoginBtnMouseClicked
         // TODO add your handling code here:
         
-        Home home = new Home();
+        Main home = new Main();
         home.setVisible(true);
     }//GEN-LAST:event_LoginBtnMouseClicked
 
