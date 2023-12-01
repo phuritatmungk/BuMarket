@@ -214,8 +214,7 @@ public class Forget_Pwd extends javax.swing.JFrame {
 
     private void SignInBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SignInBtnMouseClicked
         // TODO add your handling code here:
-        Login login = new Login();
-        login.setVisible(true);
+        new Login().setVisible(true);
         this.dispose();
         
     }//GEN-LAST:event_SignInBtnMouseClicked

@@ -230,24 +230,21 @@ public class Login extends javax.swing.JFrame {
 
     private void LoginBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LoginBtnMouseClicked
         // TODO add your handling code here:
-        Home home = new Home();
-        home.setVisible(true);
+        new Home().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_LoginBtnMouseClicked
 
     private void SignupBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SignupBtnMouseClicked
         // TODO add your handling code here:
         
-        Register regis = new Register();
-        regis.setVisible(true);
+        new Register().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_SignupBtnMouseClicked
 
     private void ForgetBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ForgetBtnMouseClicked
         // TODO add your handling code here:
         
-        Forget_Pwd forget = new Forget_Pwd();
-        forget.setVisible(true);
+        new Forget_Pwd().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_ForgetBtnMouseClicked
 
