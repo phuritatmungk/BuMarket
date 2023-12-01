@@ -27,7 +27,6 @@ public class Home extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
@@ -37,7 +36,6 @@ public class Home extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
@@ -56,16 +54,6 @@ public class Home extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton1.setText("อื่นๆ");
-        jButton1.setBorder(null);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 360, 40, 20));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setText("BU Market");
@@ -100,7 +88,7 @@ public class Home extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 360, 60, 20));
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 360, 60, 20));
 
         jButton5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton5.setText("เครื่องเขียน");
@@ -110,7 +98,7 @@ public class Home extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 360, 80, 20));
+        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 360, 80, 20));
 
         jButton6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton6.setText("ขนม/เครื่องดื่ม");
@@ -120,16 +108,7 @@ public class Home extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 360, 90, 20));
-
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/mais (1).png"))); // NOI18N
-        jButton7.setBorder(null);
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 270, 90, 80));
+        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 360, 90, 20));
 
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/Pngtreevector-stationery-icon-41.png"))); // NOI18N
         jButton8.setBorder(null);
@@ -138,7 +117,7 @@ public class Home extends javax.swing.JFrame {
                 jButton8ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 270, 90, 80));
+        jPanel1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 270, 90, 80));
 
         jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/Picture3 (1).png"))); // NOI18N
         jButton10.setBorder(null);
@@ -147,7 +126,7 @@ public class Home extends javax.swing.JFrame {
                 jButton10ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 270, 90, -1));
+        jPanel1.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 270, 90, -1));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/th-11134207-7qul6-lh3hruwrurl4d3 (1).jpg"))); // NOI18N
         jLabel8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -163,7 +142,7 @@ public class Home extends javax.swing.JFrame {
                 jButton11ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 270, 90, 80));
+        jPanel1.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 270, 90, 80));
 
         jButton12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/Picture2 (1).png"))); // NOI18N
@@ -231,10 +210,6 @@ public class Home extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
@@ -262,10 +237,6 @@ public class Home extends javax.swing.JFrame {
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton10ActionPerformed
-
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
@@ -311,7 +282,6 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
@@ -320,7 +290,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
