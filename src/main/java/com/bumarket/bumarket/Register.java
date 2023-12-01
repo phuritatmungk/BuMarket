@@ -278,6 +278,7 @@ public class Register extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
@@ -307,8 +308,6 @@ public class Register extends javax.swing.JFrame {
     private void SignInBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SignInBtnMouseClicked
         Login login = new Login();
         login.setVisible(true);
-        login.pack();
-        login.setLocationRelativeTo(null);
         this.dispose();
     }//GEN-LAST:event_SignInBtnMouseClicked
 
