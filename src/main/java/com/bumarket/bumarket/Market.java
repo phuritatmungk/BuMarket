@@ -112,15 +112,15 @@ public class Market extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
 
         jLabel1.setBackground(new java.awt.Color(204, 204, 204));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/sg-11134201-7rbmv-lnjd7mjno8fa75 (1).jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sg-11134201-7rbmv-lnjd7mjno8fa75 (1).jpg"))); // NOI18N
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/sg-11134201-7qvdz-lie9xrwwd9ts55 (1).jpg"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sg-11134201-7qvdz-lie9xrwwd9ts55 (1).jpg"))); // NOI18N
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/sg-11134201-7qvf9-lie9xt5kjwj777 (1).jpg"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sg-11134201-7qvf9-lie9xt5kjwj777 (1).jpg"))); // NOI18N
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/bumarket/bumarket/IMG/sg-11134201-7qvf6-lie9xr7xdtd683 (1).jpg"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/sg-11134201-7qvf6-lie9xr7xdtd683 (1).jpg"))); // NOI18N
 
         scrollbar1.setOrientation(java.awt.Scrollbar.HORIZONTAL);
 

@@ -365,14 +365,16 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="12" style="1"/>
         </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Picture2 (1).png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="&#xe22;&#xe2d;&#xe14;&#xe1e;&#xe2d;&#xe22;&#xe17;&#xe4c;&#xe04;&#xe07;&#xe40;&#xe2b;&#xe25;&#xe37;&#xe2d;"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
             <BevelBorder/>
           </Border>
         </Property>
-        <Property name="horizontalAlignment" type="int" value="4"/>
-        <Property name="horizontalTextPosition" type="int" value="0"/>
+        <Property name="horizontalTextPosition" type="int" value="4"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
@@ -388,13 +390,16 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="12" style="1"/>
         </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Picture2 (1).png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="  &#xe1b;&#xe23;&#xe30;&#xe27;&#xe31;&#xe15;&#xe34;&#xe01;&#xe32;&#xe23;&#xe2a;&#xe31;&#xe48;&#xe07;&#xe0b;&#xe37;&#xe49;&#xe2d;"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
             <BevelBorder/>
           </Border>
         </Property>
-        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="horizontalTextPosition" type="int" value="4"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -447,7 +452,7 @@
     <Component class="javax.swing.JLabel" name="jLabel11">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/com/bumarket/bumarket/IMG/Exit.png"/>
+          <Image iconType="3" name="/Exit.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -459,7 +464,7 @@
     <Component class="javax.swing.JLabel" name="jLabel10">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/com/bumarket/bumarket/IMG/Account.png"/>
+          <Image iconType="3" name="/Account.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -503,7 +508,7 @@
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/com/bumarket/bumarket/IMG/Shopicon.png"/>
+          <Image iconType="3" name="/Shopicon.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -515,7 +520,7 @@
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/com/bumarket/bumarket/IMG/Search.png"/>
+          <Image iconType="3" name="/Search.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -527,7 +532,7 @@
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/com/bumarket/bumarket/IMG/btn_logo.png"/>
+          <Image iconType="3" name="/btn_logo.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -556,7 +561,7 @@
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/com/bumarket/bumarket/IMG/Back.png"/>
+          <Image iconType="3" name="/Back.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -641,7 +646,7 @@
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/com/bumarket/bumarket/IMG/Down.png"/>
+          <Image iconType="3" name="/Down.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -653,7 +658,7 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/com/bumarket/bumarket/IMG/Up.png"/>
+          <Image iconType="3" name="/Up.png"/>
         </Property>
       </Properties>
       <Constraints>
