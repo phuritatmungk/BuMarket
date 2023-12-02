@@ -8,12 +8,12 @@ package com.bumarket.bumarket;
  *
  * @author USER
  */
-public class CategoryStudent extends javax.swing.JFrame {
+public class Categoryjacket extends javax.swing.JFrame {
 
     /**
-     * Creates new form CategoryStudent
+     * Creates new form Categoryjacket
      */
-    public CategoryStudent() {
+    public Categoryjacket() {
         initComponents();
     }
 
@@ -175,11 +175,11 @@ public class CategoryStudent extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("ชุดนักศึกษา");
+        jLabel3.setText("เสื้อแจ็คเก็ต");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 15, 138, 78));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel1.setText("ชุดนักศึกษา");
+        jLabel1.setText("เสื้อแจ็คเก็ต");
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, -1));
 
         jButton8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -209,39 +209,39 @@ public class CategoryStudent extends javax.swing.JFrame {
         jSeparator9.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
         jPanel2.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 440, 180, 10));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Student uniform1.jpg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Jacket1.jpg"))); // NOI18N
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 190, 200));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel5.setText("฿ 240.00");
+        jLabel5.setText("฿ 411.00");
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 420, -1, -1));
 
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Student uniform4.jpg"))); // NOI18N
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Jacket4.jpg"))); // NOI18N
         jPanel2.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 180, 190, -1));
 
         jLabel16.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel16.setText("ใหม่เครื่องแบบDKสำหรับผู้ชาย");
+        jLabel16.setText("เสื้อแจ็คเก็ต สำหรับเดินป่า");
         jLabel16.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel16.setVerifyInputWhenFocusTarget(false);
         jLabel16.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        jPanel2.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 390, 180, -1));
+        jPanel2.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 390, 190, -1));
 
         jLabel18.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel18.setText("฿ 489.00");
+        jLabel18.setText("฿ 389.00");
         jPanel2.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 420, -1, -1));
 
-        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Student uniform2.jpg"))); // NOI18N
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Jacket2.jpg"))); // NOI18N
         jPanel2.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 180, 190, -1));
 
-        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Student uniform3.jpg"))); // NOI18N
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Jacket3.jpg"))); // NOI18N
         jPanel2.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 180, 190, -1));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel6.setText("เสื้อเชิ้ตชายสีขาว เสื้อนักศึกษา");
+        jLabel6.setText("เสื้อแจ็คเก็ตแฟชั่นสไตล์เกาหลี");
         jLabel6.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel6.setVerifyInputWhenFocusTarget(false);
         jLabel6.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
@@ -249,7 +249,7 @@ public class CategoryStudent extends javax.swing.JFrame {
 
         jLabel21.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel21.setText("เสื้อนักศึกษาชายแขนยาว");
+        jLabel21.setText("เสื้อแจ็คเก็ตแขนยาวผู้ชาย");
         jLabel21.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel21.setVerifyInputWhenFocusTarget(false);
         jLabel21.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
@@ -257,20 +257,20 @@ public class CategoryStudent extends javax.swing.JFrame {
 
         jLabel22.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel22.setText("฿ 120.00");
+        jLabel22.setText("฿ 274.00");
         jPanel2.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 420, -1, -1));
 
         jLabel23.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel23.setText("เสื้อเชิ้ตสีขาวเครื่องแบบ ชุดยูนิฟอร์ม");
+        jLabel23.setText("เสื้อแจ็กเก็ตกันหนาว ผ้าฟลีซ");
         jLabel23.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel23.setVerifyInputWhenFocusTarget(false);
         jLabel23.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        jPanel2.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 390, -1, -1));
+        jPanel2.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 390, -1, -1));
 
         jLabel24.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel24.setText("฿ 119.00");
+        jLabel24.setText("฿ 307.00");
         jPanel2.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 420, -1, -1));
 
         jSeparator10.setForeground(new java.awt.Color(121, 121, 121));
@@ -454,20 +454,20 @@ public class CategoryStudent extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CategoryStudent.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Categoryjacket.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CategoryStudent.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Categoryjacket.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CategoryStudent.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Categoryjacket.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CategoryStudent.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Categoryjacket.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CategoryStudent().setVisible(true);
+                new Categoryjacket().setVisible(true);
             }
         });
     }

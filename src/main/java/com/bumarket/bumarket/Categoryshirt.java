@@ -95,7 +95,7 @@ public class Categoryshirt extends javax.swing.JFrame {
         jPanel2.add(jSeparator12, new org.netbeans.lib.awtextra.AbsoluteConstraints(-6, 156, 1200, 10));
 
         btnPencil.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnPencil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pencil.png"))); // NOI18N
+        btnPencil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon1 (2).png"))); // NOI18N
         btnPencil.setText("เสื้อผ้า");
         btnPencil.setContentAreaFilled(false);
         btnPencil.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -106,10 +106,10 @@ public class Categoryshirt extends javax.swing.JFrame {
                 btnPencilActionPerformed(evt);
             }
         });
-        jPanel2.add(btnPencil, new org.netbeans.lib.awtextra.AbsoluteConstraints(235, 15, 110, -1));
+        jPanel2.add(btnPencil, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 10, 110, 90));
 
         btnBook.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnBook.setIcon(new javax.swing.ImageIcon(getClass().getResource("/book.png"))); // NOI18N
+        btnBook.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Untitled (4).png"))); // NOI18N
         btnBook.setText("ชุดนักศึกษา");
         btnBook.setContentAreaFilled(false);
         btnBook.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -128,10 +128,10 @@ public class Categoryshirt extends javax.swing.JFrame {
                 btnBookActionPerformed(evt);
             }
         });
-        jPanel2.add(btnBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 15, 118, -1));
+        jPanel2.add(btnBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 15, 118, 90));
 
         btnPen.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnPen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pen.png"))); // NOI18N
+        btnPen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconjacket (1).png"))); // NOI18N
         btnPen.setText("เสื้อแจ็คเก็ต");
         btnPen.setContentAreaFilled(false);
         btnPen.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -150,7 +150,7 @@ public class Categoryshirt extends javax.swing.JFrame {
                 btnPenActionPerformed(evt);
             }
         });
-        jPanel2.add(btnPen, new org.netbeans.lib.awtextra.AbsoluteConstraints(507, 15, 118, 80));
+        jPanel2.add(btnPen, new org.netbeans.lib.awtextra.AbsoluteConstraints(507, 15, 118, 90));
 
         btnOther.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnOther.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mais-1.png"))); // NOI18N
@@ -172,7 +172,7 @@ public class Categoryshirt extends javax.swing.JFrame {
                 btnOtherActionPerformed(evt);
             }
         });
-        jPanel2.add(btnOther, new org.netbeans.lib.awtextra.AbsoluteConstraints(643, 15, 118, 78));
+        jPanel2.add(btnOther, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 20, 118, 78));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
