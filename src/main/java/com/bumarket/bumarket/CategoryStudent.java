@@ -8,12 +8,12 @@ package com.bumarket.bumarket;
  *
  * @author USER
  */
-public class Categoryshirt extends javax.swing.JFrame {
+public class CategoryStudent extends javax.swing.JFrame {
 
     /**
      * Creates new form Categoryshirt
      */
-    public Categoryshirt() {
+    public CategoryStudent() {
         initComponents();
     }
 
@@ -73,7 +73,6 @@ public class Categoryshirt extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1280, 720));
 
         jPanel1.setBackground(new java.awt.Color(230, 230, 230));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
