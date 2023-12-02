@@ -26,6 +26,10 @@ public class Shoppingcart extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jButton3 = new javax.swing.JButton();
+        ExitButton = new javax.swing.JButton();
+        Cartbutton = new javax.swing.JButton();
+        Backbutton = new javax.swing.JButton();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
@@ -49,20 +53,16 @@ public class Shoppingcart extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel13 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
@@ -71,10 +71,33 @@ public class Shoppingcart extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
+        jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
+        jButton3.setText("ยอดพอยท์คงเหลือ");
+        jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1280, 720));
         setSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        ExitButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
+        ExitButton.setContentAreaFilled(false);
+        getContentPane().add(ExitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 35, -1, -1));
+
+        Cartbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shopicon.png"))); // NOI18N
+        Cartbutton.setContentAreaFilled(false);
+        getContentPane().add(Cartbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 25, -1, -1));
+
+        Backbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Back.png"))); // NOI18N
+        Backbutton.setContentAreaFilled(false);
+        getContentPane().add(Backbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, -1));
 
         jLabel24.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -186,18 +209,6 @@ public class Shoppingcart extends javax.swing.JFrame {
         jLabel19.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 300, 240, 120));
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
-        jButton3.setText("ยอดพอยท์คงเหลือ");
-        jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 150, 240, 49));
-
         jButton12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
         jButton12.setText("  ประวัติการสั่งซื้อ");
@@ -216,9 +227,6 @@ public class Shoppingcart extends javax.swing.JFrame {
         jLabel9.setText("ตระกร้า");
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, -1, -1));
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 40, -1, -1));
-
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Account.png"))); // NOI18N
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 10, -1, -1));
 
@@ -232,9 +240,6 @@ public class Shoppingcart extends javax.swing.JFrame {
         jLabel7.setText("My Account");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 35, -1, -1));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shopicon.png"))); // NOI18N
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 35, 50, 40));
-
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Search.png"))); // NOI18N
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 37, -1, 30));
 
@@ -246,9 +251,6 @@ public class Shoppingcart extends javax.swing.JFrame {
         jTextField1.setText("  Search");
         jTextField1.setToolTipText("");
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 35, 410, 34));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Back.png"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
         jLabel14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
         getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 160, 120));
@@ -331,6 +333,9 @@ public class Shoppingcart extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Backbutton;
+    private javax.swing.JButton Cartbutton;
+    private javax.swing.JButton ExitButton;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton2;
@@ -343,7 +348,6 @@ public class Shoppingcart extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
@@ -363,11 +367,9 @@ public class Shoppingcart extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
