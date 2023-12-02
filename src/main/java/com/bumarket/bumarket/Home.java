@@ -178,9 +178,10 @@ public class Home extends javax.swing.JFrame {
 
         jButton15.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture1-1 (1).png"))); // NOI18N
-        jButton15.setText("เสื้อผ้าBU");
+        jButton15.setText("เสื้อผ้า");
         jButton15.setBorder(null);
         jButton15.setContentAreaFilled(false);
+        jButton15.setFocusPainted(false);
         jButton15.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton15.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton15.addActionListener(new java.awt.event.ActionListener() {
@@ -195,6 +196,7 @@ public class Home extends javax.swing.JFrame {
         jButton16.setText("เตรื่องเขียน");
         jButton16.setBorder(null);
         jButton16.setContentAreaFilled(false);
+        jButton16.setFocusPainted(false);
         jButton16.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton16.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton16.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -214,6 +216,7 @@ public class Home extends javax.swing.JFrame {
         jButton14.setText("ขนม/เครื่องดืม");
         jButton14.setBorder(null);
         jButton14.setContentAreaFilled(false);
+        jButton14.setFocusPainted(false);
         jButton14.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton14.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton14.addActionListener(new java.awt.event.ActionListener() {
