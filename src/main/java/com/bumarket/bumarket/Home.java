@@ -86,11 +86,11 @@ public class Home extends javax.swing.JFrame {
         });
         jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 180, 180, 49));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/th-11134207-7qul6-lh3hruwrurl4d3 (1).jpg"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/advert3.jpg"))); // NOI18N
         jLabel8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 440, 190, 200));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/All-Pen-Content-post-1024x763-1.jpg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/advert 1.jpg"))); // NOI18N
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 170, 370, 240));
 
         jButton12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -100,15 +100,15 @@ public class Home extends javax.swing.JFrame {
         jButton12.setContentAreaFilled(false);
         jPanel1.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 180, 180, 50));
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/istockphoto-944997482-1024x1024 (2).jpg"))); // NOI18N
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/advert 2.jpg"))); // NOI18N
         jLabel11.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 440, 190, 200));
 
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fash-pro-back-school-detail6-120 (1).jpg"))); // NOI18N
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/advert 4.jpg"))); // NOI18N
         jLabel12.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 440, 190, 200));
 
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/973616d8a4982b820327b4a32d704d1b (1).jpg"))); // NOI18N
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/advert 5.jpg"))); // NOI18N
         jLabel13.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 440, 190, 200));
 
