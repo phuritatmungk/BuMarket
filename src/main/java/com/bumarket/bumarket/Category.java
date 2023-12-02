@@ -284,7 +284,9 @@ public class Category extends javax.swing.JFrame {
         jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 40, -1, -1));
 
         btnBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Back.png"))); // NOI18N
+        btnBack.setBorderPainted(false);
         btnBack.setContentAreaFilled(false);
+        btnBack.setFocusable(false);
         btnBack.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnBackMouseClicked(evt);
