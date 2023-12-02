@@ -81,6 +81,7 @@ public class Forget_Pwd extends javax.swing.JFrame {
         ConfirmBtn.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
         ConfirmBtn.setForeground(new java.awt.Color(255, 255, 255));
         ConfirmBtn.setText("Confirm");
+        ConfirmBtn.setBorderPainted(false);
         ConfirmBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ConfirmBtnMouseClicked(evt);
