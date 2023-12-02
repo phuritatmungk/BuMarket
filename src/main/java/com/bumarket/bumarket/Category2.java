@@ -30,12 +30,12 @@ public class Category2 extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jSeparator5 = new javax.swing.JSeparator();
         jSeparator6 = new javax.swing.JSeparator();
-        jButton1 = new javax.swing.JButton();
+        btnPencil = new javax.swing.JButton();
+        btnBook = new javax.swing.JButton();
+        btnPen = new javax.swing.JButton();
+        btnOther = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jSeparator7 = new javax.swing.JSeparator();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jSeparator8 = new javax.swing.JSeparator();
         jSeparator9 = new javax.swing.JSeparator();
@@ -43,7 +43,7 @@ public class Category2 extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jButton7 = new javax.swing.JButton();
+        btnProduct1 = new javax.swing.JButton();
         jSeparator12 = new javax.swing.JSeparator();
         jSeparator13 = new javax.swing.JSeparator();
         jLabel6 = new javax.swing.JLabel();
@@ -78,18 +78,85 @@ public class Category2 extends javax.swing.JFrame {
         jSeparator6.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
         jPanel2.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(779, 3, 13, 100));
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pencil.png"))); // NOI18N
-        jButton1.setText("ดินสอและไส้ดินสอ");
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.setIconTextGap(0);
-        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+        btnPencil.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnPencil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pencil.png"))); // NOI18N
+        btnPencil.setText("ดินสอและไส้ดินสอ");
+        btnPencil.setContentAreaFilled(false);
+        btnPencil.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnPencil.setIconTextGap(0);
+        btnPencil.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnPencil.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnPencilMouseClicked(evt);
             }
         });
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(235, 15, -1, -1));
+        btnPencil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPencilActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnPencil, new org.netbeans.lib.awtextra.AbsoluteConstraints(235, 15, -1, -1));
+
+        btnBook.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnBook.setIcon(new javax.swing.ImageIcon(getClass().getResource("/book.png"))); // NOI18N
+        btnBook.setText("สมุด");
+        btnBook.setContentAreaFilled(false);
+        btnBook.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnBook.setIconTextGap(0);
+        btnBook.setMaximumSize(new java.awt.Dimension(118, 78));
+        btnBook.setMinimumSize(new java.awt.Dimension(118, 78));
+        btnBook.setPreferredSize(new java.awt.Dimension(118, 78));
+        btnBook.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnBook.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBookActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 15, 118, -1));
+
+        btnPen.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnPen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pen.png"))); // NOI18N
+        btnPen.setText("ปากกา");
+        btnPen.setContentAreaFilled(false);
+        btnPen.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnPen.setIconTextGap(0);
+        btnPen.setMaximumSize(new java.awt.Dimension(118, 78));
+        btnPen.setMinimumSize(new java.awt.Dimension(118, 78));
+        btnPen.setPreferredSize(new java.awt.Dimension(118, 78));
+        btnPen.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnPen.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnPenMouseClicked(evt);
+            }
+        });
+        btnPen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPenActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnPen, new org.netbeans.lib.awtextra.AbsoluteConstraints(507, 15, 118, 78));
+
+        btnOther.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnOther.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mais-1.png"))); // NOI18N
+        btnOther.setText("อื่นๆ");
+        btnOther.setContentAreaFilled(false);
+        btnOther.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnOther.setIconTextGap(0);
+        btnOther.setMaximumSize(new java.awt.Dimension(118, 78));
+        btnOther.setMinimumSize(new java.awt.Dimension(118, 78));
+        btnOther.setPreferredSize(new java.awt.Dimension(118, 78));
+        btnOther.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnOther.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnOtherMouseClicked(evt);
+            }
+        });
+        btnOther.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOtherActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnOther, new org.netbeans.lib.awtextra.AbsoluteConstraints(643, 15, 118, 78));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel3.setText("เครื่องเขียน");
@@ -98,50 +165,11 @@ public class Category2 extends javax.swing.JFrame {
         jSeparator7.setForeground(new java.awt.Color(0, 0, 0));
         jSeparator7.setOrientation(javax.swing.SwingConstants.VERTICAL);
         jSeparator7.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
-        jPanel2.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(213, -5, 16, 110));
+        jPanel2.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(213, -5, 16, 160));
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pen.png"))); // NOI18N
-        jButton3.setText("ปากกา");
-        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton3.setIconTextGap(0);
-        jButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(507, 15, 118, 78));
-
-        jButton4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mais-1.png"))); // NOI18N
-        jButton4.setText("อื่นๆ");
-        jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton4.setIconTextGap(0);
-        jButton4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(643, 15, 118, 78));
-
-        jButton5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/book.png"))); // NOI18N
-        jButton5.setText("สมุด");
-        jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton5.setIconTextGap(0);
-        jButton5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 15, 118, -1));
-
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel1.setText("ดินสอและไส้ดินสอ");
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(41, 127, -1, -1));
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel1.setText("สมุด");
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 120, -1, -1));
 
         jSeparator8.setForeground(new java.awt.Color(121, 121, 121));
         jSeparator8.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
@@ -173,14 +201,14 @@ public class Category2 extends javax.swing.JFrame {
         jLabel5.setText("฿ 45.00");
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, -1, -1));
 
-        jButton7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton7.setText("เพิ่มเติม");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        btnProduct1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnProduct1.setText("เพิ่มเติม");
+        btnProduct1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                btnProduct1ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 310, -1, -1));
+        jPanel2.add(btnProduct1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 310, -1, -1));
 
         jSeparator12.setForeground(new java.awt.Color(121, 121, 121));
         jSeparator12.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
@@ -199,6 +227,7 @@ public class Category2 extends javax.swing.JFrame {
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
         jButton8.setText("ยอดพอยท์คงเหลือ");
         jButton8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton8.setContentAreaFilled(false);
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
@@ -210,6 +239,7 @@ public class Category2 extends javax.swing.JFrame {
         jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
         jButton12.setText("ประวัติการสั่งซื้อ");
         jButton12.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton12.setContentAreaFilled(false);
         jPanel2.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 30, 180, 50));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, -1, 564));
@@ -247,6 +277,11 @@ public class Category2 extends javax.swing.JFrame {
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Back.png"))); // NOI18N
         jButton2.setContentAreaFilled(false);
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton2MouseClicked(evt);
+            }
+        });
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -273,27 +308,28 @@ public class Category2 extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnPencilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPencilActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnPencilActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnPenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPenActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btnPenActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void btnOtherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOtherActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_btnOtherActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void btnBookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBookActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_btnBookActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void btnProduct1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_btnProduct1ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
@@ -302,6 +338,28 @@ public class Category2 extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void btnPencilMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPencilMouseClicked
+        new Category().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnPencilMouseClicked
+
+    private void btnPenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPenMouseClicked
+        new Category3().setVisible(true);
+        this.dispose();        // TODO add your handling code here:
+    }//GEN-LAST:event_btnPenMouseClicked
+
+    private void btnOtherMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnOtherMouseClicked
+        // TODO add your handling code here:
+        new Category4().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnOtherMouseClicked
+
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+        // TODO add your handling code here:
+        new Home().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton2MouseClicked
 
     /**
      * @param args the command line arguments
@@ -339,13 +397,13 @@ public class Category2 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnBook;
+    private javax.swing.JButton btnOther;
+    private javax.swing.JButton btnPen;
+    private javax.swing.JButton btnPencil;
+    private javax.swing.JButton btnProduct1;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
