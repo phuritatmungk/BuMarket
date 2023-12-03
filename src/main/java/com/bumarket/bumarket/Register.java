@@ -4,9 +4,10 @@
  */
 package com.bumarket.bumarket;
 
-import java.awt.HeadlessException;
-import java.awt.event.ActionEvent;
-import javax.swing.JOptionPane;
+import java.awt.*;
+import java.io.*;
+import java.util.*;
+import javax.swing.*;
 
 /**
  *
@@ -15,6 +16,9 @@ import javax.swing.JOptionPane;
 public class Register extends javax.swing.JFrame {
     
     private final UserData userdata = new UserData();
+    Map<String, String> usernameANDpassword = new HashMap<>();
+    ArrayList<String> all_usernames = new ArrayList<>();
+    
     
     /**
      * Creates new form Register
@@ -248,23 +252,131 @@ public class Register extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_SignInBtnMouseClicked
 
-    private void RegisterBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RegisterBtnMouseClicked
-        String user = txtUser.getText().trim();
-        String pass = String.valueOf(txtPass.getText());
+        public void getUsers() {
+        
+        File file = new File("account.txt");
+        String username = "";
+        String password = "";
+        
         try {
             
-            userdata.setId(txtId.getText());
-            userdata.setUsername(txtUser.getText());
-            userdata.setFName(txtFName.getText());
-            userdata.setLName(txtLName.getText());
-            userdata.setPassword(pass);
+            FileReader fr = new FileReader(file);
+            BufferedReader br = new BufferedReader(fr);
             
+            // read line by line from the text file
+            Object[] lines = br.lines().toArray();
+            for(int i = 0; i < lines.length; i++) {  
+                // splite the row into two rows
+                // one for the name of the field
+                // and the other for the value of the field
+                String[] row = lines[i].toString().split(": ");
+                
+                if(row[0].equals("Username"))
+                {
+                    // if it's the username field we will get the username
+                    username = row[1];
+                    // add the username to the all username array
+                    all_usernames.add(username);
+                }
+                else if(row[0].equals("Password"))
+                {
+                    // if it's the password field we will get the password
+                    password = row[1];
+                }
+                if(!username.equals("") && !password.equals(""))
+                {
+                    // add the username and the password to the hashmap
+                    usernameANDpassword.put(username, password);
+                }
+                
+            }
+        } catch (FileNotFoundException ex) {
+            
+        }
+    }
+    
+    public boolean checkIfUsernameExist(String un) {
+    boolean exist = false;
+        
+    for(String username: all_usernames) {
+        if(username.equals(un))
+        {
+            exist = true;
+        }
+    }
+    return exist;
+    }
+    
+    private void RegisterBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RegisterBtnMouseClicked
+        String username = txtUser.getText().trim();
+        String password = String.valueOf(txtPass.getText()).trim();
+        String fname = txtFName.getText().trim();
+        String lname = txtLName.getText().trim();
+        String id = txtId.getText().trim();
+        String confirm_pwd = String.valueOf(txtConfirmPwd.getText()).trim();
+        try {
+            
+            File file = new File("account.txt");
+
+            // file = the file we want to write on
+            // true = we wan to append the text on it
+            FileWriter fw = new FileWriter(file, true);
+            
+            // we need to check if the textfields are empty
+            // we need to check if the confirmation password equal the password
+            // we need to check if the username already exist
+          
+            // check if the textfields are empty
+            if( username.equals("") || password.equals("") || fname.equals("") || lname.equals("") || id.equals(""))
+            {
+                System.out.println("One Or More Fields Are Empty");
+            }
+            else{
+                // confirmation password
+                if(password.equals(confirm_pwd))
+                {
+                    // check if the username already exist
+                    if(!checkIfUsernameExist(username))
+                    {
+                        fw.write("Student ID: " + id);
+                        fw.write(System.getProperty("line.separator"));
+                        fw.write("Username: " + username);
+                        fw.write(System.getProperty("line.separator"));
+                        fw.write("Fullname: " + fname);
+                        fw.write(System.getProperty("line.separator"));
+                        fw.write("Email: " + lname);
+                        fw.write(System.getProperty("line.separator"));
+                        fw.write("Password: " + password);
+                        fw.write(System.getProperty("line.separator"));
+                        fw.write("---");
+                        fw.write(System.getProperty("line.separator"));
+                        fw.close(); 
+                        // populate the array and hashmap
+                        getUsers();
+                        
+                    }
+                    else
+                    {
+                       System.out.println("This Username Already Exist, Try Another One");  
+                    }
+
+                }
+                else
+                {
+                    System.out.println("Password Confirmation Error");
+                }
+            }
+                                                 
             JOptionPane.showMessageDialog(this, "Register Successfully", "Info", JOptionPane.INFORMATION_MESSAGE);
+            
+            new Login().setVisible(true);
+            this.dispose();
         } catch (HeadlessException e) {
             JOptionPane.showMessageDialog(this, "Failed to Register", "Error", JOptionPane.ERROR_MESSAGE);
+        } catch (IOException ex) {
+            JOptionPane.showMessageDialog(this, "Failed to Register", "Error", JOptionPane.ERROR_MESSAGE);
         }
-        new Login().setVisible(true);
-        this.dispose();
+        
     }//GEN-LAST:event_RegisterBtnMouseClicked
 
     /**
