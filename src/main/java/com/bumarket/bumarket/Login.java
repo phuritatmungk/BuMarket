@@ -264,7 +264,7 @@ public class Login extends javax.swing.JFrame {
 
     private void eyeMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eyeMousePressed
         eye.setVisible(false);
-        eye_hide.setVisible(Boolean.TRUE);
+        eye_hide.setVisible(true);
         txtNewPwd3.setEchoChar('*');
     }//GEN-LAST:event_eyeMousePressed
 
