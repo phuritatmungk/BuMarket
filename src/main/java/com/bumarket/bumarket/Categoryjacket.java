@@ -92,6 +92,7 @@ public class Categoryjacket extends javax.swing.JFrame {
         btnPencil.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnPencil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon1 (2).png"))); // NOI18N
         btnPencil.setText("เสื้อผ้า");
+        btnPencil.setBorder(null);
         btnPencil.setContentAreaFilled(false);
         btnPencil.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnPencil.setIconTextGap(0);
@@ -106,6 +107,7 @@ public class Categoryjacket extends javax.swing.JFrame {
         btnBook.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnBook.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Untitled (4).png"))); // NOI18N
         btnBook.setText("ชุดนักศึกษา");
+        btnBook.setBorder(null);
         btnBook.setContentAreaFilled(false);
         btnBook.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnBook.setIconTextGap(0);
@@ -128,6 +130,7 @@ public class Categoryjacket extends javax.swing.JFrame {
         btnPen.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnPen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconjacket (1).png"))); // NOI18N
         btnPen.setText("เสื้อแจ็คเก็ต");
+        btnPen.setBorder(null);
         btnPen.setContentAreaFilled(false);
         btnPen.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnPen.setIconTextGap(0);
@@ -150,6 +153,7 @@ public class Categoryjacket extends javax.swing.JFrame {
         btnOther.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnOther.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mais-1.png"))); // NOI18N
         btnOther.setText("อื่นๆ");
+        btnOther.setBorder(null);
         btnOther.setContentAreaFilled(false);
         btnOther.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnOther.setIconTextGap(0);
@@ -195,6 +199,11 @@ public class Categoryjacket extends javax.swing.JFrame {
         jButton12.setText("ประวัติการสั่งซื้อ");
         jButton12.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton12.setContentAreaFilled(false);
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 30, 180, 50));
 
         jSeparator8.setForeground(new java.awt.Color(121, 121, 121));
@@ -272,6 +281,11 @@ public class Categoryjacket extends javax.swing.JFrame {
 
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Jacket1.jpg"))); // NOI18N
         jButton5.setBorder(null);
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 190, 190));
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Jacket2.jpg"))); // NOI18N
@@ -330,6 +344,7 @@ public class Categoryjacket extends javax.swing.JFrame {
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 10, -1, -1));
 
         btnBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Back.png"))); // NOI18N
+        btnBack.setBorder(null);
         btnBack.setContentAreaFilled(false);
         btnBack.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -365,7 +380,8 @@ public class Categoryjacket extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnPencilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPencilActionPerformed
-        // TODO add your handling code here:
+         new CategoryStudent().setVisible(true);
+         this.dispose();
     }//GEN-LAST:event_btnPencilActionPerformed
 
     private void btnBookMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBookMouseClicked
@@ -374,7 +390,8 @@ public class Categoryjacket extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBookMouseClicked
 
     private void btnBookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBookActionPerformed
-        // TODO add your handling code here:
+         new Categoryshirt().setVisible(true);
+         this.dispose();
     }//GEN-LAST:event_btnBookActionPerformed
 
     private void btnPenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPenMouseClicked
@@ -383,7 +400,8 @@ public class Categoryjacket extends javax.swing.JFrame {
     }//GEN-LAST:event_btnPenMouseClicked
 
     private void btnPenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPenActionPerformed
-        // TODO add your handling code here:
+         new Categoryjacket().setVisible(true);
+         this.dispose();
     }//GEN-LAST:event_btnPenActionPerformed
 
     private void btnOtherMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnOtherMouseClicked
@@ -412,6 +430,16 @@ public class Categoryjacket extends javax.swing.JFrame {
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnBackActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        new MarketJacket1().setVisible(true);
+         this.dispose();
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+         new Shoppingcart().setVisible(true);
+         this.dispose();
+    }//GEN-LAST:event_jButton12ActionPerformed
 
     /**
      * @param args the command line arguments
