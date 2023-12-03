@@ -93,11 +93,6 @@ public class Register extends javax.swing.JFrame {
         txtLName.setForeground(new java.awt.Color(119, 119, 119));
         txtLName.setText("Last Name");
         txtLName.setBorder(null);
-        txtLName.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtLNameActionPerformed(evt);
-            }
-        });
 
         txtId.setBackground(new java.awt.Color(202, 202, 202));
         txtId.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -105,22 +100,12 @@ public class Register extends javax.swing.JFrame {
         txtId.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         txtId.setText("Student ID");
         txtId.setBorder(null);
-        txtId.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtIdActionPerformed(evt);
-            }
-        });
 
         txtFName.setBackground(new java.awt.Color(202, 202, 202));
         txtFName.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         txtFName.setForeground(new java.awt.Color(119, 119, 119));
         txtFName.setText("First Name");
         txtFName.setBorder(null);
-        txtFName.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtFNameActionPerformed(evt);
-            }
-        });
 
         jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
@@ -136,11 +121,6 @@ public class Register extends javax.swing.JFrame {
         txtUser.setForeground(new java.awt.Color(119, 119, 119));
         txtUser.setText("Username");
         txtUser.setBorder(null);
-        txtUser.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtUserActionPerformed(evt);
-            }
-        });
 
         jSeparator4.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator4.setForeground(new java.awt.Color(0, 0, 0));
@@ -150,11 +130,6 @@ public class Register extends javax.swing.JFrame {
         txtPass.setForeground(new java.awt.Color(119, 119, 119));
         txtPass.setText("Password");
         txtPass.setBorder(null);
-        txtPass.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtPassActionPerformed(evt);
-            }
-        });
 
         jSeparator5.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator5.setForeground(new java.awt.Color(0, 0, 0));
@@ -164,11 +139,6 @@ public class Register extends javax.swing.JFrame {
         txtConfirmPwd.setForeground(new java.awt.Color(119, 119, 119));
         txtConfirmPwd.setText("Comfirm Password");
         txtConfirmPwd.setBorder(null);
-        txtConfirmPwd.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtConfirmPwdActionPerformed(evt);
-            }
-        });
 
         jSeparator6.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator6.setForeground(new java.awt.Color(0, 0, 0));
@@ -273,22 +243,6 @@ public class Register extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtFNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFNameActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtFNameActionPerformed
-
-    private void txtIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIdActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtIdActionPerformed
-
-    private void txtLNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLNameActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtLNameActionPerformed
-
-    private void txtUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUserActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtUserActionPerformed
-
     private void SignInBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SignInBtnMouseClicked
         new Login().setVisible(true);
         this.dispose();
@@ -296,7 +250,7 @@ public class Register extends javax.swing.JFrame {
 
     private void RegisterBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RegisterBtnMouseClicked
         String user = txtUser.getText().trim();
-        String pass = String.valueOf(FPass.getPassword());
+        String pass = String.valueOf(txtPass.getText());
         try {
             
             userdata.setId(txtId.getText());
