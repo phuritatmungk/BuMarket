@@ -4,7 +4,10 @@
  */
 package com.bumarket.bumarket;
 
+import java.awt.Color;
+import java.awt.Font;
 import javax.swing.JOptionPane;
+import javax.swing.JTextField;
 
 /**
  *
@@ -17,6 +20,7 @@ public class Login extends javax.swing.JFrame {
      */
     public Login() {
         initComponents();
+        txtNewPwd3.setEchoChar((char)0);
     }
 
     /**
@@ -29,14 +33,16 @@ public class Login extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel6 = new javax.swing.JPanel();
+        eye_hide = new javax.swing.JLabel();
+        eye = new javax.swing.JLabel();
         txtUser3 = new javax.swing.JTextField();
         jSeparator29 = new javax.swing.JSeparator();
-        txtNewPwd3 = new javax.swing.JTextField();
         jSeparator28 = new javax.swing.JSeparator();
         SignInBtn3 = new javax.swing.JButton();
         ConfirmBtn3 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         SignInBtn4 = new javax.swing.JButton();
+        txtNewPwd3 = new javax.swing.JPasswordField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -46,11 +52,35 @@ public class Login extends javax.swing.JFrame {
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setResizable(false);
         setSize(new java.awt.Dimension(1280, 720));
+        addWindowFocusListener(new java.awt.event.WindowFocusListener() {
+            public void windowGainedFocus(java.awt.event.WindowEvent evt) {
+                formWindowGainedFocus(evt);
+            }
+            public void windowLostFocus(java.awt.event.WindowEvent evt) {
+            }
+        });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel6.setBackground(new java.awt.Color(202, 202, 202));
         jPanel6.setForeground(new java.awt.Color(51, 51, 51));
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        eye_hide.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eye_hide.png"))); // NOI18N
+        eye_hide.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                eye_hideMousePressed(evt);
+            }
+        });
+        jPanel6.add(eye_hide, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 85, -1, -1));
+
+        eye.setForeground(new java.awt.Color(0, 0, 0));
+        eye.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eye.png"))); // NOI18N
+        eye.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                eyeMousePressed(evt);
+            }
+        });
+        jPanel6.add(eye, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 85, -1, -1));
 
         txtUser3.setBackground(new java.awt.Color(202, 202, 202));
         txtUser3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -58,23 +88,19 @@ public class Login extends javax.swing.JFrame {
         txtUser3.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         txtUser3.setText("Username");
         txtUser3.setBorder(null);
-        jPanel6.add(txtUser3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 271, -1));
+        txtUser3.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtUser3FocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtUser3FocusLost(evt);
+            }
+        });
+        jPanel6.add(txtUser3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 250, -1));
 
         jSeparator29.setForeground(new java.awt.Color(0, 0, 0));
         jSeparator29.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
         jPanel6.add(jSeparator29, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 252, 10));
-
-        txtNewPwd3.setBackground(new java.awt.Color(202, 202, 202));
-        txtNewPwd3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        txtNewPwd3.setForeground(new java.awt.Color(119, 119, 119));
-        txtNewPwd3.setText("Password");
-        txtNewPwd3.setBorder(null);
-        txtNewPwd3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNewPwd3ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(txtNewPwd3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 265, -1));
 
         jSeparator28.setForeground(new java.awt.Color(0, 0, 0));
         jSeparator28.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
@@ -134,6 +160,22 @@ public class Login extends javax.swing.JFrame {
         });
         jPanel6.add(SignInBtn4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, -1, -1));
 
+        txtNewPwd3.setBackground(new java.awt.Color(202, 202, 202));
+        txtNewPwd3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        txtNewPwd3.setForeground(new java.awt.Color(119, 119, 119));
+        txtNewPwd3.setText("Password");
+        txtNewPwd3.setBorder(null);
+        txtNewPwd3.setEchoChar('\u0000');
+        txtNewPwd3.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtNewPwd3FocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtNewPwd3FocusLost(evt);
+            }
+        });
+        jPanel6.add(txtNewPwd3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 87, 210, 20));
+
         getContentPane().add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 270, 270, 300));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -154,6 +196,7 @@ public class Login extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    
     private void ConfirmBtn3ConfirmBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ConfirmBtn3ConfirmBtnMouseClicked
         // TODO add your handling code here:
         JOptionPane.showMessageDialog(null, "Password has been changed.");
@@ -179,15 +222,54 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_SignInBtn4ActionPerformed
 
-    private void txtNewPwd3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNewPwd3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtNewPwd3ActionPerformed
-
     private void ConfirmBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConfirmBtn3ActionPerformed
          new Home().setVisible(true);
          this.dispose();        // TODO add your handling code here:
     }//GEN-LAST:event_ConfirmBtn3ActionPerformed
 
+    private void txtUser3FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtUser3FocusGained
+       if(txtUser3.getText().equals("Username"))
+       {
+           txtUser3.setText("");
+       }
+    }//GEN-LAST:event_txtUser3FocusGained
+
+    private void txtUser3FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtUser3FocusLost
+        if (txtUser3.getText().length()==0)
+            txtUser3.setText("Username");
+    }//GEN-LAST:event_txtUser3FocusLost
+
+    private void txtNewPwd3FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtNewPwd3FocusGained
+        if(txtNewPwd3.getText().equals("Password"))
+       {
+           txtNewPwd3.setText("");
+           txtNewPwd3.setEchoChar('*');
+       }
+    }//GEN-LAST:event_txtNewPwd3FocusGained
+
+    private void txtNewPwd3FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtNewPwd3FocusLost
+        if (txtNewPwd3.getText().length()==0)
+            txtNewPwd3.setText("Password");
+    }//GEN-LAST:event_txtNewPwd3FocusLost
+
+    private void eye_hideMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eye_hideMousePressed
+        eye.setVisible(true);
+        eye_hide.setVisible(false);
+        txtNewPwd3.setEchoChar((char)0);
+    }//GEN-LAST:event_eye_hideMousePressed
+
+    private void formWindowGainedFocus(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowGainedFocus
+        this.requestFocusInWindow();
+    }//GEN-LAST:event_formWindowGainedFocus
+
+    private void eyeMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eyeMousePressed
+        eye.setVisible(false);
+        eye_hide.setVisible(Boolean.TRUE);
+        txtNewPwd3.setEchoChar('*');
+    }//GEN-LAST:event_eyeMousePressed
+
+    
+    
     /**
      * @param args the command line arguments
      */
@@ -224,83 +306,22 @@ public class Login extends javax.swing.JFrame {
         
     }
 
+  
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ConfirmBtn3;
-    private javax.swing.JButton ForgetBtn;
-    private javax.swing.JButton ForgetBtn1;
-    private javax.swing.JButton ForgetBtn2;
-    private javax.swing.JButton ForgetBtn3;
-    private javax.swing.JButton ForgetBtn4;
-    private javax.swing.JButton ForgetBtn5;
-    private javax.swing.JButton LoginBtn;
-    private javax.swing.JButton LoginBtn1;
-    private javax.swing.JButton LoginBtn2;
-    private javax.swing.JButton LoginBtn3;
-    private javax.swing.JButton LoginBtn4;
-    private javax.swing.JButton LoginBtn5;
     private javax.swing.JButton SignInBtn3;
     private javax.swing.JButton SignInBtn4;
-    private javax.swing.JButton SignupBtn;
-    private javax.swing.JButton SignupBtn1;
-    private javax.swing.JButton SignupBtn2;
-    private javax.swing.JButton SignupBtn3;
-    private javax.swing.JButton SignupBtn4;
-    private javax.swing.JButton SignupBtn5;
+    private javax.swing.JLabel eye;
+    private javax.swing.JLabel eye_hide;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JPanel jPanel11;
-    private javax.swing.JPanel jPanel12;
-    private javax.swing.JPanel jPanel13;
-    private javax.swing.JPanel jPanel14;
-    private javax.swing.JPanel jPanel15;
-    private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel6;
-    private javax.swing.JSeparator jSeparator16;
-    private javax.swing.JSeparator jSeparator17;
-    private javax.swing.JSeparator jSeparator18;
-    private javax.swing.JSeparator jSeparator19;
-    private javax.swing.JSeparator jSeparator20;
-    private javax.swing.JSeparator jSeparator21;
-    private javax.swing.JSeparator jSeparator22;
-    private javax.swing.JSeparator jSeparator23;
-    private javax.swing.JSeparator jSeparator24;
-    private javax.swing.JSeparator jSeparator25;
-    private javax.swing.JSeparator jSeparator26;
-    private javax.swing.JSeparator jSeparator27;
     private javax.swing.JSeparator jSeparator28;
     private javax.swing.JSeparator jSeparator29;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField19;
-    private javax.swing.JTextField jTextField20;
-    private javax.swing.JTextField jTextField21;
-    private javax.swing.JTextField jTextField22;
-    private javax.swing.JTextField jTextField23;
-    private javax.swing.JTextField jTextField24;
-    private javax.swing.JTextField jTextField25;
-    private javax.swing.JTextField jTextField26;
-    private javax.swing.JTextField txtNewPwd3;
+    private javax.swing.JPasswordField txtNewPwd3;
     private javax.swing.JTextField txtUser3;
     // End of variables declaration//GEN-END:variables
 }
