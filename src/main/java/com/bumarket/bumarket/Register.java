@@ -11,6 +11,8 @@ import javax.swing.JOptionPane;
  * @author chait
  */
 public class Register extends javax.swing.JFrame {
+    
+    private final UserData userdata = new UserData();
 
     /**
      * Creates new form Register
@@ -322,8 +324,17 @@ public class Register extends javax.swing.JFrame {
 
     private void RegisterBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RegisterBtnMouseClicked
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(null, "Register Successfully");
-        new Home().setVisible(true);
+        try {
+            userdata.setId(txtId.getText());
+            userdata.setUsername(txtUser.getText());
+            userdata.setFName(txtFName.getText());
+            userdata.setLName(txtLName.getText());
+            userdata.setPassword(txtPass.getText());
+            JOptionPane.showMessageDialog(this, "Register Successfully", "Info", JOptionPane.INFORMATION_MESSAGE);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Failed to Register", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+        new Login().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_RegisterBtnMouseClicked
 
