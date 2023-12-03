@@ -4,6 +4,8 @@
  */
 package com.bumarket.bumarket;
 
+import java.awt.HeadlessException;
+import java.awt.event.ActionEvent;
 import javax.swing.JOptionPane;
 
 /**
@@ -43,7 +45,9 @@ public class Register extends javax.swing.JFrame {
         jSeparator3 = new javax.swing.JSeparator();
         txtUser = new javax.swing.JTextField();
         jSeparator4 = new javax.swing.JSeparator();
+        txtPass = new javax.swing.JTextField();
         jSeparator5 = new javax.swing.JSeparator();
+        txtConfirmPwd = new javax.swing.JTextField();
         jSeparator6 = new javax.swing.JSeparator();
         jLabel2 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -141,26 +145,33 @@ public class Register extends javax.swing.JFrame {
         jSeparator4.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator4.setForeground(new java.awt.Color(0, 0, 0));
 
+        txtPass.setBackground(new java.awt.Color(202, 202, 202));
+        txtPass.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        txtPass.setForeground(new java.awt.Color(119, 119, 119));
+        txtPass.setText("Password");
+        txtPass.setBorder(null);
+        txtPass.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPassActionPerformed(evt);
+            }
+        });
+
         jSeparator5.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator5.setForeground(new java.awt.Color(0, 0, 0));
 
+        txtConfirmPwd.setBackground(new java.awt.Color(202, 202, 202));
+        txtConfirmPwd.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        txtConfirmPwd.setForeground(new java.awt.Color(119, 119, 119));
+        txtConfirmPwd.setText("Comfirm Password");
+        txtConfirmPwd.setBorder(null);
+        txtConfirmPwd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtConfirmPwdActionPerformed(evt);
+            }
+        });
+
         jSeparator6.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator6.setForeground(new java.awt.Color(0, 0, 0));
-
-        FPass.setBackground(new java.awt.Color(202, 202, 202));
-        FPass.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        FPass.setForeground(new java.awt.Color(119, 119, 119));
-        FPass.setText("Password");
-        FPass.setToolTipText("");
-        FPass.setBorder(null);
-        FPass.setHighlighter(null);
-        FPass.setName(""); // NOI18N
-
-        FConfirmPass.setBackground(new java.awt.Color(202, 202, 202));
-        FConfirmPass.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        FConfirmPass.setForeground(new java.awt.Color(119, 119, 119));
-        FConfirmPass.setText("jPasswordField2");
-        FConfirmPass.setBorder(null);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -185,13 +196,11 @@ public class Register extends javax.swing.JFrame {
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(txtLName, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(txtUser, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addComponent(FConfirmPass, javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(FPass, javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jSeparator5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 252, Short.MAX_VALUE))
-                                        .addGap(19, 19, 19)))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtPass, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(txtConfirmPwd, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
                                     .addGap(22, 22, 22)
                                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -222,16 +231,16 @@ public class Register extends javax.swing.JFrame {
                 .addGap(4, 4, 4)
                 .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(FPass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(1, 1, 1)
+                .addComponent(txtPass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(FConfirmPass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(1, 1, 1)
+                .addComponent(txtConfirmPwd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel5)
                         .addGap(122, 122, 122))
                     .addGroup(jPanel3Layout.createSequentialGroup()
@@ -241,7 +250,7 @@ public class Register extends javax.swing.JFrame {
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel3)
                             .addComponent(SignInBtn))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addContainerGap(33, Short.MAX_VALUE))))
         );
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 210, -1, -1));
@@ -258,7 +267,7 @@ public class Register extends javax.swing.JFrame {
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 180, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/background.png"))); // NOI18N
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 710));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 710));
 
         pack();
         setLocationRelativeTo(null);
@@ -297,7 +306,7 @@ public class Register extends javax.swing.JFrame {
             userdata.setPassword(pass);
             
             JOptionPane.showMessageDialog(this, "Register Successfully", "Info", JOptionPane.INFORMATION_MESSAGE);
-        } catch (Exception e) {
+        } catch (HeadlessException e) {
             JOptionPane.showMessageDialog(this, "Failed to Register", "Error", JOptionPane.ERROR_MESSAGE);
         }
         new Login().setVisible(true);
@@ -332,16 +341,12 @@ public class Register extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Register().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new Register().setVisible(true);
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPasswordField FConfirmPass;
-    private javax.swing.JPasswordField FPass;
     private javax.swing.JButton RegisterBtn;
     private javax.swing.JButton SignInBtn;
     private javax.swing.JLabel jLabel1;
@@ -357,9 +362,11 @@ public class Register extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
+    private javax.swing.JTextField txtConfirmPwd;
     private javax.swing.JTextField txtFName;
     private javax.swing.JTextField txtId;
     private javax.swing.JTextField txtLName;
+    private javax.swing.JTextField txtPass;
     private javax.swing.JTextField txtUser;
     // End of variables declaration//GEN-END:variables
 }
