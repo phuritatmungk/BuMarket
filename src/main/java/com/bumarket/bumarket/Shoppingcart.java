@@ -83,7 +83,6 @@ public class Shoppingcart extends javax.swing.JFrame {
         });
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1280, 720));
         setSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -188,6 +187,11 @@ public class Shoppingcart extends javax.swing.JFrame {
         PayButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         PayButton.setForeground(new java.awt.Color(255, 255, 255));
         PayButton.setText("ชำระเงิน");
+        PayButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PayButtonActionPerformed(evt);
+            }
+        });
         getContentPane().add(PayButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 430, 240, -1));
 
         jLabel18.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -296,6 +300,11 @@ public class Shoppingcart extends javax.swing.JFrame {
     private void ComboBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboBox3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ComboBox3ActionPerformed
+
+    private void PayButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PayButtonActionPerformed
+         new Checkout().setVisible(true);
+         this.dispose();
+    }//GEN-LAST:event_PayButtonActionPerformed
 
     /**
      * @param args the command line arguments

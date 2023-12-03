@@ -241,6 +241,11 @@ public class Category4 extends javax.swing.JFrame {
         jButton12.setText("ประวัติการสั่งซื้อ");
         jButton12.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton12.setContentAreaFilled(false);
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 30, 180, 50));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, 564));
@@ -365,6 +370,11 @@ public class Category4 extends javax.swing.JFrame {
         new Home().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton2MouseClicked
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+         new Shoppingcart().setVisible(true);
+         this.dispose();
+    }//GEN-LAST:event_jButton12ActionPerformed
 
     /**
      * @param args the command line arguments
