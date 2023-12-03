@@ -41,9 +41,10 @@ public class Categoryshirt extends javax.swing.JFrame {
         jButton12 = new javax.swing.JButton();
         jSeparator8 = new javax.swing.JSeparator();
         jSeparator9 = new javax.swing.JSeparator();
+        jSeparator10 = new javax.swing.JSeparator();
+        jSeparator13 = new javax.swing.JSeparator();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
@@ -53,10 +54,9 @@ public class Categoryshirt extends javax.swing.JFrame {
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
-        jSeparator10 = new javax.swing.JSeparator();
-        jSeparator13 = new javax.swing.JSeparator();
-        jButton2 = new javax.swing.JButton();
+        jLabel17 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jSeparator11 = new javax.swing.JSeparator();
@@ -210,6 +210,14 @@ public class Categoryshirt extends javax.swing.JFrame {
         jSeparator9.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
         jPanel2.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 440, 180, 10));
 
+        jSeparator10.setForeground(new java.awt.Color(121, 121, 121));
+        jSeparator10.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        jPanel2.add(jSeparator10, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 440, 200, 10));
+
+        jSeparator13.setForeground(new java.awt.Color(121, 121, 121));
+        jSeparator13.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        jPanel2.add(jSeparator13, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 440, 200, 10));
+
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shirts.jpg"))); // NOI18N
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 190, 200));
 
@@ -217,10 +225,6 @@ public class Categoryshirt extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(255, 0, 0));
         jLabel5.setText("฿ 376.00");
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 420, -1, -1));
-
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shirt6.jpg"))); // NOI18N
-        jLabel17.setText("jLabel17");
-        jPanel2.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 180, 190, -1));
 
         jLabel16.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -277,25 +281,21 @@ public class Categoryshirt extends javax.swing.JFrame {
         jLabel24.setText("฿ 185.00");
         jPanel2.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 420, -1, -1));
 
-        jSeparator10.setForeground(new java.awt.Color(121, 121, 121));
-        jSeparator10.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
-        jPanel2.add(jSeparator10, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 440, 200, 10));
-
-        jSeparator13.setForeground(new java.awt.Color(121, 121, 121));
-        jSeparator13.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
-        jPanel2.add(jSeparator13, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 440, 200, 10));
-
-        jButton2.setBackground(new java.awt.Color(204, 204, 204));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setToolTipText("");
-        jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, 230, 300));
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shirt6.jpg"))); // NOI18N
+        jLabel17.setText("jLabel17");
+        jPanel2.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 180, 190, -1));
 
         jButton1.setBackground(new java.awt.Color(204, 204, 204));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setToolTipText("");
         jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 170, 230, 300));
+
+        jButton2.setBackground(new java.awt.Color(204, 204, 204));
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setToolTipText("");
+        jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, 230, 300));
 
         jButton3.setBackground(new java.awt.Color(204, 204, 204));
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
@@ -358,6 +358,7 @@ public class Categoryshirt extends javax.swing.JFrame {
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 10, -1, -1));
 
         btnBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Back.png"))); // NOI18N
+        btnBack.setBorder(null);
         btnBack.setContentAreaFilled(false);
         btnBack.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
