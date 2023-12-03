@@ -15,7 +15,7 @@ import javax.swing.*;
  */
 public class Register extends javax.swing.JFrame {
     
-    private final UserData userdata = new UserData();
+    private UserData userdata;
     Map<String, String> usernameANDpassword = new HashMap<>();
     ArrayList<String> all_usernames = new ArrayList<>();
     

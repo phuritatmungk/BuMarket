@@ -12,72 +12,13 @@ import java.util.*;
  * @author chait
  */
 public class UserData implements java.io.Serializable {
-    
-    ArrayList<String> all_usernames = new ArrayList<>();
-    
-    Map<String, String> usernameANDpassword = new HashMap<>();
-    
-    
+   
     
     private String Id;
     private String FName;
     private String LName;
     private String Username;
     private String Password;
-    
-    public void getUsers() {
-       
-        // the info structure will be like this
-        /*
-        Username: aaa
-        Fullname: bbb ccc
-        Email: abc@mail.com
-        Password: pass123
-        ---
-        */
-        
-        File file = new File("account.txt");
-        String username = "";
-        String password = "";
-        
-        try {
-            
-            FileReader fr = new FileReader(file);
-            BufferedReader br = new BufferedReader(fr);
-            
-            // read line by line from the text file
-            Object[] lines = br.lines().toArray();
-            for(int i = 0; i < lines.length; i++) {  
-                // splite the row into two rows
-                // one for the name of the field
-                // and the other for the value of the field
-                String[] row = lines[i].toString().split(": ");
-                
-                if(row[0].equals("Username"))
-                {
-                    // if it's the username field we will get the username
-                    username = row[1];
-                    // add the username to the all username array
-                    all_usernames.add(username);
-                }
-                else if(row[0].equals("Password"))
-                {
-                    // if it's the password field we will get the password
-                    password = row[1];
-                }
-                if(!username.equals("") && !password.equals(""))
-                {
-                    // add the username and the password to the hashmap
-                    usernameANDpassword.put(username, password);
-                }
-                
-            }
-        } catch (FileNotFoundException ex) {
-            
-        }
-    }
-        
-
     
     public String getId() {
         return Id;
