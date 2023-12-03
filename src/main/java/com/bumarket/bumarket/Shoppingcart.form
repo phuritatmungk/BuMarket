@@ -149,7 +149,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox5">
+    <Component class="javax.swing.JComboBox" name="ComboBox2">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="4">
@@ -161,7 +161,7 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox5ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComboBox2ActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
@@ -172,7 +172,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JCheckBox" name="jCheckBox2">
+    <Component class="javax.swing.JCheckBox" name="CheckBox2">
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="790" y="410" width="-1" height="20"/>
@@ -236,7 +236,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox6">
+    <Component class="javax.swing.JComboBox" name="ComboBox3">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="4">
@@ -248,7 +248,7 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox6ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComboBox3ActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
@@ -259,7 +259,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JCheckBox" name="jCheckBox3">
+    <Component class="javax.swing.JCheckBox" name="CheckBox3">
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="790" y="550" width="-1" height="20"/>
@@ -323,7 +323,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton2">
+    <Component class="javax.swing.JButton" name="BuyButton">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="18" style="0"/>
@@ -336,7 +336,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="PayButton">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="33" green="33" red="ff" type="rgb"/>
@@ -421,7 +421,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton12">
+    <Component class="javax.swing.JButton" name="Historybutton">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="12" style="1"/>
@@ -475,7 +475,7 @@
     <Component class="javax.swing.JLabel" name="jLabel9">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="36" style="1"/>
+          <Font name="Tahoma" size="24" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&#xe15;&#xe23;&#xe30;&#xe01;&#xe23;&#xe49;&#xe32;"/>
       </Properties>
@@ -613,7 +613,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox2">
+    <Component class="javax.swing.JComboBox" name="ComboBox1">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="4">
@@ -625,7 +625,7 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox2ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComboBox1ActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
@@ -636,7 +636,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JCheckBox" name="jCheckBox1">
+    <Component class="javax.swing.JCheckBox" name="CheckBox1">
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="790" y="270" width="-1" height="20"/>
@@ -651,7 +651,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="0" y="-10" width="1280" height="750"/>
+          <AbsoluteConstraints x="0" y="0" width="1280" height="720"/>
         </Constraint>
       </Constraints>
     </Component>

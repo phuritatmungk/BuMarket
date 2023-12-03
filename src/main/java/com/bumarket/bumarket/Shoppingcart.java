@@ -34,26 +34,26 @@ public class Shoppingcart extends javax.swing.JFrame {
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
-        jComboBox5 = new javax.swing.JComboBox<>();
-        jCheckBox2 = new javax.swing.JCheckBox();
+        ComboBox2 = new javax.swing.JComboBox<>();
+        CheckBox2 = new javax.swing.JCheckBox();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
-        jComboBox6 = new javax.swing.JComboBox<>();
-        jCheckBox3 = new javax.swing.JCheckBox();
+        ComboBox3 = new javax.swing.JComboBox<>();
+        CheckBox3 = new javax.swing.JCheckBox();
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        BuyButton = new javax.swing.JButton();
+        PayButton = new javax.swing.JButton();
         jLabel18 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
-        jButton12 = new javax.swing.JButton();
+        Historybutton = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel13 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
@@ -66,8 +66,8 @@ public class Shoppingcart extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jCheckBox1 = new javax.swing.JCheckBox();
+        ComboBox1 = new javax.swing.JComboBox<>();
+        CheckBox1 = new javax.swing.JCheckBox();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -120,14 +120,14 @@ public class Shoppingcart extends javax.swing.JFrame {
         jLabel27.setToolTipText("");
         getContentPane().add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 430, -1, -1));
 
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4" }));
-        jComboBox5.addActionListener(new java.awt.event.ActionListener() {
+        ComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4" }));
+        ComboBox2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox5ActionPerformed(evt);
+                ComboBox2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 460, 80, -1));
-        getContentPane().add(jCheckBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 410, -1, 20));
+        getContentPane().add(ComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 460, 80, -1));
+        getContentPane().add(CheckBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 410, -1, 20));
 
         jLabel28.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -150,14 +150,14 @@ public class Shoppingcart extends javax.swing.JFrame {
         jLabel31.setToolTipText("");
         getContentPane().add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 570, -1, -1));
 
-        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4" }));
-        jComboBox6.addActionListener(new java.awt.event.ActionListener() {
+        ComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4" }));
+        ComboBox3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox6ActionPerformed(evt);
+                ComboBox3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 600, 80, -1));
-        getContentPane().add(jCheckBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 550, -1, 20));
+        getContentPane().add(ComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 600, 80, -1));
+        getContentPane().add(CheckBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 550, -1, 20));
 
         jLabel21.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel21.setText("รหัสสินค้า ดินสอสีเมจิก 11225");
@@ -180,15 +180,15 @@ public class Shoppingcart extends javax.swing.JFrame {
         jLabel20.setToolTipText("");
         getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 220, 100, -1));
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton2.setText("เลือกซื้อสินค้า");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 470, 240, -1));
+        BuyButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        BuyButton.setText("เลือกซื้อสินค้า");
+        getContentPane().add(BuyButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 470, 240, -1));
 
-        jButton1.setBackground(new java.awt.Color(255, 51, 51));
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("ชำระเงิน");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 430, 240, -1));
+        PayButton.setBackground(new java.awt.Color(255, 51, 51));
+        PayButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        PayButton.setForeground(new java.awt.Color(255, 255, 255));
+        PayButton.setText("ชำระเงิน");
+        getContentPane().add(PayButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 430, 240, -1));
 
         jLabel18.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel18.setText("ราคารวมทั้งหมด");
@@ -209,12 +209,12 @@ public class Shoppingcart extends javax.swing.JFrame {
         jLabel19.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 300, 240, 120));
 
-        jButton12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
-        jButton12.setText("  ประวัติการสั่งซื้อ");
-        jButton12.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton12.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        getContentPane().add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 220, 240, 50));
+        Historybutton.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        Historybutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
+        Historybutton.setText("  ประวัติการสั่งซื้อ");
+        Historybutton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Historybutton.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        getContentPane().add(Historybutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 220, 240, 50));
 
         jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
@@ -223,7 +223,7 @@ public class Shoppingcart extends javax.swing.JFrame {
         jLabel13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 360, 160, 120));
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel9.setText("ตระกร้า");
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, -1, -1));
 
@@ -262,17 +262,17 @@ public class Shoppingcart extends javax.swing.JFrame {
         jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
         getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 490, 680, 70));
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4" }));
-        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+        ComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4" }));
+        ComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox2ActionPerformed(evt);
+                ComboBox1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 315, 80, -1));
-        getContentPane().add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 270, -1, 20));
+        getContentPane().add(ComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 315, 80, -1));
+        getContentPane().add(CheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 270, -1, 20));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Down.png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1280, 750));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Up.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -285,17 +285,17 @@ public class Shoppingcart extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+    private void ComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboBox1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox2ActionPerformed
+    }//GEN-LAST:event_ComboBox1ActionPerformed
 
-    private void jComboBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox5ActionPerformed
+    private void ComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboBox2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox5ActionPerformed
+    }//GEN-LAST:event_ComboBox2ActionPerformed
 
-    private void jComboBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox6ActionPerformed
+    private void ComboBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboBox3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox6ActionPerformed
+    }//GEN-LAST:event_ComboBox3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -334,18 +334,18 @@ public class Shoppingcart extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Backbutton;
+    private javax.swing.JButton BuyButton;
     private javax.swing.JButton Cartbutton;
+    private javax.swing.JCheckBox CheckBox1;
+    private javax.swing.JCheckBox CheckBox2;
+    private javax.swing.JCheckBox CheckBox3;
+    private javax.swing.JComboBox<String> ComboBox1;
+    private javax.swing.JComboBox<String> ComboBox2;
+    private javax.swing.JComboBox<String> ComboBox3;
     private javax.swing.JButton ExitButton;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton Historybutton;
+    private javax.swing.JButton PayButton;
     private javax.swing.JButton jButton3;
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JCheckBox jCheckBox2;
-    private javax.swing.JCheckBox jCheckBox3;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox5;
-    private javax.swing.JComboBox<String> jComboBox6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel12;
