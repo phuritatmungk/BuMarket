@@ -52,7 +52,6 @@ public class Register extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
-        setPreferredSize(new java.awt.Dimension(1280, 720));
         setResizable(false);
         setSize(new java.awt.Dimension(1280, 720));
 
@@ -63,12 +62,12 @@ public class Register extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel1.setText("WELCOME");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(600, 150, 91, 21);
+        jLabel1.setBounds(600, 150, 89, 21);
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel2.setText("BU MARKET");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(580, 110, 146, 29);
+        jLabel2.setBounds(580, 110, 149, 29);
 
         jPanel3.setBackground(new java.awt.Color(202, 202, 202));
         jPanel3.setForeground(new java.awt.Color(51, 51, 51));

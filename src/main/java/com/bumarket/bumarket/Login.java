@@ -101,6 +101,7 @@ public class Login extends javax.swing.JFrame {
         jTextField15.setForeground(new java.awt.Color(119, 119, 119));
         jTextField15.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         jTextField15.setText("Username");
+        jTextField15.setToolTipText("");
         jTextField15.setBorder(null);
         jTextField15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
