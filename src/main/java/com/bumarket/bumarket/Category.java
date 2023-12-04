@@ -83,6 +83,7 @@ public class Category extends javax.swing.JFrame {
         btnPencil.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnPencil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pencil.png"))); // NOI18N
         btnPencil.setText("ดินสอและไส้ดินสอ");
+        btnPencil.setBorder(null);
         btnPencil.setContentAreaFilled(false);
         btnPencil.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnPencil.setIconTextGap(0);
@@ -97,6 +98,7 @@ public class Category extends javax.swing.JFrame {
         btnBook.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnBook.setIcon(new javax.swing.ImageIcon(getClass().getResource("/book.png"))); // NOI18N
         btnBook.setText("สมุด");
+        btnBook.setBorder(null);
         btnBook.setContentAreaFilled(false);
         btnBook.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnBook.setIconTextGap(0);
@@ -119,6 +121,7 @@ public class Category extends javax.swing.JFrame {
         btnPen.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnPen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pen.png"))); // NOI18N
         btnPen.setText("ปากกา");
+        btnPen.setBorder(null);
         btnPen.setContentAreaFilled(false);
         btnPen.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnPen.setIconTextGap(0);
@@ -381,7 +384,7 @@ public class Category extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBackMouseClicked
 
     private void btnProduct1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct1MouseClicked
-        new MarketPencil1().setVisible(true);
+        new MarketPen1().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnProduct1MouseClicked
 

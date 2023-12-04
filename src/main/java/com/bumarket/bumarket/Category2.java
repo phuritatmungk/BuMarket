@@ -82,6 +82,7 @@ public class Category2 extends javax.swing.JFrame {
         btnPencil.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnPencil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pencil.png"))); // NOI18N
         btnPencil.setText("ดินสอและไส้ดินสอ");
+        btnPencil.setBorder(null);
         btnPencil.setContentAreaFilled(false);
         btnPencil.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnPencil.setIconTextGap(0);
@@ -101,6 +102,7 @@ public class Category2 extends javax.swing.JFrame {
         btnBook.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnBook.setIcon(new javax.swing.ImageIcon(getClass().getResource("/book.png"))); // NOI18N
         btnBook.setText("สมุด");
+        btnBook.setBorder(null);
         btnBook.setContentAreaFilled(false);
         btnBook.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnBook.setIconTextGap(0);
@@ -118,6 +120,7 @@ public class Category2 extends javax.swing.JFrame {
         btnPen.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnPen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pen.png"))); // NOI18N
         btnPen.setText("ปากกา");
+        btnPen.setBorder(null);
         btnPen.setContentAreaFilled(false);
         btnPen.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnPen.setIconTextGap(0);
@@ -140,6 +143,7 @@ public class Category2 extends javax.swing.JFrame {
         btnOther.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnOther.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mais-1.png"))); // NOI18N
         btnOther.setText("อื่นๆ");
+        btnOther.setBorder(null);
         btnOther.setContentAreaFilled(false);
         btnOther.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnOther.setIconTextGap(0);
@@ -204,6 +208,7 @@ public class Category2 extends javax.swing.JFrame {
 
         btnProduct1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnProduct1.setText("เพิ่มเติม");
+        btnProduct1.setOpaque(false);
         btnProduct1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnProduct1ActionPerformed(evt);
@@ -287,6 +292,7 @@ public class Category2 extends javax.swing.JFrame {
         jPanel1.add(lbLogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 40, -1, -1));
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Back.png"))); // NOI18N
+        jButton2.setBorder(null);
         jButton2.setBorderPainted(false);
         jButton2.setContentAreaFilled(false);
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
