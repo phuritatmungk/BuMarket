@@ -291,7 +291,7 @@ public class Register extends javax.swing.JFrame {
                 
             }
         } catch (FileNotFoundException ex) {
-            
+            JOptionPane.showMessageDialog(this, "File not found!", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
     
@@ -329,7 +329,7 @@ public class Register extends javax.swing.JFrame {
             // check if the textfields are empty
             if( username.equals("") || password.equals("") || fname.equals("") || lname.equals("") || id.equals(""))
             {
-                System.out.println("One Or More Fields Are Empty");
+                JOptionPane.showMessageDialog(this, "One or Both fields are empty", "Warning", JOptionPane.WARNING_MESSAGE);
             }
             else{
                 // confirmation password
