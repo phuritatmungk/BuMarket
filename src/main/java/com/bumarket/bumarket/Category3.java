@@ -46,7 +46,6 @@ public class Category3 extends javax.swing.JFrame {
         btnProduct1 = new javax.swing.JButton();
         jSeparator12 = new javax.swing.JSeparator();
         jSeparator13 = new javax.swing.JSeparator();
-        jLabel6 = new javax.swing.JLabel();
         jButton8 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
@@ -188,18 +187,18 @@ public class Category3 extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel2.setText("ROTRING ดินสอไม้ HB Metallic คละสี");
+        jLabel2.setText("ปากกาหมึกเจล Lamy Balloon Blue");
         jLabel2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel2.setVerifyInputWhenFocusTarget(false);
         jLabel2.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, 190, -1));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/1091657 (1).jpg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pen1.png"))); // NOI18N
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel5.setText("฿ 45.00");
+        jLabel5.setText("฿ 309.00");
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, -1, -1));
 
         btnProduct1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -219,10 +218,6 @@ public class Category3 extends javax.swing.JFrame {
         jSeparator13.setOrientation(javax.swing.SwingConstants.VERTICAL);
         jSeparator13.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
         jPanel2.add(jSeparator13, new org.netbeans.lib.awtextra.AbsoluteConstraints(586, 157, 13, 410));
-
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel6.setText("(แพ็ค4แท่ง)");
-        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, -1, -1));
 
         jButton8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
@@ -431,7 +426,6 @@ public class Category3 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;

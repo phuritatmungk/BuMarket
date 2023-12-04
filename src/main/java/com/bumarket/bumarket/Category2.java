@@ -188,18 +188,18 @@ public class Category2 extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel2.setText("ROTRING ดินสอไม้ HB Metallic คละสี");
+        jLabel2.setText("สมุดวาดเขียน MONT MARTE ");
         jLabel2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel2.setVerifyInputWhenFocusTarget(false);
         jLabel2.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 270, 190, -1));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/1091657 (1).jpg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/product-book1.png"))); // NOI18N
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel5.setText("฿ 45.00");
+        jLabel5.setText("฿ 292.00");
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, -1, -1));
 
         btnProduct1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -221,8 +221,8 @@ public class Category2 extends javax.swing.JFrame {
         jPanel2.add(jSeparator13, new org.netbeans.lib.awtextra.AbsoluteConstraints(586, 157, 13, 410));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel6.setText("(แพ็ค4แท่ง)");
-        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, -1, -1));
+        jLabel6.setText("ขนาด A4 140 แกรม 40 หน้า");
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, 150, -1));
 
         jButton8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
