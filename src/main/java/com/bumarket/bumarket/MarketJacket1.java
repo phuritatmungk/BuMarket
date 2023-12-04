@@ -67,7 +67,7 @@ public class MarketJacket1 extends javax.swing.JFrame {
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
+        lbLogout = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
 
         jToggleButton1.setText("jToggleButton1");
@@ -284,8 +284,13 @@ public class MarketJacket1 extends javax.swing.JFrame {
         jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Account.png"))); // NOI18N
         getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 10, -1, 70));
 
-        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
-        getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 40, -1, 30));
+        lbLogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
+        lbLogout.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbLogoutMouseClicked(evt);
+            }
+        });
+        getContentPane().add(lbLogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 40, -1, 30));
 
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Up.png"))); // NOI18N
         getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
@@ -329,6 +334,12 @@ public class MarketJacket1 extends javax.swing.JFrame {
          new Categoryjacket().setVisible(true);
          this.dispose();
     }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void lbLogoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbLogoutMouseClicked
+        // TODO add your handling code here:
+        new Login().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_lbLogoutMouseClicked
 
     /**
      * @param args the command line arguments
@@ -394,7 +405,6 @@ public class MarketJacket1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
@@ -410,5 +420,6 @@ public class MarketJacket1 extends javax.swing.JFrame {
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JToggleButton jToggleButton1;
+    private javax.swing.JLabel lbLogout;
     // End of variables declaration//GEN-END:variables
 }

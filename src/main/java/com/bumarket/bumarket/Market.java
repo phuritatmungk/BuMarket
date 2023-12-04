@@ -32,7 +32,7 @@ public class Market extends javax.swing.JFrame {
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
+        lbLogout = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
@@ -57,7 +57,6 @@ public class Market extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/btn_logo.png"))); // NOI18N
@@ -89,8 +88,13 @@ public class Market extends javax.swing.JFrame {
         jLabel20.setText("XXXXX XXXXX");
         getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 55, -1, 20));
 
-        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
-        getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 40, -1, 30));
+        lbLogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
+        lbLogout.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbLogoutMouseClicked(evt);
+            }
+        });
+        getContentPane().add(lbLogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 40, -1, 30));
 
         jTextField2.setBackground(new java.awt.Color(216, 216, 216));
         jTextField2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -246,6 +250,12 @@ public class Market extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton13ActionPerformed
 
+    private void lbLogoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbLogoutMouseClicked
+        // TODO add your handling code here:
+        new Login().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_lbLogoutMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -298,7 +308,6 @@ public class Market extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -310,6 +319,7 @@ public class Market extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JLabel lbLogout;
     private java.awt.Scrollbar scrollbar1;
     // End of variables declaration//GEN-END:variables
 }
