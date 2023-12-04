@@ -57,7 +57,7 @@ public class Login extends javax.swing.JFrame {
                 }
             }
         } catch (FileNotFoundException ex) {
-            
+            JOptionPane.showMessageDialog(this, "File not found!", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 
@@ -307,11 +307,11 @@ public class Login extends javax.swing.JFrame {
         boolean userExist = false;
         try {
             if(username.equals("Username") || password.equals("Password")) {
-                System.out.println(username);
+                JOptionPane.showMessageDialog(this, "One or Both fields are Empty", "Warning", JOptionPane.WARNING_MESSAGE);
             }
             else { 
                 for(String uname: usernameANDpassword.keySet()) {
-                    System.out.println(uname);
+                    JOptionPane.showMessageDialog(this, "Wrong Username or Password", "Error", JOptionPane.ERROR_MESSAGE);
                     if(uname.equals(username)) {
                         if(usernameANDpassword.get(uname).equals(password)) {
                             userExist = true;
@@ -327,7 +327,7 @@ public class Login extends javax.swing.JFrame {
                 }
             }
         } catch (Exception e) {
-            System.out.println("Catch Error");
+            System.out.println("Failed to Login");
         }
     }//GEN-LAST:event_ConfirmBtn3ActionPerformed
 

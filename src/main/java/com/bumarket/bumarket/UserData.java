@@ -12,54 +12,7 @@ import java.util.*;
  * @author chait
  */
 public class UserData implements java.io.Serializable {
-   
-    
-    private String Id;
-    private String FName;
-    private String LName;
-    private String Username;
-    private String Password;
-    
-    public String getId() {
-        return Id;
-    }
 
-    public void setId(String Id) {
-        this.Id = Id;
-    }
-
-    public String getFName() {
-        return FName;
-    }
-
-    public void setFName(String FName) {
-        this.FName = FName;
-    }
-
-    public String getLName() {
-        return LName;
-    }
-
-    public void setLName(String LName) {
-        this.LName = LName;
-    }
-
-    public String getUsername() {
-        return Username;
-    }
-
-    public void setUsername(String Username) {
-        this.Username = Username;
-    }
-
-    public String getPassword() {
-        return Password;
-    }
-
-    public void setPassword(String Password) {
-        this.Password = Password;
-    }
-    
     public static int checkPasswordStrength(String password) {
         int score = 0;
         if (password.length() >= 8) {

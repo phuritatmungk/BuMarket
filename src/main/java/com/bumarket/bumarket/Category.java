@@ -56,7 +56,7 @@ public class Category extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
+        lbLogout = new javax.swing.JLabel();
         btnBack = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -285,8 +285,13 @@ public class Category extends javax.swing.JFrame {
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Account.png"))); // NOI18N
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 10, -1, -1));
 
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
-        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 40, -1, -1));
+        lbLogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
+        lbLogout.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbLogoutMouseClicked(evt);
+            }
+        });
+        jPanel1.add(lbLogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 40, -1, -1));
 
         btnBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Back.png"))); // NOI18N
         btnBack.setBorderPainted(false);
@@ -376,7 +381,7 @@ public class Category extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBackMouseClicked
 
     private void btnProduct1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct1MouseClicked
-        new Market().setVisible(true);
+        new MarketPencil1().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnProduct1MouseClicked
 
@@ -384,6 +389,12 @@ public class Category extends javax.swing.JFrame {
          new Shoppingcart().setVisible(true);
          this.dispose();
     }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void lbLogoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbLogoutMouseClicked
+        // TODO add your handling code here:
+        new Login().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_lbLogoutMouseClicked
 
     /**
      * @param args the command line arguments
@@ -435,7 +446,6 @@ public class Category extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -454,6 +464,7 @@ public class Category extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JSeparator jSeparator8;
     private javax.swing.JSeparator jSeparator9;
+    private javax.swing.JLabel lbLogout;
     private javax.swing.JTextField txtSearch;
     // End of variables declaration//GEN-END:variables
 }

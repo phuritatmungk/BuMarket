@@ -47,7 +47,7 @@ public class Home extends javax.swing.JFrame {
         jLabel17 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
+        lbLogout = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
         jButton15 = new javax.swing.JButton();
         jButton16 = new javax.swing.JButton();
@@ -162,8 +162,13 @@ public class Home extends javax.swing.JFrame {
         jLabel16.setText("XXXXX XXXXX");
         jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 55, -1, -1));
 
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
-        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 40, -1, -1));
+        lbLogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
+        lbLogout.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbLogoutMouseClicked(evt);
+            }
+        });
+        jPanel1.add(lbLogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 40, -1, -1));
 
         jTextField2.setBackground(new java.awt.Color(216, 216, 216));
         jTextField2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -270,6 +275,12 @@ public class Home extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButton16MouseClicked
 
+    private void lbLogoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbLogoutMouseClicked
+        // TODO add your handling code here:
+        new Login().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_lbLogoutMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -321,7 +332,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -333,5 +343,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JLabel lbLogout;
     // End of variables declaration//GEN-END:variables
 }
