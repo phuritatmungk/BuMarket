@@ -28,47 +28,46 @@ public class MarketJacket1 extends javax.swing.JFrame {
 
         jToggleButton1 = new javax.swing.JToggleButton();
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        Productshirt1 = new javax.swing.JLabel();
+        Productshirt2 = new javax.swing.JLabel();
+        Productshirt3 = new javax.swing.JLabel();
+        Productshirt4 = new javax.swing.JLabel();
+        txtProduct = new javax.swing.JLabel();
+        txtDescription = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
+        txt1 = new javax.swing.JLabel();
+        txt2 = new javax.swing.JLabel();
+        txt3 = new javax.swing.JLabel();
+        txt4 = new javax.swing.JLabel();
+        txt5 = new javax.swing.JLabel();
+        txt6 = new javax.swing.JLabel();
+        txt7 = new javax.swing.JLabel();
+        txtPrice = new javax.swing.JLabel();
+        txtColor = new javax.swing.JLabel();
+        btnBlue = new javax.swing.JButton();
+        btnBlack = new javax.swing.JButton();
+        btnRed = new javax.swing.JButton();
+        btnGrey = new javax.swing.JButton();
+        txtSize = new javax.swing.JLabel();
+        btnSizeM = new javax.swing.JButton();
+        btnSizeL = new javax.swing.JButton();
+        btnSizeXL = new javax.swing.JButton();
+        btnSize2XL = new javax.swing.JButton();
+        btnSize3XL = new javax.swing.JButton();
+        txtAmount = new javax.swing.JLabel();
         jSpinner1 = new javax.swing.JSpinner();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jLabel25 = new javax.swing.JLabel();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
-        jButton18 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jLabel16 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
+        btnAdd_to_cart = new javax.swing.JButton();
+        btnBuy = new javax.swing.JButton();
+        btnBack = new javax.swing.JButton();
+        iconUniversity = new javax.swing.JLabel();
+        txtGlass = new javax.swing.JLabel();
+        txtSearch = new javax.swing.JTextField();
+        Cart = new javax.swing.JLabel();
+        txtAccount = new javax.swing.JLabel();
+        txtUSER = new javax.swing.JLabel();
+        iconUSER = new javax.swing.JLabel();
         lbLogout = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
+        background = new javax.swing.JLabel();
 
         jToggleButton1.setText("jToggleButton1");
 
@@ -78,228 +77,211 @@ public class MarketJacket1 extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setBackground(new java.awt.Color(204, 204, 204));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Jacket1.1.jpg"))); // NOI18N
-        jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 280, 280));
+        Productshirt1.setBackground(new java.awt.Color(204, 204, 204));
+        Productshirt1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Jacket1.1.jpg"))); // NOI18N
+        Productshirt1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        Productshirt1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(Productshirt1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 280, 280));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Jacket1.4.jpg"))); // NOI18N
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 360, 80, -1));
+        Productshirt2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Jacket1.2.jpg"))); // NOI18N
+        jPanel1.add(Productshirt2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 360, 90, -1));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Jacket1.3.jpg"))); // NOI18N
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 360, -1, -1));
+        Productshirt3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Jacket1.3.jpg"))); // NOI18N
+        jPanel1.add(Productshirt3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 360, -1, -1));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Jacket1.2.jpg"))); // NOI18N
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 360, 90, -1));
+        Productshirt4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Jacket1.4.jpg"))); // NOI18N
+        jPanel1.add(Productshirt4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 360, 80, -1));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel2.setText("เสื้อแจ็คเก็ตผู้ชายกันลม สำหรับเดินป่า  Men Jacket");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 30, 560, 40));
+        txtProduct.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        txtProduct.setText("เสื้อแจ็คเก็ตผู้ชายกันลม สำหรับเดินป่า  Men Jacket");
+        jPanel1.add(txtProduct, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 30, 560, 40));
+
+        txtDescription.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        txtDescription.setText("คำอธิบาย");
+        jPanel1.add(txtDescription, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 70, 80, 30));
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setForeground(new java.awt.Color(255, 255, 255));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel9.setText("เพศที่เกี่ยวข้อง: เป็นกลาง/ชายและหญิงสามารถทำได้");
-        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 450, 20));
+        txt1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txt1.setText("ฟังก์ชั่น: ด่วน -รีด, ระบายอากาศ, กันน้ำ, แสงพิเศษ, กันลม, windproof");
+        jPanel3.add(txt1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 400, 20));
 
-        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel10.setText("ฟังก์ชั่น: ด่วน -รีด, ระบายอากาศ, กันน้ำ, แสงพิเศษ, กันลม, windproof");
-        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 400, 20));
+        txt2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txt2.setText("ผ้า: เส้นใยเคมีผสม");
+        jPanel3.add(txt2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 420, -1));
 
-        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel11.setText("ผ้า: เส้นใยเคมีผสม");
-        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 420, -1));
+        txt3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txt3.setText("ฤดูกาลที่เหมาะสม: ฤดูหนาวฤดูใบไม้ผลิฤดูใบไม้ร่วง");
+        jPanel3.add(txt3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 420, 20));
 
-        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel12.setText("ฤดูกาลที่เหมาะสม: ฤดูหนาวฤดูใบไม้ผลิฤดูใบไม้ร่วง");
-        jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 420, 20));
+        txt4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txt4.setText("รูปแบบ: ธรรมดา");
+        jPanel3.add(txt4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 450, 20));
 
-        jLabel14.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel14.setText("รูปแบบ: ธรรมดา");
-        jPanel3.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 450, 20));
+        txt5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txt5.setText("เพศที่เกี่ยวข้อง: เป็นกลาง/ชายและหญิงสามารถทำได้");
+        jPanel3.add(txt5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 450, 20));
 
-        jLabel17.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel17.setText("วัสดุ: เส้นใยโพลีเอสเตอร์");
-        jPanel3.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 460, 20));
+        txt6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txt6.setText("วัสดุ: เส้นใยโพลีเอสเตอร์");
+        jPanel3.add(txt6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 460, 20));
 
-        jLabel23.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel23.setText("M, L, XL, XXL, XXXL, 4XL, 5XL");
-        jPanel3.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, 460, 20));
+        txt7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txt7.setText("M, L, XL, 2XL, 3XL");
+        jPanel3.add(txt7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, 460, 20));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 110, 510, 190));
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(204, 0, 0));
-        jLabel8.setText("฿389.00");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 310, 100, 40));
+        txtPrice.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        txtPrice.setForeground(new java.awt.Color(204, 0, 0));
+        txtPrice.setText("฿389.00");
+        jPanel1.add(txtPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 310, 100, 40));
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton1.setText("หยิบใส่ตระกร้า");
-        jButton1.setContentAreaFilled(false);
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 490, -1, 40));
+        txtColor.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        txtColor.setText("สี");
+        jPanel1.add(txtColor, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 360, 20, 30));
 
-        jButton2.setBackground(new java.awt.Color(204, 0, 0));
-        jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("ซื้อสินค้า");
-        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton2MouseClicked(evt);
+        btnBlue.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnBlue.setText("สีน้ำเงิน");
+        btnBlue.setContentAreaFilled(false);
+        btnBlue.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBlueActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 490, 140, 40));
+        jPanel1.add(btnBlue, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 360, -1, 30));
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel4.setText("ขนาด");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 400, 50, 30));
+        btnBlack.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnBlack.setText("สีดำ");
+        btnBlack.setContentAreaFilled(false);
+        jPanel1.add(btnBlack, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 360, -1, 30));
+
+        btnRed.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnRed.setText("สีแดง");
+        btnRed.setContentAreaFilled(false);
+        jPanel1.add(btnRed, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 360, -1, 30));
+
+        btnGrey.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnGrey.setText("สีเทา");
+        btnGrey.setContentAreaFilled(false);
+        jPanel1.add(btnGrey, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 360, -1, 30));
+
+        txtSize.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        txtSize.setText("ขนาด");
+        jPanel1.add(txtSize, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 400, 50, 30));
+
+        btnSizeM.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnSizeM.setText("M");
+        btnSizeM.setContentAreaFilled(false);
+        btnSizeM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSizeMActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnSizeM, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 400, 50, 30));
+
+        btnSizeL.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnSizeL.setText("L");
+        btnSizeL.setContentAreaFilled(false);
+        btnSizeL.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSizeLActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnSizeL, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 400, 50, 30));
+
+        btnSizeXL.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnSizeXL.setText("XL");
+        btnSizeXL.setContentAreaFilled(false);
+        btnSizeXL.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSizeXLActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnSizeXL, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 400, 50, 30));
+
+        btnSize2XL.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnSize2XL.setText("2XL");
+        btnSize2XL.setContentAreaFilled(false);
+        btnSize2XL.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSize2XLActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnSize2XL, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 400, 50, 30));
+
+        btnSize3XL.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnSize3XL.setText("3XL");
+        btnSize3XL.setContentAreaFilled(false);
+        btnSize3XL.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSize3XLActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnSize3XL, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 400, 60, 30));
+
+        txtAmount.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        txtAmount.setText("จำนวน");
+        jPanel1.add(txtAmount, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 440, 70, 30));
         jPanel1.add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 440, 120, 30));
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel7.setText("คำอธิบาย");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 70, 80, 30));
+        btnAdd_to_cart.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnAdd_to_cart.setText("หยิบใส่ตระกร้า");
+        btnAdd_to_cart.setContentAreaFilled(false);
+        jPanel1.add(btnAdd_to_cart, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 490, -1, 40));
 
-        jLabel24.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel24.setText("จำนวน");
-        jPanel1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 440, 70, 30));
-
-        jButton4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton4.setText("5XL");
-        jButton4.setContentAreaFilled(false);
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+        btnBuy.setBackground(new java.awt.Color(204, 0, 0));
+        btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnBuy.setForeground(new java.awt.Color(255, 255, 255));
+        btnBuy.setText("ซื้อสินค้า");
+        btnBuy.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnBuyMouseClicked(evt);
             }
         });
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 400, 50, 30));
-
-        jLabel25.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel25.setText("สี");
-        jPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 360, 20, 30));
-
-        jButton7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton7.setText("สีน้ำเงิน");
-        jButton7.setContentAreaFilled(false);
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 360, -1, 30));
-
-        jButton8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton8.setText("สีดำ");
-        jButton8.setContentAreaFilled(false);
-        jPanel1.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 360, -1, 30));
-
-        jButton9.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton9.setText("สีเทา");
-        jButton9.setContentAreaFilled(false);
-        jPanel1.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 360, -1, 30));
-
-        jButton15.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton15.setText("M");
-        jButton15.setContentAreaFilled(false);
-        jButton15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton15ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 400, 50, 30));
-
-        jButton16.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton16.setText("L");
-        jButton16.setContentAreaFilled(false);
-        jButton16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton16ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 400, 50, 30));
-
-        jButton17.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton17.setText("XL");
-        jButton17.setContentAreaFilled(false);
-        jButton17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton17ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 400, 50, 30));
-
-        jButton18.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton18.setText("XXL");
-        jButton18.setContentAreaFilled(false);
-        jButton18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton18ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 400, 50, 30));
-
-        jButton19.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton19.setText("XXXL");
-        jButton19.setContentAreaFilled(false);
-        jButton19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton19ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 400, 60, 30));
-
-        jButton20.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton20.setText("4XL");
-        jButton20.setContentAreaFilled(false);
-        jButton20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton20ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 400, 50, 30));
-
-        jButton10.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton10.setText("สีแดง");
-        jButton10.setContentAreaFilled(false);
-        jPanel1.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 360, -1, 30));
+        jPanel1.add(btnBuy, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 490, 140, 40));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, 1090, 540));
 
-        jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Back.png"))); // NOI18N
-        jButton13.setBorder(null);
-        jButton13.setContentAreaFilled(false);
-        jButton13.addActionListener(new java.awt.event.ActionListener() {
+        btnBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Back.png"))); // NOI18N
+        btnBack.setBorder(null);
+        btnBack.setContentAreaFilled(false);
+        btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton13ActionPerformed(evt);
+                btnBackActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 90, 80));
+        getContentPane().add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 90, 80));
 
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/btn_logo.png"))); // NOI18N
-        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, 120, 110));
+        iconUniversity.setIcon(new javax.swing.ImageIcon(getClass().getResource("/btn_logo.png"))); // NOI18N
+        getContentPane().add(iconUniversity, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, 120, 110));
 
-        jTextField2.setBackground(new java.awt.Color(216, 216, 216));
-        jTextField2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jTextField2.setText("  Search");
-        jTextField2.setToolTipText("");
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 35, 410, 30));
+        txtGlass.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Search.png"))); // NOI18N
+        getContentPane().add(txtGlass, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 37, -1, 30));
 
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shopicon.png"))); // NOI18N
-        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 35, 50, 40));
+        txtSearch.setBackground(new java.awt.Color(216, 216, 216));
+        txtSearch.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        txtSearch.setText("  Search");
+        txtSearch.setToolTipText("");
+        getContentPane().add(txtSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 35, 410, 30));
 
-        jLabel19.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel19.setText("My Account");
-        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 35, -1, 20));
+        Cart.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shopicon.png"))); // NOI18N
+        getContentPane().add(Cart, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 35, 50, 40));
 
-        jLabel20.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel20.setText("XXXXX XXXXX");
-        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 55, -1, 20));
+        txtAccount.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        txtAccount.setForeground(new java.awt.Color(255, 255, 255));
+        txtAccount.setText("My Account");
+        getContentPane().add(txtAccount, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 35, -1, 20));
 
-        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Account.png"))); // NOI18N
-        getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 10, -1, 70));
+        txtUSER.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        txtUSER.setForeground(new java.awt.Color(255, 255, 255));
+        txtUSER.setText("XXXXX XXXXX");
+        getContentPane().add(txtUSER, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 55, -1, 20));
+
+        iconUSER.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Account.png"))); // NOI18N
+        getContentPane().add(iconUSER, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 10, -1, 70));
 
         lbLogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
         lbLogout.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -309,49 +291,41 @@ public class MarketJacket1 extends javax.swing.JFrame {
         });
         getContentPane().add(lbLogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 40, -1, 30));
 
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Up.png"))); // NOI18N
-        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Up.png"))); // NOI18N
+        getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void btnBlueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBlueActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_btnBlueActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void btnSizeMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSizeMActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_btnSizeMActionPerformed
 
-    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+    private void btnSizeLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSizeLActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton15ActionPerformed
+    }//GEN-LAST:event_btnSizeLActionPerformed
 
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+    private void btnSizeXLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSizeXLActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton16ActionPerformed
+    }//GEN-LAST:event_btnSizeXLActionPerformed
 
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+    private void btnSize2XLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSize2XLActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton17ActionPerformed
+    }//GEN-LAST:event_btnSize2XLActionPerformed
 
-    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+    private void btnSize3XLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSize3XLActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton18ActionPerformed
+    }//GEN-LAST:event_btnSize3XLActionPerformed
 
-    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton19ActionPerformed
-
-    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton20ActionPerformed
-
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
          new Categoryjacket().setVisible(true);
          this.dispose();
-    }//GEN-LAST:event_jButton13ActionPerformed
+    }//GEN-LAST:event_btnBackActionPerformed
 
     private void lbLogoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbLogoutMouseClicked
         // TODO add your handling code here:
@@ -359,11 +333,11 @@ public class MarketJacket1 extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_lbLogoutMouseClicked
 
-    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+    private void btnBuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseClicked
         // TODO add your handling code here:
         new Shoppingcart().setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jButton2MouseClicked
+    }//GEN-LAST:event_btnBuyMouseClicked
 
     /**
      * @param args the command line arguments
@@ -402,48 +376,47 @@ public class MarketJacket1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel Cart;
+    private javax.swing.JLabel Productshirt1;
+    private javax.swing.JLabel Productshirt2;
+    private javax.swing.JLabel Productshirt3;
+    private javax.swing.JLabel Productshirt4;
+    private javax.swing.JLabel background;
+    private javax.swing.JButton btnAdd_to_cart;
+    private javax.swing.JButton btnBack;
+    private javax.swing.JButton btnBlack;
+    private javax.swing.JButton btnBlue;
+    private javax.swing.JButton btnBuy;
+    private javax.swing.JButton btnGrey;
+    private javax.swing.JButton btnRed;
+    private javax.swing.JButton btnSize2XL;
+    private javax.swing.JButton btnSize3XL;
+    private javax.swing.JButton btnSizeL;
+    private javax.swing.JButton btnSizeM;
+    private javax.swing.JButton btnSizeXL;
+    private javax.swing.JLabel iconUSER;
+    private javax.swing.JLabel iconUniversity;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JSpinner jSpinner1;
-    private javax.swing.JTextField jTextField2;
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JLabel lbLogout;
+    private javax.swing.JLabel txt1;
+    private javax.swing.JLabel txt2;
+    private javax.swing.JLabel txt3;
+    private javax.swing.JLabel txt4;
+    private javax.swing.JLabel txt5;
+    private javax.swing.JLabel txt6;
+    private javax.swing.JLabel txt7;
+    private javax.swing.JLabel txtAccount;
+    private javax.swing.JLabel txtAmount;
+    private javax.swing.JLabel txtColor;
+    private javax.swing.JLabel txtDescription;
+    private javax.swing.JLabel txtGlass;
+    private javax.swing.JLabel txtPrice;
+    private javax.swing.JLabel txtProduct;
+    private javax.swing.JTextField txtSearch;
+    private javax.swing.JLabel txtSize;
+    private javax.swing.JLabel txtUSER;
     // End of variables declaration//GEN-END:variables
 }

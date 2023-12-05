@@ -53,8 +53,8 @@ public class Categoryjacket extends javax.swing.JFrame {
         jSeparator11 = new javax.swing.JSeparator();
         btnProduct1 = new javax.swing.JButton();
         btnProduct2 = new javax.swing.JButton();
-        btnProduct4 = new javax.swing.JButton();
         btnProduct3 = new javax.swing.JButton();
+        btnProduct4 = new javax.swing.JButton();
         iconUniversity = new javax.swing.JLabel();
         txtGlass = new javax.swing.JLabel();
         txtSearch = new javax.swing.JTextField();
@@ -267,13 +267,13 @@ public class Categoryjacket extends javax.swing.JFrame {
         btnProduct2.setBorder(null);
         jPanel2.add(btnProduct2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 180, 190, 190));
 
-        btnProduct4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Jacket4.jpg"))); // NOI18N
-        btnProduct4.setBorder(null);
-        jPanel2.add(btnProduct4, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 180, 190, 190));
-
         btnProduct3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Jacket3.jpg"))); // NOI18N
         btnProduct3.setBorder(null);
         jPanel2.add(btnProduct3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 180, 190, 190));
+
+        btnProduct4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Jacket4.jpg"))); // NOI18N
+        btnProduct4.setBorder(null);
+        jPanel2.add(btnProduct4, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 180, 190, 190));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, -1, 500));
 
