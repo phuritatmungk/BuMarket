@@ -5,8 +5,6 @@
 package com.bumarket.bumarket;
 
 import java.awt.*;
-import java.io.*;
-import java.util.*;
 import javax.swing.*;
 
 /**
@@ -14,51 +12,13 @@ import javax.swing.*;
  * @author chait
  */
 public class Login extends javax.swing.JFrame {
-    Map<String, String> usernameANDpassword = new HashMap<>();
-    ArrayList<String> all_usernames = new ArrayList<>();
 
-    /**
-     * Creates new form Login
-     */
+    private final UserData userdata;
+    
     public Login() {
         initComponents();
-        txtNewPwd3.setEchoChar((char)0);
-    }
-    
-    public void getUsers() {
-        File file = new File("account.txt");
-        String username = "";
-        String password = "";
-        
-        try {
-            FileReader fr = new FileReader(file);
-            BufferedReader br = new BufferedReader(fr);
-            
-            Object[] lines = br.lines().toArray();
-            for(int i = 0; i < lines.length; i++) {  
-                String[] row = lines[i].toString().split(": ");
-                
-                if(row[0].equals("Username"))
-                {
-                    // if it's the username field we will get the username
-                    username = row[1];
-                    // add the username to the all username array
-                    all_usernames.add(username);
-                }
-                else if(row[0].equals("Password"))
-                {
-                    // if it's the password field we will get the password
-                    password = row[1];
-                }
-                if(!username.equals("") && !password.equals(""))
-                {
-                    // add the username and the password to the hashmap
-                    usernameANDpassword.put(username, password);
-                }
-            }
-        } catch (FileNotFoundException ex) {
-            JOptionPane.showMessageDialog(this, "File not found!", "Error", JOptionPane.ERROR_MESSAGE);
-        }
+        userdata = new UserData();
+        eye_hide.setVisible(false);
     }
 
     /**
@@ -247,12 +207,12 @@ public class Login extends javax.swing.JFrame {
 
     private void SignInBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignInBtn3ActionPerformed
         new Register().setVisible(true);
-        this.dispose();        // TODO add your handling code here:
+        this.dispose();
     }//GEN-LAST:event_SignInBtn3ActionPerformed
 
     private void SignInBtn4SignInBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SignInBtn4SignInBtnMouseClicked
         new Forget_Pwd().setVisible(true);
-        this.dispose();        // TODO add your handling code here:
+        this.dispose();
     }//GEN-LAST:event_SignInBtn4SignInBtnMouseClicked
 
     private void SignInBtn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignInBtn4ActionPerformed
@@ -275,7 +235,6 @@ public class Login extends javax.swing.JFrame {
         if(txtNewPwd3.getText().equals("Password"))
        {
            txtNewPwd3.setText("");
-           txtNewPwd3.setEchoChar('*');
        }
     }//GEN-LAST:event_txtNewPwd3FocusGained
 
@@ -285,8 +244,8 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_txtNewPwd3FocusLost
 
     private void eye_hideMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eye_hideMousePressed
-        eye.setVisible(true);
         eye_hide.setVisible(false);
+        eye.setVisible(true);
         txtNewPwd3.setEchoChar((char)0);
     }//GEN-LAST:event_eye_hideMousePressed
 
@@ -301,19 +260,20 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_eyeMousePressed
 
     private void ConfirmBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConfirmBtn3ActionPerformed
-        getUsers();
+        userdata.getUsers();
         String username = txtUser3.getText().trim();
         String password = String.valueOf(txtNewPwd3.getPassword()).trim();
         boolean userExist = false;
         try {
             if(username.equals("Username") || password.equals("Password")) {
                 JOptionPane.showMessageDialog(this, "One or Both fields are Empty", "Info", JOptionPane.INFORMATION_MESSAGE);
+                txtNewPwd3.requestFocus();
             }
             else { 
-                for(String uname: usernameANDpassword.keySet()) {
+                for(String uname: userdata.usernameANDpassword.keySet()) {
                     System.out.println(uname);
                     if(uname.equals(username)) {
-                        if(usernameANDpassword.get(uname).equals(password)) {
+                        if(userdata.usernameANDpassword.get(uname).equals(password)) {
                             userExist = true;
                             System.out.println("Welcome To The Application");
                             new Home().setVisible(true);
@@ -324,6 +284,7 @@ public class Login extends javax.swing.JFrame {
                     }
                 if(userExist == false) {
                     JOptionPane.showMessageDialog(this, "Wrong Username or Password!", "Error", JOptionPane.ERROR_MESSAGE);
+                    txtNewPwd3.requestFocus();
                 }
             }
         } catch (Exception e) {

@@ -6,7 +6,6 @@ package com.bumarket.bumarket;
 
 import java.awt.*;
 import java.io.*;
-import java.util.*;
 import javax.swing.*;
 
 /**
@@ -15,16 +14,16 @@ import javax.swing.*;
  */
 public class Register extends javax.swing.JFrame {
     
-    Map<String, String> usernameANDpassword = new HashMap<>();
-    ArrayList<String> all_usernames = new ArrayList<>();
-    ArrayList<String> all_userid = new ArrayList<>();
-    
+    private final UserData userdata;
     
     /**
      * Creates new form Register
      */
     public Register() {
         initComponents();
+        userdata = new UserData();
+        eye_hide.setVisible(false);
+        eye_hide2.setVisible(false);
     }
 
     /**
@@ -49,10 +48,14 @@ public class Register extends javax.swing.JFrame {
         jSeparator3 = new javax.swing.JSeparator();
         txtUser = new javax.swing.JTextField();
         jSeparator4 = new javax.swing.JSeparator();
-        txtPass = new javax.swing.JTextField();
         jSeparator5 = new javax.swing.JSeparator();
-        txtConfirmPwd = new javax.swing.JTextField();
         jSeparator6 = new javax.swing.JSeparator();
+        txtPass = new javax.swing.JPasswordField();
+        txtConfirmPass = new javax.swing.JPasswordField();
+        eye_hide = new javax.swing.JLabel();
+        eye = new javax.swing.JLabel();
+        eye_hide2 = new javax.swing.JLabel();
+        eye1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -97,19 +100,43 @@ public class Register extends javax.swing.JFrame {
         txtLName.setForeground(new java.awt.Color(119, 119, 119));
         txtLName.setText("Last Name");
         txtLName.setBorder(null);
+        txtLName.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtLNameFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtLNameFocusLost(evt);
+            }
+        });
 
         txtId.setBackground(new java.awt.Color(202, 202, 202));
         txtId.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         txtId.setForeground(new java.awt.Color(119, 119, 119));
-        txtId.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         txtId.setText("Student ID");
         txtId.setBorder(null);
+        txtId.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtIdFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtIdFocusLost(evt);
+            }
+        });
 
         txtFName.setBackground(new java.awt.Color(202, 202, 202));
         txtFName.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         txtFName.setForeground(new java.awt.Color(119, 119, 119));
         txtFName.setText("First Name");
         txtFName.setBorder(null);
+        txtFName.setCaretPosition(9);
+        txtFName.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtFNameFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtFNameFocusLost(evt);
+            }
+        });
 
         jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
@@ -125,27 +152,83 @@ public class Register extends javax.swing.JFrame {
         txtUser.setForeground(new java.awt.Color(119, 119, 119));
         txtUser.setText("Username");
         txtUser.setBorder(null);
+        txtUser.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtUserFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtUserFocusLost(evt);
+            }
+        });
 
         jSeparator4.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator4.setForeground(new java.awt.Color(0, 0, 0));
+
+        jSeparator5.setBackground(new java.awt.Color(0, 0, 0));
+        jSeparator5.setForeground(new java.awt.Color(0, 0, 0));
+
+        jSeparator6.setBackground(new java.awt.Color(0, 0, 0));
+        jSeparator6.setForeground(new java.awt.Color(0, 0, 0));
 
         txtPass.setBackground(new java.awt.Color(202, 202, 202));
         txtPass.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         txtPass.setForeground(new java.awt.Color(119, 119, 119));
         txtPass.setText("Password");
         txtPass.setBorder(null);
+        txtPass.setEchoChar('\u0000');
+        txtPass.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtPassFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtPassFocusLost(evt);
+            }
+        });
 
-        jSeparator5.setBackground(new java.awt.Color(0, 0, 0));
-        jSeparator5.setForeground(new java.awt.Color(0, 0, 0));
+        txtConfirmPass.setBackground(new java.awt.Color(202, 202, 202));
+        txtConfirmPass.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        txtConfirmPass.setForeground(new java.awt.Color(119, 119, 119));
+        txtConfirmPass.setText("Confirm Password");
+        txtConfirmPass.setBorder(null);
+        txtConfirmPass.setEchoChar('\u0000');
+        txtConfirmPass.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtConfirmPassFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtConfirmPassFocusLost(evt);
+            }
+        });
 
-        txtConfirmPwd.setBackground(new java.awt.Color(202, 202, 202));
-        txtConfirmPwd.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        txtConfirmPwd.setForeground(new java.awt.Color(119, 119, 119));
-        txtConfirmPwd.setText("Comfirm Password");
-        txtConfirmPwd.setBorder(null);
+        eye_hide.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eye_hide.png"))); // NOI18N
+        eye_hide.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                eye_hideMousePressed(evt);
+            }
+        });
 
-        jSeparator6.setBackground(new java.awt.Color(0, 0, 0));
-        jSeparator6.setForeground(new java.awt.Color(0, 0, 0));
+        eye.setForeground(new java.awt.Color(0, 0, 0));
+        eye.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eye.png"))); // NOI18N
+        eye.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                eyeMousePressed(evt);
+            }
+        });
+
+        eye_hide2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eye_hide.png"))); // NOI18N
+        eye_hide2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                eye_hide2MousePressed(evt);
+            }
+        });
+
+        eye1.setForeground(new java.awt.Color(0, 0, 0));
+        eye1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eye.png"))); // NOI18N
+        eye1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                eye1MousePressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -157,38 +240,48 @@ public class Register extends javax.swing.JFrame {
                     .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(txtId, javax.swing.GroupLayout.PREFERRED_SIZE, 268, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(txtFName, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(9, 9, 9))
+                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jSeparator1, javax.swing.GroupLayout.DEFAULT_SIZE, 252, Short.MAX_VALUE)
+                                .addComponent(txtUser)
+                                .addComponent(jSeparator4, javax.swing.GroupLayout.DEFAULT_SIZE, 252, Short.MAX_VALUE)
+                                .addComponent(txtLName)
+                                .addComponent(jSeparator3, javax.swing.GroupLayout.DEFAULT_SIZE, 252, Short.MAX_VALUE)
+                                .addComponent(txtFName)
+                                .addComponent(jSeparator2, javax.swing.GroupLayout.DEFAULT_SIZE, 252, Short.MAX_VALUE)
+                                .addComponent(txtId))
+                            .addGap(25, 25, 25))
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jSeparator5, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel3Layout.createSequentialGroup()
+                                        .addComponent(txtPass)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(eye)
+                                            .addComponent(eye_hide)))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
+                                        .addComponent(txtConfirmPass, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(eye_hide2)
+                                            .addComponent(eye1))))
+                                .addGap(25, 25, 25)))
                         .addGroup(jPanel3Layout.createSequentialGroup()
-                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtLName, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtUser, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(txtPass, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(txtConfirmPwd, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
-                                    .addGap(22, 22, 22)
-                                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(RegisterBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGroup(jPanel3Layout.createSequentialGroup()
-                                            .addComponent(jLabel3)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(SignInBtn)))))
+                            .addGap(22, 22, 22)
+                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(RegisterBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(jPanel3Layout.createSequentialGroup()
+                                    .addComponent(jLabel3)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(SignInBtn)))
                             .addContainerGap()))))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
+                .addGap(15, 15, 15)
                 .addComponent(txtId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -204,12 +297,19 @@ public class Register extends javax.swing.JFrame {
                 .addComponent(txtUser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(4, 4, 4)
                 .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtPass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(txtPass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(eye)
+                        .addComponent(eye_hide)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtConfirmPwd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtConfirmPass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(eye_hide2)
+                    .addComponent(eye1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -252,84 +352,13 @@ public class Register extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_SignInBtnMouseClicked
 
-        public void getUsers() {
-        
-        File file = new File("account.txt");
-        String username = "";
-        String password = "";
-        String userid = "";
-        
-        try {
-            
-            FileReader fr = new FileReader(file);
-            BufferedReader br = new BufferedReader(fr);
-            
-            // read line by line from the text file
-            Object[] lines = br.lines().toArray();
-            for(int i = 0; i < lines.length; i++) {  
-                // splite the row into two rows
-                // one for the name of the field
-                // and the other for the value of the field
-                String[] row = lines[i].toString().split(": ");
-                
-                if(row[0].equals("Username"))
-                {
-                    // if it's the username field we will get the username
-                    username = row[1];
-                    // add the username to the all username array
-                    all_usernames.add(username);
-                }
-                else if(row[0].equals("Password"))
-                {
-                    // if it's the password field we will get the password
-                    password = row[1];
-                }
-                else if(row[0].equals("Student ID")) {
-                    userid = row[1];
-                    all_userid.add(userid);
-                }
-                if(!username.equals("") && !password.equals(""))
-                {
-                    // add the username and the password to the hashmap
-                    usernameANDpassword.put(username, password);
-                }
-                
-            }
-        } catch (FileNotFoundException ex) {
-            JOptionPane.showMessageDialog(this, "File not found!", "Error", JOptionPane.ERROR_MESSAGE);
-        }
-    }
-    
-    public boolean checkIfUsernameExist(String un) {
-        boolean exist = false;
-
-        for(String username: all_usernames) {
-            if(username.equals(un))
-            {
-                exist = true;
-            }
-        }
-        return exist;
-    }
-    
-    public boolean checkIfUseridExist(String uid) {
-        boolean exist = false;
-        
-        for(String userid: all_userid) {
-            if(userid.equals(uid)) {
-                exist = true;
-            }
-        }
-        return exist;
-    }
-    
     private void RegisterBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RegisterBtnMouseClicked
         String username = txtUser.getText().trim();
-        String password = String.valueOf(txtPass.getText()).trim();
+        String password = String.valueOf(txtPass.getPassword()).trim();
         String fname = txtFName.getText().trim();
         String lname = txtLName.getText().trim();
         String id = txtId.getText().trim();
-        String confirm_pwd = String.valueOf(txtConfirmPwd.getText()).trim();
+        String confirm_pwd = String.valueOf(txtConfirmPass.getPassword()).trim();
         try {
             
             File file = new File("account.txt");
@@ -343,7 +372,7 @@ public class Register extends javax.swing.JFrame {
             // we need to check if the username already exist
           
             // check if the textfields are empty
-            if( username.equals("") || password.equals("") || fname.equals("") || lname.equals("") || id.equals(""))
+            if( username.equals("Username") || password.equals("Password") || fname.equals("First Name") || lname.equals("Last Name") || id.equals("Student ID"))
             {
                 JOptionPane.showMessageDialog(this, "One or Both fields are empty", "Warning", JOptionPane.WARNING_MESSAGE);
             }
@@ -352,10 +381,10 @@ public class Register extends javax.swing.JFrame {
                 if(password.equals(confirm_pwd))
                 {
                     // check if the username already exist
-                    getUsers();
-                    if(!checkIfUseridExist(id))
+                    userdata.getUsers();
+                    if(!userdata.checkIfUseridExist(id))
                     {
-                        if(!checkIfUsernameExist(username)) {
+                        if(!userdata.checkIfUsernameExist(username)) {
                             fw.write("Student ID: " + id);
                             fw.write(System.getProperty("line.separator"));
                             fw.write("Username: " + username);
@@ -376,17 +405,20 @@ public class Register extends javax.swing.JFrame {
                             this.dispose();
                         }
                         else {
-                            JOptionPane.showMessageDialog(this, "This Username Already Exist, Try Another One", "Error", JOptionPane.ERROR_MESSAGE);
+                            JOptionPane.showMessageDialog(this, "This Username Already Exist, Try Another One", "Warning", JOptionPane.WARNING_MESSAGE);
+                            txtUser.requestFocus();
                         }
                     }
                     else
                     {
-                       JOptionPane.showMessageDialog(this, "This Student Id Already Exist", "Error", JOptionPane.ERROR_MESSAGE);
+                       JOptionPane.showMessageDialog(this, "This Student Id Already Exist", "Warning", JOptionPane.WARNING_MESSAGE);
+                       txtId.requestFocus();
                     }
                 }
                 else
                 {
-                    System.out.println("Password Confirmation Error");
+                    JOptionPane.showMessageDialog(this, "Password Doesn't Match", "Warning", JOptionPane.WARNING_MESSAGE);
+                    txtConfirmPass.requestFocus();
                 }
             }
         } catch (HeadlessException e) {
@@ -396,6 +428,102 @@ public class Register extends javax.swing.JFrame {
         }
         
     }//GEN-LAST:event_RegisterBtnMouseClicked
+
+    private void txtIdFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtIdFocusGained
+        if(txtId.getText().equals("Student ID"))
+       {
+           txtId.setText("");
+       }
+    }//GEN-LAST:event_txtIdFocusGained
+
+    private void txtIdFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtIdFocusLost
+        if (txtId.getText().length()==0)
+            txtId.setText("Student ID");
+    }//GEN-LAST:event_txtIdFocusLost
+
+    private void txtFNameFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtFNameFocusGained
+        if(txtFName.getText().equals("First Name"))
+       {
+           txtFName.setText("");
+       }
+    }//GEN-LAST:event_txtFNameFocusGained
+
+    private void txtFNameFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtFNameFocusLost
+        if (txtFName.getText().length()==0)
+            txtFName.setText("First Name");
+    }//GEN-LAST:event_txtFNameFocusLost
+
+    private void txtLNameFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtLNameFocusLost
+        if (txtLName.getText().length()==0)
+            txtLName.setText("Last Name");
+    }//GEN-LAST:event_txtLNameFocusLost
+
+    private void txtUserFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtUserFocusLost
+        if (txtUser.getText().length()==0)
+            txtUser.setText("Username");
+    }//GEN-LAST:event_txtUserFocusLost
+
+    private void txtLNameFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtLNameFocusGained
+        if(txtLName.getText().equals("Last Name"))
+       {
+           txtLName.setText("");
+       }
+    }//GEN-LAST:event_txtLNameFocusGained
+
+    private void txtUserFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtUserFocusGained
+        if(txtUser.getText().equals("Username"))
+       {
+           txtUser.setText("");
+       }
+    }//GEN-LAST:event_txtUserFocusGained
+
+    private void txtPassFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtPassFocusGained
+        if(txtPass.getText().equals("Password"))
+       {
+           txtPass.setText("");
+       }
+    }//GEN-LAST:event_txtPassFocusGained
+
+    private void txtConfirmPassFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtConfirmPassFocusGained
+        if(txtConfirmPass.getText().equals("Confirm Password"))
+       {
+           txtConfirmPass.setText("");
+       }
+    }//GEN-LAST:event_txtConfirmPassFocusGained
+
+    private void txtPassFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtPassFocusLost
+        if (txtPass.getText().length()==0)
+            txtPass.setText("Password");
+    }//GEN-LAST:event_txtPassFocusLost
+
+    private void txtConfirmPassFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtConfirmPassFocusLost
+        if (txtConfirmPass.getText().length()==0)
+            txtConfirmPass.setText("Confirm Password");
+    }//GEN-LAST:event_txtConfirmPassFocusLost
+
+    private void eye_hideMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eye_hideMousePressed
+        eye_hide.setVisible(false);
+        eye.setVisible(true);
+        txtPass.setEchoChar((char)0);
+    }//GEN-LAST:event_eye_hideMousePressed
+
+    private void eyeMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eyeMousePressed
+        eye.setVisible(false);
+        eye_hide.setVisible(true);
+        txtPass.setEchoChar('*');
+    }//GEN-LAST:event_eyeMousePressed
+
+    private void eye_hide2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eye_hide2MousePressed
+        eye_hide2.setVisible(false);
+        eye1.setVisible(true);
+        txtConfirmPass.setEchoChar((char)0);
+    }//GEN-LAST:event_eye_hide2MousePressed
+
+    private void eye1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eye1MousePressed
+        eye1.setVisible(false);
+        eye_hide2.setVisible(true);
+        txtConfirmPass.setEchoChar('*');
+    }//GEN-LAST:event_eye1MousePressed
 
     /**
      * @param args the command line arguments
@@ -433,6 +561,10 @@ public class Register extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton RegisterBtn;
     private javax.swing.JButton SignInBtn;
+    private javax.swing.JLabel eye;
+    private javax.swing.JLabel eye1;
+    private javax.swing.JLabel eye_hide;
+    private javax.swing.JLabel eye_hide2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -446,11 +578,11 @@ public class Register extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
-    private javax.swing.JTextField txtConfirmPwd;
+    private javax.swing.JPasswordField txtConfirmPass;
     private javax.swing.JTextField txtFName;
     private javax.swing.JTextField txtId;
     private javax.swing.JTextField txtLName;
-    private javax.swing.JTextField txtPass;
+    private javax.swing.JPasswordField txtPass;
     private javax.swing.JTextField txtUser;
     // End of variables declaration//GEN-END:variables
 }
