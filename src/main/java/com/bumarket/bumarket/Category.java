@@ -47,7 +47,7 @@ public class Category extends javax.swing.JFrame {
         jSeparator13 = new javax.swing.JSeparator();
         jLabel6 = new javax.swing.JLabel();
         jButton8 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
+        btnShoppingcart = new javax.swing.JButton();
         jSeparator11 = new javax.swing.JSeparator();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
@@ -241,17 +241,17 @@ public class Category extends javax.swing.JFrame {
         });
         jPanel2.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 30, 180, 49));
 
-        jButton12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
-        jButton12.setText("ประวัติการสั่งซื้อ");
-        jButton12.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton12.setContentAreaFilled(false);
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
+        btnShoppingcart.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnShoppingcart.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
+        btnShoppingcart.setText("ประวัติการสั่งซื้อ");
+        btnShoppingcart.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnShoppingcart.setContentAreaFilled(false);
+        btnShoppingcart.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
+                btnShoppingcartActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 30, 180, 50));
+        jPanel2.add(btnShoppingcart, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 30, 180, 50));
 
         jSeparator11.setForeground(new java.awt.Color(0, 0, 0));
         jSeparator11.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -384,14 +384,14 @@ public class Category extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBackMouseClicked
 
     private void btnProduct1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct1MouseClicked
-        new MarketPen1().setVisible(true);
+        new MarketPencil1().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnProduct1MouseClicked
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+    private void btnShoppingcartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnShoppingcartActionPerformed
          new Shoppingcart().setVisible(true);
          this.dispose();
-    }//GEN-LAST:event_jButton12ActionPerformed
+    }//GEN-LAST:event_btnShoppingcartActionPerformed
 
     private void lbLogoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbLogoutMouseClicked
         // TODO add your handling code here:
@@ -441,7 +441,7 @@ public class Category extends javax.swing.JFrame {
     private javax.swing.JButton btnPen;
     private javax.swing.JButton btnPencil;
     private javax.swing.JButton btnProduct1;
-    private javax.swing.JButton jButton12;
+    private javax.swing.JButton btnShoppingcart;
     private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;

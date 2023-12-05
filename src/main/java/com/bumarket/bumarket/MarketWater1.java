@@ -35,8 +35,8 @@ public class MarketWater1 extends javax.swing.JFrame {
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        btnAddtocart = new javax.swing.JButton();
+        btnBuy = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jSpinner1 = new javax.swing.JSpinner();
         jLabel31 = new javax.swing.JLabel();
@@ -98,17 +98,18 @@ public class MarketWater1 extends javax.swing.JFrame {
         jPanel2.add(jLabel30);
         jLabel30.setBounds(455, 304, 140, 40);
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton1.setText("หยิบใส่ตระกร้า");
-        jPanel2.add(jButton1);
-        jButton1.setBounds(455, 400, 137, 40);
+        btnAddtocart.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnAddtocart.setText("หยิบใส่ตระกร้า");
+        btnAddtocart.setContentAreaFilled(false);
+        jPanel2.add(btnAddtocart);
+        btnAddtocart.setBounds(455, 400, 137, 40);
 
-        jButton4.setBackground(new java.awt.Color(204, 0, 0));
-        jButton4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("ซื้อสินค้า");
-        jPanel2.add(jButton4);
-        jButton4.setBounds(610, 400, 140, 40);
+        btnBuy.setBackground(new java.awt.Color(204, 0, 0));
+        btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnBuy.setForeground(new java.awt.Color(255, 255, 255));
+        btnBuy.setText("ซื้อสินค้า");
+        jPanel2.add(btnBuy);
+        btnBuy.setBounds(610, 400, 140, 40);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel4.setText("จำนวน");
@@ -194,6 +195,7 @@ public class MarketWater1 extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
@@ -204,6 +206,8 @@ public class MarketWater1 extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        new Shoppingcart().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
@@ -242,9 +246,9 @@ public class MarketWater1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnAddtocart;
+    private javax.swing.JButton btnBuy;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

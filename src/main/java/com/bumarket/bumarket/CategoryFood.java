@@ -30,10 +30,8 @@ public class CategoryFood extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jSeparator5 = new javax.swing.JSeparator();
         jSeparator6 = new javax.swing.JSeparator();
-        btnPencil = new javax.swing.JButton();
-        btnBook = new javax.swing.JButton();
-        btnPen = new javax.swing.JButton();
-        btnOther = new javax.swing.JButton();
+        btnSnacks = new javax.swing.JButton();
+        btnDrinks = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jSeparator8 = new javax.swing.JSeparator();
@@ -78,81 +76,49 @@ public class CategoryFood extends javax.swing.JFrame {
         jSeparator6.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
         jPanel2.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(779, 3, 13, 100));
 
-        btnPencil.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnPencil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/foodIcon.png"))); // NOI18N
-        btnPencil.setText("ขนม");
-        btnPencil.setContentAreaFilled(false);
-        btnPencil.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnPencil.setIconTextGap(0);
-        btnPencil.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        btnPencil.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPencilActionPerformed(evt);
-            }
-        });
-        jPanel2.add(btnPencil, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, -1, -1));
-
-        btnBook.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnBook.setIcon(new javax.swing.ImageIcon(getClass().getResource("/waterIcon.png"))); // NOI18N
-        btnBook.setText("เครื่องดื่ม");
-        btnBook.setContentAreaFilled(false);
-        btnBook.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnBook.setIconTextGap(0);
-        btnBook.setMaximumSize(new java.awt.Dimension(118, 78));
-        btnBook.setMinimumSize(new java.awt.Dimension(118, 78));
-        btnBook.setPreferredSize(new java.awt.Dimension(118, 78));
-        btnBook.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        btnBook.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnSnacks.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnSnacks.setIcon(new javax.swing.ImageIcon(getClass().getResource("/foodIcon.png"))); // NOI18N
+        btnSnacks.setText("ขนม");
+        btnSnacks.setContentAreaFilled(false);
+        btnSnacks.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnSnacks.setIconTextGap(0);
+        btnSnacks.setMaximumSize(new java.awt.Dimension(118, 78));
+        btnSnacks.setMinimumSize(new java.awt.Dimension(118, 78));
+        btnSnacks.setPreferredSize(new java.awt.Dimension(118, 78));
+        btnSnacks.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnSnacks.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnBookMouseClicked(evt);
+                btnSnacksMouseClicked(evt);
             }
         });
-        btnBook.addActionListener(new java.awt.event.ActionListener() {
+        btnSnacks.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBookActionPerformed(evt);
+                btnSnacksActionPerformed(evt);
             }
         });
-        jPanel2.add(btnBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 20, 118, -1));
+        jPanel2.add(btnSnacks, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, 120, -1));
 
-        btnPen.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnPen.setContentAreaFilled(false);
-        btnPen.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnPen.setIconTextGap(0);
-        btnPen.setMaximumSize(new java.awt.Dimension(118, 78));
-        btnPen.setMinimumSize(new java.awt.Dimension(118, 78));
-        btnPen.setPreferredSize(new java.awt.Dimension(118, 78));
-        btnPen.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        btnPen.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnDrinks.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnDrinks.setIcon(new javax.swing.ImageIcon(getClass().getResource("/waterIcon.png"))); // NOI18N
+        btnDrinks.setText("เครื่องดื่ม");
+        btnDrinks.setContentAreaFilled(false);
+        btnDrinks.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnDrinks.setIconTextGap(0);
+        btnDrinks.setMaximumSize(new java.awt.Dimension(118, 78));
+        btnDrinks.setMinimumSize(new java.awt.Dimension(118, 78));
+        btnDrinks.setPreferredSize(new java.awt.Dimension(118, 78));
+        btnDrinks.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnDrinks.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnPenMouseClicked(evt);
+                btnDrinksMouseClicked(evt);
             }
         });
-        btnPen.addActionListener(new java.awt.event.ActionListener() {
+        btnDrinks.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPenActionPerformed(evt);
+                btnDrinksActionPerformed(evt);
             }
         });
-        jPanel2.add(btnPen, new org.netbeans.lib.awtextra.AbsoluteConstraints(507, 15, 118, 80));
-
-        btnOther.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnOther.setContentAreaFilled(false);
-        btnOther.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnOther.setIconTextGap(0);
-        btnOther.setMaximumSize(new java.awt.Dimension(118, 78));
-        btnOther.setMinimumSize(new java.awt.Dimension(118, 78));
-        btnOther.setPreferredSize(new java.awt.Dimension(118, 78));
-        btnOther.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        btnOther.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnOtherMouseClicked(evt);
-            }
-        });
-        btnOther.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnOtherActionPerformed(evt);
-            }
-        });
-        jPanel2.add(btnOther, new org.netbeans.lib.awtextra.AbsoluteConstraints(643, 15, 118, 78));
+        jPanel2.add(btnDrinks, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 20, 118, -1));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel3.setText("ขนม/เครื่องดื่ม");
@@ -322,32 +288,24 @@ public class CategoryFood extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnPencilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPencilActionPerformed
+    private void btnSnacksActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSnacksActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnPencilActionPerformed
+    }//GEN-LAST:event_btnSnacksActionPerformed
 
-    private void btnBookMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBookMouseClicked
-        new Category2().setVisible(true);
+    private void btnDrinksMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDrinksMouseClicked
+        new CategoryWater().setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_btnBookMouseClicked
+    }//GEN-LAST:event_btnDrinksMouseClicked
 
-    private void btnBookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBookActionPerformed
+    private void btnDrinksActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDrinksActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnBookActionPerformed
-
-    private void btnOtherMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnOtherMouseClicked
-        new Category4().setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btnOtherMouseClicked
-
-    private void btnOtherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOtherActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnOtherActionPerformed
+    }//GEN-LAST:event_btnDrinksActionPerformed
 
     private void btnProduct1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct1MouseClicked
-        new MarketPencil1().setVisible(true);
+        new MarketFood1().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnProduct1MouseClicked
 
@@ -380,14 +338,9 @@ public class CategoryFood extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnBackActionPerformed
 
-    private void btnPenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPenActionPerformed
+    private void btnSnacksMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSnacksMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnPenActionPerformed
-
-    private void btnPenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPenMouseClicked
-        new Category3().setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btnPenMouseClicked
+    }//GEN-LAST:event_btnSnacksMouseClicked
 
     /**
      * @param args the command line arguments
@@ -426,11 +379,9 @@ public class CategoryFood extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBack;
-    private javax.swing.JButton btnBook;
-    private javax.swing.JButton btnOther;
-    private javax.swing.JButton btnPen;
-    private javax.swing.JButton btnPencil;
+    private javax.swing.JButton btnDrinks;
     private javax.swing.JButton btnProduct1;
+    private javax.swing.JButton btnSnacks;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
