@@ -10,3 +10,9 @@ Fullname: setthaphong
 Email: sukserm
 Password: sethnew
 ---
+Student ID: 234
+Username: 1234
+Fullname: sadad
+Email: dsadas
+Password: 1234
+---
