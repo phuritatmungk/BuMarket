@@ -78,7 +78,7 @@
                           <EmptySpace min="13" pref="13" max="-2" attributes="0"/>
                           <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                          <Component id="SignInBtn3" min="-2" max="-2" attributes="0"/>
+                          <Component id="SignInBtn" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace min="48" pref="48" max="-2" attributes="0"/>
@@ -110,7 +110,7 @@
                                   </Group>
                               </Group>
                               <Component id="jSeparator15" alignment="0" max="32767" attributes="0"/>
-                              <Component id="txtUser3" alignment="0" max="32767" attributes="0"/>
+                              <Component id="txtUser" alignment="0" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -123,7 +123,7 @@
               <Group type="102" attributes="0">
                   <Component id="jSeparator16" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="14" pref="14" max="-2" attributes="0"/>
-                  <Component id="txtUser3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtUser" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                   <Component id="jSeparator15" min="-2" pref="10" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
@@ -145,7 +145,7 @@
                           <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                              <Component id="SignInBtn3" min="-2" max="-2" attributes="0"/>
+                              <Component id="SignInBtn" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
                           <Component id="ConfirmBtn3" min="-2" pref="56" max="-2" attributes="0"/>
@@ -184,7 +184,7 @@
             <Property name="text" type="java.lang.String" value="Back to "/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="SignInBtn3">
+        <Component class="javax.swing.JButton" name="SignInBtn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="cc" green="cc" red="d0" type="rgb"/>
@@ -202,10 +202,9 @@
           </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="SignInBtnMouseClicked"/>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SignInBtn3ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtUser3">
+        <Component class="javax.swing.JTextField" name="txtUser">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ca" green="ca" red="ca" type="rgb"/>
@@ -223,8 +222,8 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtUser3FocusGained"/>
-            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtUser3FocusLost"/>
+            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtUserFocusGained"/>
+            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtUserFocusLost"/>
           </Events>
         </Component>
         <Component class="javax.swing.JSeparator" name="jSeparator13">
