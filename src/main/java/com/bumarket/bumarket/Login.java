@@ -33,20 +33,21 @@ public class Login extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         eye_hide = new javax.swing.JLabel();
         eye = new javax.swing.JLabel();
-        txtUser3 = new javax.swing.JTextField();
+        txtUser = new javax.swing.JTextField();
         jSeparator29 = new javax.swing.JSeparator();
         jSeparator28 = new javax.swing.JSeparator();
-        SignInBtn3 = new javax.swing.JButton();
-        ConfirmBtn3 = new javax.swing.JButton();
+        SignUpBtn = new javax.swing.JButton();
+        ConfirmBtn = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        SignInBtn4 = new javax.swing.JButton();
-        txtNewPwd3 = new javax.swing.JPasswordField();
+        ForgetPassBtn = new javax.swing.JButton();
+        txtPass = new javax.swing.JPasswordField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Login Page");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setResizable(false);
         setSize(new java.awt.Dimension(1280, 720));
@@ -80,21 +81,21 @@ public class Login extends javax.swing.JFrame {
         });
         jPanel6.add(eye, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 85, -1, -1));
 
-        txtUser3.setBackground(new java.awt.Color(202, 202, 202));
-        txtUser3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        txtUser3.setForeground(new java.awt.Color(119, 119, 119));
-        txtUser3.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        txtUser3.setText("Username");
-        txtUser3.setBorder(null);
-        txtUser3.addFocusListener(new java.awt.event.FocusAdapter() {
+        txtUser.setBackground(new java.awt.Color(202, 202, 202));
+        txtUser.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        txtUser.setForeground(new java.awt.Color(119, 119, 119));
+        txtUser.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtUser.setText("Username");
+        txtUser.setBorder(null);
+        txtUser.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                txtUser3FocusGained(evt);
+                txtUserFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                txtUser3FocusLost(evt);
+                txtUserFocusLost(evt);
             }
         });
-        jPanel6.add(txtUser3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 250, -1));
+        jPanel6.add(txtUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 250, -1));
 
         jSeparator29.setForeground(new java.awt.Color(0, 0, 0));
         jSeparator29.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
@@ -104,75 +105,60 @@ public class Login extends javax.swing.JFrame {
         jSeparator28.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
         jPanel6.add(jSeparator28, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 252, 10));
 
-        SignInBtn3.setBackground(new java.awt.Color(208, 204, 204));
-        SignInBtn3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        SignInBtn3.setForeground(new java.awt.Color(255, 153, 0));
-        SignInBtn3.setText("Register");
-        SignInBtn3.setBorder(null);
-        SignInBtn3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                SignInBtn3SignInBtnMouseClicked(evt);
-            }
-        });
-        SignInBtn3.addActionListener(new java.awt.event.ActionListener() {
+        SignUpBtn.setBackground(new java.awt.Color(208, 204, 204));
+        SignUpBtn.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        SignUpBtn.setForeground(new java.awt.Color(255, 153, 0));
+        SignUpBtn.setText("Register");
+        SignUpBtn.setBorder(null);
+        SignUpBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SignInBtn3ActionPerformed(evt);
+                SignUpBtnActionPerformed(evt);
             }
         });
-        jPanel6.add(SignInBtn3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 270, -1, -1));
+        jPanel6.add(SignUpBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 270, -1, -1));
 
-        ConfirmBtn3.setBackground(new java.awt.Color(0, 0, 0));
-        ConfirmBtn3.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
-        ConfirmBtn3.setForeground(new java.awt.Color(255, 255, 255));
-        ConfirmBtn3.setText("Login");
-        ConfirmBtn3.setBorderPainted(false);
-        ConfirmBtn3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ConfirmBtn3ConfirmBtnMouseClicked(evt);
-            }
-        });
-        ConfirmBtn3.addActionListener(new java.awt.event.ActionListener() {
+        ConfirmBtn.setBackground(new java.awt.Color(0, 0, 0));
+        ConfirmBtn.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
+        ConfirmBtn.setForeground(new java.awt.Color(255, 255, 255));
+        ConfirmBtn.setText("Login");
+        ConfirmBtn.setBorderPainted(false);
+        ConfirmBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ConfirmBtn3ActionPerformed(evt);
+                ConfirmBtnActionPerformed(evt);
             }
         });
-        jPanel6.add(ConfirmBtn3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 192, 56));
+        jPanel6.add(ConfirmBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 192, 56));
 
-        jLabel3.setText("Don't have a Account ? ");
+        jLabel3.setText("Don't have an Account ? ");
         jPanel6.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, -1, -1));
 
-        SignInBtn4.setBackground(new java.awt.Color(208, 204, 204));
-        SignInBtn4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        SignInBtn4.setForeground(new java.awt.Color(255, 153, 0));
-        SignInBtn4.setText("Forget Password ?");
-        SignInBtn4.setBorder(null);
-        SignInBtn4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                SignInBtn4SignInBtnMouseClicked(evt);
-            }
-        });
-        SignInBtn4.addActionListener(new java.awt.event.ActionListener() {
+        ForgetPassBtn.setBackground(new java.awt.Color(208, 204, 204));
+        ForgetPassBtn.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        ForgetPassBtn.setForeground(new java.awt.Color(255, 153, 0));
+        ForgetPassBtn.setText("Forget Password ?");
+        ForgetPassBtn.setBorder(null);
+        ForgetPassBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SignInBtn4ActionPerformed(evt);
+                ForgetPassBtnActionPerformed(evt);
             }
         });
-        jPanel6.add(SignInBtn4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, -1, -1));
+        jPanel6.add(ForgetPassBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, -1, -1));
 
-        txtNewPwd3.setBackground(new java.awt.Color(202, 202, 202));
-        txtNewPwd3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        txtNewPwd3.setForeground(new java.awt.Color(119, 119, 119));
-        txtNewPwd3.setText("Password");
-        txtNewPwd3.setBorder(null);
-        txtNewPwd3.setEchoChar('\u0000');
-        txtNewPwd3.addFocusListener(new java.awt.event.FocusAdapter() {
+        txtPass.setBackground(new java.awt.Color(202, 202, 202));
+        txtPass.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        txtPass.setForeground(new java.awt.Color(119, 119, 119));
+        txtPass.setText("Password");
+        txtPass.setBorder(null);
+        txtPass.setEchoChar('\u0000');
+        txtPass.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                txtNewPwd3FocusGained(evt);
+                txtPassFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                txtNewPwd3FocusLost(evt);
+                txtPassFocusLost(evt);
             }
         });
-        jPanel6.add(txtNewPwd3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 87, 210, 20));
+        jPanel6.add(txtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 87, 210, 20));
 
         getContentPane().add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 270, 270, 300));
 
@@ -195,58 +181,44 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     
-    private void ConfirmBtn3ConfirmBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ConfirmBtn3ConfirmBtnMouseClicked
-        
-    }//GEN-LAST:event_ConfirmBtn3ConfirmBtnMouseClicked
-
-    private void SignInBtn3SignInBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SignInBtn3SignInBtnMouseClicked
-        // TODO add your handling code here:
-        new Login().setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_SignInBtn3SignInBtnMouseClicked
-
-    private void SignInBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignInBtn3ActionPerformed
+    private void SignUpBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignUpBtnActionPerformed
         new Register().setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_SignInBtn3ActionPerformed
+    }//GEN-LAST:event_SignUpBtnActionPerformed
 
-    private void SignInBtn4SignInBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SignInBtn4SignInBtnMouseClicked
-        new Forget_Pwd().setVisible(true);
+    private void ForgetPassBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ForgetPassBtnActionPerformed
+        new Forgot_Pass().setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_SignInBtn4SignInBtnMouseClicked
+    }//GEN-LAST:event_ForgetPassBtnActionPerformed
 
-    private void SignInBtn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignInBtn4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_SignInBtn4ActionPerformed
-
-    private void txtUser3FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtUser3FocusGained
-       if(txtUser3.getText().equals("Username"))
+    private void txtUserFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtUserFocusGained
+       if(txtUser.getText().equals("Username"))
        {
-           txtUser3.setText("");
+           txtUser.setText("");
        }
-    }//GEN-LAST:event_txtUser3FocusGained
+    }//GEN-LAST:event_txtUserFocusGained
 
-    private void txtUser3FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtUser3FocusLost
-        if (txtUser3.getText().length()==0)
-            txtUser3.setText("Username");
-    }//GEN-LAST:event_txtUser3FocusLost
+    private void txtUserFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtUserFocusLost
+        if (txtUser.getText().length()==0)
+            txtUser.setText("Username");
+    }//GEN-LAST:event_txtUserFocusLost
 
-    private void txtNewPwd3FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtNewPwd3FocusGained
-        if(txtNewPwd3.getText().equals("Password"))
+    private void txtPassFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtPassFocusGained
+        if(txtPass.getText().equals("Password"))
        {
-           txtNewPwd3.setText("");
+           txtPass.setText("");
        }
-    }//GEN-LAST:event_txtNewPwd3FocusGained
+    }//GEN-LAST:event_txtPassFocusGained
 
-    private void txtNewPwd3FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtNewPwd3FocusLost
-        if (txtNewPwd3.getText().length()==0)
-            txtNewPwd3.setText("Password");
-    }//GEN-LAST:event_txtNewPwd3FocusLost
+    private void txtPassFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtPassFocusLost
+        if (txtPass.getText().length()==0)
+            txtPass.setText("Password");
+    }//GEN-LAST:event_txtPassFocusLost
 
     private void eye_hideMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eye_hideMousePressed
         eye_hide.setVisible(false);
         eye.setVisible(true);
-        txtNewPwd3.setEchoChar((char)0);
+        txtPass.setEchoChar((char)0);
     }//GEN-LAST:event_eye_hideMousePressed
 
     private void formWindowGainedFocus(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowGainedFocus
@@ -256,18 +228,18 @@ public class Login extends javax.swing.JFrame {
     private void eyeMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eyeMousePressed
         eye.setVisible(false);
         eye_hide.setVisible(true);
-        txtNewPwd3.setEchoChar('*');
+        txtPass.setEchoChar('*');
     }//GEN-LAST:event_eyeMousePressed
 
-    private void ConfirmBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConfirmBtn3ActionPerformed
+    private void ConfirmBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConfirmBtnActionPerformed
         userdata.getUsers();
-        String username = txtUser3.getText().trim();
-        String password = String.valueOf(txtNewPwd3.getPassword()).trim();
+        String username = txtUser.getText().trim();
+        String password = String.valueOf(txtPass.getPassword()).trim();
         boolean userExist = false;
         try {
             if(username.equals("Username") || password.equals("Password")) {
                 JOptionPane.showMessageDialog(this, "One or Both fields are Empty", "Info", JOptionPane.INFORMATION_MESSAGE);
-                txtNewPwd3.requestFocus();
+                txtPass.requestFocus();
             }
             else { 
                 for(String uname: userdata.usernameANDpassword.keySet()) {
@@ -284,15 +256,14 @@ public class Login extends javax.swing.JFrame {
                     }
                 if(userExist == false) {
                     JOptionPane.showMessageDialog(this, "Wrong Username or Password!", "Error", JOptionPane.ERROR_MESSAGE);
-                    txtNewPwd3.requestFocus();
+                    txtPass.requestFocus();
                 }
             }
         } catch (Exception e) {
             System.out.println("Failed to Login");
         }
-    }//GEN-LAST:event_ConfirmBtn3ActionPerformed
+    }//GEN-LAST:event_ConfirmBtnActionPerformed
 
-    
     
     /**
      * @param args the command line arguments
@@ -332,9 +303,9 @@ public class Login extends javax.swing.JFrame {
 
   
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton ConfirmBtn3;
-    private javax.swing.JButton SignInBtn3;
-    private javax.swing.JButton SignInBtn4;
+    private javax.swing.JButton ConfirmBtn;
+    private javax.swing.JButton ForgetPassBtn;
+    private javax.swing.JButton SignUpBtn;
     private javax.swing.JLabel eye;
     private javax.swing.JLabel eye_hide;
     private javax.swing.JLabel jLabel1;
@@ -345,7 +316,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JSeparator jSeparator28;
     private javax.swing.JSeparator jSeparator29;
-    private javax.swing.JPasswordField txtNewPwd3;
-    private javax.swing.JTextField txtUser3;
+    private javax.swing.JPasswordField txtPass;
+    private javax.swing.JTextField txtUser;
     // End of variables declaration//GEN-END:variables
 }

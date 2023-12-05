@@ -55,6 +55,7 @@ public class Home extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Home");
         setPreferredSize(new java.awt.Dimension(1280, 769));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 

@@ -4,20 +4,22 @@
  */
 package com.bumarket.bumarket;
 
+import java.io.*;
+import java.util.*;
 import javax.swing.*;
 
 /**
  *
  * @author chait
  */
-public class Forget_Pwd extends javax.swing.JFrame {
+public class Forgot_Pass extends javax.swing.JFrame {
     
     private final UserData userdata;
 
     /**
      * Creates new form Forget_Pwd
      */
-    public Forget_Pwd() {
+    public Forgot_Pass() {
         initComponents();
         userdata = new UserData();
         eye_hide.setVisible(false);
@@ -37,8 +39,8 @@ public class Forget_Pwd extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         ConfirmBtn3 = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
-        SignInBtn3 = new javax.swing.JButton();
-        txtUser3 = new javax.swing.JTextField();
+        SignInBtn = new javax.swing.JButton();
+        txtUser = new javax.swing.JTextField();
         jSeparator13 = new javax.swing.JSeparator();
         jSeparator14 = new javax.swing.JSeparator();
         jSeparator15 = new javax.swing.JSeparator();
@@ -88,34 +90,29 @@ public class Forget_Pwd extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel9.setText("Back to ");
 
-        SignInBtn3.setBackground(new java.awt.Color(208, 204, 204));
-        SignInBtn3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        SignInBtn3.setForeground(new java.awt.Color(255, 153, 0));
-        SignInBtn3.setText("Sign In");
-        SignInBtn3.setBorder(null);
-        SignInBtn3.addMouseListener(new java.awt.event.MouseAdapter() {
+        SignInBtn.setBackground(new java.awt.Color(208, 204, 204));
+        SignInBtn.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        SignInBtn.setForeground(new java.awt.Color(255, 153, 0));
+        SignInBtn.setText("Sign In");
+        SignInBtn.setBorder(null);
+        SignInBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 SignInBtnMouseClicked(evt);
             }
         });
-        SignInBtn3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SignInBtn3ActionPerformed(evt);
-            }
-        });
 
-        txtUser3.setBackground(new java.awt.Color(202, 202, 202));
-        txtUser3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        txtUser3.setForeground(new java.awt.Color(119, 119, 119));
-        txtUser3.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        txtUser3.setText("Username");
-        txtUser3.setBorder(null);
-        txtUser3.addFocusListener(new java.awt.event.FocusAdapter() {
+        txtUser.setBackground(new java.awt.Color(202, 202, 202));
+        txtUser.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        txtUser.setForeground(new java.awt.Color(119, 119, 119));
+        txtUser.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtUser.setText("Username");
+        txtUser.setBorder(null);
+        txtUser.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                txtUser3FocusGained(evt);
+                txtUserFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                txtUser3FocusLost(evt);
+                txtUserFocusLost(evt);
             }
         });
 
@@ -202,7 +199,7 @@ public class Forget_Pwd extends javax.swing.JFrame {
                         .addGap(13, 13, 13)
                         .addComponent(jLabel9)
                         .addGap(6, 6, 6)
-                        .addComponent(SignInBtn3))
+                        .addComponent(SignInBtn))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(48, 48, 48)
                         .addComponent(ConfirmBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -226,7 +223,7 @@ public class Forget_Pwd extends javax.swing.JFrame {
                                     .addComponent(eye)
                                     .addComponent(eye_hide)))
                             .addComponent(jSeparator15, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtUser3, javax.swing.GroupLayout.Alignment.LEADING))))
+                            .addComponent(txtUser, javax.swing.GroupLayout.Alignment.LEADING))))
                 .addContainerGap(25, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
@@ -234,7 +231,7 @@ public class Forget_Pwd extends javax.swing.JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addComponent(jSeparator16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(14, 14, 14)
-                .addComponent(txtUser3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txtUser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(6, 6, 6)
                 .addComponent(jSeparator15, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -254,7 +251,7 @@ public class Forget_Pwd extends javax.swing.JFrame {
                         .addGap(10, 10, 10)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel9)
-                            .addComponent(SignInBtn3))
+                            .addComponent(SignInBtn))
                         .addGap(20, 20, 20)
                         .addComponent(ConfirmBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(eye1)
@@ -281,6 +278,56 @@ public class Forget_Pwd extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    public void changePass() throws IOException {
+        String newPassword = "";
+        boolean checked = true;
+
+        File file = new File("account.txt");
+        File tempFile = new File("account2.txt");
+        BufferedWriter writer = new BufferedWriter(new FileWriter(tempFile));
+        FileReader fr = new FileReader(file);
+        BufferedReader br = new BufferedReader(fr);
+        Object[] lines = br.lines().toArray();
+        String username = txtUser.getText();
+        
+        for(int i = 0; i < lines.length; i++) {  
+            String[] row = lines[i].toString().split(": ");
+            System.out.println(lines[i]);
+            System.out.println(lines[1]);
+            if(Objects.equals((row[0]), username) && checked)
+            {
+                username = row[1];
+                newPassword = String.valueOf(txtNewPass.getPassword());
+                lines[0] = row[0] + " " + newPassword;
+                checked = false;
+            }
+            writer.write(lines[0] + System.getProperty("line.separator"));
+
+            
+            if(row[0].equals("Username"))
+            {
+                // if it's the username field we will get the username
+                username = row[1];
+                // add the username to the all username array
+                userdata.all_usernames.add(username);
+            }
+            else if(row[0].equals("Password"))
+            {
+                // if it's the password field we will get the password
+                newPassword = row[1];
+
+                userdata.all_password.add(newPassword);
+            }
+            if(!username.equals("") && !newPassword.equals(""))
+            {
+                // add the username and the password to the hashmap
+                userdata.usernameANDpassword.put(username, newPassword);
+            }
+        }
+        writer.close();
+        file.delete();
+        boolean successful = tempFile.renameTo(file);
+    }
     
     private void SignInBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SignInBtnMouseClicked
         // TODO add your handling code here:
@@ -290,7 +337,7 @@ public class Forget_Pwd extends javax.swing.JFrame {
 
     private void ConfirmBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ConfirmBtnMouseClicked
         userdata.getUsers();
-        String username = txtUser3.getText().trim();
+        String username = txtUser.getText().trim();
         String password = String.valueOf(txtPass.getPassword()).trim();
         String newpass = String.valueOf(txtNewPass.getPassword()).trim();
         boolean userExist = false;
@@ -320,10 +367,6 @@ public class Forget_Pwd extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_ConfirmBtnMouseClicked
 
-    private void SignInBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignInBtn3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_SignInBtn3ActionPerformed
-
     private void eye_hideMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eye_hideMousePressed
         eye.setVisible(true);
         eye_hide.setVisible(false);
@@ -348,10 +391,10 @@ public class Forget_Pwd extends javax.swing.JFrame {
         txtNewPass.setEchoChar('*');
     }//GEN-LAST:event_eye1MousePressed
 
-    private void txtUser3FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtUser3FocusLost
-        if (txtUser3.getText().length()==0)
-            txtUser3.setText("Username");
-    }//GEN-LAST:event_txtUser3FocusLost
+    private void txtUserFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtUserFocusLost
+        if (txtUser.getText().length()==0)
+            txtUser.setText("Username");
+    }//GEN-LAST:event_txtUserFocusLost
 
     private void txtPassFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtPassFocusLost
         if (txtPass.getText().length()==0)
@@ -370,12 +413,12 @@ public class Forget_Pwd extends javax.swing.JFrame {
        }
     }//GEN-LAST:event_txtPassFocusGained
 
-    private void txtUser3FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtUser3FocusGained
-        if(txtUser3.getText().equals("Username"))
+    private void txtUserFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtUserFocusGained
+        if(txtUser.getText().equals("Username"))
        {
-           txtUser3.setText("");
+           txtUser.setText("");
        }
-    }//GEN-LAST:event_txtUser3FocusGained
+    }//GEN-LAST:event_txtUserFocusGained
 
     private void txtNewPassFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtNewPassFocusGained
         if(txtNewPass.getText().equals("New Password"))
@@ -401,27 +444,28 @@ public class Forget_Pwd extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Forget_Pwd.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Forgot_Pass.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Forget_Pwd.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Forgot_Pass.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Forget_Pwd.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Forgot_Pass.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Forget_Pwd.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Forgot_Pass.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Forget_Pwd().setVisible(true);
+                new Forgot_Pass().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ConfirmBtn3;
-    private javax.swing.JButton SignInBtn3;
+    private javax.swing.JButton SignInBtn;
     private javax.swing.JLabel eye;
     private javax.swing.JLabel eye1;
     private javax.swing.JLabel eye_hide;
@@ -439,6 +483,6 @@ public class Forget_Pwd extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator16;
     private javax.swing.JPasswordField txtNewPass;
     private javax.swing.JPasswordField txtPass;
-    private javax.swing.JTextField txtUser3;
+    private javax.swing.JTextField txtUser;
     // End of variables declaration//GEN-END:variables
 }
