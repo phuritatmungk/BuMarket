@@ -310,29 +310,34 @@ public class Register extends javax.swing.JFrame {
                     userdata.getUsers();
                     if(!userdata.checkIfUseridExist(id))
                     {
-                        if(!userdata.checkIfUsernameExist(username)) {
-                            fw.write("Student ID: " + id);
-                            fw.write(System.getProperty("line.separator"));
-                            fw.write("Username: " + username);
-                            fw.write(System.getProperty("line.separator"));
-                            fw.write("Fullname: " + fname);
-                            fw.write(System.getProperty("line.separator"));
-                            fw.write("Lastname: " + lname);
-                            fw.write(System.getProperty("line.separator"));
-                            fw.write("Password: " + password);
-                            fw.write(System.getProperty("line.separator"));
-                            fw.write("---");
-                            fw.write(System.getProperty("line.separator"));
-                            fw.close(); 
-                            // populate the array and hashmap
-                            
-                            JOptionPane.showMessageDialog(this, "Register Successfully", "Info", JOptionPane.INFORMATION_MESSAGE);
-                            new Login().setVisible(true);
-                            this.dispose();
+                        if(!id.matches("[0-9]*")) {
+                            JOptionPane.showMessageDialog(this, "Student ID must contains only numbers", "Warning", JOptionPane.WARNING_MESSAGE);
                         }
                         else {
-                            JOptionPane.showMessageDialog(this, "This Username Already Exist, Try Another One", "Warning", JOptionPane.WARNING_MESSAGE);
-                            txtUser.requestFocus();
+                            if(!userdata.checkIfUsernameExist(username)) {
+                                fw.write("Student ID: " + id);
+                                fw.write(System.getProperty("line.separator"));
+                                fw.write("Username: " + username);
+                                fw.write(System.getProperty("line.separator"));
+                                fw.write("Firstname: " + fname.substring(0,1).toUpperCase() + fname.substring(1).toLowerCase());
+                                fw.write(System.getProperty("line.separator"));
+                                fw.write("Lastname: " + lname.substring(0,1).toUpperCase() + lname.substring(1).toLowerCase());
+                                fw.write(System.getProperty("line.separator"));
+                                fw.write("Password: " + password);
+                                fw.write(System.getProperty("line.separator"));
+                                fw.write("---");
+                                fw.write(System.getProperty("line.separator"));
+                                fw.close(); 
+                                // populate the array and hashmap
+
+                                JOptionPane.showMessageDialog(this, "Register Successfully", "Info", JOptionPane.INFORMATION_MESSAGE);
+                                new Login().setVisible(true);
+                                this.dispose();
+                            }
+                            else {
+                                JOptionPane.showMessageDialog(this, "This Username Already Exist, Try Another One", "Warning", JOptionPane.WARNING_MESSAGE);
+                                txtUser.requestFocus();
+                            }
                         }
                     }
                     else

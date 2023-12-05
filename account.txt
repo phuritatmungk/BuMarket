@@ -1,24 +1,18 @@
 Student ID: 1650705203
 Username: phuritat
-Fullname: phuritat
+Firstname: Phuritat
 Lastname: Mungkun
 Password: 1150
 ---
 Student ID: 1650703034
 Username: sethnew
-Fullname: setthaphong
-Lastname: sukserm
-Password: sethnew
----
-Student ID: 1650703034
-Username: sethnew
-Fullname: setthaphong
-Email: sukserm
+Firstname: Setthaphong
+Lastname: Sukserm
 Password: sethnew
 ---
 Student ID: 234
 Username: 1234
-Fullname: sadad
-Email: dsadas
+Firstname: Sadad
+Lastname: Dsadas
 Password: 1234
 ---

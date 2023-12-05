@@ -40,16 +40,16 @@ public class MarketFood1 extends javax.swing.JFrame {
         jLabel29 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        btnAddtocart = new javax.swing.JButton();
+        btnBuy = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jSpinner1 = new javax.swing.JSpinner();
         jLabel31 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
+        btnOption1 = new javax.swing.JButton();
+        btnOption2 = new javax.swing.JButton();
+        btnOption4 = new javax.swing.JButton();
+        btnOption3 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
@@ -128,17 +128,23 @@ public class MarketFood1 extends javax.swing.JFrame {
         jPanel2.add(jLabel30);
         jLabel30.setBounds(464, 344, 162, 40);
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton1.setText("หยิบใส่ตระกร้า");
-        jPanel2.add(jButton1);
-        jButton1.setBounds(464, 479, 137, 40);
+        btnAddtocart.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnAddtocart.setText("หยิบใส่ตระกร้า");
+        btnAddtocart.setContentAreaFilled(false);
+        jPanel2.add(btnAddtocart);
+        btnAddtocart.setBounds(464, 479, 137, 40);
 
-        jButton4.setBackground(new java.awt.Color(204, 0, 0));
-        jButton4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("ซื้อสินค้า");
-        jPanel2.add(jButton4);
-        jButton4.setBounds(619, 479, 140, 40);
+        btnBuy.setBackground(new java.awt.Color(204, 0, 0));
+        btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnBuy.setForeground(new java.awt.Color(255, 255, 255));
+        btnBuy.setText("ซื้อสินค้า");
+        btnBuy.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnBuyMouseClicked(evt);
+            }
+        });
+        jPanel2.add(btnBuy);
+        btnBuy.setBounds(619, 479, 140, 40);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel4.setText("จำนวน");
@@ -157,31 +163,35 @@ public class MarketFood1 extends javax.swing.JFrame {
         jPanel2.add(jLabel28);
         jLabel28.setBounds(464, 387, 29, 30);
 
-        jButton7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton7.setText(" มันฝรั่งแท้");
-        jButton7.setToolTipText("");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        btnOption1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnOption1.setText(" มันฝรั่งแท้");
+        btnOption1.setToolTipText("");
+        btnOption1.setContentAreaFilled(false);
+        btnOption1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                btnOption1ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton7);
-        jButton7.setBounds(524, 387, 82, 30);
+        jPanel2.add(btnOption1);
+        btnOption1.setBounds(524, 387, 82, 30);
 
-        jButton8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton8.setText("เมี่ยงคำ ครบรส ");
-        jPanel2.add(jButton8);
-        jButton8.setBounds(616, 387, 107, 30);
+        btnOption2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnOption2.setText("เมี่ยงคำ ครบรส ");
+        btnOption2.setContentAreaFilled(false);
+        jPanel2.add(btnOption2);
+        btnOption2.setBounds(616, 387, 107, 30);
 
-        jButton10.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton10.setText("ซาวครีมและหัวหอม");
-        jPanel2.add(jButton10);
-        jButton10.setBounds(838, 387, 124, 30);
+        btnOption4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnOption4.setText("ซาวครีมและหัวหอม");
+        btnOption4.setContentAreaFilled(false);
+        jPanel2.add(btnOption4);
+        btnOption4.setBounds(838, 387, 124, 30);
 
-        jButton11.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jButton11.setText("โนริ สาหร่าย");
-        jPanel2.add(jButton11);
-        jButton11.setBounds(735, 387, 91, 30);
+        btnOption3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnOption3.setText("โนริ สาหร่าย");
+        btnOption3.setContentAreaFilled(false);
+        jPanel2.add(btnOption3);
+        btnOption3.setBounds(735, 387, 91, 30);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel5.setText("ขนาด 32 บาท 3 ซอง");
@@ -256,6 +266,7 @@ public class MarketFood1 extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
@@ -268,9 +279,15 @@ public class MarketFood1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void btnOption1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOption1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_btnOption1ActionPerformed
+
+    private void btnBuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseClicked
+        // TODO add your handling code here:
+        new Shoppingcart().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnBuyMouseClicked
 
     /**
      * @param args the command line arguments
@@ -308,13 +325,13 @@ public class MarketFood1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
+    private javax.swing.JButton btnAddtocart;
+    private javax.swing.JButton btnBuy;
+    private javax.swing.JButton btnOption1;
+    private javax.swing.JButton btnOption2;
+    private javax.swing.JButton btnOption3;
+    private javax.swing.JButton btnOption4;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

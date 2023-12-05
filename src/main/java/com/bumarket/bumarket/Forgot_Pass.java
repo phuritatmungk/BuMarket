@@ -6,6 +6,8 @@ package com.bumarket.bumarket;
 
 import java.io.*;
 import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.*;
 
 /**
@@ -15,10 +17,11 @@ import javax.swing.*;
 public class Forgot_Pass extends javax.swing.JFrame {
     
     private final UserData userdata;
+    Map<String, String> usernameANDpassword = new HashMap<>();
+    ArrayList<String> all_usernames = new ArrayList<>();
+    ArrayList<String> all_password = new ArrayList<>();
+    ArrayList<String> all_userid = new ArrayList<>();
 
-    /**
-     * Creates new form Forget_Pwd
-     */
     public Forgot_Pass() {
         initComponents();
         userdata = new UserData();
@@ -347,8 +350,26 @@ public class Forgot_Pass extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "One or Both fields are Empty", "Info", JOptionPane.INFORMATION_MESSAGE);
             }
             else { 
+                File file = new File("account.txt");
+                FileWriter fw = new FileWriter(file, true);
+                FileReader fr = new FileReader(file);
+                BufferedReader br = new BufferedReader(fr);
+
+                Object[] lines = br.lines().toArray();
+                for(int i = 0; i < lines.length; i++) {  
+                    String[] row = lines[i].toString().split(": ");
+                    if(row[0].equals("Password"))
+                    {
+                        // if it's the password field we will get the password
+                        if(row[1].equals(String.valueOf(txtPass.getPassword()).trim())) {
+                            row[1] = String.valueOf(txtNewPass.getPassword()).trim();
+                            newpass = row[1];
+
+                            all_password.add(newpass);
+                        }
+                    }
+                }
                 for(String uname: userdata.usernameANDpassword.keySet()) {
-                    System.out.println(uname);
                     if(uname.equals(username)) {
                         if(userdata.usernameANDpassword.get(uname).equals(password)) {
                             userExist = true;

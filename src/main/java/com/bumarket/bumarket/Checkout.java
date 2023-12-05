@@ -77,6 +77,7 @@ public class Checkout extends javax.swing.JFrame {
 
         BuyButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         BuyButton.setText("เลือกซื้อสินค้าต่อ");
+        BuyButton.setContentAreaFilled(false);
         BuyButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BuyButtonActionPerformed(evt);
@@ -235,6 +236,7 @@ public class Checkout extends javax.swing.JFrame {
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void BPButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BPButtonActionPerformed

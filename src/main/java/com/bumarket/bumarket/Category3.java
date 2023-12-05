@@ -203,6 +203,12 @@ public class Category3 extends javax.swing.JFrame {
 
         btnProduct1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnProduct1.setText("เพิ่มเติม");
+        btnProduct1.setContentAreaFilled(false);
+        btnProduct1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnProduct1MouseClicked(evt);
+            }
+        });
         btnProduct1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnProduct1ActionPerformed(evt);
@@ -381,6 +387,12 @@ public class Category3 extends javax.swing.JFrame {
         new Login().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_lbLogoutMouseClicked
+
+    private void btnProduct1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct1MouseClicked
+        // TODO add your handling code here:
+        new MarketPen1().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnProduct1MouseClicked
 
     /**
      * @param args the command line arguments

@@ -377,6 +377,7 @@ public class Categoryjacket extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnPencilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPencilActionPerformed

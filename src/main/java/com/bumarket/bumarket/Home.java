@@ -49,9 +49,9 @@ public class Home extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         lbLogout = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
-        jButton15 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
+        btnClothes = new javax.swing.JButton();
+        btnStationery = new javax.swing.JButton();
+        btnSnacksanddrinks = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -182,55 +182,60 @@ public class Home extends javax.swing.JFrame {
         });
         jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 35, 410, 34));
 
-        jButton15.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture1-1 (1).png"))); // NOI18N
-        jButton15.setText("เสื้อผ้า");
-        jButton15.setBorder(null);
-        jButton15.setContentAreaFilled(false);
-        jButton15.setFocusPainted(false);
-        jButton15.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton15.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton15.addActionListener(new java.awt.event.ActionListener() {
+        btnClothes.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnClothes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture1-1 (1).png"))); // NOI18N
+        btnClothes.setText("เสื้อผ้า");
+        btnClothes.setBorder(null);
+        btnClothes.setContentAreaFilled(false);
+        btnClothes.setFocusPainted(false);
+        btnClothes.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnClothes.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnClothes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton15ActionPerformed(evt);
+                btnClothesActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 300, 100, 110));
+        jPanel1.add(btnClothes, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 300, 100, 110));
 
-        jButton16.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pngtreevector-stationery-icon-41.png"))); // NOI18N
-        jButton16.setText("เตรื่องเขียน");
-        jButton16.setBorder(null);
-        jButton16.setContentAreaFilled(false);
-        jButton16.setFocusPainted(false);
-        jButton16.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton16.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton16.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnStationery.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnStationery.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pngtreevector-stationery-icon-41.png"))); // NOI18N
+        btnStationery.setText("เครื่องเขียน");
+        btnStationery.setBorder(null);
+        btnStationery.setContentAreaFilled(false);
+        btnStationery.setFocusPainted(false);
+        btnStationery.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnStationery.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnStationery.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton16MouseClicked(evt);
+                btnStationeryMouseClicked(evt);
             }
         });
-        jButton16.addActionListener(new java.awt.event.ActionListener() {
+        btnStationery.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton16ActionPerformed(evt);
+                btnStationeryActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 300, 100, 110));
+        jPanel1.add(btnStationery, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 300, 100, 110));
 
-        jButton14.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture3 (1).png"))); // NOI18N
-        jButton14.setText("ขนม/เครื่องดืม");
-        jButton14.setBorder(null);
-        jButton14.setContentAreaFilled(false);
-        jButton14.setFocusPainted(false);
-        jButton14.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton14.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton14ActionPerformed(evt);
+        btnSnacksanddrinks.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnSnacksanddrinks.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture3 (1).png"))); // NOI18N
+        btnSnacksanddrinks.setText("ขนม/เครื่องดืม");
+        btnSnacksanddrinks.setBorder(null);
+        btnSnacksanddrinks.setContentAreaFilled(false);
+        btnSnacksanddrinks.setFocusPainted(false);
+        btnSnacksanddrinks.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnSnacksanddrinks.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnSnacksanddrinks.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnSnacksanddrinksMouseClicked(evt);
             }
         });
-        jPanel1.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 300, 100, 110));
+        btnSnacksanddrinks.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSnacksanddrinksActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnSnacksanddrinks, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 300, 100, 110));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Up.png"))); // NOI18N
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 1380, 760));
@@ -253,34 +258,40 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton9ActionPerformed
 
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+    private void btnSnacksanddrinksActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSnacksanddrinksActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton14ActionPerformed
+    }//GEN-LAST:event_btnSnacksanddrinksActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
 
-    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+    private void btnClothesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClothesActionPerformed
         new Categoryshirt().setVisible(true);
         this.dispose();        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton15ActionPerformed
+    }//GEN-LAST:event_btnClothesActionPerformed
 
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+    private void btnStationeryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStationeryActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton16ActionPerformed
+    }//GEN-LAST:event_btnStationeryActionPerformed
 
-    private void jButton16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton16MouseClicked
+    private void btnStationeryMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnStationeryMouseClicked
         // TODO add your handling code here:
         new Category().setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jButton16MouseClicked
+    }//GEN-LAST:event_btnStationeryMouseClicked
 
     private void lbLogoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbLogoutMouseClicked
         // TODO add your handling code here:
         new Login().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_lbLogoutMouseClicked
+
+    private void btnSnacksanddrinksMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSnacksanddrinksMouseClicked
+        // TODO add your handling code here:
+        new CategoryFood().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnSnacksanddrinksMouseClicked
 
     /**
      * @param args the command line arguments
@@ -318,10 +329,10 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnClothes;
+    private javax.swing.JButton btnSnacksanddrinks;
+    private javax.swing.JButton btnStationery;
     private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton9;

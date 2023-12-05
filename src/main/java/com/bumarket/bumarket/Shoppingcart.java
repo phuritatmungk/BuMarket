@@ -181,6 +181,7 @@ public class Shoppingcart extends javax.swing.JFrame {
 
         BuyButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         BuyButton.setText("เลือกซื้อสินค้า");
+        BuyButton.setContentAreaFilled(false);
         getContentPane().add(BuyButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 470, 240, -1));
 
         PayButton.setBackground(new java.awt.Color(255, 51, 51));
@@ -217,6 +218,7 @@ public class Shoppingcart extends javax.swing.JFrame {
         Historybutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
         Historybutton.setText("  ประวัติการสั่งซื้อ");
         Historybutton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Historybutton.setContentAreaFilled(false);
         Historybutton.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         getContentPane().add(Historybutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 220, 240, 50));
 

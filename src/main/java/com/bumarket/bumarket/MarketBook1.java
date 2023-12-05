@@ -39,8 +39,8 @@ public class MarketBook1 extends javax.swing.JFrame {
         jLabel27 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        btnAddtocart = new javax.swing.JButton();
+        btnBuy = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jSpinner1 = new javax.swing.JSpinner();
         jLabel31 = new javax.swing.JLabel();
@@ -105,13 +105,19 @@ public class MarketBook1 extends javax.swing.JFrame {
         jLabel30.setForeground(new java.awt.Color(204, 0, 0));
         jLabel30.setText("฿292.00");
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton1.setText("หยิบใส่ตระกร้า");
+        btnAddtocart.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnAddtocart.setText("หยิบใส่ตระกร้า");
+        btnAddtocart.setContentAreaFilled(false);
 
-        jButton4.setBackground(new java.awt.Color(204, 0, 0));
-        jButton4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("ซื้อสินค้า");
+        btnBuy.setBackground(new java.awt.Color(204, 0, 0));
+        btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnBuy.setForeground(new java.awt.Color(255, 255, 255));
+        btnBuy.setText("ซื้อสินค้า");
+        btnBuy.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnBuyMouseClicked(evt);
+            }
+        });
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel4.setText("จำนวน");
@@ -133,9 +139,9 @@ public class MarketBook1 extends javax.swing.JFrame {
                         .addGap(63, 63, 63)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jButton1)
+                                .addComponent(btnAddtocart)
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(btnBuy, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -173,8 +179,8 @@ public class MarketBook1 extends javax.swing.JFrame {
                             .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(btnAddtocart, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnBuy, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(17, 17, 17)
                         .addComponent(jLabel3)))
@@ -250,6 +256,7 @@ public class MarketBook1 extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
@@ -261,6 +268,12 @@ public class MarketBook1 extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void btnBuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseClicked
+        // TODO add your handling code here:
+        new Shoppingcart().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnBuyMouseClicked
 
     /**
      * @param args the command line arguments
@@ -298,9 +311,9 @@ public class MarketBook1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnAddtocart;
+    private javax.swing.JButton btnBuy;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

@@ -30,10 +30,8 @@ public class CategoryWater extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jSeparator5 = new javax.swing.JSeparator();
         jSeparator6 = new javax.swing.JSeparator();
-        btnPencil = new javax.swing.JButton();
-        btnBook = new javax.swing.JButton();
-        btnPen = new javax.swing.JButton();
-        btnOther = new javax.swing.JButton();
+        btnSnacks = new javax.swing.JButton();
+        btnWater = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jSeparator8 = new javax.swing.JSeparator();
@@ -47,7 +45,7 @@ public class CategoryWater extends javax.swing.JFrame {
         jSeparator13 = new javax.swing.JSeparator();
         jLabel6 = new javax.swing.JLabel();
         jButton8 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
+        btnShoppingcart = new javax.swing.JButton();
         jSeparator11 = new javax.swing.JSeparator();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
@@ -78,81 +76,46 @@ public class CategoryWater extends javax.swing.JFrame {
         jSeparator6.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
         jPanel2.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(779, 3, 13, 100));
 
-        btnPencil.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnPencil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/foodIcon.png"))); // NOI18N
-        btnPencil.setText("ขนม");
-        btnPencil.setContentAreaFilled(false);
-        btnPencil.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnPencil.setIconTextGap(0);
-        btnPencil.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        btnPencil.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPencilActionPerformed(evt);
-            }
-        });
-        jPanel2.add(btnPencil, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, -1, -1));
-
-        btnBook.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnBook.setIcon(new javax.swing.ImageIcon(getClass().getResource("/waterIcon.png"))); // NOI18N
-        btnBook.setText("เครื่องดื่ม");
-        btnBook.setContentAreaFilled(false);
-        btnBook.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnBook.setIconTextGap(0);
-        btnBook.setMaximumSize(new java.awt.Dimension(118, 78));
-        btnBook.setMinimumSize(new java.awt.Dimension(118, 78));
-        btnBook.setPreferredSize(new java.awt.Dimension(118, 78));
-        btnBook.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        btnBook.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnSnacks.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnSnacks.setIcon(new javax.swing.ImageIcon(getClass().getResource("/foodIcon.png"))); // NOI18N
+        btnSnacks.setText("ขนม");
+        btnSnacks.setContentAreaFilled(false);
+        btnSnacks.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnSnacks.setIconTextGap(0);
+        btnSnacks.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnSnacks.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnBookMouseClicked(evt);
+                btnSnacksMouseClicked(evt);
             }
         });
-        btnBook.addActionListener(new java.awt.event.ActionListener() {
+        btnSnacks.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBookActionPerformed(evt);
+                btnSnacksActionPerformed(evt);
             }
         });
-        jPanel2.add(btnBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 20, 118, -1));
+        jPanel2.add(btnSnacks, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, -1, -1));
 
-        btnPen.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnPen.setContentAreaFilled(false);
-        btnPen.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnPen.setIconTextGap(0);
-        btnPen.setMaximumSize(new java.awt.Dimension(118, 78));
-        btnPen.setMinimumSize(new java.awt.Dimension(118, 78));
-        btnPen.setPreferredSize(new java.awt.Dimension(118, 78));
-        btnPen.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        btnPen.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnWater.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnWater.setIcon(new javax.swing.ImageIcon(getClass().getResource("/waterIcon.png"))); // NOI18N
+        btnWater.setText("เครื่องดื่ม");
+        btnWater.setContentAreaFilled(false);
+        btnWater.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnWater.setIconTextGap(0);
+        btnWater.setMaximumSize(new java.awt.Dimension(118, 78));
+        btnWater.setMinimumSize(new java.awt.Dimension(118, 78));
+        btnWater.setPreferredSize(new java.awt.Dimension(118, 78));
+        btnWater.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnWater.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnPenMouseClicked(evt);
+                btnWaterMouseClicked(evt);
             }
         });
-        btnPen.addActionListener(new java.awt.event.ActionListener() {
+        btnWater.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPenActionPerformed(evt);
+                btnWaterActionPerformed(evt);
             }
         });
-        jPanel2.add(btnPen, new org.netbeans.lib.awtextra.AbsoluteConstraints(507, 15, 118, 80));
-
-        btnOther.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnOther.setContentAreaFilled(false);
-        btnOther.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnOther.setIconTextGap(0);
-        btnOther.setMaximumSize(new java.awt.Dimension(118, 78));
-        btnOther.setMinimumSize(new java.awt.Dimension(118, 78));
-        btnOther.setPreferredSize(new java.awt.Dimension(118, 78));
-        btnOther.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        btnOther.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnOtherMouseClicked(evt);
-            }
-        });
-        btnOther.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnOtherActionPerformed(evt);
-            }
-        });
-        jPanel2.add(btnOther, new org.netbeans.lib.awtextra.AbsoluteConstraints(643, 15, 118, 78));
+        jPanel2.add(btnWater, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 20, 118, -1));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel3.setText("ขนม/เครื่องดื่ม");
@@ -233,17 +196,17 @@ public class CategoryWater extends javax.swing.JFrame {
         });
         jPanel2.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 30, 180, 49));
 
-        jButton12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
-        jButton12.setText("ประวัติการสั่งซื้อ");
-        jButton12.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton12.setContentAreaFilled(false);
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
+        btnShoppingcart.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnShoppingcart.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
+        btnShoppingcart.setText("ประวัติการสั่งซื้อ");
+        btnShoppingcart.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnShoppingcart.setContentAreaFilled(false);
+        btnShoppingcart.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
+                btnShoppingcartActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 30, 180, 50));
+        jPanel2.add(btnShoppingcart, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 30, 180, 50));
 
         jSeparator11.setForeground(new java.awt.Color(0, 0, 0));
         jSeparator11.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -323,41 +286,24 @@ public class CategoryWater extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnPencilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPencilActionPerformed
+    private void btnSnacksActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSnacksActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnPencilActionPerformed
+    }//GEN-LAST:event_btnSnacksActionPerformed
 
-    private void btnBookMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBookMouseClicked
+    private void btnWaterMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnWaterMouseClicked
         new Category2().setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_btnBookMouseClicked
+    }//GEN-LAST:event_btnWaterMouseClicked
 
-    private void btnBookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBookActionPerformed
+    private void btnWaterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnWaterActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnBookActionPerformed
-
-    private void btnPenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPenMouseClicked
-        new Category3().setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btnPenMouseClicked
-
-    private void btnPenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPenActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnPenActionPerformed
-
-    private void btnOtherMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnOtherMouseClicked
-        new Category4().setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btnOtherMouseClicked
-
-    private void btnOtherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOtherActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnOtherActionPerformed
+    }//GEN-LAST:event_btnWaterActionPerformed
 
     private void btnProduct1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct1MouseClicked
-        new MarketPencil1().setVisible(true);
+        new MarketWater1().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnProduct1MouseClicked
 
@@ -369,10 +315,10 @@ public class CategoryWater extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton8ActionPerformed
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+    private void btnShoppingcartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnShoppingcartActionPerformed
         new Shoppingcart().setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jButton12ActionPerformed
+    }//GEN-LAST:event_btnShoppingcartActionPerformed
 
     private void lbLogoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbLogoutMouseClicked
         // TODO add your handling code here:
@@ -389,6 +335,12 @@ public class CategoryWater extends javax.swing.JFrame {
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnBackActionPerformed
+
+    private void btnSnacksMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSnacksMouseClicked
+        // TODO add your handling code here:
+        new CategoryFood().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnSnacksMouseClicked
 
     /**
      * @param args the command line arguments
@@ -427,12 +379,10 @@ public class CategoryWater extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBack;
-    private javax.swing.JButton btnBook;
-    private javax.swing.JButton btnOther;
-    private javax.swing.JButton btnPen;
-    private javax.swing.JButton btnPencil;
     private javax.swing.JButton btnProduct1;
-    private javax.swing.JButton jButton12;
+    private javax.swing.JButton btnShoppingcart;
+    private javax.swing.JButton btnSnacks;
+    private javax.swing.JButton btnWater;
     private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
