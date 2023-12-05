@@ -66,7 +66,7 @@ public class Categoryshirt extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         btnBack = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1280, 720));
@@ -366,10 +366,10 @@ public class Categoryshirt extends javax.swing.JFrame {
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Search.png"))); // NOI18N
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 30, -1, -1));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Up.png"))); // NOI18N
-        jLabel7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jLabel7.setFocusTraversalPolicyProvider(true);
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, -1, 740));
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Up.png"))); // NOI18N
+        background.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        background.setFocusTraversalPolicyProvider(true);
+        jPanel1.add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, -1, 740));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -484,6 +484,7 @@ public class Categoryshirt extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel background;
     private javax.swing.JButton btnBack;
     private javax.swing.JButton btnBook;
     private javax.swing.JButton btnOther;
@@ -511,7 +512,6 @@ public class Categoryshirt extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
