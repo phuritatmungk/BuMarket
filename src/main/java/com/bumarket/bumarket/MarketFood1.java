@@ -61,9 +61,10 @@ public class MarketFood1 extends javax.swing.JFrame {
         jLabel15 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(230, 230, 230));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -89,7 +90,7 @@ public class MarketFood1 extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel2.setText("[แพ็คสุดคุ้ม] Lays Classic เลย์คลาสสิค แผ่นเรียบ ");
         jPanel2.add(jLabel2);
-        jLabel2.setBounds(464, 34, 541, 40);
+        jLabel2.setBounds(464, 34, 542, 40);
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -132,7 +133,7 @@ public class MarketFood1 extends javax.swing.JFrame {
         btnAddtocart.setText("หยิบใส่ตระกร้า");
         btnAddtocart.setContentAreaFilled(false);
         jPanel2.add(btnAddtocart);
-        btnAddtocart.setBounds(464, 479, 137, 40);
+        btnAddtocart.setBounds(464, 479, 138, 40);
 
         btnBuy.setBackground(new java.awt.Color(204, 0, 0));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -179,7 +180,7 @@ public class MarketFood1 extends javax.swing.JFrame {
         btnOption2.setText("เมี่ยงคำ ครบรส ");
         btnOption2.setContentAreaFilled(false);
         jPanel2.add(btnOption2);
-        btnOption2.setBounds(616, 387, 107, 30);
+        btnOption2.setBounds(616, 387, 106, 30);
 
         btnOption4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnOption4.setText("ซาวครีมและหัวหอม");
@@ -191,12 +192,12 @@ public class MarketFood1 extends javax.swing.JFrame {
         btnOption3.setText("โนริ สาหร่าย");
         btnOption3.setContentAreaFilled(false);
         jPanel2.add(btnOption3);
-        btnOption3.setBounds(735, 387, 91, 30);
+        btnOption3.setBounds(735, 387, 90, 30);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel5.setText("ขนาด 32 บาท 3 ซอง");
         jPanel2.add(jLabel5);
-        jLabel5.setBounds(460, 70, 229, 40);
+        jLabel5.setBounds(460, 70, 230, 40);
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, 1090, 530));
 
@@ -250,20 +251,10 @@ public class MarketFood1 extends javax.swing.JFrame {
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Search.png"))); // NOI18N
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 30, -1, -1));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Up.png"))); // NOI18N
-        jLabel7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(-6, -10, 1290, 740));
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Up.png"))); // NOI18N
+        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, -1));
 
         pack();
         setLocationRelativeTo(null);
@@ -339,6 +330,7 @@ public class MarketFood1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
@@ -352,7 +344,6 @@ public class MarketFood1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
