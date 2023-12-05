@@ -43,7 +43,7 @@ public class Register extends javax.swing.JFrame {
         txtLName = new javax.swing.JTextField();
         txtId = new javax.swing.JTextField();
         txtFName = new javax.swing.JTextField();
-        jSeparator1 = new javax.swing.JSeparator();
+        jSeparator7 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
         txtUser = new javax.swing.JTextField();
@@ -70,6 +70,7 @@ public class Register extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(202, 202, 202));
         jPanel3.setForeground(new java.awt.Color(51, 51, 51));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         RegisterBtn.setBackground(new java.awt.Color(0, 0, 0));
         RegisterBtn.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
@@ -81,9 +82,12 @@ public class Register extends javax.swing.JFrame {
                 RegisterBtnMouseClicked(evt);
             }
         });
+        jPanel3.add(RegisterBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 283, 203, 56));
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(119, 119, 119));
         jLabel3.setText("Already A Member?");
+        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(13, 351, -1, -1));
 
         SignInBtn.setBackground(new java.awt.Color(208, 204, 204));
         SignInBtn.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
@@ -95,6 +99,8 @@ public class Register extends javax.swing.JFrame {
                 SignInBtnMouseClicked(evt);
             }
         });
+        jPanel3.add(SignInBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 351, -1, -1));
+        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 279, -1, -1));
 
         txtLName.setBackground(new java.awt.Color(202, 202, 202));
         txtLName.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -109,6 +115,7 @@ public class Register extends javax.swing.JFrame {
                 txtLNameFocusLost(evt);
             }
         });
+        jPanel3.add(txtLName, new org.netbeans.lib.awtextra.AbsoluteConstraints(13, 105, 252, -1));
 
         txtId.setBackground(new java.awt.Color(202, 202, 202));
         txtId.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -123,6 +130,7 @@ public class Register extends javax.swing.JFrame {
                 txtIdFocusLost(evt);
             }
         });
+        jPanel3.add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(13, 15, 252, -1));
 
         txtFName.setBackground(new java.awt.Color(202, 202, 202));
         txtFName.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -138,15 +146,19 @@ public class Register extends javax.swing.JFrame {
                 txtFNameFocusLost(evt);
             }
         });
+        jPanel3.add(txtFName, new org.netbeans.lib.awtextra.AbsoluteConstraints(13, 60, 252, -1));
 
-        jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
-        jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
+        jSeparator7.setBackground(new java.awt.Color(0, 0, 0));
+        jSeparator7.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel3.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(13, 40, 252, 10));
 
         jSeparator2.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel3.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(13, 83, 252, 10));
 
         jSeparator3.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator3.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel3.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(13, 128, 252, 10));
 
         txtUser.setBackground(new java.awt.Color(202, 202, 202));
         txtUser.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -161,15 +173,19 @@ public class Register extends javax.swing.JFrame {
                 txtUserFocusLost(evt);
             }
         });
+        jPanel3.add(txtUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(13, 150, 252, -1));
 
         jSeparator4.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator4.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel3.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(13, 171, 252, 10));
 
         jSeparator5.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator5.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel3.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(13, 213, 252, 10));
 
         jSeparator6.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator6.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel3.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(13, 255, 252, 10));
 
         txtPass.setBackground(new java.awt.Color(202, 202, 202));
         txtPass.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -185,6 +201,7 @@ public class Register extends javax.swing.JFrame {
                 txtPassFocusLost(evt);
             }
         });
+        jPanel3.add(txtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(13, 190, 226, -1));
 
         txtConfirmPass.setBackground(new java.awt.Color(202, 202, 202));
         txtConfirmPass.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -200,6 +217,7 @@ public class Register extends javax.swing.JFrame {
                 txtConfirmPassFocusLost(evt);
             }
         });
+        jPanel3.add(txtConfirmPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(13, 229, 226, -1));
 
         eye_hide.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eye_hide.png"))); // NOI18N
         eye_hide.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -207,6 +225,7 @@ public class Register extends javax.swing.JFrame {
                 eye_hideMousePressed(evt);
             }
         });
+        jPanel3.add(eye_hide, new org.netbeans.lib.awtextra.AbsoluteConstraints(245, 187, -1, -1));
 
         eye.setForeground(new java.awt.Color(0, 0, 0));
         eye.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eye.png"))); // NOI18N
@@ -215,6 +234,7 @@ public class Register extends javax.swing.JFrame {
                 eyeMousePressed(evt);
             }
         });
+        jPanel3.add(eye, new org.netbeans.lib.awtextra.AbsoluteConstraints(245, 187, -1, -1));
 
         eye_hide2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eye_hide.png"))); // NOI18N
         eye_hide2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -222,6 +242,7 @@ public class Register extends javax.swing.JFrame {
                 eye_hide2MousePressed(evt);
             }
         });
+        jPanel3.add(eye_hide2, new org.netbeans.lib.awtextra.AbsoluteConstraints(245, 229, -1, -1));
 
         eye1.setForeground(new java.awt.Color(0, 0, 0));
         eye1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eye.png"))); // NOI18N
@@ -230,106 +251,9 @@ public class Register extends javax.swing.JFrame {
                 eye1MousePressed(evt);
             }
         });
+        jPanel3.add(eye1, new org.netbeans.lib.awtextra.AbsoluteConstraints(245, 229, -1, -1));
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap(13, Short.MAX_VALUE)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jSeparator1, javax.swing.GroupLayout.DEFAULT_SIZE, 252, Short.MAX_VALUE)
-                                .addComponent(txtUser)
-                                .addComponent(jSeparator4, javax.swing.GroupLayout.DEFAULT_SIZE, 252, Short.MAX_VALUE)
-                                .addComponent(txtLName)
-                                .addComponent(jSeparator3, javax.swing.GroupLayout.DEFAULT_SIZE, 252, Short.MAX_VALUE)
-                                .addComponent(txtFName)
-                                .addComponent(jSeparator2, javax.swing.GroupLayout.DEFAULT_SIZE, 252, Short.MAX_VALUE)
-                                .addComponent(txtId))
-                            .addGap(25, 25, 25))
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jSeparator5, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel3Layout.createSequentialGroup()
-                                        .addComponent(txtPass)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(eye)
-                                            .addComponent(eye_hide)))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
-                                        .addComponent(txtConfirmPass, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(eye_hide2)
-                                            .addComponent(eye1))))
-                                .addGap(25, 25, 25)))
-                        .addGroup(jPanel3Layout.createSequentialGroup()
-                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel3Layout.createSequentialGroup()
-                                    .addGap(22, 22, 22)
-                                    .addComponent(RegisterBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(jPanel3Layout.createSequentialGroup()
-                                    .addComponent(jLabel3)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(SignInBtn)))
-                            .addContainerGap()))))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(txtId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtFName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtLName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtUser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(4, 4, 4)
-                .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(txtPass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(eye)
-                        .addComponent(eye_hide)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtConfirmPass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(eye_hide2)
-                    .addComponent(eye1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel5)
-                        .addGap(122, 122, 122))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(RegisterBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
-                            .addComponent(SignInBtn))
-                        .addContainerGap(33, Short.MAX_VALUE))))
-        );
-
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 210, -1, -1));
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 210, -1, 380));
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel2.setText("BU MARKET");
@@ -574,12 +498,12 @@ public class Register extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
+    private javax.swing.JSeparator jSeparator7;
     private javax.swing.JPasswordField txtConfirmPass;
     private javax.swing.JTextField txtFName;
     private javax.swing.JTextField txtId;

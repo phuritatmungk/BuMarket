@@ -88,6 +88,7 @@ public class Forgot_Pass extends javax.swing.JFrame {
         });
 
         jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(119, 119, 119));
         jLabel9.setText("Back to ");
 
         SignInBtn.setBackground(new java.awt.Color(208, 204, 204));

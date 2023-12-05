@@ -129,6 +129,7 @@ public class Login extends javax.swing.JFrame {
         });
         jPanel6.add(ConfirmBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 192, 56));
 
+        jLabel3.setForeground(new java.awt.Color(119, 119, 119));
         jLabel3.setText("Don't have an Account ? ");
         jPanel6.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, -1, -1));
 

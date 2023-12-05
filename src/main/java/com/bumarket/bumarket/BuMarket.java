@@ -11,6 +11,6 @@ package com.bumarket.bumarket;
 public class BuMarket {
 
     public static void main(String[] args) {
-        new Login().setVisible(true);
+        new Loading().setVisible(true);
     }
 }
