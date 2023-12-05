@@ -6,6 +6,8 @@ package com.bumarket.bumarket;
 
 import java.io.*;
 import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.*;
 
 /**
@@ -16,9 +18,6 @@ public class Forgot_Pass extends javax.swing.JFrame {
     
     private final UserData userdata;
 
-    /**
-     * Creates new form Forget_Pwd
-     */
     public Forgot_Pass() {
         initComponents();
         userdata = new UserData();

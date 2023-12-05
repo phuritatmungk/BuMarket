@@ -10,12 +10,6 @@ Fullname: setthaphong
 Lastname: sukserm
 Password: sethnew
 ---
-Student ID: 1650703034
-Username: sethnew
-Fullname: setthaphong
-Email: sukserm
-Password: sethnew
----
 Student ID: 234
 Username: 1234
 Fullname: sadad
