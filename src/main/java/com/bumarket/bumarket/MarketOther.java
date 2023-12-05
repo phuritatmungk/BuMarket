@@ -80,7 +80,7 @@ public class MarketOther extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel2.setText("ลวดเย็บ แม็กซ์ 35-5M");
         jPanel2.add(jLabel2);
-        jLabel2.setBounds(455, 34, 241, 40);
+        jLabel2.setBounds(455, 34, 242, 40);
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -123,7 +123,7 @@ public class MarketOther extends javax.swing.JFrame {
         btnAddtocart.setText("หยิบใส่ตระกร้า");
         btnAddtocart.setContentAreaFilled(false);
         jPanel2.add(btnAddtocart);
-        btnAddtocart.setBounds(455, 400, 137, 40);
+        btnAddtocart.setBounds(455, 400, 138, 40);
 
         btnBuy.setBackground(new java.awt.Color(204, 0, 0));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
