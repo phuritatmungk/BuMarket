@@ -93,7 +93,7 @@ public class CategoryFood extends javax.swing.JFrame {
         jPanel2.add(btnPencil, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, -1, -1));
 
         btnBook.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnBook.setIcon(new javax.swing.ImageIcon(getClass().getResource("/book.png"))); // NOI18N
+        btnBook.setIcon(new javax.swing.ImageIcon(getClass().getResource("/waterIcon.png"))); // NOI18N
         btnBook.setText("เครื่องดื่ม");
         btnBook.setContentAreaFilled(false);
         btnBook.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
