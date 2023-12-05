@@ -37,65 +37,31 @@ public class Loading extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Loadbar.setBackground(new java.awt.Color(255, 255, 255));
+        Loadbar.setForeground(new java.awt.Color(153, 153, 153));
         getContentPane().add(Loadbar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 710, 1280, 10));
 
         Loadvalue.setBackground(new java.awt.Color(255, 255, 255));
         Loadvalue.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        Loadvalue.setForeground(new java.awt.Color(255, 255, 255));
         Loadvalue.setText("0%");
-        getContentPane().add(Loadvalue, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 680, 40, -1));
+        getContentPane().add(Loadvalue, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 690, 40, -1));
 
         loadlabel.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         loadlabel.setForeground(new java.awt.Color(255, 255, 255));
         loadlabel.setText("Loading....");
-        getContentPane().add(loadlabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 680, -1, -1));
+        getContentPane().add(loadlabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 690, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Download.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        Loading load = new Loading();
-        load.setVisible(true);
-        Login login = new Login();
-        try 
-            {
-                for(int i=0;i<=100;i++){
-                   Thread.sleep(100);
-                   load.Loadvalue.setText(i +"%");
-                   
-                   if(i==10)
-                   {
-                        load.loadlabel.setText ("Turning 0n Modulea...");
-                   }
-                   if(i==20)
-                   {
-                       load.loadlabel.setText ("loading Modules...");
-                   }
-                   if(i==50)
-                   {
-                       load.loadlabel.setText ("Connecting to Database...");
-                   }
-
-                   if (1==70){
-                       load.loadlabel.setText("Connection Successful !");
-                   }
-                   if(i==80){
-                       load.loadlabel.setText ("Launching Webpage...");
-                   }
-                   load.Loadbar.setValue(i);
-                }
-            } catch (Exception e){
-                JOptionPane.showMessageDialog(null, e);
-            }
-            load.setVisible(false);
-            login.setVisible(true);
-            load.dispose();
-            
+    public static void main(String args[]) {      
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
