@@ -99,9 +99,9 @@ public class Loading extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JProgressBar Loadbar;
-    private javax.swing.JLabel Loadvalue;
+    public static javax.swing.JProgressBar Loadbar;
+    public static javax.swing.JLabel Loadvalue;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel loadlabel;
+    public static javax.swing.JLabel loadlabel;
     // End of variables declaration//GEN-END:variables
 }
