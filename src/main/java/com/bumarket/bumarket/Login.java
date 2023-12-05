@@ -307,11 +307,11 @@ public class Login extends javax.swing.JFrame {
         boolean userExist = false;
         try {
             if(username.equals("Username") || password.equals("Password")) {
-                JOptionPane.showMessageDialog(this, "One or Both fields are Empty", "Warning", JOptionPane.WARNING_MESSAGE);
+                JOptionPane.showMessageDialog(this, "One or Both fields are Empty", "Info", JOptionPane.INFORMATION_MESSAGE);
             }
             else { 
                 for(String uname: usernameANDpassword.keySet()) {
-                    JOptionPane.showMessageDialog(this, "Wrong Username or Password", "Error", JOptionPane.ERROR_MESSAGE);
+                    System.out.println(uname);
                     if(uname.equals(username)) {
                         if(usernameANDpassword.get(uname).equals(password)) {
                             userExist = true;
@@ -323,7 +323,7 @@ public class Login extends javax.swing.JFrame {
                         }
                     }
                 if(userExist == false) {
-                    System.out.println("This User doesn't exist");
+                    JOptionPane.showMessageDialog(this, "Wrong Username or Password!", "Error", JOptionPane.ERROR_MESSAGE);
                 }
             }
         } catch (Exception e) {
