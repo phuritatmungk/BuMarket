@@ -4,19 +4,24 @@
  */
 package com.bumarket.bumarket;
 
-import javax.swing.JOptionPane;
+import javax.swing.*;
 
 /**
  *
  * @author chait
  */
 public class Forget_Pwd extends javax.swing.JFrame {
+    
+    private final UserData userdata;
 
     /**
      * Creates new form Forget_Pwd
      */
     public Forget_Pwd() {
         initComponents();
+        userdata = new UserData();
+        eye_hide.setVisible(false);
+        eye_hide1.setVisible(false);
     }
 
     /**
@@ -33,13 +38,17 @@ public class Forget_Pwd extends javax.swing.JFrame {
         ConfirmBtn3 = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
         SignInBtn3 = new javax.swing.JButton();
-        txtConfirmPwd3 = new javax.swing.JTextField();
         txtUser3 = new javax.swing.JTextField();
-        txtNewPwd3 = new javax.swing.JTextField();
         jSeparator13 = new javax.swing.JSeparator();
         jSeparator14 = new javax.swing.JSeparator();
         jSeparator15 = new javax.swing.JSeparator();
         jSeparator16 = new javax.swing.JSeparator();
+        txtPass = new javax.swing.JPasswordField();
+        txtNewPass = new javax.swing.JPasswordField();
+        eye_hide = new javax.swing.JLabel();
+        eye = new javax.swing.JLabel();
+        eye_hide1 = new javax.swing.JLabel();
+        eye1 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
@@ -58,14 +67,12 @@ public class Forget_Pwd extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
-        setPreferredSize(new java.awt.Dimension(1280, 720));
         setResizable(false);
         setSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel6.setBackground(new java.awt.Color(202, 202, 202));
         jPanel6.setForeground(new java.awt.Color(51, 51, 51));
-        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         ConfirmBtn3.setBackground(new java.awt.Color(0, 0, 0));
         ConfirmBtn3.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
@@ -77,11 +84,9 @@ public class Forget_Pwd extends javax.swing.JFrame {
                 ConfirmBtnMouseClicked(evt);
             }
         });
-        jPanel6.add(ConfirmBtn3, new org.netbeans.lib.awtextra.AbsoluteConstraints(48, 187, 192, 56));
 
         jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel9.setText("Back to ");
-        jPanel6.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(13, 150, -1, -1));
 
         SignInBtn3.setBackground(new java.awt.Color(208, 204, 204));
         SignInBtn3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
@@ -98,14 +103,6 @@ public class Forget_Pwd extends javax.swing.JFrame {
                 SignInBtn3ActionPerformed(evt);
             }
         });
-        jPanel6.add(SignInBtn3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, -1, -1));
-
-        txtConfirmPwd3.setBackground(new java.awt.Color(202, 202, 202));
-        txtConfirmPwd3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        txtConfirmPwd3.setForeground(new java.awt.Color(119, 119, 119));
-        txtConfirmPwd3.setText("Comfirm Password");
-        txtConfirmPwd3.setBorder(null);
-        jPanel6.add(txtConfirmPwd3, new org.netbeans.lib.awtextra.AbsoluteConstraints(13, 107, 271, -1));
 
         txtUser3.setBackground(new java.awt.Color(202, 202, 202));
         txtUser3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -113,27 +110,156 @@ public class Forget_Pwd extends javax.swing.JFrame {
         txtUser3.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         txtUser3.setText("Username");
         txtUser3.setBorder(null);
-        jPanel6.add(txtUser3, new org.netbeans.lib.awtextra.AbsoluteConstraints(13, 17, 271, -1));
-
-        txtNewPwd3.setBackground(new java.awt.Color(202, 202, 202));
-        txtNewPwd3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        txtNewPwd3.setForeground(new java.awt.Color(119, 119, 119));
-        txtNewPwd3.setText("New Password");
-        txtNewPwd3.setBorder(null);
-        jPanel6.add(txtNewPwd3, new org.netbeans.lib.awtextra.AbsoluteConstraints(13, 62, 265, -1));
+        txtUser3.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtUser3FocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtUser3FocusLost(evt);
+            }
+        });
 
         jSeparator13.setForeground(new java.awt.Color(0, 0, 0));
         jSeparator13.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
-        jPanel6.add(jSeparator13, new org.netbeans.lib.awtextra.AbsoluteConstraints(13, 130, 252, 10));
 
         jSeparator14.setForeground(new java.awt.Color(0, 0, 0));
         jSeparator14.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
-        jPanel6.add(jSeparator14, new org.netbeans.lib.awtextra.AbsoluteConstraints(13, 85, 252, 10));
 
         jSeparator15.setForeground(new java.awt.Color(0, 0, 0));
         jSeparator15.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
-        jPanel6.add(jSeparator15, new org.netbeans.lib.awtextra.AbsoluteConstraints(13, 40, 252, 10));
-        jPanel6.add(jSeparator16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 0));
+
+        txtPass.setBackground(new java.awt.Color(202, 202, 202));
+        txtPass.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        txtPass.setForeground(new java.awt.Color(119, 119, 119));
+        txtPass.setText("Current Password");
+        txtPass.setBorder(null);
+        txtPass.setEchoChar('\u0000');
+        txtPass.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtPassFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtPassFocusLost(evt);
+            }
+        });
+
+        txtNewPass.setBackground(new java.awt.Color(202, 202, 202));
+        txtNewPass.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        txtNewPass.setForeground(new java.awt.Color(119, 119, 119));
+        txtNewPass.setText("New Password");
+        txtNewPass.setBorder(null);
+        txtNewPass.setEchoChar('\u0000');
+        txtNewPass.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtNewPassFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtNewPassFocusLost(evt);
+            }
+        });
+
+        eye_hide.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eye_hide.png"))); // NOI18N
+        eye_hide.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                eye_hideMousePressed(evt);
+            }
+        });
+
+        eye.setForeground(new java.awt.Color(0, 0, 0));
+        eye.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eye.png"))); // NOI18N
+        eye.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                eyeMousePressed(evt);
+            }
+        });
+
+        eye_hide1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eye_hide.png"))); // NOI18N
+        eye_hide1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                eye_hide1MousePressed(evt);
+            }
+        });
+
+        eye1.setForeground(new java.awt.Color(0, 0, 0));
+        eye1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eye.png"))); // NOI18N
+        eye1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                eye1MousePressed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jSeparator16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(13, 13, 13)
+                        .addComponent(jSeparator14, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(13, 13, 13)
+                        .addComponent(jLabel9)
+                        .addGap(6, 6, 6)
+                        .addComponent(SignInBtn3))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(48, 48, 48)
+                        .addComponent(ConfirmBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(13, 13, 13)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jSeparator13, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addComponent(txtNewPass, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(eye1)
+                                    .addComponent(eye_hide1)))))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(13, 13, 13)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel6Layout.createSequentialGroup()
+                                .addComponent(txtPass, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(eye)
+                                    .addComponent(eye_hide)))
+                            .addComponent(jSeparator15, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtUser3, javax.swing.GroupLayout.Alignment.LEADING))))
+                .addContainerGap(25, Short.MAX_VALUE))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addComponent(jSeparator16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14)
+                .addComponent(txtUser3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addComponent(jSeparator15, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(txtPass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(7, 7, 7)
+                        .addComponent(jSeparator14, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(eye)
+                    .addComponent(eye_hide))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(txtNewPass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(7, 7, 7)
+                        .addComponent(jSeparator13, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel9)
+                            .addComponent(SignInBtn3))
+                        .addGap(20, 20, 20)
+                        .addComponent(ConfirmBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(eye1)
+                    .addComponent(eye_hide1)))
+        );
 
         getContentPane().add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 240, 290, 300));
 
@@ -155,6 +281,7 @@ public class Forget_Pwd extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    
     private void SignInBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SignInBtnMouseClicked
         // TODO add your handling code here:
         new Login().setVisible(true);
@@ -162,13 +289,100 @@ public class Forget_Pwd extends javax.swing.JFrame {
     }//GEN-LAST:event_SignInBtnMouseClicked
 
     private void ConfirmBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ConfirmBtnMouseClicked
-        // TODO add your handling code here:
-        JOptionPane.showMessageDialog(null, "Password has been changed.");
+        userdata.getUsers();
+        String username = txtUser3.getText().trim();
+        String password = String.valueOf(txtPass.getPassword()).trim();
+        String newpass = String.valueOf(txtNewPass.getPassword()).trim();
+        boolean userExist = false;
+        try {
+            if(username.equals("Username") || password.equals("Current Password") || newpass.equals("New Password")) {
+                JOptionPane.showMessageDialog(this, "One or Both fields are Empty", "Info", JOptionPane.INFORMATION_MESSAGE);
+            }
+            else { 
+                for(String uname: userdata.usernameANDpassword.keySet()) {
+                    System.out.println(uname);
+                    if(uname.equals(username)) {
+                        if(userdata.usernameANDpassword.get(uname).equals(password)) {
+                            userExist = true;
+                            System.out.println("Password Has Been Changed");
+                            new Login().setVisible(true);
+                            this.dispose();
+                            break;
+                            }
+                        }
+                    }
+                if(userExist == false) {
+                    JOptionPane.showMessageDialog(this, "Wrong Username or Password!", "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("Failed to Change Password");
+        }
     }//GEN-LAST:event_ConfirmBtnMouseClicked
 
     private void SignInBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignInBtn3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_SignInBtn3ActionPerformed
+
+    private void eye_hideMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eye_hideMousePressed
+        eye.setVisible(true);
+        eye_hide.setVisible(false);
+        txtPass.setEchoChar((char)0);
+    }//GEN-LAST:event_eye_hideMousePressed
+
+    private void eyeMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eyeMousePressed
+        eye.setVisible(false);
+        eye_hide.setVisible(true);
+        txtPass.setEchoChar('*');
+    }//GEN-LAST:event_eyeMousePressed
+
+    private void eye_hide1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eye_hide1MousePressed
+        eye1.setVisible(true);
+        eye_hide1.setVisible(false);
+        txtNewPass.setEchoChar((char)0);
+    }//GEN-LAST:event_eye_hide1MousePressed
+
+    private void eye1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eye1MousePressed
+        eye1.setVisible(false);
+        eye_hide1.setVisible(true);
+        txtNewPass.setEchoChar('*');
+    }//GEN-LAST:event_eye1MousePressed
+
+    private void txtUser3FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtUser3FocusLost
+        if (txtUser3.getText().length()==0)
+            txtUser3.setText("Username");
+    }//GEN-LAST:event_txtUser3FocusLost
+
+    private void txtPassFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtPassFocusLost
+        if (txtPass.getText().length()==0)
+            txtPass.setText("Current Password");
+    }//GEN-LAST:event_txtPassFocusLost
+
+    private void txtNewPassFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtNewPassFocusLost
+        if (txtNewPass.getText().length()==0)
+            txtNewPass.setText("New Password");
+    }//GEN-LAST:event_txtNewPassFocusLost
+
+    private void txtPassFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtPassFocusGained
+        if(txtPass.getText().equals("Current Password"))
+       {
+           txtPass.setText("");
+       }
+    }//GEN-LAST:event_txtPassFocusGained
+
+    private void txtUser3FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtUser3FocusGained
+        if(txtUser3.getText().equals("Username"))
+       {
+           txtUser3.setText("");
+       }
+    }//GEN-LAST:event_txtUser3FocusGained
+
+    private void txtNewPassFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtNewPassFocusGained
+        if(txtNewPass.getText().equals("New Password"))
+       {
+           txtNewPass.setText("");
+       }
+    }//GEN-LAST:event_txtNewPassFocusGained
 
     /**
      * @param args the command line arguments
@@ -206,56 +420,25 @@ public class Forget_Pwd extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton ConfirmBtn;
-    private javax.swing.JButton ConfirmBtn1;
-    private javax.swing.JButton ConfirmBtn2;
     private javax.swing.JButton ConfirmBtn3;
-    private javax.swing.JButton SignInBtn;
-    private javax.swing.JButton SignInBtn1;
-    private javax.swing.JButton SignInBtn2;
     private javax.swing.JButton SignInBtn3;
+    private javax.swing.JLabel eye;
+    private javax.swing.JLabel eye1;
+    private javax.swing.JLabel eye_hide;
+    private javax.swing.JLabel eye_hide1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
-    private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator10;
-    private javax.swing.JSeparator jSeparator11;
-    private javax.swing.JSeparator jSeparator12;
     private javax.swing.JSeparator jSeparator13;
     private javax.swing.JSeparator jSeparator14;
     private javax.swing.JSeparator jSeparator15;
     private javax.swing.JSeparator jSeparator16;
-    private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JSeparator jSeparator3;
-    private javax.swing.JSeparator jSeparator4;
-    private javax.swing.JSeparator jSeparator5;
-    private javax.swing.JSeparator jSeparator6;
-    private javax.swing.JSeparator jSeparator7;
-    private javax.swing.JSeparator jSeparator8;
-    private javax.swing.JSeparator jSeparator9;
-    private javax.swing.JTextField txtConfirmPwd;
-    private javax.swing.JTextField txtConfirmPwd1;
-    private javax.swing.JTextField txtConfirmPwd2;
-    private javax.swing.JTextField txtConfirmPwd3;
-    private javax.swing.JTextField txtNewPwd;
-    private javax.swing.JTextField txtNewPwd1;
-    private javax.swing.JTextField txtNewPwd2;
-    private javax.swing.JTextField txtNewPwd3;
-    private javax.swing.JTextField txtUser;
-    private javax.swing.JTextField txtUser1;
-    private javax.swing.JTextField txtUser2;
+    private javax.swing.JPasswordField txtNewPass;
+    private javax.swing.JPasswordField txtPass;
     private javax.swing.JTextField txtUser3;
     // End of variables declaration//GEN-END:variables
 }
