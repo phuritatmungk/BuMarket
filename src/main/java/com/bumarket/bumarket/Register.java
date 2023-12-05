@@ -15,9 +15,9 @@ import javax.swing.*;
  */
 public class Register extends javax.swing.JFrame {
     
-    private UserData userdata;
     Map<String, String> usernameANDpassword = new HashMap<>();
     ArrayList<String> all_usernames = new ArrayList<>();
+    ArrayList<String> all_userid = new ArrayList<>();
     
     
     /**
@@ -257,6 +257,7 @@ public class Register extends javax.swing.JFrame {
         File file = new File("account.txt");
         String username = "";
         String password = "";
+        String userid = "";
         
         try {
             
@@ -283,6 +284,10 @@ public class Register extends javax.swing.JFrame {
                     // if it's the password field we will get the password
                     password = row[1];
                 }
+                else if(row[0].equals("Student ID")) {
+                    userid = row[1];
+                    all_userid.add(userid);
+                }
                 if(!username.equals("") && !password.equals(""))
                 {
                     // add the username and the password to the hashmap
@@ -296,15 +301,26 @@ public class Register extends javax.swing.JFrame {
     }
     
     public boolean checkIfUsernameExist(String un) {
-    boolean exist = false;
-        
-    for(String username: all_usernames) {
-        if(username.equals(un))
-        {
-            exist = true;
+        boolean exist = false;
+
+        for(String username: all_usernames) {
+            if(username.equals(un))
+            {
+                exist = true;
+            }
         }
+        return exist;
     }
-    return exist;
+    
+    public boolean checkIfUseridExist(String uid) {
+        boolean exist = false;
+        
+        for(String userid: all_userid) {
+            if(userid.equals(uid)) {
+                exist = true;
+            }
+        }
+        return exist;
     }
     
     private void RegisterBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RegisterBtnMouseClicked
@@ -336,41 +352,43 @@ public class Register extends javax.swing.JFrame {
                 if(password.equals(confirm_pwd))
                 {
                     // check if the username already exist
-                    if(!checkIfUsernameExist(username))
+                    getUsers();
+                    if(!checkIfUseridExist(id))
                     {
-                        fw.write("Student ID: " + id);
-                        fw.write(System.getProperty("line.separator"));
-                        fw.write("Username: " + username);
-                        fw.write(System.getProperty("line.separator"));
-                        fw.write("Fullname: " + fname);
-                        fw.write(System.getProperty("line.separator"));
-                        fw.write("Email: " + lname);
-                        fw.write(System.getProperty("line.separator"));
-                        fw.write("Password: " + password);
-                        fw.write(System.getProperty("line.separator"));
-                        fw.write("---");
-                        fw.write(System.getProperty("line.separator"));
-                        fw.close(); 
-                        // populate the array and hashmap
-                        getUsers();
-                        
+                        if(!checkIfUsernameExist(username)) {
+                            fw.write("Student ID: " + id);
+                            fw.write(System.getProperty("line.separator"));
+                            fw.write("Username: " + username);
+                            fw.write(System.getProperty("line.separator"));
+                            fw.write("Fullname: " + fname);
+                            fw.write(System.getProperty("line.separator"));
+                            fw.write("Lastname: " + lname);
+                            fw.write(System.getProperty("line.separator"));
+                            fw.write("Password: " + password);
+                            fw.write(System.getProperty("line.separator"));
+                            fw.write("---");
+                            fw.write(System.getProperty("line.separator"));
+                            fw.close(); 
+                            // populate the array and hashmap
+                            
+                            JOptionPane.showMessageDialog(this, "Register Successfully", "Info", JOptionPane.INFORMATION_MESSAGE);
+                            new Login().setVisible(true);
+                            this.dispose();
+                        }
+                        else {
+                            JOptionPane.showMessageDialog(this, "This Username Already Exist, Try Another One", "Error", JOptionPane.ERROR_MESSAGE);
+                        }
                     }
                     else
                     {
-                       System.out.println("This Username Already Exist, Try Another One");  
+                       JOptionPane.showMessageDialog(this, "This Student Id Already Exist", "Error", JOptionPane.ERROR_MESSAGE);
                     }
-
                 }
                 else
                 {
                     System.out.println("Password Confirmation Error");
                 }
             }
-                                                 
-            JOptionPane.showMessageDialog(this, "Register Successfully", "Info", JOptionPane.INFORMATION_MESSAGE);
-            
-            new Login().setVisible(true);
-            this.dispose();
         } catch (HeadlessException e) {
             JOptionPane.showMessageDialog(this, "Failed to Register", "Error", JOptionPane.ERROR_MESSAGE);
         } catch (IOException ex) {
