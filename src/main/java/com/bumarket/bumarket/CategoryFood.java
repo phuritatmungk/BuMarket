@@ -347,7 +347,7 @@ public class CategoryFood extends javax.swing.JFrame {
     }//GEN-LAST:event_btnOtherActionPerformed
 
     private void btnProduct1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct1MouseClicked
-        new MarketPencil1().setVisible(true);
+        new MarketPen1().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnProduct1MouseClicked
 
