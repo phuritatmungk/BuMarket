@@ -61,6 +61,9 @@ public class Shoppingcart extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton3 = new javax.swing.JButton();
+        Total = new javax.swing.JLabel();
+        List = new javax.swing.JLabel();
+        jSeparator12 = new javax.swing.JSeparator();
         jSeparator11 = new javax.swing.JSeparator();
         jScrollPane1 = new javax.swing.JScrollPane();
         Table = new javax.swing.JTable();
@@ -69,7 +72,6 @@ public class Shoppingcart extends javax.swing.JFrame {
         Backbutton = new javax.swing.JButton();
         BuyButton = new javax.swing.JButton();
         PayButton = new javax.swing.JButton();
-        jLabel18 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
@@ -99,6 +101,25 @@ public class Shoppingcart extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Total.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        Total.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        Total.setText("100");
+        Total.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        Total.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(Total, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 340, 80, -1));
+
+        List.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        List.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        List.setText("3 รายการ");
+        List.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        List.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(List, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 285, 80, -1));
+
+        jSeparator12.setForeground(new java.awt.Color(0, 0, 0));
+        jSeparator12.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jSeparator12.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        getContentPane().add(jSeparator12, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 280, 10, 20));
 
         jSeparator11.setForeground(new java.awt.Color(0, 0, 0));
         jSeparator11.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -156,7 +177,7 @@ public class Shoppingcart extends javax.swing.JFrame {
         BuyButton.setText("เลือกซื้อสินค้า");
         BuyButton.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         BuyButton.setContentAreaFilled(false);
-        getContentPane().add(BuyButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 470, 240, 30));
+        getContentPane().add(BuyButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 420, 240, 30));
 
         PayButton.setBackground(new java.awt.Color(255, 51, 51));
         PayButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -167,34 +188,30 @@ public class Shoppingcart extends javax.swing.JFrame {
                 PayButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(PayButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 430, 240, -1));
-
-        jLabel18.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel18.setText("ราคารวมทั้งหมด");
-        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 390, -1, -1));
+        getContentPane().add(PayButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 380, 240, -1));
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel17.setText("ยอดรวม");
-        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 365, -1, -1));
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 340, -1, -1));
 
         jLabel16.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel16.setText("สรุปคำสั่งซื้อ");
-        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 310, -1, -1));
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 280, -1, -1));
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel12.setText("รวมมูลค่าสินค้า");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 340, -1, -1));
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 310, -1, -1));
 
         jLabel19.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 300, 240, 120));
+        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 270, 240, 100));
 
         Historybutton.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         Historybutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
         Historybutton.setText("  ประวัติการสั่งซื้อ");
-        Historybutton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        Historybutton.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Historybutton.setContentAreaFilled(false);
         Historybutton.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        getContentPane().add(Historybutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 220, 240, 50));
+        getContentPane().add(Historybutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 210, 240, 50));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel9.setText("ตระกร้า");
@@ -285,15 +302,16 @@ public class Shoppingcart extends javax.swing.JFrame {
     private javax.swing.JButton Cartbutton;
     private javax.swing.JButton ExitButton;
     private javax.swing.JButton Historybutton;
+    private javax.swing.JLabel List;
     private javax.swing.JButton PayButton;
     private javax.swing.JTable Table;
+    private javax.swing.JLabel Total;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
@@ -303,6 +321,7 @@ public class Shoppingcart extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator11;
+    private javax.swing.JSeparator jSeparator12;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
