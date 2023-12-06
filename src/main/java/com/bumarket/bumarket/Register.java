@@ -298,7 +298,7 @@ public class Register extends javax.swing.JFrame {
             // we need to check if the username already exist
           
             // check if the textfields are empty
-            if( username.equals("Username") || password.equals("Password") || fname.equals("First Name") || lname.equals("Last Name") || id.equals("Student ID"))
+            if(username.equals("Username") || password.equals("Password") || fname.equals("First Name") || lname.equals("Last Name") || id.equals("Student ID"))
             {
                 JOptionPane.showMessageDialog(this, "One or Both fields are empty", "Warning", JOptionPane.WARNING_MESSAGE);
             }
