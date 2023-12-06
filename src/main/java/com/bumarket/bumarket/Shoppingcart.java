@@ -4,6 +4,13 @@
  */
 package com.bumarket.bumarket;
 
+import java.awt.Component;
+import java.text.DecimalFormat;
+import javax.swing.JTable;
+import javax.swing.SwingConstants;
+import javax.swing.table.DefaultTableCellRenderer;
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author pongs
@@ -17,10 +24,37 @@ public class Shoppingcart extends javax.swing.JFrame {
     }
     
     private void Shoppingcart_Data() {
-        Product pd = (Product) Table.getModel();
+        Table.getColumnModel().getColumn(3).setCellEditor(new QtyCellEdit(new EventCellInputChange(){
+            @Override
+            public void inputChanged() {
+                sumAmount();
+            }
+        }));
+        Table.getColumnModel().getColumn(3).setCellRenderer(new DefaultTableCellRenderer() {
+            @Override
+            public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
+                super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
+                setHorizontalAlignment(SwingConstants.CENTER);
+                return this;
+            }
+        });
+        DefaultTableModel pd = (DefaultTableModel) Table.getModel();
+        pd.addRow(new Product("Kuy",11225, 2, 100, 10).toTableRow(Table.getRowCount() + 1));
+        pd.addRow(new Product("Kuy",11225, 2, 100, 10).toTableRow(Table.getRowCount() + 1));
+        pd.addRow(new Product("Kuy",11225, 2, 100, 10).toTableRow(Table.getRowCount() + 1));
+        pd.addRow(new Product("Kuy",11225, 2, 100, 10).toTableRow(Table.getRowCount() + 1));
         pd.addRow(new Product("Kuy",11225, 2, 100, 10).toTableRow(Table.getRowCount() + 1));
         
     } 
+    
+     private void sumAmount() {
+        int total = 0;
+        for (int i = 0; i < Table.getRowCount(); i++) {
+            Product item = (Product) Table.getValueAt(i, 0);
+            total += item.getTotal();
+        }
+        DecimalFormat df = new DecimalFormat("$ #,##0.00");
+    }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -77,11 +111,11 @@ public class Shoppingcart extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Product", "ID Product", "Quantity", "Total", "Point"
+                "Data", "Product", "ID Product", "Quantity", "Total", "Point"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false
+                false, false, false, true, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -91,13 +125,17 @@ public class Shoppingcart extends javax.swing.JFrame {
         Table.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(Table);
         if (Table.getColumnModel().getColumnCount() > 0) {
-            Table.getColumnModel().getColumn(0).setResizable(false);
+            Table.getColumnModel().getColumn(0).setMinWidth(0);
+            Table.getColumnModel().getColumn(0).setPreferredWidth(0);
+            Table.getColumnModel().getColumn(0).setMaxWidth(0);
             Table.getColumnModel().getColumn(1).setResizable(false);
             Table.getColumnModel().getColumn(2).setResizable(false);
-            Table.getColumnModel().getColumn(2).setPreferredWidth(5);
+            Table.getColumnModel().getColumn(2).setPreferredWidth(30);
             Table.getColumnModel().getColumn(3).setResizable(false);
+            Table.getColumnModel().getColumn(3).setPreferredWidth(5);
             Table.getColumnModel().getColumn(4).setResizable(false);
-            Table.getColumnModel().getColumn(4).setPreferredWidth(5);
+            Table.getColumnModel().getColumn(5).setResizable(false);
+            Table.getColumnModel().getColumn(5).setPreferredWidth(5);
         }
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 210, 660, 420));

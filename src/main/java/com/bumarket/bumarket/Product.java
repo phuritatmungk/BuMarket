@@ -15,6 +15,12 @@ public class Product {
     /**
      * @return the product
      */
+    private String product;
+    private int productID;
+    private int qty;
+    private double total;
+    private int point;
+    
     public String getProduct() {
         return product;
     }
@@ -90,19 +96,9 @@ public class Product {
         this.point = point;
     }
     
-    public Product(){
-        
-    }
-    
-    private String product;
-    private int productID;
-    private int qty;
-    private double total;
-    private int point;
-    
     public Object[] toTableRow(int rowNum){
-        DecimalFormat df = new DecimalFormat("#,##0.##");
-        return new Object[]{this,df.format(rowNum),product,df.format(qty),"$"+df.format(total),"$ "};
+        DecimalFormat df = new DecimalFormat("###0.##");
+        return new Object[]{this,product, df.format(productID), df.format(qty), "$"+df.format(total), df.format(point)};
     }
     
 }
