@@ -43,11 +43,6 @@ private void Shoppingcart_Data() {
             }
         });
         DefaultTableModel pd = (DefaultTableModel) Table.getModel();
-        pd.addRow(new Product("Kuy",11225, 2, 100, 10).toTableRow(Table.getRowCount() + 1));
-        pd.addRow(new Product("Kuy",11225, 2, 100, 10).toTableRow(Table.getRowCount() + 1));
-        pd.addRow(new Product("Kuy",11225, 2, 100, 10).toTableRow(Table.getRowCount() + 1));
-        pd.addRow(new Product("Kuy",11225, 2, 100, 10).toTableRow(Table.getRowCount() + 1));
-        pd.addRow(new Product("Kuy",11225, 2, 100, 10).toTableRow(Table.getRowCount() + 1));
         
     } 
     

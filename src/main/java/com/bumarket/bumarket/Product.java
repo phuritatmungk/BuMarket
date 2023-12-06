@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.bumarket.bumarket;
 
 import java.text.DecimalFormat;
@@ -11,15 +7,31 @@ import java.text.DecimalFormat;
  * @author pongs
  */
 public class Product {
-
-    /**
-     * @return the product
-     */
+    
     private String product;
     private int productID;
     private int qty;
     private double total;
     private int point;
+    private double price;
+
+    /**
+     * @return the price
+     */
+    public double getPrice() {
+        return price;
+    }
+
+    /**
+     * @param price the price to set
+     */
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    /**
+     * @return the product
+     */
     
     public String getProduct() {
         return product;
@@ -88,17 +100,18 @@ public class Product {
         this.point = point;
     }
     
-    public Product(String product, int productID, int qty, double total, int point){
+    public Product(String product, int productID, int qty,double price, double total, int point){
         this.product = product;
         this.productID = productID;
         this.qty = qty;
+        this.price = price;
         this.total = total;
         this.point = point;
     }
     
     public Object[] toTableRow(int rowNum){
         DecimalFormat df = new DecimalFormat("###0.##");
-        return new Object[]{this,product, df.format(productID), df.format(qty), "$"+df.format(total), df.format(point)};
+        return new Object[]{this,product, df.format(productID), df.format(qty), "$"+df.format(price),"$"+df.format(total), df.format(point)};
     }
     
 }

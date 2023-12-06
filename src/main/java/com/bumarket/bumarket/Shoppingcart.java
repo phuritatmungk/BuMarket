@@ -10,6 +10,7 @@ import java.io.ObjectInputStream;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableCellRenderer;
@@ -107,6 +108,7 @@ public class Shoppingcart extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        DeleteBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(1280, 720));
@@ -294,6 +296,14 @@ public class Shoppingcart extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, -1, -1));
 
+        DeleteBtn.setText("Delete");
+        DeleteBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                DeleteBtnMouseClicked(evt);
+            }
+        });
+        getContentPane().add(DeleteBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 160, -1, -1));
+
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
@@ -339,6 +349,20 @@ public class Shoppingcart extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton1MouseClicked
 
+    private void DeleteBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DeleteBtnMouseClicked
+        DefaultTableModel model = (DefaultTableModel) Table.getModel();
+        if(Table.getSelectedRowCount() ==1){
+            model.removeRow(Table.getSelectedRow());
+        }else{
+            if (Table.getRowCount()==0){
+
+            }else{
+                JOptionPane.showMessageDialog(this, "Please select Single Row For Delete");
+            }
+
+        }
+    }//GEN-LAST:event_DeleteBtnMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -379,6 +403,7 @@ public class Shoppingcart extends javax.swing.JFrame {
     private javax.swing.JButton Backbutton;
     private javax.swing.JButton BuyButton;
     private javax.swing.JButton Cartbutton;
+    private javax.swing.JButton DeleteBtn;
     private javax.swing.JButton ExitButton;
     private javax.swing.JButton Historybutton;
     private javax.swing.JLabel List;

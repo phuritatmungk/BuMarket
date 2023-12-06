@@ -75,8 +75,9 @@ public class QtyCellEdit extends DefaultCellEditor {
         if (qty != item.getQty()) {
             DecimalFormat df = new DecimalFormat("###0.##");
             item.setQty(qty);
-            item.setTotal(item.getTotal()* qty);
+            item.setTotal(item.getPrice()* qty);
             table.setValueAt("$ " + df.format(item.getTotal()), row, 5);
+
             event.inputChanged();
         }
     }
