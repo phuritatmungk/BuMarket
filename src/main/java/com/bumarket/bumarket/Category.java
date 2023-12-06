@@ -30,10 +30,6 @@ public class Category extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jSeparator5 = new javax.swing.JSeparator();
         jSeparator6 = new javax.swing.JSeparator();
-        btnPencil = new javax.swing.JButton();
-        btnBook = new javax.swing.JButton();
-        btnPen = new javax.swing.JButton();
-        btnOther = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -62,6 +58,12 @@ public class Category extends javax.swing.JFrame {
         txtProduct9 = new javax.swing.JLabel();
         txtProduct10 = new javax.swing.JLabel();
         btnProduct2 = new javax.swing.JButton();
+        txtProduct11 = new javax.swing.JLabel();
+        btnProduct4 = new javax.swing.JButton();
+        btnPencil = new javax.swing.JButton();
+        btnBook = new javax.swing.JButton();
+        btnPen = new javax.swing.JButton();
+        btnOther = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         txtSearch = new javax.swing.JTextField();
@@ -93,89 +95,6 @@ public class Category extends javax.swing.JFrame {
         jSeparator6.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
         jPanel2.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(779, 3, 13, 100));
 
-        btnPencil.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnPencil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pencil.png"))); // NOI18N
-        btnPencil.setText("ดินสอและไส้ดินสอ");
-        btnPencil.setBorder(null);
-        btnPencil.setContentAreaFilled(false);
-        btnPencil.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnPencil.setIconTextGap(0);
-        btnPencil.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        btnPencil.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPencilActionPerformed(evt);
-            }
-        });
-        jPanel2.add(btnPencil, new org.netbeans.lib.awtextra.AbsoluteConstraints(235, 15, -1, -1));
-
-        btnBook.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnBook.setIcon(new javax.swing.ImageIcon(getClass().getResource("/book.png"))); // NOI18N
-        btnBook.setText("สมุด");
-        btnBook.setBorder(null);
-        btnBook.setContentAreaFilled(false);
-        btnBook.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnBook.setIconTextGap(0);
-        btnBook.setMaximumSize(new java.awt.Dimension(118, 78));
-        btnBook.setMinimumSize(new java.awt.Dimension(118, 78));
-        btnBook.setPreferredSize(new java.awt.Dimension(118, 78));
-        btnBook.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        btnBook.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnBookMouseClicked(evt);
-            }
-        });
-        btnBook.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBookActionPerformed(evt);
-            }
-        });
-        jPanel2.add(btnBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 15, 118, -1));
-
-        btnPen.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnPen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pen.png"))); // NOI18N
-        btnPen.setText("ปากกา");
-        btnPen.setBorder(null);
-        btnPen.setContentAreaFilled(false);
-        btnPen.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnPen.setIconTextGap(0);
-        btnPen.setMaximumSize(new java.awt.Dimension(118, 78));
-        btnPen.setMinimumSize(new java.awt.Dimension(118, 78));
-        btnPen.setPreferredSize(new java.awt.Dimension(118, 78));
-        btnPen.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        btnPen.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnPenMouseClicked(evt);
-            }
-        });
-        btnPen.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPenActionPerformed(evt);
-            }
-        });
-        jPanel2.add(btnPen, new org.netbeans.lib.awtextra.AbsoluteConstraints(507, 15, 118, 80));
-
-        btnOther.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnOther.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mais-1.png"))); // NOI18N
-        btnOther.setText("อื่นๆ");
-        btnOther.setContentAreaFilled(false);
-        btnOther.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnOther.setIconTextGap(0);
-        btnOther.setMaximumSize(new java.awt.Dimension(118, 78));
-        btnOther.setMinimumSize(new java.awt.Dimension(118, 78));
-        btnOther.setPreferredSize(new java.awt.Dimension(118, 78));
-        btnOther.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        btnOther.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnOtherMouseClicked(evt);
-            }
-        });
-        btnOther.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnOtherActionPerformed(evt);
-            }
-        });
-        jPanel2.add(btnOther, new org.netbeans.lib.awtextra.AbsoluteConstraints(643, 15, 118, 78));
-
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel3.setText("เครื่องเขียน");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 15, 138, 78));
@@ -202,7 +121,7 @@ public class Category extends javax.swing.JFrame {
                 btnProduct33ActionPerformed(evt);
             }
         });
-        jPanel2.add(btnProduct3, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 430, -1, -1));
+        jPanel2.add(btnProduct3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 430, -1, -1));
 
         jSeparator12.setForeground(new java.awt.Color(121, 121, 121));
         jSeparator12.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
@@ -215,7 +134,6 @@ public class Category extends javax.swing.JFrame {
         jButton8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
         jButton8.setText("ยอดพอยท์คงเหลือ");
-        jButton8.setBorder(javax.swing.BorderFactory.createBevelBorder(null));
         jButton8.setContentAreaFilled(false);
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -227,7 +145,6 @@ public class Category extends javax.swing.JFrame {
         btnShoppingcart.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btnShoppingcart.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
         btnShoppingcart.setText("ประวัติการสั่งซื้อ");
-        btnShoppingcart.setBorder(javax.swing.BorderFactory.createBevelBorder(null));
         btnShoppingcart.setContentAreaFilled(false);
         btnShoppingcart.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -260,16 +177,16 @@ public class Category extends javax.swing.JFrame {
 
         txtProduct4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtProduct4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        txtProduct4.setText("เสื้อนักศึกษาชายแขนยาว");
+        txtProduct4.setText("100-4H สีน้ำเงิน");
         txtProduct4.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         txtProduct4.setVerifyInputWhenFocusTarget(false);
         txtProduct4.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        jPanel2.add(txtProduct4, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 390, -1, -1));
+        jPanel2.add(txtProduct4, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 410, -1, -1));
 
         txtprice4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         txtprice4.setForeground(new java.awt.Color(255, 0, 0));
         txtprice4.setText("฿ 240.00");
-        jPanel2.add(txtprice4, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 420, -1, -1));
+        jPanel2.add(txtprice4, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 440, -1, -1));
 
         jSeparator14.setForeground(new java.awt.Color(121, 121, 121));
         jSeparator14.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
@@ -382,6 +299,114 @@ public class Category extends javax.swing.JFrame {
         });
         jPanel2.add(btnProduct2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 430, -1, -1));
 
+        txtProduct11.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtProduct11.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        txtProduct11.setText("ดินสอเขียนแบบลูโมกราฟ สเต็ดเล่อร์ ");
+        txtProduct11.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        txtProduct11.setVerifyInputWhenFocusTarget(false);
+        txtProduct11.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        jPanel2.add(txtProduct11, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 390, -1, -1));
+
+        btnProduct4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnProduct4.setText("เพิ่มเติม");
+        btnProduct4.setContentAreaFilled(false);
+        btnProduct4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnProduct43MouseClicked(evt);
+            }
+        });
+        btnProduct4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnProduct43ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnProduct4, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 430, -1, -1));
+
+        btnPencil.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnPencil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pencil.png"))); // NOI18N
+        btnPencil.setText("ดินสอและไส้ดินสอ");
+        btnPencil.setContentAreaFilled(false);
+        btnPencil.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnPencil.setIconTextGap(0);
+        btnPencil.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnPencil.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnPencilMouseClicked(evt);
+            }
+        });
+        btnPencil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPencilActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnPencil, new org.netbeans.lib.awtextra.AbsoluteConstraints(235, 15, -1, -1));
+
+        btnBook.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnBook.setIcon(new javax.swing.ImageIcon(getClass().getResource("/book.png"))); // NOI18N
+        btnBook.setText("สมุด");
+        btnBook.setContentAreaFilled(false);
+        btnBook.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnBook.setIconTextGap(0);
+        btnBook.setMaximumSize(new java.awt.Dimension(118, 78));
+        btnBook.setMinimumSize(new java.awt.Dimension(118, 78));
+        btnBook.setPreferredSize(new java.awt.Dimension(118, 78));
+        btnBook.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnBook.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnBookMouseClicked(evt);
+            }
+        });
+        btnBook.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBookActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 15, 118, -1));
+
+        btnPen.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnPen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pen.png"))); // NOI18N
+        btnPen.setText("ปากกา");
+        btnPen.setContentAreaFilled(false);
+        btnPen.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnPen.setIconTextGap(0);
+        btnPen.setMaximumSize(new java.awt.Dimension(118, 78));
+        btnPen.setMinimumSize(new java.awt.Dimension(118, 78));
+        btnPen.setPreferredSize(new java.awt.Dimension(118, 78));
+        btnPen.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnPen.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnPenMouseClicked(evt);
+            }
+        });
+        btnPen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPenActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnPen, new org.netbeans.lib.awtextra.AbsoluteConstraints(507, 15, 118, 78));
+
+        btnOther.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnOther.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mais-1.png"))); // NOI18N
+        btnOther.setText("อื่นๆ");
+        btnOther.setContentAreaFilled(false);
+        btnOther.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnOther.setIconTextGap(0);
+        btnOther.setMaximumSize(new java.awt.Dimension(118, 78));
+        btnOther.setMinimumSize(new java.awt.Dimension(118, 78));
+        btnOther.setPreferredSize(new java.awt.Dimension(118, 78));
+        btnOther.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnOther.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnOtherMouseClicked(evt);
+            }
+        });
+        btnOther.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOtherActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnOther, new org.netbeans.lib.awtextra.AbsoluteConstraints(643, 15, 118, 78));
+
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, -1, 564));
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/btn_logo.png"))); // NOI18N
@@ -440,7 +465,6 @@ public class Category extends javax.swing.JFrame {
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 30, -1, -1));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Up.png"))); // NOI18N
-        jLabel7.setBorder(javax.swing.BorderFactory.createBevelBorder(null));
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, -1, 740));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -491,37 +515,6 @@ public class Category extends javax.swing.JFrame {
 
     }//GEN-LAST:event_btnProduct33MouseClicked
 
-    private void btnOtherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOtherActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnOtherActionPerformed
-
-    private void btnOtherMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnOtherMouseClicked
-        new Category4().setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btnOtherMouseClicked
-
-    private void btnPenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPenActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnPenActionPerformed
-
-    private void btnPenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPenMouseClicked
-        new Category3().setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btnPenMouseClicked
-
-    private void btnBookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBookActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBookActionPerformed
-
-    private void btnBookMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBookMouseClicked
-        new Category2().setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btnBookMouseClicked
-
-    private void btnPencilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPencilActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnPencilActionPerformed
-
     private void btnProduct1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct1MouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_btnProduct1MouseClicked
@@ -537,6 +530,53 @@ public class Category extends javax.swing.JFrame {
     private void btnProduct2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnProduct2ActionPerformed
+
+    private void btnProduct43MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct43MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnProduct43MouseClicked
+
+    private void btnProduct43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct43ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnProduct43ActionPerformed
+
+    private void btnPencilMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPencilMouseClicked
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_btnPencilMouseClicked
+
+    private void btnPencilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPencilActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnPencilActionPerformed
+
+    private void btnBookMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBookMouseClicked
+        // TODO add your handling code here:
+        new Category2().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnBookMouseClicked
+
+    private void btnBookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBookActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBookActionPerformed
+
+    private void btnPenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPenActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnPenActionPerformed
+
+    private void btnOtherMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnOtherMouseClicked
+        // TODO add your handling code here:
+        new Category4().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnOtherMouseClicked
+
+    private void btnOtherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOtherActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnOtherActionPerformed
+
+    private void btnPenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPenMouseClicked
+        // TODO add your handling code here:
+        new Category3().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnPenMouseClicked
 
     /**
      * @param args the command line arguments
@@ -582,6 +622,7 @@ public class Category extends javax.swing.JFrame {
     private javax.swing.JButton btnProduct1;
     private javax.swing.JButton btnProduct2;
     private javax.swing.JButton btnProduct3;
+    private javax.swing.JButton btnProduct4;
     private javax.swing.JButton btnShoppingcart;
     private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
@@ -610,6 +651,7 @@ public class Category extends javax.swing.JFrame {
     private javax.swing.JLabel lbLogout;
     private javax.swing.JLabel txtProduct1;
     private javax.swing.JLabel txtProduct10;
+    private javax.swing.JLabel txtProduct11;
     private javax.swing.JLabel txtProduct2;
     private javax.swing.JLabel txtProduct3;
     private javax.swing.JLabel txtProduct4;
