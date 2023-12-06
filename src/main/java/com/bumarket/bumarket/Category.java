@@ -521,6 +521,8 @@ public class Category extends javax.swing.JFrame {
 
     private void btnProduct1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct1ActionPerformed
         // TODO add your handling code here:
+        new MarketPencil1().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnProduct1ActionPerformed
 
     private void btnProduct2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct2MouseClicked

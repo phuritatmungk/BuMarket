@@ -161,7 +161,7 @@ public class Categoryshirt extends javax.swing.JFrame {
         btnPoint.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btnPoint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
         btnPoint.setText("ยอดพอยท์คงเหลือ");
-        btnPoint.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnPoint.setBorder(null);
         btnPoint.setContentAreaFilled(false);
         btnPoint.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -173,7 +173,7 @@ public class Categoryshirt extends javax.swing.JFrame {
         btnHistory.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btnHistory.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
         btnHistory.setText("ประวัติการสั่งซื้อ");
-        btnHistory.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnHistory.setBorder(null);
         btnHistory.setContentAreaFilled(false);
         btnHistory.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -339,7 +339,6 @@ public class Categoryshirt extends javax.swing.JFrame {
         jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Up.png"))); // NOI18N
-        background.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         background.setFocusTraversalPolicyProvider(true);
         jPanel1.add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, -1, 740));
 
