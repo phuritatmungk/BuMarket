@@ -27,15 +27,15 @@ public class History extends javax.swing.JFrame {
     private void initComponents() {
 
         PointButton = new javax.swing.JButton();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
+        Amount3 = new javax.swing.JLabel();
+        Price3 = new javax.swing.JLabel();
+        BPpoint3 = new javax.swing.JLabel();
+        Amount2 = new javax.swing.JLabel();
+        Price2 = new javax.swing.JLabel();
+        BPpoint2 = new javax.swing.JLabel();
+        Amount1 = new javax.swing.JLabel();
+        Price1 = new javax.swing.JLabel();
+        BPpoint1 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
@@ -67,7 +67,7 @@ public class History extends javax.swing.JFrame {
         PointButton.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         PointButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
         PointButton.setText("ยอดพอยท์คงเหลือ");
-        PointButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        PointButton.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         PointButton.setContentAreaFilled(false);
         PointButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -76,47 +76,47 @@ public class History extends javax.swing.JFrame {
         });
         getContentPane().add(PointButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 160, 180, 49));
 
-        jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel18.setText("x1");
-        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 530, 50, -1));
+        Amount3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        Amount3.setText("x1");
+        getContentPane().add(Amount3, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 530, 50, -1));
 
-        jLabel19.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel19.setText("฿100");
-        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 550, 50, -1));
+        Price3.setForeground(new java.awt.Color(255, 0, 0));
+        Price3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        Price3.setText("฿100");
+        getContentPane().add(Price3, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 550, 50, -1));
 
-        jLabel22.setForeground(new java.awt.Color(153, 204, 0));
-        jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel22.setText("+ 10 BP");
-        getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 570, 50, -1));
+        BPpoint3.setForeground(new java.awt.Color(153, 204, 0));
+        BPpoint3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        BPpoint3.setText("+ 10 BP");
+        getContentPane().add(BPpoint3, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 570, 50, -1));
 
-        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel12.setText("x1");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 390, 50, -1));
+        Amount2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        Amount2.setText("x1");
+        getContentPane().add(Amount2, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 390, 50, -1));
 
-        jLabel16.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel16.setText("฿100");
-        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 410, 50, -1));
+        Price2.setForeground(new java.awt.Color(255, 0, 0));
+        Price2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        Price2.setText("฿100");
+        getContentPane().add(Price2, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 410, 50, -1));
 
-        jLabel17.setForeground(new java.awt.Color(153, 204, 0));
-        jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel17.setText("+ 10 BP");
-        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 430, 50, -1));
+        BPpoint2.setForeground(new java.awt.Color(153, 204, 0));
+        BPpoint2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        BPpoint2.setText("+ 10 BP");
+        getContentPane().add(BPpoint2, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 430, 50, -1));
 
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel3.setText("x1");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 250, 50, -1));
+        Amount1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        Amount1.setText("x1");
+        getContentPane().add(Amount1, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 250, 50, -1));
 
-        jLabel5.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel5.setText("฿100");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 270, 50, -1));
+        Price1.setForeground(new java.awt.Color(255, 0, 0));
+        Price1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        Price1.setText("฿100");
+        getContentPane().add(Price1, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 270, 50, -1));
 
-        jLabel11.setForeground(new java.awt.Color(153, 204, 0));
-        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel11.setText("+ 10 BP");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 290, 50, -1));
+        BPpoint1.setForeground(new java.awt.Color(153, 204, 0));
+        BPpoint1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        BPpoint1.setText("+ 10 BP");
+        getContentPane().add(BPpoint1, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 290, 50, -1));
 
         jLabel24.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -130,7 +130,7 @@ public class History extends javax.swing.JFrame {
         getContentPane().add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 420, -1, 20));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel9.setText("ตระกร้า");
+        jLabel9.setText("ประวัติการสั่งชื้อ");
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, -1, -1));
 
         jLabel14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
@@ -173,7 +173,18 @@ public class History extends javax.swing.JFrame {
         getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 350, 880, 70));
 
         Backbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Back.png"))); // NOI18N
+        Backbutton.setBorder(null);
         Backbutton.setContentAreaFilled(false);
+        Backbutton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BackbuttonMouseClicked(evt);
+            }
+        });
+        Backbutton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BackbuttonActionPerformed(evt);
+            }
+        });
         getContentPane().add(Backbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/btn_logo.png"))); // NOI18N
@@ -189,6 +200,7 @@ public class History extends javax.swing.JFrame {
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 37, -1, 30));
 
         Cartbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shopicon.png"))); // NOI18N
+        Cartbutton.setBorder(null);
         Cartbutton.setContentAreaFilled(false);
         getContentPane().add(Cartbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 25, -1, -1));
 
@@ -206,6 +218,7 @@ public class History extends javax.swing.JFrame {
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 10, -1, -1));
 
         ExitButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
+        ExitButton.setBorder(null);
         ExitButton.setContentAreaFilled(false);
         getContentPane().add(ExitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 35, -1, -1));
 
@@ -222,6 +235,15 @@ public class History extends javax.swing.JFrame {
     private void PointButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PointButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_PointButtonActionPerformed
+
+    private void BackbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackbuttonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BackbuttonActionPerformed
+
+    private void BackbuttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BackbuttonMouseClicked
+        new Home().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_BackbuttonMouseClicked
 
     /**
      * @param args the command line arguments
@@ -259,32 +281,32 @@ public class History extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Amount1;
+    private javax.swing.JLabel Amount2;
+    private javax.swing.JLabel Amount3;
+    private javax.swing.JLabel BPpoint1;
+    private javax.swing.JLabel BPpoint2;
+    private javax.swing.JLabel BPpoint3;
     private javax.swing.JButton Backbutton;
     private javax.swing.JButton Cartbutton;
     private javax.swing.JButton ExitButton;
     private javax.swing.JButton PointButton;
+    private javax.swing.JLabel Price1;
+    private javax.swing.JLabel Price2;
+    private javax.swing.JLabel Price3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;

@@ -60,15 +60,19 @@ public class Shoppingcart extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        Total = new javax.swing.JLabel();
+        List = new javax.swing.JLabel();
+        jSeparator12 = new javax.swing.JSeparator();
         jSeparator11 = new javax.swing.JSeparator();
         jScrollPane1 = new javax.swing.JScrollPane();
         Table = new javax.swing.JTable();
+        BPButton = new javax.swing.JButton();
+        Historybutton = new javax.swing.JButton();
         ExitButton = new javax.swing.JButton();
         Cartbutton = new javax.swing.JButton();
         Backbutton = new javax.swing.JButton();
         BuyButton = new javax.swing.JButton();
         PayButton = new javax.swing.JButton();
-        jLabel18 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
@@ -80,14 +84,31 @@ public class Shoppingcart extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
-        Historybutton1 = new javax.swing.JButton();
-        BPButton = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Total.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        Total.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        Total.setText("100");
+        Total.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        Total.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(Total, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 340, 80, -1));
+
+        List.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        List.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        List.setText("3 รายการ");
+        List.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        List.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(List, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 285, 80, -1));
+
+        jSeparator12.setForeground(new java.awt.Color(0, 0, 0));
+        jSeparator12.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jSeparator12.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        getContentPane().add(jSeparator12, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 280, 10, 20));
 
         jSeparator11.setForeground(new java.awt.Color(0, 0, 0));
         jSeparator11.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -129,6 +150,29 @@ public class Shoppingcart extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 210, 660, 420));
 
+        BPButton.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        BPButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
+        BPButton.setText("ยอดพอยท์คงเหลือ");
+        BPButton.setContentAreaFilled(false);
+        BPButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BPButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(BPButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 150, 220, 50));
+
+        Historybutton.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        Historybutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
+        Historybutton.setText("ประวัติการสั่งซื้อ");
+        Historybutton.setContentAreaFilled(false);
+        Historybutton.setPreferredSize(new java.awt.Dimension(177, 39));
+        Historybutton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HistorybuttonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Historybutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 210, 220, 50));
+
         ExitButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
         ExitButton.setBorder(null);
         ExitButton.setContentAreaFilled(false);
@@ -142,6 +186,11 @@ public class Shoppingcart extends javax.swing.JFrame {
         Backbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Back.png"))); // NOI18N
         Backbutton.setBorder(null);
         Backbutton.setContentAreaFilled(false);
+        Backbutton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BackbuttonMouseClicked(evt);
+            }
+        });
         Backbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BackbuttonActionPerformed(evt);
@@ -153,7 +202,7 @@ public class Shoppingcart extends javax.swing.JFrame {
         BuyButton.setText("เลือกซื้อสินค้า");
         BuyButton.setBorder(null);
         BuyButton.setContentAreaFilled(false);
-        getContentPane().add(BuyButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 470, 240, 30));
+        getContentPane().add(BuyButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 420, 240, 30));
 
         PayButton.setBackground(new java.awt.Color(255, 51, 51));
         PayButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -164,26 +213,22 @@ public class Shoppingcart extends javax.swing.JFrame {
                 PayButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(PayButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 430, 240, -1));
-
-        jLabel18.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel18.setText("ราคารวมทั้งหมด");
-        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 390, -1, -1));
+        getContentPane().add(PayButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 380, 240, -1));
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel17.setText("ยอดรวม");
-        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 365, -1, -1));
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 340, -1, -1));
 
         jLabel16.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel16.setText("สรุปคำสั่งซื้อ");
-        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 310, -1, -1));
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 280, -1, -1));
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel12.setText("รวมมูลค่าสินค้า");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 340, -1, -1));
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 310, -1, -1));
 
         jLabel19.setBorder(javax.swing.BorderFactory.createLineBorder(null));
-        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 300, 240, 120));
+        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 270, 240, 100));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel9.setText("ตระกร้า");
@@ -214,32 +259,6 @@ public class Shoppingcart extends javax.swing.JFrame {
         jTextField1.setToolTipText("");
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 35, 410, 34));
 
-        Historybutton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        Historybutton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
-        Historybutton1.setText("  ประวัติการสั่งซื้อ");
-        Historybutton1.setContentAreaFilled(false);
-        Historybutton1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        Historybutton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Historybutton1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(Historybutton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 220, 240, 50));
-
-        BPButton.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        BPButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
-        BPButton.setText("ยอดพอยท์คงเหลือ");
-        BPButton.setContentAreaFilled(false);
-        BPButton.setMaximumSize(new java.awt.Dimension(138, 32));
-        BPButton.setMinimumSize(new java.awt.Dimension(138, 32));
-        BPButton.setPreferredSize(new java.awt.Dimension(138, 32));
-        BPButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BPButtonActionPerformed(evt);
-            }
-        });
-        getContentPane().add(BPButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 160, 240, 49));
-
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Down.png"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
@@ -259,13 +278,19 @@ public class Shoppingcart extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_BackbuttonActionPerformed
 
-    private void Historybutton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Historybutton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Historybutton1ActionPerformed
+    private void BackbuttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BackbuttonMouseClicked
+        new Home().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_BackbuttonMouseClicked
 
     private void BPButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BPButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_BPButtonActionPerformed
+
+    private void HistorybuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HistorybuttonActionPerformed
+        new Shoppingcart().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_HistorybuttonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -308,15 +333,16 @@ public class Shoppingcart extends javax.swing.JFrame {
     private javax.swing.JButton BuyButton;
     private javax.swing.JButton Cartbutton;
     private javax.swing.JButton ExitButton;
-    private javax.swing.JButton Historybutton1;
+    private javax.swing.JButton Historybutton;
+    private javax.swing.JLabel List;
     private javax.swing.JButton PayButton;
     private javax.swing.JTable Table;
+    private javax.swing.JLabel Total;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
@@ -326,6 +352,7 @@ public class Shoppingcart extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator11;
+    private javax.swing.JSeparator jSeparator12;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
