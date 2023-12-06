@@ -60,13 +60,14 @@ public class Shoppingcart extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton3 = new javax.swing.JButton();
         Total = new javax.swing.JLabel();
         List = new javax.swing.JLabel();
         jSeparator12 = new javax.swing.JSeparator();
         jSeparator11 = new javax.swing.JSeparator();
         jScrollPane1 = new javax.swing.JScrollPane();
         Table = new javax.swing.JTable();
+        BPButton = new javax.swing.JButton();
+        Historybutton = new javax.swing.JButton();
         ExitButton = new javax.swing.JButton();
         Cartbutton = new javax.swing.JButton();
         Backbutton = new javax.swing.JButton();
@@ -76,7 +77,6 @@ public class Shoppingcart extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
-        Historybutton = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -86,17 +86,6 @@ public class Shoppingcart extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
-        jButton3.setText("ยอดพอยท์คงเหลือ");
-        jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(1280, 720));
@@ -126,7 +115,7 @@ public class Shoppingcart extends javax.swing.JFrame {
         jSeparator11.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
         getContentPane().add(jSeparator11, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 170, 10, 470));
 
-        Table.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Table.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         Table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -161,6 +150,29 @@ public class Shoppingcart extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 210, 660, 420));
 
+        BPButton.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        BPButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
+        BPButton.setText("ยอดพอยท์คงเหลือ");
+        BPButton.setContentAreaFilled(false);
+        BPButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BPButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(BPButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 150, 220, 50));
+
+        Historybutton.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        Historybutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
+        Historybutton.setText("ประวัติการสั่งซื้อ");
+        Historybutton.setContentAreaFilled(false);
+        Historybutton.setPreferredSize(new java.awt.Dimension(177, 39));
+        Historybutton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HistorybuttonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(Historybutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 210, 220, 50));
+
         ExitButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
         ExitButton.setBorder(null);
         ExitButton.setContentAreaFilled(false);
@@ -188,7 +200,7 @@ public class Shoppingcart extends javax.swing.JFrame {
 
         BuyButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         BuyButton.setText("เลือกซื้อสินค้า");
-        BuyButton.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        BuyButton.setBorder(null);
         BuyButton.setContentAreaFilled(false);
         getContentPane().add(BuyButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 420, 240, 30));
 
@@ -215,16 +227,8 @@ public class Shoppingcart extends javax.swing.JFrame {
         jLabel12.setText("รวมมูลค่าสินค้า");
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 310, -1, -1));
 
-        jLabel19.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jLabel19.setBorder(javax.swing.BorderFactory.createLineBorder(null));
         getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 270, 240, 100));
-
-        Historybutton.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        Historybutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
-        Historybutton.setText("  ประวัติการสั่งซื้อ");
-        Historybutton.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        Historybutton.setContentAreaFilled(false);
-        Historybutton.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        getContentPane().add(Historybutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 210, 240, 50));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel9.setText("ตระกร้า");
@@ -265,10 +269,6 @@ public class Shoppingcart extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
-
     private void PayButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PayButtonActionPerformed
          new Checkout().setVisible(true);
          this.dispose();
@@ -282,6 +282,15 @@ public class Shoppingcart extends javax.swing.JFrame {
         new Home().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_BackbuttonMouseClicked
+
+    private void BPButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BPButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BPButtonActionPerformed
+
+    private void HistorybuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HistorybuttonActionPerformed
+        new Shoppingcart().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_HistorybuttonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -319,6 +328,7 @@ public class Shoppingcart extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BPButton;
     private javax.swing.JButton Backbutton;
     private javax.swing.JButton BuyButton;
     private javax.swing.JButton Cartbutton;
@@ -328,7 +338,6 @@ public class Shoppingcart extends javax.swing.JFrame {
     private javax.swing.JButton PayButton;
     private javax.swing.JTable Table;
     private javax.swing.JLabel Total;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel12;

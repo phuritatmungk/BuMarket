@@ -83,14 +83,14 @@ public class MarketFood1 extends javax.swing.JFrame {
         jPanel2.add(jLabel3);
         jLabel3.setBounds(110, 360, 90, 90);
 
-        scrollbar1.setOrientation(java.awt.Scrollbar.HORIZONTAL);
+        scrollbar1.setOrientation(0);
         jPanel2.add(scrollbar1);
         scrollbar1.setBounds(110, 460, 300, 16);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel2.setText("[แพ็คสุดคุ้ม] Lays Classic เลย์คลาสสิค แผ่นเรียบ ");
         jPanel2.add(jLabel2);
-        jLabel2.setBounds(464, 34, 542, 40);
+        jLabel2.setBounds(464, 34, 541, 40);
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -133,7 +133,7 @@ public class MarketFood1 extends javax.swing.JFrame {
         btnAddtocart.setText("หยิบใส่ตระกร้า");
         btnAddtocart.setContentAreaFilled(false);
         jPanel2.add(btnAddtocart);
-        btnAddtocart.setBounds(464, 479, 138, 40);
+        btnAddtocart.setBounds(464, 479, 137, 40);
 
         btnBuy.setBackground(new java.awt.Color(204, 0, 0));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -180,7 +180,7 @@ public class MarketFood1 extends javax.swing.JFrame {
         btnOption2.setText("เมี่ยงคำ ครบรส ");
         btnOption2.setContentAreaFilled(false);
         jPanel2.add(btnOption2);
-        btnOption2.setBounds(616, 387, 106, 30);
+        btnOption2.setBounds(616, 387, 107, 30);
 
         btnOption4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnOption4.setText("ซาวครีมและหัวหอม");
@@ -192,12 +192,12 @@ public class MarketFood1 extends javax.swing.JFrame {
         btnOption3.setText("โนริ สาหร่าย");
         btnOption3.setContentAreaFilled(false);
         jPanel2.add(btnOption3);
-        btnOption3.setBounds(735, 387, 90, 30);
+        btnOption3.setBounds(735, 387, 91, 30);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel5.setText("ขนาด 32 บาท 3 ซอง");
         jPanel2.add(jLabel5);
-        jLabel5.setBounds(460, 70, 230, 40);
+        jLabel5.setBounds(460, 70, 229, 40);
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, 1090, 530));
 
@@ -233,6 +233,7 @@ public class MarketFood1 extends javax.swing.JFrame {
         jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 40, -1, -1));
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Back.png"))); // NOI18N
+        jButton2.setBorder(null);
         jButton2.setBorderPainted(false);
         jButton2.setContentAreaFilled(false);
         jButton2.setFocusable(false);

@@ -339,7 +339,7 @@ public class Category extends javax.swing.JFrame {
                 btnPencilActionPerformed(evt);
             }
         });
-        jPanel2.add(btnPencil, new org.netbeans.lib.awtextra.AbsoluteConstraints(235, 15, -1, -1));
+        jPanel2.add(btnPencil, new org.netbeans.lib.awtextra.AbsoluteConstraints(235, 15, 118, 78));
 
         btnBook.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnBook.setIcon(new javax.swing.ImageIcon(getClass().getResource("/book.png"))); // NOI18N
@@ -521,6 +521,8 @@ public class Category extends javax.swing.JFrame {
 
     private void btnProduct1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct1ActionPerformed
         // TODO add your handling code here:
+        new MarketPencil1().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnProduct1ActionPerformed
 
     private void btnProduct2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct2MouseClicked

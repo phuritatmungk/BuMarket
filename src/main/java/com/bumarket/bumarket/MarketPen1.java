@@ -78,14 +78,14 @@ public class MarketPen1 extends javax.swing.JFrame {
         jPanel2.add(jLabel3);
         jLabel3.setBounds(310, 370, 90, 90);
 
-        scrollbar1.setOrientation(java.awt.Scrollbar.HORIZONTAL);
+        scrollbar1.setOrientation(0);
         jPanel2.add(scrollbar1);
         scrollbar1.setBounds(101, 467, 300, 16);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel2.setText("ปากกาหมึกเจล Lamy Balloon Blue ");
         jPanel2.add(jLabel2);
-        jLabel2.setBounds(455, 34, 399, 40);
+        jLabel2.setBounds(455, 34, 395, 40);
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -124,7 +124,7 @@ public class MarketPen1 extends javax.swing.JFrame {
         btnAddtocart.setText("หยิบใส่ตระกร้า");
         btnAddtocart.setContentAreaFilled(false);
         jPanel2.add(btnAddtocart);
-        btnAddtocart.setBounds(455, 400, 138, 40);
+        btnAddtocart.setBounds(455, 400, 137, 40);
 
         btnBuy.setBackground(new java.awt.Color(204, 0, 0));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -192,6 +192,7 @@ public class MarketPen1 extends javax.swing.JFrame {
         jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 40, -1, -1));
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Back.png"))); // NOI18N
+        jButton2.setBorder(null);
         jButton2.setBorderPainted(false);
         jButton2.setContentAreaFilled(false);
         jButton2.setFocusable(false);
