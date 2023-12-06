@@ -17,6 +17,7 @@ import javax.swing.JOptionPane;
 public class MarketBook1 extends javax.swing.JFrame {
 
     List<ProductData> productList = new ArrayList<>();
+    List<String> productdata = new ArrayList<>();
     
     public MarketBook1() {
         initComponents();
@@ -276,14 +277,16 @@ public class MarketBook1 extends javax.swing.JFrame {
 
     private void btnBuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseClicked
         ProductData user = new ProductData();
-        user.setId("1234");
-        user.setName("Monte");
-        user.setQuantity("12");
-        user.setPrice("236");
-        user.setPoint("1");
+        user.setProductID(1234);
+        user.setProduct("Monte");
+        user.setQty(1);
+        user.setTotal(user.getPrice() * user.getQty());
+        user.setPrice(292);
+        user.setPoint(1 + user.getQty());
         
         productList.add(user);
-        System.out.println(productList);
+        productdata.add(user.getProduct());
+        System.out.println(productdata);
         
         writeObjectToFile(productList);
         JOptionPane.showMessageDialog(this,"Save Completed...");

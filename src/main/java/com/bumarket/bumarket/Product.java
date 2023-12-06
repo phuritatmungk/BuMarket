@@ -6,7 +6,7 @@ import java.text.DecimalFormat;
  *
  * @author pongs
  */
-public class Product {
+public class Product implements java.io.Serializable {
     
     private String product;
     private int productID;
@@ -111,7 +111,7 @@ public class Product {
     
     public Object[] toTableRow(int rowNum){
         DecimalFormat df = new DecimalFormat("###0.##");
-        return new Object[]{this,product, df.format(productID), df.format(qty), "$"+df.format(price),"$"+df.format(total), df.format(point)};
+        return new Object[]{this, df.format(productID), product, df.format(qty), "$"+df.format(price),"$"+df.format(total), df.format(point)};
     }
     
 }

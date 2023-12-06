@@ -10,51 +10,95 @@ package com.bumarket.bumarket;
  */
 public class ProductData implements java.io.Serializable {
     
-    private String Id;
-    private String Name;
-    private String Quantity;
-    private String Price;
-    private String Point;
+    private String product;
+    private int productID;
+    private int qty;
+    private double total;
+    private int point;
+    private double price;
 
-    public String getId() {
-        return Id;
+    /**
+     * @return the price
+     */
+    public double getPrice() {
+        return price;
     }
 
-    public void setId(String Id) {
-        this.Id = Id;
+    /**
+     * @param price the price to set
+     */
+    public void setPrice(double price) {
+        this.price = price;
     }
 
-    public String getName() {
-        return Name;
-    }
-
-    public void setName(String Name) {
-        this.Name = Name;
-    }
-
-    public String getQuantity() {
-        return Quantity;
-    }
-
-    public void setQuantity(String Quantity) {
-        this.Quantity = Quantity;
-    }
-
-    public String getPrice() {
-        return Price;
-    }
-
-    public void setPrice(String Price) {
-        this.Price = Price;
-    }
-
-    public String getPoint() {
-        return Point;
-    }
-
-    public void setPoint(String Point) {
-        this.Point = Point;
-    }
-
+    /**
+     * @return the product
+     */
     
+    public String getProduct() {
+        return product;
+    }
+
+    /**
+     * @param product the product to set
+     */
+    public void setProduct(String product) {
+        this.product = product;
+    }
+
+    /**
+     * @return the productID
+     */
+    public int getProductID() {
+        return productID;
+    }
+
+    /**
+     * @param productID the productID to set
+     */
+    public void setProductID(int productID) {
+        this.productID = productID;
+    }
+
+    /**
+     * @return the qty
+     */
+    public int getQty() {
+        return qty;
+    }
+
+    /**
+     * @param qty the qty to set
+     */
+    public void setQty(int qty) {
+        this.qty = qty;
+    }
+
+    /**
+     * @return the total
+     */
+    public double getTotal() {
+        return total;
+    }
+
+    /**
+     * @param total the total to set
+     */
+    public void setTotal(double total) {
+        this.total = total;
+    }
+
+    /**
+     * @return the point
+     */
+    public int getPoint() {
+        return point;
+    }
+
+    /**
+     * @param point the point to set
+     */
+    public void setPoint(int point) {
+        this.point = point;
+    }
 }

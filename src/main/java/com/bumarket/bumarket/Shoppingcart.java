@@ -144,11 +144,11 @@ public class Shoppingcart extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Data", "Product", "ID Product", "Quantity", "Total", "Point"
+                "Data", "ID Product", "Product", "Quantity", "Price", "Total", "Point"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, true, false, false
+                false, false, false, true, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -168,7 +168,8 @@ public class Shoppingcart extends javax.swing.JFrame {
             Table.getColumnModel().getColumn(3).setPreferredWidth(5);
             Table.getColumnModel().getColumn(4).setResizable(false);
             Table.getColumnModel().getColumn(5).setResizable(false);
-            Table.getColumnModel().getColumn(5).setPreferredWidth(5);
+            Table.getColumnModel().getColumn(6).setResizable(false);
+            Table.getColumnModel().getColumn(6).setPreferredWidth(5);
         }
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 210, 660, 420));
@@ -337,15 +338,10 @@ public class Shoppingcart extends javax.swing.JFrame {
         model.getDataVector().removeAllElements();
         model.fireTableDataChanged();
         System.out.println(productList);
-        
         for(ProductData xRow : productList) {
             model.addRow(new Object[0]);
             int row = model.getRowCount()-1;
-            model.setValueAt(xRow.getId(), row, 0);
-            model.setValueAt(xRow.getName(), row,1);
-            model.setValueAt(xRow.getQuantity(), row,2);
-            model.setValueAt(xRow.getPrice(), row,3);
-            model.setValueAt(xRow.getPoint(), row,4);
+            model.addRow(new Product(xRow.getProduct(), xRow.getProductID(), xRow.getQty(), xRow.getPrice(), xRow.getTotal(), xRow.getPoint()).toTableRow(Table.getRowCount() + 1));
         }
     }//GEN-LAST:event_jButton1MouseClicked
 
