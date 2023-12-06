@@ -141,15 +141,28 @@ public class Shoppingcart extends javax.swing.JFrame {
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 210, 660, 420));
 
         ExitButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
+        ExitButton.setBorder(null);
         ExitButton.setContentAreaFilled(false);
         getContentPane().add(ExitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 35, -1, -1));
 
         Cartbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shopicon.png"))); // NOI18N
+        Cartbutton.setBorder(null);
         Cartbutton.setContentAreaFilled(false);
         getContentPane().add(Cartbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 25, -1, -1));
 
         Backbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Back.png"))); // NOI18N
+        Backbutton.setBorder(null);
         Backbutton.setContentAreaFilled(false);
+        Backbutton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BackbuttonMouseClicked(evt);
+            }
+        });
+        Backbutton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BackbuttonActionPerformed(evt);
+            }
+        });
         getContentPane().add(Backbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, -1));
 
         BuyButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -243,6 +256,15 @@ public class Shoppingcart extends javax.swing.JFrame {
          new Checkout().setVisible(true);
          this.dispose();
     }//GEN-LAST:event_PayButtonActionPerformed
+
+    private void BackbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackbuttonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BackbuttonActionPerformed
+
+    private void BackbuttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BackbuttonMouseClicked
+        new Home().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_BackbuttonMouseClicked
 
     /**
      * @param args the command line arguments

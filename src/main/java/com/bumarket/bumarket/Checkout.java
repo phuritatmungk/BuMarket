@@ -78,6 +78,11 @@ public class Checkout extends javax.swing.JFrame {
         BuyButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         BuyButton.setText("เลือกซื้อสินค้าต่อ");
         BuyButton.setContentAreaFilled(false);
+        BuyButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BuyButtonMouseClicked(evt);
+            }
+        });
         BuyButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BuyButtonActionPerformed(evt);
@@ -193,6 +198,7 @@ public class Checkout extends javax.swing.JFrame {
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, -1, -1));
 
         Backbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Back.png"))); // NOI18N
+        Backbutton.setBorder(null);
         Backbutton.setContentAreaFilled(false);
         getContentPane().add(Backbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, -1));
 
@@ -209,6 +215,7 @@ public class Checkout extends javax.swing.JFrame {
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 37, -1, 30));
 
         Cartbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shopicon.png"))); // NOI18N
+        Cartbutton.setBorder(null);
         Cartbutton.setContentAreaFilled(false);
         getContentPane().add(Cartbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 25, -1, -1));
 
@@ -226,6 +233,7 @@ public class Checkout extends javax.swing.JFrame {
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 10, -1, -1));
 
         ExitButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
+        ExitButton.setBorder(null);
         ExitButton.setContentAreaFilled(false);
         getContentPane().add(ExitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 35, -1, -1));
 
@@ -250,6 +258,11 @@ public class Checkout extends javax.swing.JFrame {
     private void BuyButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuyButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_BuyButtonActionPerformed
+
+    private void BuyButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BuyButtonMouseClicked
+        new Shoppingcart().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_BuyButtonMouseClicked
 
     /**
      * @param args the command line arguments
