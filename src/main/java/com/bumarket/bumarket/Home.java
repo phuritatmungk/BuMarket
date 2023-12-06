@@ -4,6 +4,8 @@
  */
 package com.bumarket.bumarket;
 
+import java.awt.Color;
+
 /**
  *
  * @author chait
@@ -27,6 +29,7 @@ public class Home extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        Cartbutton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
@@ -43,7 +46,6 @@ public class Home extends javax.swing.JFrame {
         jButton9 = new javax.swing.JButton();
         jSeparator4 = new javax.swing.JSeparator();
         jLabel9 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
@@ -60,6 +62,15 @@ public class Home extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Cartbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shopicon.png"))); // NOI18N
+        Cartbutton.setContentAreaFilled(false);
+        Cartbutton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CartbuttonMouseClicked(evt);
+            }
+        });
+        jPanel1.add(Cartbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 25, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setText("BU Market");
@@ -145,9 +156,6 @@ public class Home extends javax.swing.JFrame {
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/btn_logo.png"))); // NOI18N
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, 120, 110));
 
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shopicon.png"))); // NOI18N
-        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 35, 50, 40));
-
         jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Account.png"))); // NOI18N
         jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 10, -1, -1));
 
@@ -188,14 +196,6 @@ public class Home extends javax.swing.JFrame {
         btnClothes.setFocusPainted(false);
         btnClothes.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnClothes.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        btnClothes.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnClothesMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnClothesMouseExited(evt);
-            }
-        });
         btnClothes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnClothesActionPerformed(evt);
@@ -299,13 +299,10 @@ public class Home extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_btnSnacksanddrinksMouseClicked
 
-    private void btnClothesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnClothesMouseEntered
- 
-    }//GEN-LAST:event_btnClothesMouseEntered
-
-    private void btnClothesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnClothesMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnClothesMouseExited
+    private void CartbuttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CartbuttonMouseClicked
+        new Shoppingcart().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_CartbuttonMouseClicked
 
     /**
      * @param args the command line arguments
@@ -343,6 +340,7 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Cartbutton;
     private javax.swing.JButton btnClothes;
     private javax.swing.JButton btnSnacksanddrinks;
     private javax.swing.JButton btnStationery;
@@ -354,7 +352,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
