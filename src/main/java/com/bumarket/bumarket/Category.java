@@ -37,7 +37,7 @@ public class Category extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        btnProduct = new javax.swing.JButton();
+        btnProduct3 = new javax.swing.JButton();
         jSeparator12 = new javax.swing.JSeparator();
         jLabel6 = new javax.swing.JLabel();
         jButton8 = new javax.swing.JButton();
@@ -61,6 +61,7 @@ public class Category extends javax.swing.JFrame {
         txtProduct8 = new javax.swing.JLabel();
         txtProduct9 = new javax.swing.JLabel();
         txtProduct10 = new javax.swing.JLabel();
+        btnProduct2 = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         txtSearch = new javax.swing.JTextField();
@@ -188,20 +189,20 @@ public class Category extends javax.swing.JFrame {
         jLabel5.setText("฿ 132.00");
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 440, -1, -1));
 
-        btnProduct.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        btnProduct.setText("เพิ่มเติม");
-        btnProduct.setContentAreaFilled(false);
-        btnProduct.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnProduct3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnProduct3.setText("เพิ่มเติม");
+        btnProduct3.setContentAreaFilled(false);
+        btnProduct3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnProductMouseClicked(evt);
+                btnProduct33MouseClicked(evt);
             }
         });
-        btnProduct.addActionListener(new java.awt.event.ActionListener() {
+        btnProduct3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnProductActionPerformed(evt);
+                btnProduct33ActionPerformed(evt);
             }
         });
-        jPanel2.add(btnProduct, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 430, -1, -1));
+        jPanel2.add(btnProduct3, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 430, -1, -1));
 
         jSeparator12.setForeground(new java.awt.Color(121, 121, 121));
         jSeparator12.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
@@ -272,7 +273,7 @@ public class Category extends javax.swing.JFrame {
 
         jSeparator14.setForeground(new java.awt.Color(121, 121, 121));
         jSeparator14.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
-        jPanel2.add(jSeparator14, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 440, 200, 10));
+        jPanel2.add(jSeparator14, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 460, 200, 10));
 
         txtProduct2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtProduct2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -288,7 +289,7 @@ public class Category extends javax.swing.JFrame {
 
         txtProduct1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtProduct1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        txtProduct1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pencil1.jpg"))); // NOI18N
+        txtProduct1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pencil4.jpg"))); // NOI18N
         txtProduct1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         txtProduct1.setVerifyInputWhenFocusTarget(false);
         txtProduct1.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
@@ -365,6 +366,21 @@ public class Category extends javax.swing.JFrame {
         txtProduct10.setVerifyInputWhenFocusTarget(false);
         txtProduct10.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
         jPanel2.add(txtProduct10, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 190, 190, -1));
+
+        btnProduct2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnProduct2.setText("เพิ่มเติม");
+        btnProduct2.setContentAreaFilled(false);
+        btnProduct2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnProduct2MouseClicked(evt);
+            }
+        });
+        btnProduct2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnProduct2ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnProduct2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 430, -1, -1));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, -1, 564));
 
@@ -467,13 +483,13 @@ public class Category extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton8ActionPerformed
 
-    private void btnProductActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProductActionPerformed
+    private void btnProduct33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct33ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnProductActionPerformed
+    }//GEN-LAST:event_btnProduct33ActionPerformed
 
-    private void btnProductMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProductMouseClicked
+    private void btnProduct33MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct33MouseClicked
 
-    }//GEN-LAST:event_btnProductMouseClicked
+    }//GEN-LAST:event_btnProduct33MouseClicked
 
     private void btnOtherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOtherActionPerformed
         // TODO add your handling code here:
@@ -508,13 +524,19 @@ public class Category extends javax.swing.JFrame {
 
     private void btnProduct1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct1MouseClicked
         // TODO add your handling code here:
-        new  MarketPencil1().setVisible(true);
-        this.dispose();
     }//GEN-LAST:event_btnProduct1MouseClicked
 
     private void btnProduct1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnProduct1ActionPerformed
+
+    private void btnProduct2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnProduct2MouseClicked
+
+    private void btnProduct2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnProduct2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -557,8 +579,9 @@ public class Category extends javax.swing.JFrame {
     private javax.swing.JButton btnOther;
     private javax.swing.JButton btnPen;
     private javax.swing.JButton btnPencil;
-    private javax.swing.JButton btnProduct;
     private javax.swing.JButton btnProduct1;
+    private javax.swing.JButton btnProduct2;
+    private javax.swing.JButton btnProduct3;
     private javax.swing.JButton btnShoppingcart;
     private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;

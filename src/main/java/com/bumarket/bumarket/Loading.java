@@ -51,7 +51,7 @@ public class Loading extends javax.swing.JFrame {
         loadlabel.setText("Loading....");
         getContentPane().add(loadlabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 690, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Download.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Doenload.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         pack();
