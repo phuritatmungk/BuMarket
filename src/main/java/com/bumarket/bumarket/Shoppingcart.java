@@ -5,7 +5,11 @@
 package com.bumarket.bumarket;
 
 import java.awt.Component;
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
 import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.List;
 import javax.swing.JTable;
 import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableCellRenderer;
@@ -16,10 +20,11 @@ import javax.swing.table.DefaultTableModel;
  * @author pongs
  */
 public class Shoppingcart extends javax.swing.JFrame {
+    
+    List<ProductData> productList = new ArrayList<>();
 
     public Shoppingcart() {
         initComponents();
-        
         Shoppingcart_Data();
     }
     
@@ -38,12 +43,6 @@ public class Shoppingcart extends javax.swing.JFrame {
                 return this;
             }
         });
-        DefaultTableModel pd = (DefaultTableModel) Table.getModel();
-        pd.addRow(new Product("Kuy",11225, 2, 100, 10).toTableRow(Table.getRowCount() + 1));
-        pd.addRow(new Product("Kuy",11225, 2, 100, 10).toTableRow(Table.getRowCount() + 1));
-        pd.addRow(new Product("Kuy",11225, 2, 100, 10).toTableRow(Table.getRowCount() + 1));
-        pd.addRow(new Product("Kuy",11225, 2, 100, 10).toTableRow(Table.getRowCount() + 1));
-        pd.addRow(new Product("Kuy",11225, 2, 100, 10).toTableRow(Table.getRowCount() + 1));
         
     } 
     
@@ -54,6 +53,27 @@ public class Shoppingcart extends javax.swing.JFrame {
             total += item.getTotal();
         }
         DecimalFormat df = new DecimalFormat("$ #,##0.00");
+    }
+     
+    public List<ProductData> readObjectFromFile() {
+        String filePath = "products.bin";
+        try {
+            FileInputStream file = new FileInputStream(filePath);
+            ObjectInputStream reader = new ObjectInputStream(file);
+            
+            while(true) {
+                try {
+                    List<ProductData> obj = (List<ProductData>)reader.readObject();
+                    return obj;
+                } catch(Exception ex) {
+                    System.err.println("end of reader file ");
+                    break;
+                }
+            }
+        } catch (Exception ex) {
+            System.err.println("failed to read" + filePath + ", " + ex);
+        }
+        return null;
     }
 
     @SuppressWarnings("unchecked")
@@ -86,6 +106,7 @@ public class Shoppingcart extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(1280, 720));
@@ -115,7 +136,7 @@ public class Shoppingcart extends javax.swing.JFrame {
         jSeparator11.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
         getContentPane().add(jSeparator11, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 170, 10, 470));
 
-        Table.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        Table.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -227,7 +248,7 @@ public class Shoppingcart extends javax.swing.JFrame {
         jLabel12.setText("รวมมูลค่าสินค้า");
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 310, -1, -1));
 
-        jLabel19.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jLabel19.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 270, 240, 100));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -265,6 +286,14 @@ public class Shoppingcart extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Up.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
+        jButton1.setText("jButton1");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, -1, -1));
+
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
@@ -291,6 +320,24 @@ public class Shoppingcart extends javax.swing.JFrame {
         new Shoppingcart().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_HistorybuttonActionPerformed
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        productList = readObjectFromFile();
+        DefaultTableModel model = (DefaultTableModel) Table.getModel();
+        model.getDataVector().removeAllElements();
+        model.fireTableDataChanged();
+        System.out.println(productList);
+        
+        for(ProductData xRow : productList) {
+            model.addRow(new Object[0]);
+            int row = model.getRowCount()-1;
+            model.setValueAt(xRow.getId(), row, 0);
+            model.setValueAt(xRow.getName(), row,1);
+            model.setValueAt(xRow.getQuantity(), row,2);
+            model.setValueAt(xRow.getPrice(), row,3);
+            model.setValueAt(xRow.getPoint(), row,4);
+        }
+    }//GEN-LAST:event_jButton1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -338,6 +385,7 @@ public class Shoppingcart extends javax.swing.JFrame {
     private javax.swing.JButton PayButton;
     private javax.swing.JTable Table;
     private javax.swing.JLabel Total;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel12;

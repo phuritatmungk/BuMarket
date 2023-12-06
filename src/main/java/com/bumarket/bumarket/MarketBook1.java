@@ -4,15 +4,20 @@
  */
 package com.bumarket.bumarket;
 
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+import java.util.ArrayList;
+import java.util.List;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author kritt
  */
 public class MarketBook1 extends javax.swing.JFrame {
 
-    /**
-     * Creates new form MarketBook1
-     */
+    List<ProductData> productList = new ArrayList<>();
+    
     public MarketBook1() {
         initComponents();
     }
@@ -270,11 +275,38 @@ public class MarketBook1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void btnBuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseClicked
-        // TODO add your handling code here:
+        ProductData user = new ProductData();
+        user.setId("1234");
+        user.setName("Monte");
+        user.setQuantity("12");
+        user.setPrice("236");
+        user.setPoint("1");
+        
+        productList.add(user);
+        System.out.println(productList);
+        
+        writeObjectToFile(productList);
+        JOptionPane.showMessageDialog(this,"Save Completed...");
         new Shoppingcart().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnBuyMouseClicked
 
+    public boolean writeObjectToFile(List<ProductData> pListData) {
+        String filePath = "products.bin";
+        try {
+            FileOutputStream file = new FileOutputStream(filePath);
+            ObjectOutputStream writer = new ObjectOutputStream(file);
+            
+            writer.writeObject(pListData);
+            writer.close();
+            file.close();
+            return true;
+        } catch (Exception ex) {
+            System.err.println("failed to write" + filePath + ", " + ex);
+            return false;
+        }
+    }
+    
     /**
      * @param args the command line arguments
      */
