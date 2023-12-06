@@ -332,7 +332,6 @@ public class Categoryjacket extends javax.swing.JFrame {
         jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Up.png"))); // NOI18N
-        background.setBorder(javax.swing.BorderFactory.createBevelBorder(null));
         jPanel1.add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, -1, 740));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
