@@ -56,7 +56,6 @@ public class Home extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Home");
-        setPreferredSize(new java.awt.Dimension(1280, 769));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -78,7 +77,7 @@ public class Home extends javax.swing.JFrame {
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
         jButton3.setText("ยอดพอยท์คงเหลือ");
-        jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jButton3.setContentAreaFilled(false);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,8 +96,7 @@ public class Home extends javax.swing.JFrame {
         jButton12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
         jButton12.setText("ประวัติการสั่งซื้อ");
-        jButton12.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton12.setContentAreaFilled(false);
+        jButton12.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel1.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 180, 180, 50));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/advert 2.jpg"))); // NOI18N
@@ -190,6 +188,14 @@ public class Home extends javax.swing.JFrame {
         btnClothes.setFocusPainted(false);
         btnClothes.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnClothes.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnClothes.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnClothesMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnClothesMouseExited(evt);
+            }
+        });
         btnClothes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnClothesActionPerformed(evt);
@@ -292,6 +298,14 @@ public class Home extends javax.swing.JFrame {
         new CategoryFood().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnSnacksanddrinksMouseClicked
+
+    private void btnClothesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnClothesMouseEntered
+ 
+    }//GEN-LAST:event_btnClothesMouseEntered
+
+    private void btnClothesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnClothesMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnClothesMouseExited
 
     /**
      * @param args the command line arguments
