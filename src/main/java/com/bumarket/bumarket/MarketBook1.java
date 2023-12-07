@@ -7,7 +7,9 @@ package com.bumarket.bumarket;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import javax.swing.JOptionPane;
 
 /**
@@ -17,7 +19,7 @@ import javax.swing.JOptionPane;
 public class MarketBook1 extends javax.swing.JFrame {
 
     List<ProductData> productList = new ArrayList<>();
-    List<String> productdata = new ArrayList<>();
+    List<String> productdata1 = new ArrayList<>();
     
     public MarketBook1() {
         initComponents();
@@ -285,13 +287,37 @@ public class MarketBook1 extends javax.swing.JFrame {
         user.setPoint(1 + user.getQty());
         
         productList.add(user);
-        productdata.add(user.getProduct());
-        System.out.println(productdata);
         
-        writeObjectToFile(productList);
+        String id = Integer.toString(user.getProductID());
+        String products = user.getProduct();
+        String quantity = Integer.toString(user.getQty());
+        String prices = Double.toString(user.getTotal());
+        String totals = Double.toString(user.getPrice());
+        String points = Integer.toString(user.getPoint());
+        
+        user.list_product(id, products, quantity, prices, totals, points);
+        //String set = Integer.toString(user.getProductID()) + "," +
+        //     user.getProduct() + "," +
+        //     Integer.toString(user.getQty()) + "," +
+        //     Double.toString(user.getTotal()) + "," +
+        //     Double.toString(user.getPrice()) + "," +
+        //     Integer.toString(user.getPoint());;
+        //productdata1.add(set);
+        
+        //productdata1.add(set);
+        //productdata1.add(Integer.toString(user.getProductID()));
+        //productdata1.add(user.getProduct());
+        //productdata1.add(Integer.toString(user.getQty()));
+        //productdata1.add(Double.toString(user.getTotal()));
+        //productdata1.add(Double.toString(user.getPrice()));
+        //productdata1.add(Integer.toString(user.getPoint()));
+        
+        //System.out.println(productdata1);
+        
+        //writeObjectToFile(productList);
         JOptionPane.showMessageDialog(this,"Save Completed...");
-        new Shoppingcart().setVisible(true);
-        this.dispose();
+        //new Shoppingcart().setVisible(true);
+        //this.dispose();
     }//GEN-LAST:event_btnBuyMouseClicked
 
     public boolean writeObjectToFile(List<ProductData> pListData) {
