@@ -314,10 +314,10 @@ public class MarketBook1 extends javax.swing.JFrame {
         
         //System.out.println(productdata1);
         
-        //writeObjectToFile(productList);
+        writeObjectToFile(productList);
         JOptionPane.showMessageDialog(this,"Save Completed...");
-        //new Shoppingcart().setVisible(true);
-        //this.dispose();
+        new Shoppingcart().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnBuyMouseClicked
 
     public boolean writeObjectToFile(List<ProductData> pListData) {
