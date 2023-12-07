@@ -4,12 +4,17 @@
  */
 package com.bumarket.bumarket;
 
+import java.io.File;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -17,9 +22,6 @@ import javax.swing.JOptionPane;
  * @author kritt
  */
 public class MarketBook1 extends javax.swing.JFrame {
-
-    List<ProductData> productList = new ArrayList<>();
-    List<String> productdata1 = new ArrayList<>();
     
     public MarketBook1() {
         initComponents();
@@ -130,6 +132,8 @@ public class MarketBook1 extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel4.setText("จำนวน");
+
+        jSpinner1.setModel(new javax.swing.SpinnerNumberModel(1, 1, null, 1));
 
         jLabel31.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel31.setText("คำอธิบาย");
@@ -282,36 +286,12 @@ public class MarketBook1 extends javax.swing.JFrame {
         ProductData user = new ProductData();
         user.setProductID(1234);
         user.setProduct("Monte");
-        user.setQty(1);
+        user.setQty(((Number) jSpinner1.getValue()).intValue());
         user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(292);
         user.setPoint(1 + user.getQty());
         
         ProductList.cart1.add(user);
-        
-        //int id = user.getProductID();
-        //String products = user.getProduct();
-        //int quantity = user.getQty();
-        //double prices = user.getTotal();
-        //double totals = user.getPrice();
-        //int points = user.getPoint();
-        
-        //user.list_product(id, products, quantity, prices, totals, points);
-        //String set = Integer.toString(user.getProductID()) + "," +
-        //     user.getProduct() + "," +
-        //     Integer.toString(user.getQty()) + "," +
-        //     Double.toString(user.getTotal()) + "," +
-        //     Double.toString(user.getPrice()) + "," +
-        //     Integer.toString(user.getPoint());;
-        //productdata1.add(set);
-        
-
-        //productdata1.add(id);
-        //productdata1.add(user.getProduct());
-        //productdata1.add(quantity);
-        //productdata1.add(prices);
-        //productdata1.add(totals);
-        //productdata1.add(points);
         
     for (ProductData productData : ProductList.cart1) {
         System.out.println("ID: " + productData.getProductID());
