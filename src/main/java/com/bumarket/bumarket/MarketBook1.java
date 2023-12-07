@@ -286,16 +286,16 @@ public class MarketBook1 extends javax.swing.JFrame {
         user.setPrice(292);
         user.setPoint(1 + user.getQty());
         
-        productList.add(user);
+        ProductList.cart1.add(user);
         
-        String id = Integer.toString(user.getProductID());
-        String products = user.getProduct();
-        String quantity = Integer.toString(user.getQty());
-        String prices = Double.toString(user.getTotal());
-        String totals = Double.toString(user.getPrice());
-        String points = Integer.toString(user.getPoint());
+        //int id = user.getProductID();
+        //String products = user.getProduct();
+        //int quantity = user.getQty();
+        //double prices = user.getTotal();
+        //double totals = user.getPrice();
+        //int points = user.getPoint();
         
-        user.list_product(id, products, quantity, prices, totals, points);
+        //user.list_product(id, products, quantity, prices, totals, points);
         //String set = Integer.toString(user.getProductID()) + "," +
         //     user.getProduct() + "," +
         //     Integer.toString(user.getQty()) + "," +
@@ -304,17 +304,25 @@ public class MarketBook1 extends javax.swing.JFrame {
         //     Integer.toString(user.getPoint());;
         //productdata1.add(set);
         
-        //productdata1.add(set);
-        //productdata1.add(Integer.toString(user.getProductID()));
+
+        //productdata1.add(id);
         //productdata1.add(user.getProduct());
-        //productdata1.add(Integer.toString(user.getQty()));
-        //productdata1.add(Double.toString(user.getTotal()));
-        //productdata1.add(Double.toString(user.getPrice()));
-        //productdata1.add(Integer.toString(user.getPoint()));
+        //productdata1.add(quantity);
+        //productdata1.add(prices);
+        //productdata1.add(totals);
+        //productdata1.add(points);
         
-        //System.out.println(productdata1);
+    for (ProductData productData : ProductList.cart1) {
+        System.out.println("ID: " + productData.getProductID());
+        System.out.println("Product: " + productData.getProduct());
+        System.out.println("Qty: " + productData.getQty());
+        System.out.println("Price: " + productData.getPrice());
+        System.out.println("Total: " + productData.getTotal());
+        System.out.println("Point: " + productData.getPoint());
+        System.out.println("---------------------------");
+    }
         
-        writeObjectToFile(productList);
+        writeObjectToFile(ProductList.cart1);
         JOptionPane.showMessageDialog(this,"Save Completed...");
         new Shoppingcart().setVisible(true);
         this.dispose();

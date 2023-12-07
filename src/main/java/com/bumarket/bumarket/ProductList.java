@@ -11,8 +11,8 @@ import java.util.List;
  *
  * @author pongs
  */
-public class GlobalVa {
-    public static List<Product> cart1 = new ArrayList<Product> ();
-        
+public class ProductList {
+     public static List<ProductData> cart1 = new ArrayList<ProductData> ();
     
 }
+

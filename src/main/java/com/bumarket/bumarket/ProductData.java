@@ -4,8 +4,7 @@
  */
 package com.bumarket.bumarket;
 
-import java.util.ArrayList;
-import java.util.List;
+
 import javax.swing.JSpinner;
 
 /**
@@ -20,47 +19,7 @@ public class ProductData implements java.io.Serializable {
     private double total;
     private int point;
     private double price;
-    private List<List<String>> productdataList2 = new ArrayList<>();
-    
-    public void list_product (String id ,String products ,String quantity , String prices ,String totals, String points ){
-        String ID = Integer.toString(productID);
-        String Qty = Integer.toString(qty);
-        String Prices = Double.toString(price);
-        String Total = Double.toString(total);
-        String Point = Integer.toString(point);
-        
-        ID = id;
-        product = products;
-        Qty = quantity;
-        Prices = prices;
-        Total = totals;
-        Point = points;
-        
-        //List<String> productdataList1 = new ArrayList<>();
-        //productdataList1.add(ID);
-        //productdataList1.add( product);
-        //productdataList1.add(Qty);
-        //productdataList1.add(Prices);
-        //productdataList1.add(Total);
-        //productdataList1.add(Point);
-        
-        //List<List<String>> productdataList2 = new ArrayList<>();
-        //productdataList2.add(productdataList1);
-        //System.out.println(productdataList2);
-        
-        List<String> productdataList1 = new ArrayList<>();
-        productdataList1.add(ID);
-        productdataList1.add(product);
-        productdataList1.add(Qty);
-        productdataList1.add(Prices);
-        productdataList1.add(Total);
-        productdataList1.add(Point);
 
-        productdataList2.add(new ArrayList<>(productdataList1));
-
-        System.out.println(productdataList2);
-         
-    }
 
     /**
      * @return the price
