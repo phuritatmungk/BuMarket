@@ -202,7 +202,7 @@ public class MarketStudent1 extends javax.swing.JFrame {
                 btnSize2XLActionPerformed(evt);
             }
         });
-        jPanel1.add(btnSize2XL, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 400, 50, 30));
+        jPanel1.add(btnSize2XL, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 400, 60, 30));
 
         btnSize3XL.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnSize3XL.setText("3XL");
@@ -212,7 +212,7 @@ public class MarketStudent1 extends javax.swing.JFrame {
                 btnSize3XLActionPerformed(evt);
             }
         });
-        jPanel1.add(btnSize3XL, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 400, 50, 30));
+        jPanel1.add(btnSize3XL, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 400, 60, 30));
 
         txtAmount.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         txtAmount.setText("จำนวน");
@@ -233,6 +233,11 @@ public class MarketStudent1 extends javax.swing.JFrame {
                 btnBuyMouseClicked(evt);
             }
         });
+        btnBuy.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBuyActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnBuy, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 490, 140, 40));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, 1090, 540));
@@ -240,6 +245,11 @@ public class MarketStudent1 extends javax.swing.JFrame {
         btnBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Back.png"))); // NOI18N
         btnBack.setBorder(null);
         btnBack.setContentAreaFilled(false);
+        btnBack.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnBackMouseClicked(evt);
+            }
+        });
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
@@ -331,9 +341,28 @@ public class MarketStudent1 extends javax.swing.JFrame {
 
     private void btnBuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseClicked
         // TODO add your handling code here:
+        ProductData user = new ProductData();
+        user.setProductID(187);
+        user.setProduct("เครื่องแบบDKสำหรับผู้ชาย เครื่องแบบนักศึกษา ");
+        user.setQty(1);
+        user.setTotal(user.getPrice() * user.getQty());
+        user.setPrice(489.00);
+        user.setPoint(1 + user.getQty());
+        
+        ProductList.cart1.add(user);
         new Shoppingcart().setVisible(true);
         this.dispose();
+        
     }//GEN-LAST:event_btnBuyMouseClicked
+
+    private void btnBuyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuyActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBuyActionPerformed
+
+    private void btnBackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackMouseClicked
+        new CategoryStudent ().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnBackMouseClicked
 
     /**
      * @param args the command line arguments

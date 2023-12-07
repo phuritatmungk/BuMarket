@@ -55,6 +55,10 @@ public class CategoryStudent extends javax.swing.JFrame {
         btnProduct2 = new javax.swing.JButton();
         btnProduct3 = new javax.swing.JButton();
         btnProduct4 = new javax.swing.JButton();
+        btnProduct1_1 = new javax.swing.JButton();
+        btnProduct1_2 = new javax.swing.JButton();
+        btnProduct1_3 = new javax.swing.JButton();
+        btnProduct1_4 = new javax.swing.JButton();
         iconUniversity = new javax.swing.JLabel();
         txtGlass = new javax.swing.JLabel();
         txtSearch = new javax.swing.JTextField();
@@ -255,6 +259,11 @@ public class CategoryStudent extends javax.swing.JFrame {
         jPanel2.add(jSeparator11, new org.netbeans.lib.awtextra.AbsoluteConstraints(213, -5, 16, 160));
 
         btnProduct1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Student uniform1.jpg"))); // NOI18N
+        btnProduct1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnProduct1MouseClicked(evt);
+            }
+        });
         btnProduct1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnProduct1ActionPerformed(evt);
@@ -263,13 +272,88 @@ public class CategoryStudent extends javax.swing.JFrame {
         jPanel2.add(btnProduct1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, 190, 190));
 
         btnProduct2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Student uniform2.jpg"))); // NOI18N
+        btnProduct2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnProduct2MouseClicked(evt);
+            }
+        });
         jPanel2.add(btnProduct2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 190, 190, 190));
 
         btnProduct3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Student uniform3.jpg"))); // NOI18N
+        btnProduct3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnProduct3MouseClicked(evt);
+            }
+        });
         jPanel2.add(btnProduct3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 190, 190, 190));
 
         btnProduct4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Student uniform4.jpg"))); // NOI18N
+        btnProduct4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnProduct4MouseClicked(evt);
+            }
+        });
         jPanel2.add(btnProduct4, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 190, 190, 190));
+
+        btnProduct1_1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnProduct1_1.setText("เพิ่มเติม");
+        btnProduct1_1.setContentAreaFilled(false);
+        btnProduct1_1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnProduct1_1MouseClicked(evt);
+            }
+        });
+        btnProduct1_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnProduct1_1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnProduct1_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 410, -1, -1));
+
+        btnProduct1_2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnProduct1_2.setText("เพิ่มเติม");
+        btnProduct1_2.setContentAreaFilled(false);
+        btnProduct1_2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnProduct1_2MouseClicked(evt);
+            }
+        });
+        btnProduct1_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnProduct1_2ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnProduct1_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 410, -1, -1));
+
+        btnProduct1_3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnProduct1_3.setText("เพิ่มเติม");
+        btnProduct1_3.setContentAreaFilled(false);
+        btnProduct1_3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnProduct1_3MouseClicked(evt);
+            }
+        });
+        btnProduct1_3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnProduct1_3ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnProduct1_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 410, -1, -1));
+
+        btnProduct1_4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        btnProduct1_4.setText("เพิ่มเติม");
+        btnProduct1_4.setContentAreaFilled(false);
+        btnProduct1_4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnProduct1_4MouseClicked(evt);
+            }
+        });
+        btnProduct1_4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnProduct1_4ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnProduct1_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 410, -1, -1));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, -1, 500));
 
@@ -401,6 +485,63 @@ public class CategoryStudent extends javax.swing.JFrame {
          this.dispose();
     }//GEN-LAST:event_btnHistoryActionPerformed
 
+    private void btnProduct1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct1MouseClicked
+        new MarketStudent1().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnProduct1MouseClicked
+
+    private void btnProduct2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct2MouseClicked
+       new MarketStudent2().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnProduct2MouseClicked
+
+    private void btnProduct3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct3MouseClicked
+        new MarketStudent3().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnProduct3MouseClicked
+
+    private void btnProduct4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct4MouseClicked
+       new MarketStudent4().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnProduct4MouseClicked
+
+    private void btnProduct1_1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct1_1MouseClicked
+        new MarketStudent4().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnProduct1_1MouseClicked
+
+    private void btnProduct1_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct1_1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnProduct1_1ActionPerformed
+
+    private void btnProduct1_2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct1_2MouseClicked
+        new MarketStudent1().setVisible(true);
+         this.dispose();
+    }//GEN-LAST:event_btnProduct1_2MouseClicked
+
+    private void btnProduct1_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct1_2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnProduct1_2ActionPerformed
+
+    private void btnProduct1_3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct1_3MouseClicked
+        new MarketStudent2().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnProduct1_3MouseClicked
+
+    private void btnProduct1_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct1_3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnProduct1_3ActionPerformed
+
+    private void btnProduct1_4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct1_4MouseClicked
+        new MarketStudent3().setVisible(true);
+        this.dispose();
+        
+    }//GEN-LAST:event_btnProduct1_4MouseClicked
+
+    private void btnProduct1_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct1_4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnProduct1_4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -445,6 +586,10 @@ public class CategoryStudent extends javax.swing.JFrame {
     private javax.swing.JButton btnJackets;
     private javax.swing.JButton btnPoint;
     private javax.swing.JButton btnProduct1;
+    private javax.swing.JButton btnProduct1_1;
+    private javax.swing.JButton btnProduct1_2;
+    private javax.swing.JButton btnProduct1_3;
+    private javax.swing.JButton btnProduct1_4;
     private javax.swing.JButton btnProduct2;
     private javax.swing.JButton btnProduct3;
     private javax.swing.JButton btnProduct4;
