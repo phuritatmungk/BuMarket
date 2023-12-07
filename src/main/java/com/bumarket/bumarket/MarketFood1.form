@@ -234,6 +234,9 @@
                 <Property name="text" type="java.lang.String" value="&#xe2b;&#xe22;&#xe34;&#xe1a;&#xe43;&#xe2a;&#xe48;&#xe15;&#xe23;&#xe30;&#xe01;&#xe23;&#xe49;&#xe32;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAddtocartMouseClicked"/>
+              </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="464" y="479" width="-1" height="40"/>

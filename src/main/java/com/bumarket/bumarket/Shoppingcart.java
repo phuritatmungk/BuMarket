@@ -339,8 +339,6 @@ public class Shoppingcart extends javax.swing.JFrame {
         model.fireTableDataChanged();
         System.out.println(productList);
         for(ProductData xRow : productList) {
-            model.addRow(new Object[0]);
-            int row = model.getRowCount()-1;
             model.addRow(new Product(xRow.getProduct(), xRow.getProductID(), xRow.getQty(), xRow.getPrice(), xRow.getTotal(), xRow.getPoint()).toTableRow(Table.getRowCount() + 1));
         }
     }//GEN-LAST:event_jButton1MouseClicked
@@ -355,7 +353,6 @@ public class Shoppingcart extends javax.swing.JFrame {
             }else{
                 JOptionPane.showMessageDialog(this, "Please select Single Row For Delete");
             }
-
         }
     }//GEN-LAST:event_DeleteBtnMouseClicked
 

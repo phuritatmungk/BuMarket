@@ -105,8 +105,4 @@ public class ProductData implements java.io.Serializable {
     public void setPoint(int point) {
         this.point = point;
     }
-
-    void setQty(JSpinner jSpinner1) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 }

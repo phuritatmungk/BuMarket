@@ -11,10 +11,7 @@ import javax.swing.JOptionPane;
  * @author kritt
  */
 public class MarketFood1 extends javax.swing.JFrame {
-
-    /**
-     * Creates new form MarketFood1
-     */
+    
     public MarketFood1() {
         initComponents();
     }
@@ -85,7 +82,7 @@ public class MarketFood1 extends javax.swing.JFrame {
         jPanel2.add(jLabel3);
         jLabel3.setBounds(110, 360, 90, 90);
 
-        scrollbar1.setOrientation(0);
+        scrollbar1.setOrientation(java.awt.Scrollbar.HORIZONTAL);
         jPanel2.add(scrollbar1);
         scrollbar1.setBounds(110, 460, 300, 16);
 
@@ -134,6 +131,11 @@ public class MarketFood1 extends javax.swing.JFrame {
         btnAddtocart.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnAddtocart.setText("หยิบใส่ตระกร้า");
         btnAddtocart.setContentAreaFilled(false);
+        btnAddtocart.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnAddtocartMouseClicked(evt);
+            }
+        });
         jPanel2.add(btnAddtocart);
         btnAddtocart.setBounds(464, 479, 137, 40);
 
@@ -279,6 +281,7 @@ public class MarketFood1 extends javax.swing.JFrame {
 
     private void btnBuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseClicked
         ProductData user = new ProductData();
+        MarketBook1 writefile = new MarketBook1();
         user.setProductID(234);
         user.setProduct("Monte");
         user.setQty(1);
@@ -298,10 +301,37 @@ public class MarketFood1 extends javax.swing.JFrame {
             System.out.println("---------------------------");
         }
         
+        writefile.writeObjectToFile(ProductList.cart1);
         JOptionPane.showMessageDialog(this,"Save Completed...");        // TODO add your handling code here:
         new Shoppingcart().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnBuyMouseClicked
+
+    private void btnAddtocartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddtocartMouseClicked
+        ProductData user = new ProductData();
+        MarketBook1 writefile = new MarketBook1();
+        user.setProductID(234);
+        user.setProduct("Monte");
+        user.setQty(1);
+        user.setTotal(user.getPrice() * user.getQty());
+        user.setPrice(292);
+        user.setPoint(1 + user.getQty());
+        
+        ProductList.cart1.add(user);
+        
+        for (ProductData productData : ProductList.cart1) {
+            System.out.println("ID: " + productData.getProductID());
+            System.out.println("Product: " + productData.getProduct());
+            System.out.println("Qty: " + productData.getQty());
+            System.out.println("Price: " + productData.getPrice());
+            System.out.println("Total: " + productData.getTotal());
+            System.out.println("Point: " + productData.getPoint());
+            System.out.println("---------------------------");
+        }
+        
+        writefile.writeObjectToFile(ProductList.cart1);
+        JOptionPane.showMessageDialog(this,"Save Completed...");
+    }//GEN-LAST:event_btnAddtocartMouseClicked
 
     /**
      * @param args the command line arguments
