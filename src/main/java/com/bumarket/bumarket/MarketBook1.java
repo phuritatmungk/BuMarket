@@ -65,6 +65,7 @@ public class MarketBook1 extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
         setSize(new java.awt.Dimension(1280, 720));
 
         jPanel1.setBackground(new java.awt.Color(230, 230, 230));
@@ -80,7 +81,7 @@ public class MarketBook1 extends javax.swing.JFrame {
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/product-book1.2(mini).jpg"))); // NOI18N
 
-        scrollbar1.setOrientation(0);
+        scrollbar1.setOrientation(java.awt.Scrollbar.HORIZONTAL);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel2.setText("สมุดวาดเขียน MONT MARTE ขนาด A4 140 แกรม 40 หน้า ");

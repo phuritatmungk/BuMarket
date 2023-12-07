@@ -63,6 +63,7 @@ public class MarketFood1 extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(230, 230, 230));
@@ -283,10 +284,10 @@ public class MarketFood1 extends javax.swing.JFrame {
         ProductData user = new ProductData();
         MarketBook1 writefile = new MarketBook1();
         user.setProductID(234);
-        user.setProduct("Monte");
+        user.setProduct("[แพ็คสุดคุ้ม] Lays Classic เลย์คลาสสิค แผ่นเรียบ ขนาด 32 บาท 3 ซอง");
         user.setQty(1);
         user.setTotal(user.getPrice() * user.getQty());
-        user.setPrice(292);
+        user.setPrice(96);
         user.setPoint(1 + user.getQty());
         
         ProductList.cart1.add(user);
@@ -311,11 +312,11 @@ public class MarketFood1 extends javax.swing.JFrame {
         ProductData user = new ProductData();
         MarketBook1 writefile = new MarketBook1();
         user.setProductID(234);
-        user.setProduct("Monte");
+        user.setProduct("[แพ็คสุดคุ้ม] Lays Classic เลย์คลาสสิค แผ่นเรียบ ขนาด 32 บาท 3 ซอง");
         user.setQty(1);
         user.setTotal(user.getPrice() * user.getQty());
-        user.setPrice(292);
-        user.setPoint(1 + user.getQty());
+        user.setPrice(96);
+        user.setPoint(0 + user.getQty());
         
         ProductList.cart1.add(user);
         

@@ -139,6 +139,7 @@ public class Shoppingcart extends javax.swing.JFrame {
         getContentPane().add(jSeparator11, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 170, 10, 470));
 
         Table.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Table.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         Table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 

@@ -72,6 +72,7 @@ public class CategoryFood extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(230, 230, 230));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -234,7 +235,7 @@ public class CategoryFood extends javax.swing.JFrame {
 
         txtProduct10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtProduct10.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        txtProduct10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Food3.jpg"))); // NOI18N
+        txtProduct10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Food3.png"))); // NOI18N
         txtProduct10.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         txtProduct10.setVerifyInputWhenFocusTarget(false);
         txtProduct10.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
@@ -464,6 +465,8 @@ public class CategoryFood extends javax.swing.JFrame {
 
     private void btnProduct3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct3MouseClicked
         // TODO add your handling code here:
+        new MarketFood2().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnProduct3MouseClicked
 
     private void btnProduct3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct3ActionPerformed
@@ -472,6 +475,8 @@ public class CategoryFood extends javax.swing.JFrame {
 
     private void btnProduct43MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct43MouseClicked
         // TODO add your handling code here:
+        new MarketFood3().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnProduct43MouseClicked
 
     private void btnProduct43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct43ActionPerformed
@@ -479,7 +484,8 @@ public class CategoryFood extends javax.swing.JFrame {
     }//GEN-LAST:event_btnProduct43ActionPerformed
 
     private void btnProduct53MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct53MouseClicked
-
+        new MarketFood4().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnProduct53MouseClicked
 
     private void btnProduct53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct53ActionPerformed

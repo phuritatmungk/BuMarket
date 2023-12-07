@@ -58,6 +58,7 @@ public class CategoryWater extends javax.swing.JFrame {
         btnProduct5 = new javax.swing.JButton();
         txtProduct7 = new javax.swing.JLabel();
         txtProduct13 = new javax.swing.JLabel();
+        txtProduct12 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         txtSearch = new javax.swing.JTextField();
@@ -71,6 +72,7 @@ public class CategoryWater extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(230, 230, 230));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -193,11 +195,11 @@ public class CategoryWater extends javax.swing.JFrame {
 
         txtProduct8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtProduct8.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        txtProduct8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Water1.png"))); // NOI18N
+        txtProduct8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/water2.jpg"))); // NOI18N
         txtProduct8.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         txtProduct8.setVerifyInputWhenFocusTarget(false);
         txtProduct8.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        jPanel2.add(txtProduct8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, 190, -1));
+        jPanel2.add(txtProduct8, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 190, 190, -1));
 
         jSeparator9.setForeground(new java.awt.Color(121, 121, 121));
         jSeparator9.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
@@ -205,7 +207,6 @@ public class CategoryWater extends javax.swing.JFrame {
 
         txtProduct9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtProduct9.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        txtProduct9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/water2_1.jpg"))); // NOI18N
         jPanel2.add(txtProduct9, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 190, 190, -1));
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -327,6 +328,14 @@ public class CategoryWater extends javax.swing.JFrame {
         txtProduct13.setVerifyInputWhenFocusTarget(false);
         txtProduct13.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
         jPanel2.add(txtProduct13, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 390, 250, -1));
+
+        txtProduct12.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtProduct12.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        txtProduct12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Water1.png"))); // NOI18N
+        txtProduct12.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        txtProduct12.setVerifyInputWhenFocusTarget(false);
+        txtProduct12.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        jPanel2.add(txtProduct12, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, 190, -1));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, -1, 564));
 
@@ -458,6 +467,8 @@ public class CategoryWater extends javax.swing.JFrame {
 
     private void btnProduct3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct3MouseClicked
         // TODO add your handling code here:
+        new MarketWater2().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnProduct3MouseClicked
 
     private void btnProduct3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct3ActionPerformed
@@ -466,6 +477,8 @@ public class CategoryWater extends javax.swing.JFrame {
 
     private void btnProduct43MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct43MouseClicked
         // TODO add your handling code here:
+        new MarketWater3().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnProduct43MouseClicked
 
     private void btnProduct43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct43ActionPerformed
@@ -551,6 +564,7 @@ public class CategoryWater extends javax.swing.JFrame {
     private javax.swing.JLabel txtProduct1;
     private javax.swing.JLabel txtProduct10;
     private javax.swing.JLabel txtProduct11;
+    private javax.swing.JLabel txtProduct12;
     private javax.swing.JLabel txtProduct13;
     private javax.swing.JLabel txtProduct5;
     private javax.swing.JLabel txtProduct7;
