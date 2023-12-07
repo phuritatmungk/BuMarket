@@ -196,6 +196,8 @@ public class MarketShirt3 extends javax.swing.JFrame {
         txtAmount.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         txtAmount.setText("จำนวน");
         jPanel1.add(txtAmount, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 440, 70, 30));
+
+        jSpinner1.setModel(new javax.swing.SpinnerNumberModel(1, 1, null, 1));
         jPanel1.add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 440, 120, 30));
 
         Productshirt1.setBackground(new java.awt.Color(204, 204, 204));

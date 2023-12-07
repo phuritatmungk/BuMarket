@@ -73,6 +73,7 @@ public class MarketFood3 extends javax.swing.JFrame {
         jLabel49 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1280, 720));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -127,7 +128,7 @@ public class MarketFood3 extends javax.swing.JFrame {
             }
         });
         jPanel6.add(btnAddtocart2);
-        btnAddtocart2.setBounds(460, 400, 137, 40);
+        btnAddtocart2.setBounds(460, 400, 138, 40);
 
         btnBuy2.setBackground(new java.awt.Color(204, 0, 0));
         btnBuy2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -145,6 +146,8 @@ public class MarketFood3 extends javax.swing.JFrame {
         jLabel8.setText("จำนวน");
         jPanel6.add(jLabel8);
         jLabel8.setBounds(460, 350, 70, 30);
+
+        jSpinner3.setModel(new javax.swing.SpinnerNumberModel(1, 1, null, 1));
         jPanel6.add(jSpinner3);
         jSpinner3.setBounds(530, 350, 120, 30);
 
@@ -214,7 +217,7 @@ public class MarketFood3 extends javax.swing.JFrame {
             }
         });
         jPanel8.add(btnAddtocart3);
-        btnAddtocart3.setBounds(460, 400, 137, 40);
+        btnAddtocart3.setBounds(460, 400, 138, 40);
 
         btnBuy3.setBackground(new java.awt.Color(204, 0, 0));
         btnBuy3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -488,16 +491,11 @@ public class MarketFood3 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAddtocart;
-    private javax.swing.JButton btnAddtocart1;
     private javax.swing.JButton btnAddtocart2;
     private javax.swing.JButton btnAddtocart3;
-    private javax.swing.JButton btnBuy;
-    private javax.swing.JButton btnBuy1;
     private javax.swing.JButton btnBuy2;
     private javax.swing.JButton btnBuy3;
     private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -505,32 +503,16 @@ public class MarketFood3 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
@@ -540,27 +522,16 @@ public class MarketFood3 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JSpinner jSpinner1;
-    private javax.swing.JSpinner jSpinner2;
     private javax.swing.JSpinner jSpinner3;
     private javax.swing.JSpinner jSpinner4;
     private javax.swing.JTextField jTextField2;
-    private java.awt.Scrollbar scrollbar1;
-    private java.awt.Scrollbar scrollbar2;
     private java.awt.Scrollbar scrollbar3;
     private java.awt.Scrollbar scrollbar4;
     // End of variables declaration//GEN-END:variables

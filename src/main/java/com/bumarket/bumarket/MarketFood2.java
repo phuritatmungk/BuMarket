@@ -74,6 +74,7 @@ public class MarketFood2 extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1280, 720));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -132,7 +133,7 @@ public class MarketFood2 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(btnAddtocart);
-        btnAddtocart.setBounds(460, 400, 137, 40);
+        btnAddtocart.setBounds(460, 400, 138, 40);
 
         btnBuy.setBackground(new java.awt.Color(204, 0, 0));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -219,7 +220,7 @@ public class MarketFood2 extends javax.swing.JFrame {
             }
         });
         jPanel4.add(btnAddtocart1);
-        btnAddtocart1.setBounds(460, 400, 137, 40);
+        btnAddtocart1.setBounds(460, 400, 138, 40);
 
         btnBuy1.setBackground(new java.awt.Color(204, 0, 0));
         btnBuy1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N

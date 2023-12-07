@@ -127,7 +127,7 @@ public class MarketFood4 extends javax.swing.JFrame {
             }
         });
         jPanel6.add(btnAddtocart2);
-        btnAddtocart2.setBounds(460, 400, 137, 40);
+        btnAddtocart2.setBounds(460, 400, 138, 40);
 
         btnBuy2.setBackground(new java.awt.Color(204, 0, 0));
         btnBuy2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -145,6 +145,8 @@ public class MarketFood4 extends javax.swing.JFrame {
         jLabel8.setText("จำนวน");
         jPanel6.add(jLabel8);
         jLabel8.setBounds(460, 350, 70, 30);
+
+        jSpinner3.setModel(new javax.swing.SpinnerNumberModel(1, 1, null, 1));
         jPanel6.add(jSpinner3);
         jSpinner3.setBounds(530, 350, 120, 30);
 
@@ -214,7 +216,7 @@ public class MarketFood4 extends javax.swing.JFrame {
             }
         });
         jPanel8.add(btnAddtocart3);
-        btnAddtocart3.setBounds(460, 400, 137, 40);
+        btnAddtocart3.setBounds(460, 400, 138, 40);
 
         btnBuy3.setBackground(new java.awt.Color(204, 0, 0));
         btnBuy3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N

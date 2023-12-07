@@ -61,6 +61,7 @@ public class MarketBook4 extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1280, 720));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -128,7 +129,7 @@ public class MarketBook4 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(btnAddtocart);
-        btnAddtocart.setBounds(460, 430, 137, 40);
+        btnAddtocart.setBounds(460, 430, 138, 40);
 
         btnBuy.setBackground(new java.awt.Color(204, 0, 0));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -146,6 +147,8 @@ public class MarketBook4 extends javax.swing.JFrame {
         jLabel4.setText("จำนวน");
         jPanel2.add(jLabel4);
         jLabel4.setBounds(460, 380, 70, 30);
+
+        jSpinner1.setModel(new javax.swing.SpinnerNumberModel(1, 1, null, 1));
         jPanel2.add(jSpinner1);
         jSpinner1.setBounds(530, 380, 120, 30);
 

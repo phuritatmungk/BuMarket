@@ -90,7 +90,7 @@ public class MarketFood1 extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel2.setText("[แพ็คสุดคุ้ม] Lays Classic เลย์คลาสสิค แผ่นเรียบ ");
         jPanel2.add(jLabel2);
-        jLabel2.setBounds(464, 34, 541, 40);
+        jLabel2.setBounds(464, 34, 542, 40);
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -138,7 +138,7 @@ public class MarketFood1 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(btnAddtocart);
-        btnAddtocart.setBounds(464, 479, 137, 40);
+        btnAddtocart.setBounds(464, 479, 138, 40);
 
         btnBuy.setBackground(new java.awt.Color(204, 0, 0));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -156,6 +156,8 @@ public class MarketFood1 extends javax.swing.JFrame {
         jLabel4.setText("จำนวน");
         jPanel2.add(jLabel4);
         jLabel4.setBounds(464, 429, 70, 30);
+
+        jSpinner1.setModel(new javax.swing.SpinnerNumberModel(1, 1, null, 1));
         jPanel2.add(jSpinner1);
         jSpinner1.setBounds(540, 431, 120, 30);
 
@@ -185,7 +187,7 @@ public class MarketFood1 extends javax.swing.JFrame {
         btnOption2.setText("เมี่ยงคำ ครบรส ");
         btnOption2.setContentAreaFilled(false);
         jPanel2.add(btnOption2);
-        btnOption2.setBounds(616, 387, 107, 30);
+        btnOption2.setBounds(616, 387, 106, 30);
 
         btnOption4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnOption4.setText("ซาวครีมและหัวหอม");
@@ -197,12 +199,12 @@ public class MarketFood1 extends javax.swing.JFrame {
         btnOption3.setText("โนริ สาหร่าย");
         btnOption3.setContentAreaFilled(false);
         jPanel2.add(btnOption3);
-        btnOption3.setBounds(735, 387, 91, 30);
+        btnOption3.setBounds(735, 387, 90, 30);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel5.setText("ขนาด 32 บาท 3 ซอง");
         jPanel2.add(jLabel5);
-        jLabel5.setBounds(460, 70, 229, 40);
+        jLabel5.setBounds(460, 70, 230, 40);
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, 1090, 530));
 

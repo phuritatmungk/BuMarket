@@ -131,7 +131,7 @@ public class MarketOther2 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(btnAddtocart);
-        btnAddtocart.setBounds(455, 400, 137, 40);
+        btnAddtocart.setBounds(455, 400, 138, 40);
 
         btnBuy.setBackground(new java.awt.Color(204, 0, 0));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -149,6 +149,8 @@ public class MarketOther2 extends javax.swing.JFrame {
         jLabel4.setText("จำนวน");
         jPanel2.add(jLabel4);
         jLabel4.setBounds(455, 350, 70, 30);
+
+        jSpinner1.setModel(new javax.swing.SpinnerNumberModel(1, 1, null, 1));
         jPanel2.add(jSpinner1);
         jSpinner1.setBounds(531, 352, 120, 30);
 
