@@ -111,7 +111,7 @@ public class Product implements java.io.Serializable {
     
     public Object[] toTableRow(int rowNum){
         DecimalFormat df = new DecimalFormat("###0.##");
-        return new Object[]{this, df.format(productID), product, df.format(qty), "$"+df.format(price),"$"+df.format(total), df.format(point)};
+        return new Object[]{this, df.format(rowNum), product, df.format(qty), "$"+df.format(price),"$"+df.format(total), df.format(point)};
     }
     
 }
