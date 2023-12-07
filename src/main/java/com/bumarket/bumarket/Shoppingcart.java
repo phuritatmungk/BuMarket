@@ -5,8 +5,12 @@
 package com.bumarket.bumarket;
 
 import java.awt.Component;
+import java.io.BufferedWriter;
 import java.io.FileInputStream;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.io.ObjectInputStream;
+import java.io.Writer;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -111,6 +115,7 @@ public class Shoppingcart extends javax.swing.JFrame {
         DeleteBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
         setSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -139,6 +144,7 @@ public class Shoppingcart extends javax.swing.JFrame {
         getContentPane().add(jSeparator11, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 170, 10, 470));
 
         Table.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Table.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         Table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -310,8 +316,9 @@ public class Shoppingcart extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void PayButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PayButtonActionPerformed
-         new Checkout().setVisible(true);
-         this.dispose();
+        
+        //new Checkout().setVisible(true);
+         //this.dispose();
     }//GEN-LAST:event_PayButtonActionPerformed
 
     private void BackbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackbuttonActionPerformed
@@ -337,7 +344,6 @@ public class Shoppingcart extends javax.swing.JFrame {
         DefaultTableModel model = (DefaultTableModel) Table.getModel();
         model.getDataVector().removeAllElements();
         model.fireTableDataChanged();
-        System.out.println(productList);
         for(ProductData xRow : productList) {
             model.addRow(new Product(xRow.getProduct(), xRow.getProductID(), xRow.getQty(), xRow.getPrice(), xRow.getTotal(), xRow.getPoint()).toTableRow(Table.getRowCount() + 1));
         }
@@ -345,7 +351,7 @@ public class Shoppingcart extends javax.swing.JFrame {
 
     private void DeleteBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DeleteBtnMouseClicked
         DefaultTableModel model = (DefaultTableModel) Table.getModel();
-        if(Table.getSelectedRowCount() ==1){
+        if(Table.getSelectedRowCount() == 1) {
             model.removeRow(Table.getSelectedRow());
         }else{
             if (Table.getRowCount()==0){

@@ -78,6 +78,7 @@ public class Category2 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setFocusable(false);
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(230, 230, 230));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -522,6 +523,8 @@ public class Category2 extends javax.swing.JFrame {
 
     private void btnProduct3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct3MouseClicked
         // TODO add your handling code here:
+        new MarketBook2().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnProduct3MouseClicked
 
     private void btnProduct3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct3ActionPerformed
@@ -530,6 +533,8 @@ public class Category2 extends javax.swing.JFrame {
 
     private void btnProduct43MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct43MouseClicked
         // TODO add your handling code here:
+        new MarketBook3().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnProduct43MouseClicked
 
     private void btnProduct43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct43ActionPerformed
@@ -537,7 +542,8 @@ public class Category2 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnProduct43ActionPerformed
 
     private void btnProduct53MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct53MouseClicked
-
+        new MarketBook4().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnProduct53MouseClicked
 
     private void btnProduct53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct53ActionPerformed

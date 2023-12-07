@@ -4,6 +4,8 @@
  */
 package com.bumarket.bumarket;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author kritt
@@ -54,6 +56,7 @@ public class MarketWater1 extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(230, 230, 230));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -68,7 +71,7 @@ public class MarketWater1 extends javax.swing.JFrame {
         jPanel2.add(jLabel1);
         jLabel1.setBounds(112, 69, 280, 280);
 
-        scrollbar1.setOrientation(0);
+        scrollbar1.setOrientation(java.awt.Scrollbar.HORIZONTAL);
         jPanel2.add(scrollbar1);
         scrollbar1.setBounds(101, 467, 300, 16);
 
@@ -101,6 +104,11 @@ public class MarketWater1 extends javax.swing.JFrame {
         btnAddtocart.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnAddtocart.setText("หยิบใส่ตระกร้า");
         btnAddtocart.setContentAreaFilled(false);
+        btnAddtocart.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnAddtocartMouseClicked(evt);
+            }
+        });
         jPanel2.add(btnAddtocart);
         btnAddtocart.setBounds(455, 400, 137, 40);
 
@@ -108,6 +116,11 @@ public class MarketWater1 extends javax.swing.JFrame {
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnBuy.setForeground(new java.awt.Color(255, 255, 255));
         btnBuy.setText("ซื้อสินค้า");
+        btnBuy.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnBuyMouseClicked(evt);
+            }
+        });
         jPanel2.add(btnBuy);
         btnBuy.setBounds(610, 400, 140, 40);
 
@@ -209,6 +222,62 @@ public class MarketWater1 extends javax.swing.JFrame {
         new Shoppingcart().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void btnBuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseClicked
+        // TODO add your handling code here:
+        ProductData user = new ProductData();
+        MarketBook1 writefile = new MarketBook1();
+        user.setProductID(234);
+        user.setProduct("คริสตัล น้ำดื่ม 600มล.");
+        user.setQty(1);
+        user.setTotal(user.getPrice() * user.getQty());
+        user.setPrice(7);
+        user.setPoint(0 + user.getQty());
+
+        ProductList.cart1.add(user);
+
+        for (ProductData productData : ProductList.cart1) {
+            System.out.println("ID: " + productData.getProductID());
+            System.out.println("Product: " + productData.getProduct());
+            System.out.println("Qty: " + productData.getQty());
+            System.out.println("Price: " + productData.getPrice());
+            System.out.println("Total: " + productData.getTotal());
+            System.out.println("Point: " + productData.getPoint());
+            System.out.println("---------------------------");
+        }
+
+        writefile.writeObjectToFile(ProductList.cart1);
+        JOptionPane.showMessageDialog(this,"Save Completed...");
+        new Shoppingcart().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnBuyMouseClicked
+
+    private void btnAddtocartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddtocartMouseClicked
+        // TODO add your handling code here:
+        ProductData user = new ProductData();
+        MarketBook1 writefile = new MarketBook1();
+        user.setProductID(234);
+        user.setProduct("คริสตัล น้ำดื่ม 600มล.");
+        user.setQty(1);
+        user.setTotal(user.getPrice() * user.getQty());
+        user.setPrice(7);
+        user.setPoint(0 + user.getQty());
+
+        ProductList.cart1.add(user);
+
+        for (ProductData productData : ProductList.cart1) {
+            System.out.println("ID: " + productData.getProductID());
+            System.out.println("Product: " + productData.getProduct());
+            System.out.println("Qty: " + productData.getQty());
+            System.out.println("Price: " + productData.getPrice());
+            System.out.println("Total: " + productData.getTotal());
+            System.out.println("Point: " + productData.getPoint());
+            System.out.println("---------------------------");
+        }
+
+        writefile.writeObjectToFile(ProductList.cart1);
+        JOptionPane.showMessageDialog(this,"Save Completed...");
+    }//GEN-LAST:event_btnAddtocartMouseClicked
 
     /**
      * @param args the command line arguments

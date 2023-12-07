@@ -4,12 +4,17 @@
  */
 package com.bumarket.bumarket;
 
+import java.io.File;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -17,9 +22,6 @@ import javax.swing.JOptionPane;
  * @author kritt
  */
 public class MarketBook1 extends javax.swing.JFrame {
-
-    List<ProductData> productList = new ArrayList<>();
-    List<String> productdata1 = new ArrayList<>();
     
     public MarketBook1() {
         initComponents();
@@ -65,6 +67,7 @@ public class MarketBook1 extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
         setSize(new java.awt.Dimension(1280, 720));
 
         jPanel1.setBackground(new java.awt.Color(230, 230, 230));
@@ -80,7 +83,7 @@ public class MarketBook1 extends javax.swing.JFrame {
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/product-book1.2(mini).jpg"))); // NOI18N
 
-        scrollbar1.setOrientation(0);
+        scrollbar1.setOrientation(java.awt.Scrollbar.HORIZONTAL);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel2.setText("สมุดวาดเขียน MONT MARTE ขนาด A4 140 แกรม 40 หน้า ");
@@ -129,6 +132,8 @@ public class MarketBook1 extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel4.setText("จำนวน");
+
+        jSpinner1.setModel(new javax.swing.SpinnerNumberModel(1, 1, null, 1));
 
         jLabel31.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel31.setText("คำอธิบาย");
@@ -281,36 +286,12 @@ public class MarketBook1 extends javax.swing.JFrame {
         ProductData user = new ProductData();
         user.setProductID(1234);
         user.setProduct("Monte");
-        user.setQty(1);
+        user.setQty(((Number) jSpinner1.getValue()).intValue());
         user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(292);
         user.setPoint(1 + user.getQty());
         
         ProductList.cart1.add(user);
-        
-        //int id = user.getProductID();
-        //String products = user.getProduct();
-        //int quantity = user.getQty();
-        //double prices = user.getTotal();
-        //double totals = user.getPrice();
-        //int points = user.getPoint();
-        
-        //user.list_product(id, products, quantity, prices, totals, points);
-        //String set = Integer.toString(user.getProductID()) + "," +
-        //     user.getProduct() + "," +
-        //     Integer.toString(user.getQty()) + "," +
-        //     Double.toString(user.getTotal()) + "," +
-        //     Double.toString(user.getPrice()) + "," +
-        //     Integer.toString(user.getPoint());;
-        //productdata1.add(set);
-        
-
-        //productdata1.add(id);
-        //productdata1.add(user.getProduct());
-        //productdata1.add(quantity);
-        //productdata1.add(prices);
-        //productdata1.add(totals);
-        //productdata1.add(points);
         
     for (ProductData productData : ProductList.cart1) {
         System.out.println("ID: " + productData.getProductID());

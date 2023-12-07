@@ -74,6 +74,7 @@ public class Category4 extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(230, 230, 230));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -502,6 +503,8 @@ public class Category4 extends javax.swing.JFrame {
 
     private void btnProduct43MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct43MouseClicked
         // TODO add your handling code here:
+        new MarketOther3().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnProduct43MouseClicked
 
     private void btnProduct43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct43ActionPerformed
@@ -509,7 +512,8 @@ public class Category4 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnProduct43ActionPerformed
 
     private void btnProduct53MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct53MouseClicked
-
+        new MarketOther4().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnProduct53MouseClicked
 
     private void btnProduct53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct53ActionPerformed

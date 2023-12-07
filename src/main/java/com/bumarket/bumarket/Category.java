@@ -185,7 +185,7 @@ public class Category extends javax.swing.JFrame {
 
         txtprice4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         txtprice4.setForeground(new java.awt.Color(255, 0, 0));
-        txtprice4.setText("฿ 240.00");
+        txtprice4.setText("฿ 24.00");
         jPanel2.add(txtprice4, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 440, -1, -1));
 
         jSeparator14.setForeground(new java.awt.Color(121, 121, 121));
@@ -313,6 +313,9 @@ public class Category extends javax.swing.JFrame {
         btnProduct4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProduct43MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnProduct4MouseEntered(evt);
             }
         });
         btnProduct4.addActionListener(new java.awt.event.ActionListener() {
@@ -512,7 +515,8 @@ public class Category extends javax.swing.JFrame {
     }//GEN-LAST:event_btnProduct33ActionPerformed
 
     private void btnProduct33MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct33MouseClicked
-
+        new MarketPencil4().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnProduct33MouseClicked
 
     private void btnProduct1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct1MouseClicked
@@ -527,6 +531,8 @@ public class Category extends javax.swing.JFrame {
 
     private void btnProduct2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct2MouseClicked
         // TODO add your handling code here:
+        new MarketPencil2().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnProduct2MouseClicked
 
     private void btnProduct2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct2ActionPerformed
@@ -535,6 +541,8 @@ public class Category extends javax.swing.JFrame {
 
     private void btnProduct43MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct43MouseClicked
         // TODO add your handling code here:
+        new MarketPencil3().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnProduct43MouseClicked
 
     private void btnProduct43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct43ActionPerformed
@@ -579,6 +587,10 @@ public class Category extends javax.swing.JFrame {
         new Category3().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnPenMouseClicked
+
+    private void btnProduct4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct4MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnProduct4MouseEntered
 
     /**
      * @param args the command line arguments

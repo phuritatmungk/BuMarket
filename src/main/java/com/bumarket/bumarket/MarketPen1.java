@@ -4,6 +4,8 @@
  */
 package com.bumarket.bumarket;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author kritt
@@ -59,6 +61,7 @@ public class MarketPen1 extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(230, 230, 230));
@@ -78,7 +81,7 @@ public class MarketPen1 extends javax.swing.JFrame {
         jPanel2.add(jLabel3);
         jLabel3.setBounds(310, 370, 90, 90);
 
-        scrollbar1.setOrientation(0);
+        scrollbar1.setOrientation(java.awt.Scrollbar.HORIZONTAL);
         jPanel2.add(scrollbar1);
         scrollbar1.setBounds(101, 467, 300, 16);
 
@@ -123,6 +126,11 @@ public class MarketPen1 extends javax.swing.JFrame {
         btnAddtocart.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnAddtocart.setText("หยิบใส่ตระกร้า");
         btnAddtocart.setContentAreaFilled(false);
+        btnAddtocart.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnAddtocartMouseClicked(evt);
+            }
+        });
         jPanel2.add(btnAddtocart);
         btnAddtocart.setBounds(455, 400, 137, 40);
 
@@ -232,9 +240,59 @@ public class MarketPen1 extends javax.swing.JFrame {
 
     private void btnBuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseClicked
         // TODO add your handling code here:
+        ProductData user = new ProductData();
+        MarketBook1 writefile = new MarketBook1();
+        user.setProductID(234);
+        user.setProduct("ปากกาหมึกเจล Lamy Balloon Blue ");
+        user.setQty(1);
+        user.setTotal(user.getPrice() * user.getQty());
+        user.setPrice(309);
+        user.setPoint(30 + user.getQty());
+
+        ProductList.cart1.add(user);
+
+        for (ProductData productData : ProductList.cart1) {
+            System.out.println("ID: " + productData.getProductID());
+            System.out.println("Product: " + productData.getProduct());
+            System.out.println("Qty: " + productData.getQty());
+            System.out.println("Price: " + productData.getPrice());
+            System.out.println("Total: " + productData.getTotal());
+            System.out.println("Point: " + productData.getPoint());
+            System.out.println("---------------------------");
+        }
+
+        writefile.writeObjectToFile(ProductList.cart1);
+        JOptionPane.showMessageDialog(this,"Save Completed...");
         new Shoppingcart().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnBuyMouseClicked
+
+    private void btnAddtocartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddtocartMouseClicked
+        // TODO add your handling code here:
+                ProductData user = new ProductData();
+        MarketBook1 writefile = new MarketBook1();
+        user.setProductID(234);
+        user.setProduct("ปากกาหมึกเจล Lamy Balloon Blue ");
+        user.setQty(1);
+        user.setTotal(user.getPrice() * user.getQty());
+        user.setPrice(309);
+        user.setPoint(30 + user.getQty());
+
+        ProductList.cart1.add(user);
+
+        for (ProductData productData : ProductList.cart1) {
+            System.out.println("ID: " + productData.getProductID());
+            System.out.println("Product: " + productData.getProduct());
+            System.out.println("Qty: " + productData.getQty());
+            System.out.println("Price: " + productData.getPrice());
+            System.out.println("Total: " + productData.getTotal());
+            System.out.println("Point: " + productData.getPoint());
+            System.out.println("---------------------------");
+        }
+
+        writefile.writeObjectToFile(ProductList.cart1);
+        JOptionPane.showMessageDialog(this,"Save Completed...");
+    }//GEN-LAST:event_btnAddtocartMouseClicked
 
     /**
      * @param args the command line arguments
