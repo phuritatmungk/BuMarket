@@ -21,3 +21,9 @@ Firstname: 1
 Lastname: 1
 Password: 1
 ---
+Student ID: 2
+Username: 2
+Firstname: 2
+Lastname: 2
+Password: 2
+---

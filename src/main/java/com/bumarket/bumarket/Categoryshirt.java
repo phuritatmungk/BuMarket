@@ -71,6 +71,7 @@ public class Categoryshirt extends javax.swing.JFrame {
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Market Category");
         setPreferredSize(new java.awt.Dimension(1280, 720));
 
         jPanel1.setBackground(new java.awt.Color(230, 230, 230));
@@ -160,7 +161,7 @@ public class Categoryshirt extends javax.swing.JFrame {
 
         txt2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         txt2.setText("เสื้อผ้า");
-        jPanel2.add(txt2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, -1));
+        jPanel2.add(txt2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 120, -1, -1));
 
         btnPoint.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btnPoint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
