@@ -108,7 +108,7 @@ public class MarketPen2 extends javax.swing.JFrame {
 
         jLabel30.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel30.setForeground(new java.awt.Color(204, 0, 0));
-        jLabel30.setText("฿132.00");
+        jLabel30.setText("฿999.00");
         jPanel2.add(jLabel30);
         jLabel30.setBounds(455, 304, 162, 40);
 
@@ -121,7 +121,7 @@ public class MarketPen2 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(btnAddtocart);
-        btnAddtocart.setBounds(455, 400, 138, 40);
+        btnAddtocart.setBounds(455, 400, 137, 40);
 
         btnBuy.setBackground(new java.awt.Color(204, 0, 0));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N

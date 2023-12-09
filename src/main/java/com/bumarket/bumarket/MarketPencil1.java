@@ -61,6 +61,7 @@ public class MarketPencil1 extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Market");
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -88,7 +89,7 @@ public class MarketPencil1 extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel2.setText("ดินสอไม้ HB Rotring Metallic คละสี (แพ็ค4แท่ง)");
         jPanel2.add(jLabel2);
-        jLabel2.setBounds(455, 34, 541, 40);
+        jLabel2.setBounds(455, 34, 534, 40);
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -132,7 +133,7 @@ public class MarketPencil1 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(btnAddtocart);
-        btnAddtocart.setBounds(455, 400, 138, 40);
+        btnAddtocart.setBounds(455, 400, 137, 40);
 
         btnBuy.setBackground(new java.awt.Color(204, 0, 0));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
