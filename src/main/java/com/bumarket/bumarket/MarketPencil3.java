@@ -227,8 +227,8 @@ public class MarketPencil3 extends javax.swing.JFrame {
         user.setProductID(234);
         user.setProduct("ดินสอดำ 2B (กล่อง12แท่ง) ควอนตั้ม QP-920 ");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(40);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(0 + user.getQty());
 
         ProductList.cart1.add(user);
@@ -272,8 +272,6 @@ public class MarketPencil3 extends javax.swing.JFrame {
 
         writefile.writeObjectToFile(ProductList.cart1);
         JOptionPane.showMessageDialog(this,"Save Completed...");        // TODO add your handling code here:
-        new Shoppingcart().setVisible(true);
-        this.dispose();
         new Shoppingcart().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnBuyMouseClicked

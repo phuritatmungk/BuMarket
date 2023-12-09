@@ -287,10 +287,9 @@ public class MarketBook1 extends javax.swing.JFrame {
         user.setProductID(1234);
         user.setProduct("Monte");
         user.setQty(((Number) jSpinner1.getValue()).intValue());
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(292);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(1 + user.getQty());
-        
         ProductList.cart1.add(user);
         
     for (ProductData productData : ProductList.cart1) {

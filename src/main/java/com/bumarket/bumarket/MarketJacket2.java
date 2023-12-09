@@ -4,6 +4,8 @@
  */
 package com.bumarket.bumarket;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author USER
@@ -246,6 +248,11 @@ public class MarketJacket2 extends javax.swing.JFrame {
         btnAdd_to_cart.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnAdd_to_cart.setText("หยิบใส่ตระกร้า");
         btnAdd_to_cart.setContentAreaFilled(false);
+        btnAdd_to_cart.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnAdd_to_cartMouseClicked(evt);
+            }
+        });
         jPanel1.add(btnAdd_to_cart, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 490, -1, 40));
 
         btnBuy.setBackground(new java.awt.Color(204, 0, 0));
@@ -563,11 +570,12 @@ public class MarketJacket2 extends javax.swing.JFrame {
         user.setProductID(289);
         user.setProduct("เสื้อแจ็คเก็ตแฟชั่นสไตล์เกาหลี");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(274.00);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(1 + user.getQty());
 
         ProductList.cart1.add(user);
+        JOptionPane.showMessageDialog(this,"Save Completed...");
         new Shoppingcart().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnBuyMouseClicked
@@ -622,6 +630,19 @@ public class MarketJacket2 extends javax.swing.JFrame {
     private void btnBack1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBack1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnBack1ActionPerformed
+
+    private void btnAdd_to_cartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAdd_to_cartMouseClicked
+        ProductData user = new ProductData();
+        user.setProductID(289);
+        user.setProduct("เสื้อแจ็คเก็ตแฟชั่นสไตล์เกาหลี");
+        user.setQty(1);
+        user.setPrice(274.00);
+        user.setTotal(user.getPrice() * user.getQty());
+        user.setPoint(1 + user.getQty());
+
+        ProductList.cart1.add(user);
+        JOptionPane.showMessageDialog(this,"Save Completed...");
+    }//GEN-LAST:event_btnAdd_to_cartMouseClicked
 
     /**
      * @param args the command line arguments

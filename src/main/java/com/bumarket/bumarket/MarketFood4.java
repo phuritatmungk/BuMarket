@@ -323,8 +323,8 @@ public class MarketFood4 extends javax.swing.JFrame {
         user.setProductID(234);
         user.setProduct("ตะวัน ข้าวเกรียบ รสต้นตำรับ 56 ก. ");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(20);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(0 + user.getQty());
 
         ProductList.cart1.add(user);

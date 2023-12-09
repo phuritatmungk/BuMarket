@@ -212,8 +212,8 @@ public class MarketWater2 extends javax.swing.JFrame {
         user.setProductID(234);
         user.setProduct("โค้ก น้ำอัดลม ออริจินัล 450มล.");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(18);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(0 + user.getQty());
 
         ProductList.cart1.add(user);
@@ -229,7 +229,6 @@ public class MarketWater2 extends javax.swing.JFrame {
         }
 
         writefile.writeObjectToFile(ProductList.cart1);
-        JOptionPane.showMessageDialog(this,"Save Completed...");
     }//GEN-LAST:event_btnAddtocartMouseClicked
 
     private void btnBuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseClicked
@@ -239,8 +238,8 @@ public class MarketWater2 extends javax.swing.JFrame {
         user.setProductID(234);
         user.setProduct("โค้ก น้ำอัดลม ออริจินัล 450มล.");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(18);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(0 + user.getQty());
 
         ProductList.cart1.add(user);

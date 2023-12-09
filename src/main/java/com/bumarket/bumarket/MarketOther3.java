@@ -228,8 +228,8 @@ public class MarketOther3 extends javax.swing.JFrame {
         user.setProductID(234);
         user.setProduct("กาวสำหรับโฟม MONT MARTE ขนาด 18.6 มล. ");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(68);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(0 + user.getQty());
 
         ProductList.cart1.add(user);

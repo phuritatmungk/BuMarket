@@ -227,8 +227,8 @@ public class MarketPencil2 extends javax.swing.JFrame {
         user.setProductID(234);
         user.setProduct("ดินสอกด 0.5 มม. Rotring Tikky ด้ามสีขาว");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(132);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(1 + user.getQty());
         
         ProductList.cart1.add(user);
@@ -245,8 +245,6 @@ public class MarketPencil2 extends javax.swing.JFrame {
         
         writefile.writeObjectToFile(ProductList.cart1);
         JOptionPane.showMessageDialog(this,"Save Completed...");        // TODO add your handling code here:
-        new Shoppingcart().setVisible(true);
-        this.dispose();
         new Shoppingcart().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnBuyMouseClicked

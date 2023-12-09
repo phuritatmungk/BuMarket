@@ -222,8 +222,8 @@ public class MarketOther4 extends javax.swing.JFrame {
         user.setProductID(234);
         user.setProduct("กาวแท่ง ตราช้าง Sticko สีขาว 40 กรัม");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(57);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(0 + user.getQty());
 
         ProductList.cart1.add(user);
