@@ -142,7 +142,7 @@ public class Forgot_Pass extends javax.swing.JFrame {
         txtPass.setBackground(new java.awt.Color(202, 202, 202));
         txtPass.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         txtPass.setForeground(new java.awt.Color(119, 119, 119));
-        txtPass.setText("Current Password");
+        txtPass.setText("New Password");
         txtPass.setBorder(null);
         txtPass.setEchoChar('\u0000');
         txtPass.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -153,12 +153,17 @@ public class Forgot_Pass extends javax.swing.JFrame {
                 txtPassFocusLost(evt);
             }
         });
+        txtPass.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPassActionPerformed(evt);
+            }
+        });
         jPanel6.add(txtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(13, 56, 190, -1));
 
         txtNewPass.setBackground(new java.awt.Color(202, 202, 202));
         txtNewPass.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         txtNewPass.setForeground(new java.awt.Color(119, 119, 119));
-        txtNewPass.setText("New Password");
+        txtNewPass.setText("Confirm New Password");
         txtNewPass.setBorder(null);
         txtNewPass.setEchoChar('\u0000');
         txtNewPass.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -389,6 +394,10 @@ public class Forgot_Pass extends javax.swing.JFrame {
            txtNewPass.setText("");
        }
     }//GEN-LAST:event_txtNewPassFocusGained
+
+    private void txtPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPassActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPassActionPerformed
 
     /**
      * @param args the command line arguments
