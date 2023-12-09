@@ -4,6 +4,8 @@
  */
 package com.bumarket.bumarket;
 
+import java.awt.Color;
+
 /**
  *
  * @author USER
@@ -158,13 +160,19 @@ public class MarketStudent4 extends javax.swing.JFrame {
         Productshirt2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Student uniform4.2.jpg"))); // NOI18N
         jPanel1.add(Productshirt2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 360, 90, -1));
 
-        btnBuy.setBackground(new java.awt.Color(204, 0, 0));
+        btnBuy.setBackground(new java.awt.Color(153, 153, 153));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnBuy.setForeground(new java.awt.Color(255, 255, 255));
         btnBuy.setText("ซื้อสินค้า");
         btnBuy.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnBuyMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnBuyMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnBuyMouseExited(evt);
             }
         });
         jPanel1.add(btnBuy, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 490, 140, 40));
@@ -275,6 +283,14 @@ public class MarketStudent4 extends javax.swing.JFrame {
         new CategoryStudent().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnBackMouseClicked
+
+    private void btnBuyMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseEntered
+        btnBuy.setBackground(Color.red);
+    }//GEN-LAST:event_btnBuyMouseEntered
+
+    private void btnBuyMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseExited
+        btnBuy.setBackground(new Color(153,153,153));
+    }//GEN-LAST:event_btnBuyMouseExited
 
     /**
      * @param args the command line arguments

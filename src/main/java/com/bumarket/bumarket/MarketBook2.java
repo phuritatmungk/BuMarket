@@ -4,6 +4,7 @@
  */
 package com.bumarket.bumarket;
 
+import java.awt.Color;
 import javax.swing.JOptionPane;
 
 /**
@@ -91,7 +92,7 @@ public class MarketBook2 extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel2.setText(" ขนาด A4 115 แกรม 50 แผ่น");
         jPanel2.add(jLabel2);
-        jLabel2.setBounds(450, 70, 322, 40);
+        jLabel2.setBounds(450, 70, 320, 40);
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -135,15 +136,21 @@ public class MarketBook2 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(btnAddtocart);
-        btnAddtocart.setBounds(460, 430, 138, 40);
+        btnAddtocart.setBounds(460, 430, 137, 40);
 
-        btnBuy.setBackground(new java.awt.Color(204, 0, 0));
+        btnBuy.setBackground(new java.awt.Color(153, 153, 153));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnBuy.setForeground(new java.awt.Color(255, 255, 255));
         btnBuy.setText("ซื้อสินค้า");
         btnBuy.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnBuyMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnBuyMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnBuyMouseExited(evt);
             }
         });
         jPanel2.add(btnBuy);
@@ -174,7 +181,7 @@ public class MarketBook2 extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel7.setText("สมุดวาดเขียน MONT MARTE กระดาษน้ำตาล");
         jPanel2.add(jLabel7);
-        jLabel7.setBounds(455, 34, 486, 40);
+        jLabel7.setBounds(455, 34, 487, 40);
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, 1090, 500));
 
@@ -230,7 +237,7 @@ public class MarketBook2 extends javax.swing.JFrame {
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 30, -1, -1));
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Up.png"))); // NOI18N
-        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
+        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 1280, 720));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1308, -1));
 
@@ -303,6 +310,14 @@ public class MarketBook2 extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void btnBuyMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseEntered
+        btnBuy.setBackground(Color.red);
+    }//GEN-LAST:event_btnBuyMouseEntered
+
+    private void btnBuyMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseExited
+         btnBuy.setBackground(new Color(153,153,153));
+    }//GEN-LAST:event_btnBuyMouseExited
 
     /**
      * @param args the command line arguments

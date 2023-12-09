@@ -4,6 +4,7 @@
  */
 package com.bumarket.bumarket;
 
+import java.awt.Color;
 import javax.swing.JOptionPane;
 
 /**
@@ -127,15 +128,21 @@ public class MarketFood4 extends javax.swing.JFrame {
             }
         });
         jPanel6.add(btnAddtocart2);
-        btnAddtocart2.setBounds(460, 400, 138, 40);
+        btnAddtocart2.setBounds(460, 400, 137, 40);
 
-        btnBuy2.setBackground(new java.awt.Color(204, 0, 0));
+        btnBuy2.setBackground(new java.awt.Color(153, 153, 153));
         btnBuy2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnBuy2.setForeground(new java.awt.Color(255, 255, 255));
         btnBuy2.setText("ซื้อสินค้า");
         btnBuy2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnBuy2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnBuy2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnBuy2MouseExited(evt);
             }
         });
         jPanel6.add(btnBuy2);
@@ -216,7 +223,7 @@ public class MarketFood4 extends javax.swing.JFrame {
             }
         });
         jPanel8.add(btnAddtocart3);
-        btnAddtocart3.setBounds(460, 400, 138, 40);
+        btnAddtocart3.setBounds(460, 400, 137, 40);
 
         btnBuy3.setBackground(new java.awt.Color(204, 0, 0));
         btnBuy3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -389,6 +396,14 @@ public class MarketFood4 extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void btnBuy2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuy2MouseEntered
+        btnBuy2.setBackground(Color.red);
+    }//GEN-LAST:event_btnBuy2MouseEntered
+
+    private void btnBuy2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuy2MouseExited
+         btnBuy2.setBackground(new Color(153,153,153));
+    }//GEN-LAST:event_btnBuy2MouseExited
 
     /**
      * @param args the command line arguments

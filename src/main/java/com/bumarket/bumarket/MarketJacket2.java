@@ -4,6 +4,8 @@
  */
 package com.bumarket.bumarket;
 
+import java.awt.Color;
+
 /**
  *
  * @author USER
@@ -248,13 +250,19 @@ public class MarketJacket2 extends javax.swing.JFrame {
         btnAdd_to_cart.setContentAreaFilled(false);
         jPanel1.add(btnAdd_to_cart, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 490, -1, 40));
 
-        btnBuy.setBackground(new java.awt.Color(204, 0, 0));
+        btnBuy.setBackground(new java.awt.Color(153, 153, 153));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnBuy.setForeground(new java.awt.Color(255, 255, 255));
         btnBuy.setText("ซื้อสินค้า");
         btnBuy.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnBuyMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnBuyMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnBuyMouseExited(evt);
             }
         });
         btnBuy.addActionListener(new java.awt.event.ActionListener() {
@@ -622,6 +630,14 @@ public class MarketJacket2 extends javax.swing.JFrame {
     private void btnBack1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBack1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnBack1ActionPerformed
+
+    private void btnBuyMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseEntered
+        btnBuy.setBackground(Color.red);
+    }//GEN-LAST:event_btnBuyMouseEntered
+
+    private void btnBuyMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseExited
+         btnBuy.setBackground(new Color(153,153,153));
+    }//GEN-LAST:event_btnBuyMouseExited
 
     /**
      * @param args the command line arguments

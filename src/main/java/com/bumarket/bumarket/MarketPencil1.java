@@ -4,6 +4,7 @@
  */
 package com.bumarket.bumarket;
 
+import java.awt.Color;
 import javax.swing.JOptionPane;
 
 /**
@@ -135,13 +136,19 @@ public class MarketPencil1 extends javax.swing.JFrame {
         jPanel2.add(btnAddtocart);
         btnAddtocart.setBounds(455, 400, 137, 40);
 
-        btnBuy.setBackground(new java.awt.Color(204, 0, 0));
+        btnBuy.setBackground(new java.awt.Color(153, 153, 153));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnBuy.setForeground(new java.awt.Color(255, 255, 255));
         btnBuy.setText("ซื้อสินค้า");
         btnBuy.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnBuyMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnBuyMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnBuyMouseExited(evt);
             }
         });
         jPanel2.add(btnBuy);
@@ -296,6 +303,14 @@ public class MarketPencil1 extends javax.swing.JFrame {
         writefile.writeObjectToFile(ProductList.cart1);
         JOptionPane.showMessageDialog(this,"Save Completed...");
     }//GEN-LAST:event_btnAddtocartMouseClicked
+
+    private void btnBuyMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseEntered
+        btnBuy.setBackground(Color.red);
+    }//GEN-LAST:event_btnBuyMouseEntered
+
+    private void btnBuyMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseExited
+        btnBuy.setBackground(new Color(153,153,153));
+    }//GEN-LAST:event_btnBuyMouseExited
 
     /**
      * @param args the command line arguments

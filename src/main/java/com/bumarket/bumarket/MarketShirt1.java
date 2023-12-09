@@ -4,6 +4,8 @@
  */
 package com.bumarket.bumarket;
 
+import java.awt.Color;
+
 /**
  *
  * @author USER
@@ -216,13 +218,19 @@ public class MarketShirt1 extends javax.swing.JFrame {
         Productshirt4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shirt1.4.jpg"))); // NOI18N
         jPanel1.add(Productshirt4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 360, 80, -1));
 
-        btnBuy.setBackground(new java.awt.Color(204, 0, 0));
+        btnBuy.setBackground(new java.awt.Color(153, 153, 153));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnBuy.setForeground(new java.awt.Color(255, 255, 255));
         btnBuy.setText("ซื้อสินค้า");
         btnBuy.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnBuyMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnBuyMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnBuyMouseExited(evt);
             }
         });
         jPanel1.add(btnBuy, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 490, 140, 40));
@@ -336,6 +344,14 @@ public class MarketShirt1 extends javax.swing.JFrame {
     private void btnSize3XLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSize3XLActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnSize3XLActionPerformed
+
+    private void btnBuyMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseEntered
+        btnBuy.setBackground(Color.red);
+    }//GEN-LAST:event_btnBuyMouseEntered
+
+    private void btnBuyMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseExited
+         btnBuy.setBackground(new Color(153,153,153));
+    }//GEN-LAST:event_btnBuyMouseExited
 
     /**
      * @param args the command line arguments
