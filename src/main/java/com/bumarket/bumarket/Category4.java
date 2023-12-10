@@ -521,7 +521,8 @@ public class Category4 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnProduct53ActionPerformed
 
     private void btnPencilMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPencilMouseClicked
-        // TODO add your handling code here:
+        new Category().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnPencilMouseClicked
 
     private void btnPencilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPencilActionPerformed

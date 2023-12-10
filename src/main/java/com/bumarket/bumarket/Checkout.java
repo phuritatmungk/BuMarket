@@ -4,6 +4,7 @@
  */
 package com.bumarket.bumarket;
 
+import java.awt.Color;
 import java.awt.Component;
 import java.text.DecimalFormat;
 import javax.swing.JTable;
@@ -98,10 +99,18 @@ private void Shoppingcart_Data() {
         setSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Accept.setBackground(new java.awt.Color(255, 51, 51));
+        Accept.setBackground(new java.awt.Color(153, 153, 153));
         Accept.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Accept.setForeground(new java.awt.Color(255, 255, 255));
         Accept.setText("ยืนยัน");
+        Accept.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                AcceptMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                AcceptMouseExited(evt);
+            }
+        });
         getContentPane().add(Accept, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 480, 260, -1));
 
         BuyButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -228,7 +237,7 @@ private void Shoppingcart_Data() {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Up.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        Table.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        Table.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -270,6 +279,14 @@ private void Shoppingcart_Data() {
         new Shoppingcart().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_BuyButtonMouseClicked
+
+    private void AcceptMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AcceptMouseEntered
+         Accept.setBackground(Color.red);
+    }//GEN-LAST:event_AcceptMouseEntered
+
+    private void AcceptMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AcceptMouseExited
+        Accept.setBackground(new Color(153,153,153));
+    }//GEN-LAST:event_AcceptMouseExited
 
     /**
      * @param args the command line arguments

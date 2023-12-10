@@ -246,8 +246,8 @@ public class MarketBook3 extends javax.swing.JFrame {
         user.setProductID(234);
         user.setProduct("สมุดวาดเขียน MONT MARTE ขนาด A6 80 แกรม 100 แผ่น");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(80);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(0 + user.getQty());
 
         ProductList.cart1.add(user);
@@ -273,8 +273,8 @@ public class MarketBook3 extends javax.swing.JFrame {
         user.setProductID(234);
         user.setProduct("สมุดวาดเขียน MONT MARTE ขนาด A6 80 แกรม 100 แผ่น");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(80);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(0 + user.getQty());
 
         ProductList.cart1.add(user);

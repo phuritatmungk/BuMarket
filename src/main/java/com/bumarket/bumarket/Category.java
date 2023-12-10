@@ -4,6 +4,8 @@
  */
 package com.bumarket.bumarket;
 
+import java.awt.Color;
+
 /**
  *
  * @author kritt
@@ -228,6 +230,12 @@ public class Category extends javax.swing.JFrame {
         btnProduct1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProduct1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnProduct1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnProduct1MouseExited(evt);
             }
         });
         btnProduct1.addActionListener(new java.awt.event.ActionListener() {
@@ -592,6 +600,14 @@ public class Category extends javax.swing.JFrame {
     private void btnProduct4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct4MouseEntered
         // TODO add your handling code here:
     }//GEN-LAST:event_btnProduct4MouseEntered
+
+    private void btnProduct1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct1MouseEntered
+         btnProduct1.setBackground(Color.red);
+    }//GEN-LAST:event_btnProduct1MouseEntered
+
+    private void btnProduct1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct1MouseExited
+         btnProduct1.setBackground(new Color(153,153,153));
+    }//GEN-LAST:event_btnProduct1MouseExited
 
     /**
      * @param args the command line arguments

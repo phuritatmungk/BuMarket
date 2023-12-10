@@ -120,6 +120,11 @@ public class MarketBook1 extends javax.swing.JFrame {
         btnAddtocart.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnAddtocart.setText("หยิบใส่ตระกร้า");
         btnAddtocart.setContentAreaFilled(false);
+        btnAddtocart.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnAddtocartMouseClicked(evt);
+            }
+        });
 
         btnBuy.setBackground(new java.awt.Color(153, 153, 153));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -294,8 +299,8 @@ public class MarketBook1 extends javax.swing.JFrame {
         user.setProductID(1234);
         user.setProduct("Monte");
         user.setQty(((Number) jSpinner1.getValue()).intValue());
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(292);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(1 + user.getQty());
         
         ProductList.cart1.add(user);
@@ -323,6 +328,32 @@ public class MarketBook1 extends javax.swing.JFrame {
     private void btnBuyMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseExited
         btnBuy.setBackground(new Color(153,153,153));
     }//GEN-LAST:event_btnBuyMouseExited
+
+    private void btnAddtocartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddtocartMouseClicked
+        ProductData user = new ProductData();
+        MarketBook1 writefile = new MarketBook1();
+        user.setProductID(1234);
+        user.setProduct("Monte");
+        user.setQty(((Number) jSpinner1.getValue()).intValue());
+        user.setPrice(292);
+        user.setTotal(user.getPrice() * user.getQty());
+        user.setPoint(1 + user.getQty());
+        
+        ProductList.cart1.add(user);
+        
+    for (ProductData productData : ProductList.cart1) {
+        System.out.println("ID: " + productData.getProductID());
+        System.out.println("Product: " + productData.getProduct());
+        System.out.println("Qty: " + productData.getQty());
+        System.out.println("Price: " + productData.getPrice());
+        System.out.println("Total: " + productData.getTotal());
+        System.out.println("Point: " + productData.getPoint());
+        System.out.println("---------------------------");
+    }
+        
+        writefile.writeObjectToFile(ProductList.cart1);
+        JOptionPane.showMessageDialog(this,"Save Completed...");
+    }//GEN-LAST:event_btnAddtocartMouseClicked
 
     public boolean writeObjectToFile(List<ProductData> pListData) {
         String filePath = "products.bin";

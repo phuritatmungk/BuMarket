@@ -254,8 +254,8 @@ public class MarketPen1 extends javax.swing.JFrame {
         user.setProductID(234);
         user.setProduct("ปากกาหมึกเจล Lamy Balloon Blue ");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(309);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(30 + user.getQty());
 
         ProductList.cart1.add(user);
@@ -283,8 +283,8 @@ public class MarketPen1 extends javax.swing.JFrame {
         user.setProductID(234);
         user.setProduct("ปากกาหมึกเจล Lamy Balloon Blue ");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(309);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(30 + user.getQty());
 
         ProductList.cart1.add(user);

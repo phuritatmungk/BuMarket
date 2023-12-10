@@ -5,7 +5,9 @@
 package com.bumarket.bumarket;
 
 import java.awt.Color;
+import java.util.List;
 import javax.swing.JButton;
+import javax.swing.JOptionPane;
 
 
 /**
@@ -275,6 +277,11 @@ public class MarketJacket1 extends javax.swing.JFrame {
         btnAdd_to_cart.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnAdd_to_cart.setText("หยิบใส่ตระกร้า");
         btnAdd_to_cart.setContentAreaFilled(false);
+        btnAdd_to_cart.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnAdd_to_cartMouseClicked(evt);
+            }
+        });
         jPanel1.add(btnAdd_to_cart, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 490, -1, 40));
 
         btnBuy.setBackground(new java.awt.Color(153, 153, 153));
@@ -607,14 +614,28 @@ public class MarketJacket1 extends javax.swing.JFrame {
 
     private void btnBuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseClicked
         ProductData user = new ProductData();
+        MarketJacket1 writefile = new MarketJacket1();
         user.setProductID(189);
         user.setProduct("เสื้อแจ็คเก็ตผู้ชายกันลม สำหรับเดินป่า  Men Jacket ");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(389.00);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(1 + user.getQty());
         
         ProductList.cart1.add(user);
+        
+     for (ProductData productData : ProductList.cart1) {
+            System.out.println("ID: " + productData.getProductID());
+            System.out.println("Product: " + productData.getProduct());
+            System.out.println("Qty: " + productData.getQty());
+            System.out.println("Price: " + productData.getPrice());
+            System.out.println("Total: " + productData.getTotal());
+            System.out.println("Point: " + productData.getPoint());
+            System.out.println("---------------------------");
+        }
+
+        writefile.writeObjectToFile(ProductList.cart1);
+        JOptionPane.showMessageDialog(this,"Save Completed...");
         new Shoppingcart().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnBuyMouseClicked
@@ -670,6 +691,32 @@ public class MarketJacket1 extends javax.swing.JFrame {
     private void btnBuyMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseExited
         btnBuy.setBackground(new Color(153,153,153));
     }//GEN-LAST:event_btnBuyMouseExited
+
+    private void btnAdd_to_cartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAdd_to_cartMouseClicked
+        ProductData user = new ProductData();
+        MarketJacket1 writefile = new MarketJacket1();
+        user.setProductID(189);
+        user.setProduct("เสื้อแจ็คเก็ตผู้ชายกันลม สำหรับเดินป่า  Men Jacket ");
+        user.setQty(1);
+        user.setPrice(389.00);
+        user.setTotal(user.getPrice() * user.getQty());
+        user.setPoint(1 + user.getQty());
+        
+        ProductList.cart1.add(user);
+        
+    for (ProductData productData : ProductList.cart1) {
+        System.out.println("ID: " + productData.getProductID());
+        System.out.println("Product: " + productData.getProduct());
+        System.out.println("Qty: " + productData.getQty());
+        System.out.println("Price: " + productData.getPrice());
+        System.out.println("Total: " + productData.getTotal());
+        System.out.println("Point: " + productData.getPoint());
+        System.out.println("---------------------------");
+    }
+        
+        writefile.writeObjectToFile(ProductList.cart1);
+        JOptionPane.showMessageDialog(this,"Save Completed...");
+    }//GEN-LAST:event_btnAdd_to_cartMouseClicked
 
     /**
      * @param args the command line arguments
@@ -789,4 +836,8 @@ public class MarketJacket1 extends javax.swing.JFrame {
     private javax.swing.JLabel txtUSER;
     private javax.swing.JLabel txtUSER1;
     // End of variables declaration//GEN-END:variables
+
+    void writeObjectToFile(List<ProductData> cart1) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

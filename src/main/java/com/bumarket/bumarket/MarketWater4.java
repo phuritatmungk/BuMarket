@@ -219,8 +219,8 @@ public class MarketWater4 extends javax.swing.JFrame {
         user.setProductID(234);
         user.setProduct("น้ำทิพย์น้ำดื่ม 550มล.");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(20);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(0 + user.getQty());
 
         ProductList.cart1.add(user);
@@ -246,8 +246,8 @@ public class MarketWater4 extends javax.swing.JFrame {
         user.setProductID(40);
         user.setProduct("น้ำทิพย์น้ำดื่ม 550มล.");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(20);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(0 + user.getQty());
 
         ProductList.cart1.add(user);

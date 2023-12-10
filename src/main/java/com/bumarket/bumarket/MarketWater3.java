@@ -214,8 +214,8 @@ public class MarketWater3 extends javax.swing.JFrame {
         user.setProductID(234);
         user.setProduct("มิรินด้าน้ำหวานกลิ่นส้ม 440มล.");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(16);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(0 + user.getQty());
 
         ProductList.cart1.add(user);
@@ -241,8 +241,8 @@ public class MarketWater3 extends javax.swing.JFrame {
         user.setProductID(40);
         user.setProduct("มิรินด้าน้ำหวานกลิ่นส้ม 440มล.");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(16);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(0 + user.getQty());
 
         ProductList.cart1.add(user);

@@ -229,8 +229,8 @@ public class MarketPen2 extends javax.swing.JFrame {
         user.setProductID(234);
         user.setProduct("Parker Jotter Around The World New York Series");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(999);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(90 + user.getQty());
 
         ProductList.cart1.add(user);
@@ -256,8 +256,8 @@ public class MarketPen2 extends javax.swing.JFrame {
         user.setProductID(234);
         user.setProduct("Parker Jotter Around The World New York Series");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(999);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(90 + user.getQty());
 
         ProductList.cart1.add(user);

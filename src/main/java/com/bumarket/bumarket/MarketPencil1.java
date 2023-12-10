@@ -255,8 +255,8 @@ public class MarketPencil1 extends javax.swing.JFrame {
         user.setProductID(234);
         user.setProduct("ดินสอไม้ HB Rotring Metallic คละสี (แพ็ค4แท่ง)");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(50);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(0 + user.getQty());
         
         ProductList.cart1.add(user);
@@ -284,8 +284,8 @@ public class MarketPencil1 extends javax.swing.JFrame {
         user.setProductID(234);
         user.setProduct("ดินสอไม้ HB Rotring Metallic คละสี (แพ็ค4แท่ง)");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(50);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(0 + user.getQty());
         
         ProductList.cart1.add(user);

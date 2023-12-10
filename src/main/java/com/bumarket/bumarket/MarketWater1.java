@@ -239,8 +239,8 @@ public class MarketWater1 extends javax.swing.JFrame {
         user.setProductID(234);
         user.setProduct("คริสตัล น้ำดื่ม 600มล.");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(7);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(0 + user.getQty());
 
         ProductList.cart1.add(user);
@@ -268,8 +268,8 @@ public class MarketWater1 extends javax.swing.JFrame {
         user.setProductID(234);
         user.setProduct("คริสตัล น้ำดื่ม 600มล.");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(7);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(0 + user.getQty());
 
         ProductList.cart1.add(user);

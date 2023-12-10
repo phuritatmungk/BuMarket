@@ -239,8 +239,8 @@ public class MarketOther2 extends javax.swing.JFrame {
         user.setProductID(234);
         user.setProduct("เครื่องเย็บกระดาษ คละสี ลวดเย็บ YOYA YS-45N");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(177);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(10 + user.getQty());
 
         ProductList.cart1.add(user);
@@ -266,8 +266,8 @@ public class MarketOther2 extends javax.swing.JFrame {
         user.setProductID(234);
         user.setProduct("เครื่องเย็บกระดาษ คละสี ลวดเย็บ YOYA YS-45N ");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(177);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(10 + user.getQty());
 
         ProductList.cart1.add(user);

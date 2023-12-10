@@ -5,6 +5,8 @@
 package com.bumarket.bumarket;
 
 import java.awt.Color;
+import java.util.List;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -210,6 +212,11 @@ public class MarketShirt4 extends javax.swing.JFrame {
         btnAdd_to_cart.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnAdd_to_cart.setText("หยิบใส่ตระกร้า");
         btnAdd_to_cart.setContentAreaFilled(false);
+        btnAdd_to_cart.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnAdd_to_cartMouseClicked(evt);
+            }
+        });
         jPanel1.add(btnAdd_to_cart, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 490, -1, 40));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, 1090, 540));
@@ -287,16 +294,29 @@ public class MarketShirt4 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSize2XLActionPerformed
 
     private void btnBuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseClicked
-        // TODO add your handling code here:
         ProductData user = new ProductData();
+        MarketShirt4 writefile = new MarketShirt4();
         user.setProductID(1587);
         user.setProduct("เสื้อยืดแขนสั้นคอกลม สําหรับผู้ชาย");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(376.00);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(1 + user.getQty());
 
-        ProductList.cart1.add(user);
+         ProductList.cart1.add(user);
+
+        for (ProductData productData : ProductList.cart1) {
+            System.out.println("ID: " + productData.getProductID());
+            System.out.println("Product: " + productData.getProduct());
+            System.out.println("Qty: " + productData.getQty());
+            System.out.println("Price: " + productData.getPrice());
+            System.out.println("Total: " + productData.getTotal());
+            System.out.println("Point: " + productData.getPoint());
+            System.out.println("---------------------------");
+        }
+
+        writefile.writeObjectToFile(ProductList.cart1);
+        JOptionPane.showMessageDialog(this,"Save Completed...");
         new Shoppingcart().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnBuyMouseClicked
@@ -319,6 +339,32 @@ public class MarketShirt4 extends javax.swing.JFrame {
     private void btnBuyMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseExited
          btnBuy.setBackground(new Color(153,153,153));
     }//GEN-LAST:event_btnBuyMouseExited
+
+    private void btnAdd_to_cartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAdd_to_cartMouseClicked
+        ProductData user = new ProductData();
+        MarketShirt4 writefile = new MarketShirt4();
+        user.setProductID(1587);
+        user.setProduct("เสื้อยืดแขนสั้นคอกลม สําหรับผู้ชาย");
+        user.setQty(1);
+        user.setPrice(376.00);
+        user.setTotal(user.getPrice() * user.getQty());
+        user.setPoint(1 + user.getQty());
+
+         ProductList.cart1.add(user);
+
+        for (ProductData productData : ProductList.cart1) {
+            System.out.println("ID: " + productData.getProductID());
+            System.out.println("Product: " + productData.getProduct());
+            System.out.println("Qty: " + productData.getQty());
+            System.out.println("Price: " + productData.getPrice());
+            System.out.println("Total: " + productData.getTotal());
+            System.out.println("Point: " + productData.getPoint());
+            System.out.println("---------------------------");
+        }
+
+        writefile.writeObjectToFile(ProductList.cart1);
+        JOptionPane.showMessageDialog(this,"Save Completed...");
+    }//GEN-LAST:event_btnAdd_to_cartMouseClicked
 
     /**
      * @param args the command line arguments
@@ -392,4 +438,8 @@ public class MarketShirt4 extends javax.swing.JFrame {
     private javax.swing.JLabel txtSize;
     private javax.swing.JLabel txtUSER;
     // End of variables declaration//GEN-END:variables
+
+    private void writeObjectToFile(List<ProductData> cart1) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

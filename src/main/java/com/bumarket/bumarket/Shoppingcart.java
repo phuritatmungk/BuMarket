@@ -4,6 +4,7 @@
  */
 package com.bumarket.bumarket;
 
+import java.awt.Color;
 import java.awt.Component;
 import java.io.BufferedWriter;
 import java.io.FileInputStream;
@@ -235,10 +236,18 @@ public class Shoppingcart extends javax.swing.JFrame {
         BuyButton.setContentAreaFilled(false);
         getContentPane().add(BuyButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 420, 240, 30));
 
-        PayButton.setBackground(new java.awt.Color(255, 51, 51));
+        PayButton.setBackground(new java.awt.Color(153, 153, 153));
         PayButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         PayButton.setForeground(new java.awt.Color(255, 255, 255));
         PayButton.setText("ชำระเงิน");
+        PayButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                PayButtonMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                PayButtonMouseExited(evt);
+            }
+        });
         PayButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 PayButtonActionPerformed(evt);
@@ -362,6 +371,14 @@ public class Shoppingcart extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_DeleteBtnMouseClicked
+
+    private void PayButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PayButtonMouseEntered
+         PayButton.setBackground(Color.red);
+    }//GEN-LAST:event_PayButtonMouseEntered
+
+    private void PayButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PayButtonMouseExited
+        PayButton.setBackground(new Color(153,153,153));
+    }//GEN-LAST:event_PayButtonMouseExited
 
     /**
      * @param args the command line arguments
