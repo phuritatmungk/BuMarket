@@ -57,6 +57,7 @@ public class MarketWater4 extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Market");
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -236,7 +237,6 @@ public class MarketWater4 extends javax.swing.JFrame {
         }
 
         writefile.writeObjectToFile(ProductList.cart1);
-        JOptionPane.showMessageDialog(this,"Save Completed...");
     }//GEN-LAST:event_btnAddtocartMouseClicked
 
     private void btnBuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseClicked
@@ -264,8 +264,6 @@ public class MarketWater4 extends javax.swing.JFrame {
 
         writefile.writeObjectToFile(ProductList.cart1);
         JOptionPane.showMessageDialog(this,"Save Completed...");        // TODO add your handling code here:
-        new Shoppingcart().setVisible(true);
-        this.dispose();
         new Shoppingcart().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnBuyMouseClicked

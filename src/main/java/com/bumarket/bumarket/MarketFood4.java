@@ -74,6 +74,7 @@ public class MarketFood4 extends javax.swing.JFrame {
         jLabel49 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Market");
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -330,8 +331,8 @@ public class MarketFood4 extends javax.swing.JFrame {
         user.setProductID(234);
         user.setProduct("ตะวัน ข้าวเกรียบ รสต้นตำรับ 56 ก. ");
         user.setQty(1);
-        user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(20);
+        user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(0 + user.getQty());
 
         ProductList.cart1.add(user);

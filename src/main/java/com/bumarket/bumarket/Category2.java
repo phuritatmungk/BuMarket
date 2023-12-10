@@ -77,6 +77,7 @@ public class Category2 extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Market Category");
         setFocusable(false);
         setResizable(false);
 

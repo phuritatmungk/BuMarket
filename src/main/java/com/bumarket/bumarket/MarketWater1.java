@@ -57,6 +57,7 @@ public class MarketWater1 extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Market");
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(230, 230, 230));
@@ -285,7 +286,6 @@ public class MarketWater1 extends javax.swing.JFrame {
         }
 
         writefile.writeObjectToFile(ProductList.cart1);
-        JOptionPane.showMessageDialog(this,"Save Completed...");
     }//GEN-LAST:event_btnAddtocartMouseClicked
 
     private void btnBuyMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseEntered

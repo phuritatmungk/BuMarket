@@ -68,6 +68,7 @@ public class MarketBook1 extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Market");
         setResizable(false);
         setSize(new java.awt.Dimension(1280, 720));
 
@@ -302,7 +303,6 @@ public class MarketBook1 extends javax.swing.JFrame {
         user.setPrice(292);
         user.setTotal(user.getPrice() * user.getQty());
         user.setPoint(1 + user.getQty());
-        
         ProductList.cart1.add(user);
         
     for (ProductData productData : ProductList.cart1) {
