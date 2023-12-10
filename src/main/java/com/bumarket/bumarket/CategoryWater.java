@@ -93,6 +93,7 @@ public class CategoryWater extends javax.swing.JFrame {
         btnSnacks.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnSnacks.setIcon(new javax.swing.ImageIcon(getClass().getResource("/foodIcon.png"))); // NOI18N
         btnSnacks.setText("ขนม");
+        btnSnacks.setBorder(null);
         btnSnacks.setContentAreaFilled(false);
         btnSnacks.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnSnacks.setIconTextGap(0);
@@ -115,6 +116,7 @@ public class CategoryWater extends javax.swing.JFrame {
         btnWater.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnWater.setIcon(new javax.swing.ImageIcon(getClass().getResource("/waterIcon.png"))); // NOI18N
         btnWater.setText("เครื่องดื่ม");
+        btnWater.setBorder(null);
         btnWater.setContentAreaFilled(false);
         btnWater.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnWater.setIconTextGap(0);
@@ -200,6 +202,11 @@ public class CategoryWater extends javax.swing.JFrame {
         txtProduct8.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         txtProduct8.setVerifyInputWhenFocusTarget(false);
         txtProduct8.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        txtProduct8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtProduct8MouseClicked(evt);
+            }
+        });
         jPanel2.add(txtProduct8, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 190, 190, -1));
 
         jSeparator9.setForeground(new java.awt.Color(121, 121, 121));
@@ -240,6 +247,11 @@ public class CategoryWater extends javax.swing.JFrame {
         txtProduct10.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         txtProduct10.setVerifyInputWhenFocusTarget(false);
         txtProduct10.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        txtProduct10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtProduct10MouseClicked(evt);
+            }
+        });
         jPanel2.add(txtProduct10, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 190, 180, -1));
 
         txtProduct5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -280,6 +292,11 @@ public class CategoryWater extends javax.swing.JFrame {
         txtProduct1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         txtProduct1.setVerifyInputWhenFocusTarget(false);
         txtProduct1.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        txtProduct1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtProduct1MouseClicked(evt);
+            }
+        });
         jPanel2.add(txtProduct1, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 190, 190, -1));
 
         txtProduct11.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -336,6 +353,11 @@ public class CategoryWater extends javax.swing.JFrame {
         txtProduct12.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         txtProduct12.setVerifyInputWhenFocusTarget(false);
         txtProduct12.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        txtProduct12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtProduct12MouseClicked(evt);
+            }
+        });
         jPanel2.add(txtProduct12, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, 190, -1));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, -1, 564));
@@ -418,8 +440,7 @@ public class CategoryWater extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSnacksActionPerformed
 
     private void btnWaterMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnWaterMouseClicked
-        new Category2().setVisible(true);
-        this.dispose();
+
     }//GEN-LAST:event_btnWaterMouseClicked
 
     private void btnWaterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnWaterActionPerformed
@@ -494,6 +515,26 @@ public class CategoryWater extends javax.swing.JFrame {
     private void btnProduct53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct53ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnProduct53ActionPerformed
+
+    private void txtProduct12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtProduct12MouseClicked
+        new MarketWater1().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_txtProduct12MouseClicked
+
+    private void txtProduct8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtProduct8MouseClicked
+       new MarketWater2().setVisible(true);
+       this.dispose();
+    }//GEN-LAST:event_txtProduct8MouseClicked
+
+    private void txtProduct10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtProduct10MouseClicked
+        new MarketWater3().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_txtProduct10MouseClicked
+
+    private void txtProduct1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtProduct1MouseClicked
+        new MarketWater4().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_txtProduct1MouseClicked
 
     /**
      * @param args the command line arguments

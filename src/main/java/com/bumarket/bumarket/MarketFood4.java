@@ -366,7 +366,7 @@ public class MarketFood4 extends javax.swing.JFrame {
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
         // TODO add your handling code here:
-        new Home().setVisible(true);
+        new CategoryFood().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton2MouseClicked
 

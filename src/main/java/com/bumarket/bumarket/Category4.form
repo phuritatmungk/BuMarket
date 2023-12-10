@@ -237,6 +237,9 @@
                 <Property name="verifyInputWhenFocusTarget" type="boolean" value="false"/>
                 <Property name="verticalTextPosition" type="int" value="1"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="txtProduct8MouseClicked"/>
+              </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="80" y="190" width="190" height="-1"/>
@@ -271,6 +274,9 @@
                 <Property name="verifyInputWhenFocusTarget" type="boolean" value="false"/>
                 <Property name="verticalTextPosition" type="int" value="1"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="txtProduct9MouseClicked"/>
+              </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="350" y="190" width="190" height="-1"/>
@@ -356,6 +362,9 @@
                 <Property name="verifyInputWhenFocusTarget" type="boolean" value="false"/>
                 <Property name="verticalTextPosition" type="int" value="1"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="txtProduct10MouseClicked"/>
+              </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="640" y="190" width="190" height="-1"/>
@@ -441,6 +450,9 @@
                 <Property name="verifyInputWhenFocusTarget" type="boolean" value="false"/>
                 <Property name="verticalTextPosition" type="int" value="1"/>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="txtProduct1MouseClicked"/>
+              </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                   <AbsoluteConstraints x="920" y="190" width="190" height="-1"/>
@@ -556,6 +568,9 @@
                   <Image iconType="3" name="/pencil.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="&#xe14;&#xe34;&#xe19;&#xe2a;&#xe2d;&#xe41;&#xe25;&#xe30;&#xe44;&#xe2a;&#xe49;&#xe14;&#xe34;&#xe19;&#xe2a;&#xe2d;"/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="null"/>
+                </Property>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
                 <Property name="iconTextGap" type="int" value="0"/>
@@ -580,6 +595,9 @@
                   <Image iconType="3" name="/book.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="&#xe2a;&#xe21;&#xe38;&#xe14;"/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="null"/>
+                </Property>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
                 <Property name="iconTextGap" type="int" value="0"/>
@@ -613,6 +631,9 @@
                   <Image iconType="3" name="/pen.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="&#xe1b;&#xe32;&#xe01;&#xe01;&#xe32;"/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="null"/>
+                </Property>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
                 <Property name="iconTextGap" type="int" value="0"/>
@@ -646,6 +667,9 @@
                   <Image iconType="3" name="/mais-1.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="&#xe2d;&#xe37;&#xe48;&#xe19;&#xe46;"/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="null"/>
+                </Property>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
                 <Property name="iconTextGap" type="int" value="0"/>

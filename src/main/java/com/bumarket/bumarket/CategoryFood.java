@@ -93,6 +93,7 @@ public class CategoryFood extends javax.swing.JFrame {
         btnSnacks.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnSnacks.setIcon(new javax.swing.ImageIcon(getClass().getResource("/foodIcon.png"))); // NOI18N
         btnSnacks.setText("ขนม");
+        btnSnacks.setBorder(null);
         btnSnacks.setContentAreaFilled(false);
         btnSnacks.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnSnacks.setIconTextGap(0);
@@ -115,6 +116,7 @@ public class CategoryFood extends javax.swing.JFrame {
         btnDrinks.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnDrinks.setIcon(new javax.swing.ImageIcon(getClass().getResource("/waterIcon.png"))); // NOI18N
         btnDrinks.setText("เครื่องดื่ม");
+        btnDrinks.setBorder(null);
         btnDrinks.setContentAreaFilled(false);
         btnDrinks.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnDrinks.setIconTextGap(0);
@@ -199,6 +201,11 @@ public class CategoryFood extends javax.swing.JFrame {
         txtProduct8.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         txtProduct8.setVerifyInputWhenFocusTarget(false);
         txtProduct8.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        txtProduct8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtProduct8MouseClicked(evt);
+            }
+        });
         jPanel2.add(txtProduct8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, 190, -1));
 
         jSeparator9.setForeground(new java.awt.Color(121, 121, 121));
@@ -208,6 +215,11 @@ public class CategoryFood extends javax.swing.JFrame {
         txtProduct9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtProduct9.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         txtProduct9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Food2.jpg"))); // NOI18N
+        txtProduct9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtProduct9MouseClicked(evt);
+            }
+        });
         jPanel2.add(txtProduct9, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 190, 140, -1));
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -240,6 +252,11 @@ public class CategoryFood extends javax.swing.JFrame {
         txtProduct10.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         txtProduct10.setVerifyInputWhenFocusTarget(false);
         txtProduct10.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        txtProduct10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtProduct10MouseClicked(evt);
+            }
+        });
         jPanel2.add(txtProduct10, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 190, 190, -1));
 
         txtProduct5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -280,6 +297,11 @@ public class CategoryFood extends javax.swing.JFrame {
         txtProduct1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         txtProduct1.setVerifyInputWhenFocusTarget(false);
         txtProduct1.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        txtProduct1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtProduct1MouseClicked(evt);
+            }
+        });
         jPanel2.add(txtProduct1, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 190, 190, -1));
 
         txtProduct11.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -492,6 +514,26 @@ public class CategoryFood extends javax.swing.JFrame {
     private void btnProduct53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct53ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnProduct53ActionPerformed
+
+    private void txtProduct8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtProduct8MouseClicked
+        new MarketFood1().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_txtProduct8MouseClicked
+
+    private void txtProduct9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtProduct9MouseClicked
+       new MarketFood2().setVisible(true);
+       this.dispose();
+    }//GEN-LAST:event_txtProduct9MouseClicked
+
+    private void txtProduct10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtProduct10MouseClicked
+        new MarketFood3().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_txtProduct10MouseClicked
+
+    private void txtProduct1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtProduct1MouseClicked
+        new MarketFood4().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_txtProduct1MouseClicked
 
     /**
      * @param args the command line arguments

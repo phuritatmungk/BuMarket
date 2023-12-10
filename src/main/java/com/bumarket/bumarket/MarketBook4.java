@@ -131,7 +131,7 @@ public class MarketBook4 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(btnAddtocart);
-        btnAddtocart.setBounds(460, 430, 138, 40);
+        btnAddtocart.setBounds(460, 430, 137, 40);
 
         btnBuy.setBackground(new java.awt.Color(153, 153, 153));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -274,7 +274,7 @@ public class MarketBook4 extends javax.swing.JFrame {
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
         // TODO add your handling code here:
-        new Home().setVisible(true);
+        new Category2().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton2MouseClicked
 

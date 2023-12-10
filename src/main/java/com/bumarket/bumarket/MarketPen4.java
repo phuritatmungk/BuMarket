@@ -261,7 +261,7 @@ public class MarketPen4 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBuyMouseClicked
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-        new Home().setVisible(true);
+       new Category3().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton2MouseClicked
 

@@ -213,6 +213,11 @@ public class Category extends javax.swing.JFrame {
         txtProduct1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         txtProduct1.setVerifyInputWhenFocusTarget(false);
         txtProduct1.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        txtProduct1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtProduct1MouseClicked(evt);
+            }
+        });
         jPanel2.add(txtProduct1, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 190, 190, -1));
 
         jSeparator9.setForeground(new java.awt.Color(121, 121, 121));
@@ -275,6 +280,11 @@ public class Category extends javax.swing.JFrame {
         txtProduct8.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         txtProduct8.setVerifyInputWhenFocusTarget(false);
         txtProduct8.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        txtProduct8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtProduct8MouseClicked(evt);
+            }
+        });
         jPanel2.add(txtProduct8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, 190, -1));
 
         txtProduct9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -283,6 +293,11 @@ public class Category extends javax.swing.JFrame {
         txtProduct9.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         txtProduct9.setVerifyInputWhenFocusTarget(false);
         txtProduct9.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        txtProduct9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtProduct9MouseClicked(evt);
+            }
+        });
         jPanel2.add(txtProduct9, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 190, 190, -1));
 
         txtProduct10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -291,6 +306,11 @@ public class Category extends javax.swing.JFrame {
         txtProduct10.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         txtProduct10.setVerifyInputWhenFocusTarget(false);
         txtProduct10.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        txtProduct10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtProduct10MouseClicked(evt);
+            }
+        });
         jPanel2.add(txtProduct10, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 190, 190, -1));
 
         btnProduct2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -337,6 +357,7 @@ public class Category extends javax.swing.JFrame {
         btnPencil.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnPencil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pencil.png"))); // NOI18N
         btnPencil.setText("ดินสอและไส้ดินสอ");
+        btnPencil.setBorder(null);
         btnPencil.setContentAreaFilled(false);
         btnPencil.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnPencil.setIconTextGap(0);
@@ -356,6 +377,7 @@ public class Category extends javax.swing.JFrame {
         btnBook.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnBook.setIcon(new javax.swing.ImageIcon(getClass().getResource("/book.png"))); // NOI18N
         btnBook.setText("สมุด");
+        btnBook.setBorder(null);
         btnBook.setContentAreaFilled(false);
         btnBook.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnBook.setIconTextGap(0);
@@ -378,6 +400,7 @@ public class Category extends javax.swing.JFrame {
         btnPen.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnPen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pen.png"))); // NOI18N
         btnPen.setText("ปากกา");
+        btnPen.setBorder(null);
         btnPen.setContentAreaFilled(false);
         btnPen.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnPen.setIconTextGap(0);
@@ -400,6 +423,7 @@ public class Category extends javax.swing.JFrame {
         btnOther.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnOther.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mais-1.png"))); // NOI18N
         btnOther.setText("อื่นๆ");
+        btnOther.setBorder(null);
         btnOther.setContentAreaFilled(false);
         btnOther.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnOther.setIconTextGap(0);
@@ -608,6 +632,26 @@ public class Category extends javax.swing.JFrame {
     private void btnProduct1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct1MouseExited
          btnProduct1.setBackground(new Color(153,153,153));
     }//GEN-LAST:event_btnProduct1MouseExited
+
+    private void txtProduct8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtProduct8MouseClicked
+        new MarketPencil1().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_txtProduct8MouseClicked
+
+    private void txtProduct9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtProduct9MouseClicked
+       new MarketPencil2().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_txtProduct9MouseClicked
+
+    private void txtProduct10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtProduct10MouseClicked
+        new MarketPencil3().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_txtProduct10MouseClicked
+
+    private void txtProduct1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtProduct1MouseClicked
+       new MarketPencil4().setVisible(true);
+       this.dispose();
+    }//GEN-LAST:event_txtProduct1MouseClicked
 
     /**
      * @param args the command line arguments
