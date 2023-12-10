@@ -29,12 +29,12 @@ public class Home extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        BPlabel = new javax.swing.JLabel();
         Cartbutton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
         jLabel3 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jButton12 = new javax.swing.JButton();
@@ -63,6 +63,14 @@ public class Home extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        BPlabel.setFont(new java.awt.Font("Times New Roman", 1, 13)); // NOI18N
+        BPlabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BPlabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bulogo (Custom).png"))); // NOI18N
+        BPlabel.setText("0.00 BP");
+        BPlabel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        BPlabel.setRequestFocusEnabled(false);
+        jPanel1.add(BPlabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 180, 180, 50));
+
         Cartbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shopicon.png"))); // NOI18N
         Cartbutton.setBorder(null);
         Cartbutton.setContentAreaFilled(false);
@@ -86,17 +94,6 @@ public class Home extends javax.swing.JFrame {
         jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 650, 910, 10));
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 380, -1, -1));
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
-        jButton3.setText("ยอดพอยท์คงเหลือ");
-        jButton3.setContentAreaFilled(false);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 180, 180, 49));
-
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/advert3.jpg"))); // NOI18N
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 440, 190, 200));
 
@@ -106,7 +103,9 @@ public class Home extends javax.swing.JFrame {
         jButton12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
         jButton12.setText("ประวัติการสั่งซื้อ");
+        jButton12.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jButton12.setContentAreaFilled(false);
+        jButton12.setRequestFocusEnabled(false);
         jButton12.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton12MouseClicked(evt);
@@ -229,10 +228,6 @@ public class Home extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
-
     private void btnSnacksanddrinksActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSnacksanddrinksActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnSnacksanddrinksActionPerformed
@@ -314,12 +309,12 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel BPlabel;
     private javax.swing.JButton Cartbutton;
     private javax.swing.JButton btnClothes;
     private javax.swing.JButton btnSnacksanddrinks;
     private javax.swing.JButton btnStationery;
     private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;

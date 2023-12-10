@@ -6,12 +6,8 @@ package com.bumarket.bumarket;
 
 import java.awt.Color;
 import java.awt.Component;
-import java.io.BufferedWriter;
 import java.io.FileInputStream;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.io.ObjectInputStream;
-import java.io.Writer;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -51,15 +47,18 @@ public class Shoppingcart extends javax.swing.JFrame {
         });
         
     } 
+
     
-     private void sumAmount() {
+    private void sumAmount() {
         int total = 0;
+        String count = Integer.toString(Table.getRowCount());
         for (int i = 0; i < Table.getRowCount(); i++) {
             Product item = (Product) Table.getValueAt(i, 0);
             total += item.getTotal();
         }
         DecimalFormat df = new DecimalFormat("$ #,##0.00");
         LBTotal.setText(df.format(total));
+        lblist.setText(count  + " รายการ");
     }
      
     public List<ProductData> readObjectFromFile() {
@@ -87,13 +86,14 @@ public class Shoppingcart extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        BPlabel = new javax.swing.JLabel();
+        lblist = new javax.swing.JLabel();
         DeleteBtn = new javax.swing.JButton();
         LBTotal = new javax.swing.JLabel();
         jSeparator12 = new javax.swing.JSeparator();
         jSeparator11 = new javax.swing.JSeparator();
         jScrollPane1 = new javax.swing.JScrollPane();
         Table = new javax.swing.JTable();
-        BPButton = new javax.swing.JButton();
         Historybutton = new javax.swing.JButton();
         ExitButton = new javax.swing.JButton();
         Cartbutton = new javax.swing.JButton();
@@ -121,6 +121,19 @@ public class Shoppingcart extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        BPlabel.setFont(new java.awt.Font("Times New Roman", 1, 13)); // NOI18N
+        BPlabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BPlabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bulogo (Custom).png"))); // NOI18N
+        BPlabel.setText("0.00 BP");
+        BPlabel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        BPlabel.setRequestFocusEnabled(false);
+        getContentPane().add(BPlabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 150, 240, 50));
+
+        lblist.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        lblist.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblist.setText("3 รายการ");
+        getContentPane().add(lblist, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 285, 80, -1));
+
         DeleteBtn.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         DeleteBtn.setText("Delete");
         DeleteBtn.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -132,7 +145,7 @@ public class Shoppingcart extends javax.swing.JFrame {
 
         LBTotal.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         LBTotal.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        LBTotal.setText("100");
+        LBTotal.setText("$0.00");
         LBTotal.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         LBTotal.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         getContentPane().add(LBTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 340, 80, -1));
@@ -154,11 +167,11 @@ public class Shoppingcart extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Data", "ID Product", "Product", "Quantity", "Price", "Total", "Point"
+                "Data", "Number", "Product", "Quantity", "Price", "Total"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, true, false, false, false
+                false, false, false, true, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -172,29 +185,16 @@ public class Shoppingcart extends javax.swing.JFrame {
             Table.getColumnModel().getColumn(0).setPreferredWidth(0);
             Table.getColumnModel().getColumn(0).setMaxWidth(0);
             Table.getColumnModel().getColumn(1).setResizable(false);
+            Table.getColumnModel().getColumn(1).setPreferredWidth(20);
             Table.getColumnModel().getColumn(2).setResizable(false);
-            Table.getColumnModel().getColumn(2).setPreferredWidth(30);
+            Table.getColumnModel().getColumn(2).setPreferredWidth(200);
             Table.getColumnModel().getColumn(3).setResizable(false);
             Table.getColumnModel().getColumn(3).setPreferredWidth(5);
             Table.getColumnModel().getColumn(4).setResizable(false);
             Table.getColumnModel().getColumn(5).setResizable(false);
-            Table.getColumnModel().getColumn(6).setResizable(false);
-            Table.getColumnModel().getColumn(6).setPreferredWidth(5);
         }
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 210, 660, 420));
-
-        BPButton.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        BPButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
-        BPButton.setText("ยอดพอยท์คงเหลือ");
-        BPButton.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        BPButton.setContentAreaFilled(false);
-        BPButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BPButtonActionPerformed(evt);
-            }
-        });
-        getContentPane().add(BPButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 150, 220, 50));
 
         Historybutton.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         Historybutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture2 (1).png"))); // NOI18N
@@ -207,7 +207,7 @@ public class Shoppingcart extends javax.swing.JFrame {
                 HistorybuttonActionPerformed(evt);
             }
         });
-        getContentPane().add(Historybutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 210, 220, 50));
+        getContentPane().add(Historybutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 210, 240, 50));
 
         ExitButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
         ExitButton.setBorder(null);
@@ -337,10 +337,6 @@ public class Shoppingcart extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_BackbuttonMouseClicked
 
-    private void BPButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BPButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_BPButtonActionPerformed
-
     private void HistorybuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HistorybuttonActionPerformed
         new Shoppingcart().setVisible(true);
         this.dispose();
@@ -352,7 +348,8 @@ public class Shoppingcart extends javax.swing.JFrame {
         model.getDataVector().removeAllElements();
         model.fireTableDataChanged();
         for(ProductData xRow : productList) {
-            model.addRow(new Product(xRow.getProduct(), xRow.getProductID(), xRow.getQty(), xRow.getPrice(), xRow.getTotal(), xRow.getPoint()).toTableRow(Table.getRowCount() + 1));
+            model.addRow(new Product(xRow.getProduct(), xRow.getQty(), xRow.getPrice(), xRow.getTotal()).toTableRow(Table.getRowCount() + 1));
+            sumAmount();
         }
     }//GEN-LAST:event_jButton1MouseClicked
 
@@ -413,7 +410,7 @@ public class Shoppingcart extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BPButton;
+    private javax.swing.JLabel BPlabel;
     private javax.swing.JButton Backbutton;
     private javax.swing.JButton BuyButton;
     private javax.swing.JButton Cartbutton;
@@ -440,5 +437,6 @@ public class Shoppingcart extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator11;
     private javax.swing.JSeparator jSeparator12;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel lblist;
     // End of variables declaration//GEN-END:variables
 }

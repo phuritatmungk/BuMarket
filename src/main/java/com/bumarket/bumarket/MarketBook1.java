@@ -5,17 +5,9 @@
 package com.bumarket.bumarket;
 
 import java.awt.Color;
-import java.io.File;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.io.ObjectOutputStream;
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -297,23 +289,11 @@ public class MarketBook1 extends javax.swing.JFrame {
 
     private void btnBuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseClicked
         ProductData user = new ProductData();
-        user.setProductID(1234);
         user.setProduct("Monte");
         user.setQty(((Number) jSpinner1.getValue()).intValue());
         user.setPrice(292);
         user.setTotal(user.getPrice() * user.getQty());
-        user.setPoint(1 + user.getQty());
         ProductList.cart1.add(user);
-        
-    for (ProductData productData : ProductList.cart1) {
-        System.out.println("ID: " + productData.getProductID());
-        System.out.println("Product: " + productData.getProduct());
-        System.out.println("Qty: " + productData.getQty());
-        System.out.println("Price: " + productData.getPrice());
-        System.out.println("Total: " + productData.getTotal());
-        System.out.println("Point: " + productData.getPoint());
-        System.out.println("---------------------------");
-    }
         
         writeObjectToFile(ProductList.cart1);
         JOptionPane.showMessageDialog(this,"Save Completed...");
@@ -332,25 +312,12 @@ public class MarketBook1 extends javax.swing.JFrame {
     private void btnAddtocartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddtocartMouseClicked
         ProductData user = new ProductData();
         MarketBook1 writefile = new MarketBook1();
-        user.setProductID(1234);
         user.setProduct("Monte");
         user.setQty(((Number) jSpinner1.getValue()).intValue());
         user.setPrice(292);
         user.setTotal(user.getPrice() * user.getQty());
-        user.setPoint(1 + user.getQty());
-        
         ProductList.cart1.add(user);
-        
-    for (ProductData productData : ProductList.cart1) {
-        System.out.println("ID: " + productData.getProductID());
-        System.out.println("Product: " + productData.getProduct());
-        System.out.println("Qty: " + productData.getQty());
-        System.out.println("Price: " + productData.getPrice());
-        System.out.println("Total: " + productData.getTotal());
-        System.out.println("Point: " + productData.getPoint());
-        System.out.println("---------------------------");
-    }
-        
+
         writefile.writeObjectToFile(ProductList.cart1);
         JOptionPane.showMessageDialog(this,"Save Completed...");
     }//GEN-LAST:event_btnAddtocartMouseClicked

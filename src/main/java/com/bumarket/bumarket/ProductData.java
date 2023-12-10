@@ -14,10 +14,8 @@ import javax.swing.JSpinner;
 public class ProductData implements java.io.Serializable {
     
     private String product;
-    private int productID;
     private int qty;
     private double total;
-    private int point;
     private double price;
 
 
@@ -53,16 +51,10 @@ public class ProductData implements java.io.Serializable {
     /**
      * @return the productID
      */
-    public int getProductID() {
-        return productID;
-    }
 
     /**
      * @param productID the productID to set
      */
-    public void setProductID(int productID) {
-        this.productID = productID;
-    }
 
     /**
      * @return the qty
@@ -95,14 +87,9 @@ public class ProductData implements java.io.Serializable {
     /**
      * @return the point
      */
-    public int getPoint() {
-        return point;
-    }
+
 
     /**
      * @param point the point to set
      */
-    public void setPoint(int point) {
-        this.point = point;
-    }
 }

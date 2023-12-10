@@ -540,6 +540,7 @@ public class MarketJacket4 extends javax.swing.JFrame {
         getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSizeMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSizeMActionPerformed
@@ -564,25 +565,13 @@ public class MarketJacket4 extends javax.swing.JFrame {
 
     private void btnBuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseClicked
         ProductData user = new ProductData();
-        MarketJacket4 writefile = new MarketJacket4();
-        user.setProductID(789);
+        MarketBook1 writefile = new MarketBook1();
         user.setProduct("เสื้อแจ็คเก็ตแขนยาวผู้ชาย");
         user.setQty(1);
         user.setPrice(411.00);
         user.setTotal(user.getPrice() * user.getQty());
-        user.setPoint(1 + user.getQty());
 
         ProductList.cart1.add(user);
-
-        for (ProductData productData : ProductList.cart1) {
-            System.out.println("ID: " + productData.getProductID());
-            System.out.println("Product: " + productData.getProduct());
-            System.out.println("Qty: " + productData.getQty());
-            System.out.println("Price: " + productData.getPrice());
-            System.out.println("Total: " + productData.getTotal());
-            System.out.println("Point: " + productData.getPoint());
-            System.out.println("---------------------------");
-        }
 
         writefile.writeObjectToFile(ProductList.cart1);
         JOptionPane.showMessageDialog(this,"Save Completed...");
@@ -645,25 +634,13 @@ public class MarketJacket4 extends javax.swing.JFrame {
 
     private void btnAdd_to_cartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAdd_to_cartMouseClicked
         ProductData user = new ProductData();
-        MarketJacket4 writefile = new MarketJacket4();
-        user.setProductID(789);
+        MarketBook1 writefile = new MarketBook1();
         user.setProduct("เสื้อแจ็คเก็ตแขนยาวผู้ชาย");
         user.setQty(1);
         user.setPrice(411.00);
         user.setTotal(user.getPrice() * user.getQty());
-        user.setPoint(1 + user.getQty());
 
         ProductList.cart1.add(user);
-
-        for (ProductData productData : ProductList.cart1) {
-            System.out.println("ID: " + productData.getProductID());
-            System.out.println("Product: " + productData.getProduct());
-            System.out.println("Qty: " + productData.getQty());
-            System.out.println("Price: " + productData.getPrice());
-            System.out.println("Total: " + productData.getTotal());
-            System.out.println("Point: " + productData.getPoint());
-            System.out.println("---------------------------");
-        }
 
         writefile.writeObjectToFile(ProductList.cart1);
         JOptionPane.showMessageDialog(this,"Save Completed...");
@@ -783,7 +760,4 @@ public class MarketJacket4 extends javax.swing.JFrame {
     private javax.swing.JLabel txtUSER1;
     // End of variables declaration//GEN-END:variables
 
-    private void writeObjectToFile(List<ProductData> cart1) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 }
