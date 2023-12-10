@@ -39,7 +39,7 @@ public class MarketFood3 extends javax.swing.JFrame {
         jLabel39 = new javax.swing.JLabel();
         jLabel41 = new javax.swing.JLabel();
         btnAddtocart2 = new javax.swing.JButton();
-        btnBuy2 = new javax.swing.JButton();
+        btnBuy1 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         jSpinner3 = new javax.swing.JSpinner();
         jLabel42 = new javax.swing.JLabel();
@@ -130,25 +130,25 @@ public class MarketFood3 extends javax.swing.JFrame {
             }
         });
         jPanel6.add(btnAddtocart2);
-        btnAddtocart2.setBounds(460, 400, 137, 40);
+        btnAddtocart2.setBounds(460, 400, 138, 40);
 
-        btnBuy2.setBackground(new java.awt.Color(153, 153, 153));
-        btnBuy2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnBuy2.setForeground(new java.awt.Color(255, 255, 255));
-        btnBuy2.setText("ซื้อสินค้า");
-        btnBuy2.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnBuy1.setBackground(new java.awt.Color(153, 153, 153));
+        btnBuy1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnBuy1.setForeground(new java.awt.Color(255, 255, 255));
+        btnBuy1.setText("ซื้อสินค้า");
+        btnBuy1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnBuy2MouseClicked(evt);
+                btnBuy1MouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnBuy2MouseEntered(evt);
+                btnBuy1MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnBuy2MouseExited(evt);
+                btnBuy1MouseExited(evt);
             }
         });
-        jPanel6.add(btnBuy2);
-        btnBuy2.setBounds(610, 400, 140, 40);
+        jPanel6.add(btnBuy1);
+        btnBuy1.setBounds(620, 400, 140, 40);
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel8.setText("จำนวน");
@@ -225,7 +225,7 @@ public class MarketFood3 extends javax.swing.JFrame {
             }
         });
         jPanel8.add(btnAddtocart3);
-        btnAddtocart3.setBounds(460, 400, 137, 40);
+        btnAddtocart3.setBounds(460, 400, 138, 40);
 
         btnBuy3.setBackground(new java.awt.Color(204, 0, 0));
         btnBuy3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -325,124 +325,23 @@ public class MarketFood3 extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnAddtocartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddtocartMouseClicked
-        // TODO add your handling code here:
-        ProductData user = new ProductData();
-        MarketBook1 writefile = new MarketBook1();
-        user.setProductID(234);
-        user.setProduct("คิทแคท ช็อกโกแลตพรีเมี่ยม35กรัม");
-        user.setQty(1);
-        user.setPrice(48);
-        user.setTotal(user.getPrice() * user.getQty());
-        user.setPoint(0 + user.getQty());
-
-        ProductList.cart1.add(user);
-
-        for (ProductData productData : ProductList.cart1) {
-            System.out.println("ID: " + productData.getProductID());
-            System.out.println("Product: " + productData.getProduct());
-            System.out.println("Qty: " + productData.getQty());
-            System.out.println("Price: " + productData.getPrice());
-            System.out.println("Total: " + productData.getTotal());
-            System.out.println("Point: " + productData.getPoint());
-            System.out.println("---------------------------");
-        }
-
-        writefile.writeObjectToFile(ProductList.cart1);
-        JOptionPane.showMessageDialog(this,"Save Completed...");
-    }//GEN-LAST:event_btnAddtocartMouseClicked
-
-    private void btnBuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseClicked
-        // TODO add your handling code here:
-        ProductData user = new ProductData();
-        MarketBook1 writefile = new MarketBook1();
-        user.setProductID(234);
-        user.setProduct("คิทแคท ช็อกโกแลตพรีเมี่ยม35กรัม");
-        user.setQty(1);
-        user.setPrice(48);
-        user.setTotal(user.getPrice() * user.getQty());
-        user.setPoint(0 + user.getQty());
-
-        ProductList.cart1.add(user);
-
-        for (ProductData productData : ProductList.cart1) {
-            System.out.println("ID: " + productData.getProductID());
-            System.out.println("Product: " + productData.getProduct());
-            System.out.println("Qty: " + productData.getQty());
-            System.out.println("Price: " + productData.getPrice());
-            System.out.println("Total: " + productData.getTotal());
-            System.out.println("Point: " + productData.getPoint());
-            System.out.println("---------------------------");
-        }
-
-        writefile.writeObjectToFile(ProductList.cart1);
-        JOptionPane.showMessageDialog(this,"Save Completed...");
-        new Shoppingcart().setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btnBuyMouseClicked
-
-    private void btnAddtocart1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddtocart1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddtocart1MouseClicked
-
-    private void btnBuy1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuy1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuy1MouseClicked
-
     private void btnAddtocart2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddtocart2MouseClicked
         // TODO add your handling code here:
         ProductData user = new ProductData();
         MarketBook1 writefile = new MarketBook1();
-        user.setProductID(234);
         user.setProduct("ทาโร รสเข้มข้น");
         user.setQty(1);
         user.setPrice(20);
         user.setTotal(user.getPrice() * user.getQty());
-        user.setPoint(0 + user.getQty());
 
         ProductList.cart1.add(user);
-
-        for (ProductData productData : ProductList.cart1) {
-            System.out.println("ID: " + productData.getProductID());
-            System.out.println("Product: " + productData.getProduct());
-            System.out.println("Qty: " + productData.getQty());
-            System.out.println("Price: " + productData.getPrice());
-            System.out.println("Total: " + productData.getTotal());
-            System.out.println("Point: " + productData.getPoint());
-            System.out.println("---------------------------");
-        }
 
         writefile.writeObjectToFile(ProductList.cart1);
         JOptionPane.showMessageDialog(this,"Save Completed...");
     }//GEN-LAST:event_btnAddtocart2MouseClicked
 
-    private void btnBuy2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuy2MouseClicked
-        // TODO add your handling code here:
-        ProductData user = new ProductData();
-        MarketBook1 writefile = new MarketBook1();
-        user.setProductID(234);
-        user.setProduct("ทาโร รสเข้มข้น");
-        user.setQty(1);
-        user.setPrice(20);
-        user.setTotal(user.getPrice() * user.getQty());
-        user.setPoint(0 + user.getQty());
+    private void btnBuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuy2MouseClicked
 
-        ProductList.cart1.add(user);
-
-        for (ProductData productData : ProductList.cart1) {
-            System.out.println("ID: " + productData.getProductID());
-            System.out.println("Product: " + productData.getProduct());
-            System.out.println("Qty: " + productData.getQty());
-            System.out.println("Price: " + productData.getPrice());
-            System.out.println("Total: " + productData.getTotal());
-            System.out.println("Point: " + productData.getPoint());
-            System.out.println("---------------------------");
-        }
-
-        writefile.writeObjectToFile(ProductList.cart1);
-        JOptionPane.showMessageDialog(this,"Save Completed...");
-        new Shoppingcart().setVisible(true);
-        this.dispose();
     }//GEN-LAST:event_btnBuy2MouseClicked
 
     private void btnAddtocart3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddtocart3MouseClicked
@@ -463,13 +362,30 @@ public class MarketFood3 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void btnBuy2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuy2MouseEntered
-        btnBuy2.setBackground(Color.red);
-    }//GEN-LAST:event_btnBuy2MouseEntered
+    private void btnBuy1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuy1MouseEntered
+        btnBuy1.setBackground(Color.red);
+    }//GEN-LAST:event_btnBuy1MouseEntered
 
-    private void btnBuy2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuy2MouseExited
-         btnBuy2.setBackground(new Color(153,153,153));
-    }//GEN-LAST:event_btnBuy2MouseExited
+    private void btnBuy1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuy1MouseExited
+         btnBuy1.setBackground(new Color(153,153,153));
+    }//GEN-LAST:event_btnBuy1MouseExited
+
+    private void btnBuy1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuy1MouseClicked
+        // TODO add your handling code here:
+        ProductData user = new ProductData();
+        MarketBook1 writefile = new MarketBook1();
+        user.setProduct("ทาโร รสเข้มข้น");
+        user.setQty(1);
+        user.setPrice(20);
+        user.setTotal(user.getPrice() * user.getQty());
+
+        ProductList.cart1.add(user);
+
+        writefile.writeObjectToFile(ProductList.cart1);
+        JOptionPane.showMessageDialog(this,"Save Completed...");
+        new Shoppingcart().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnBuy1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -509,7 +425,7 @@ public class MarketFood3 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAddtocart2;
     private javax.swing.JButton btnAddtocart3;
-    private javax.swing.JButton btnBuy2;
+    private javax.swing.JButton btnBuy1;
     private javax.swing.JButton btnBuy3;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel10;

@@ -135,7 +135,7 @@ public class MarketFood2 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(btnAddtocart);
-        btnAddtocart.setBounds(460, 400, 137, 40);
+        btnAddtocart.setBounds(460, 400, 138, 40);
 
         btnBuy.setBackground(new java.awt.Color(153, 153, 153));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -228,7 +228,7 @@ public class MarketFood2 extends javax.swing.JFrame {
             }
         });
         jPanel4.add(btnAddtocart1);
-        btnAddtocart1.setBounds(460, 400, 137, 40);
+        btnAddtocart1.setBounds(460, 400, 138, 40);
 
         btnBuy1.setBackground(new java.awt.Color(204, 0, 0));
         btnBuy1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -332,24 +332,12 @@ public class MarketFood2 extends javax.swing.JFrame {
         // TODO add your handling code here:
         ProductData user = new ProductData();
         MarketBook1 writefile = new MarketBook1();
-        user.setProductID(234);
         user.setProduct("ทาโร รสเข้มข้น");
         user.setQty(1);
         user.setPrice(20);
         user.setTotal(user.getPrice() * user.getQty());
-        user.setPoint(0 + user.getQty());
 
         ProductList.cart1.add(user);
-
-        for (ProductData productData : ProductList.cart1) {
-            System.out.println("ID: " + productData.getProductID());
-            System.out.println("Product: " + productData.getProduct());
-            System.out.println("Qty: " + productData.getQty());
-            System.out.println("Price: " + productData.getPrice());
-            System.out.println("Total: " + productData.getTotal());
-            System.out.println("Point: " + productData.getPoint());
-            System.out.println("---------------------------");
-        }
 
         writefile.writeObjectToFile(ProductList.cart1);
         JOptionPane.showMessageDialog(this,"Save Completed...");
@@ -359,24 +347,12 @@ public class MarketFood2 extends javax.swing.JFrame {
         // TODO add your handling code here:
         ProductData user = new ProductData();
         MarketBook1 writefile = new MarketBook1();
-        user.setProductID(234);
         user.setProduct("ทาโร รสเข้มข้น");
         user.setQty(1);
         user.setPrice(20);
         user.setTotal(user.getPrice() * user.getQty());
-        user.setPoint(0 + user.getQty());
 
         ProductList.cart1.add(user);
-
-        for (ProductData productData : ProductList.cart1) {
-            System.out.println("ID: " + productData.getProductID());
-            System.out.println("Product: " + productData.getProduct());
-            System.out.println("Qty: " + productData.getQty());
-            System.out.println("Price: " + productData.getPrice());
-            System.out.println("Total: " + productData.getTotal());
-            System.out.println("Point: " + productData.getPoint());
-            System.out.println("---------------------------");
-        }
 
         writefile.writeObjectToFile(ProductList.cart1);
         JOptionPane.showMessageDialog(this,"Save Completed...");

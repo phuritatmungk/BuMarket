@@ -227,24 +227,12 @@ public class MarketPen2 extends javax.swing.JFrame {
         // TODO add your handling code here:
         ProductData user = new ProductData();
         MarketBook1 writefile = new MarketBook1();
-        user.setProductID(234);
         user.setProduct("Parker Jotter Around The World New York Series");
         user.setQty(1);
         user.setPrice(999);
         user.setTotal(user.getPrice() * user.getQty());
-        user.setPoint(90 + user.getQty());
 
         ProductList.cart1.add(user);
-
-        for (ProductData productData : ProductList.cart1) {
-            System.out.println("ID: " + productData.getProductID());
-            System.out.println("Product: " + productData.getProduct());
-            System.out.println("Qty: " + productData.getQty());
-            System.out.println("Price: " + productData.getPrice());
-            System.out.println("Total: " + productData.getTotal());
-            System.out.println("Point: " + productData.getPoint());
-            System.out.println("---------------------------");
-        }
 
         writefile.writeObjectToFile(ProductList.cart1);
         JOptionPane.showMessageDialog(this,"Save Completed...");
@@ -254,24 +242,12 @@ public class MarketPen2 extends javax.swing.JFrame {
         // TODO add your handling code here:
         ProductData user = new ProductData();
         MarketBook1 writefile = new MarketBook1();
-        user.setProductID(234);
         user.setProduct("Parker Jotter Around The World New York Series");
         user.setQty(1);
         user.setPrice(999);
         user.setTotal(user.getPrice() * user.getQty());
-        user.setPoint(90 + user.getQty());
 
         ProductList.cart1.add(user);
-
-        for (ProductData productData : ProductList.cart1) {
-            System.out.println("ID: " + productData.getProductID());
-            System.out.println("Product: " + productData.getProduct());
-            System.out.println("Qty: " + productData.getQty());
-            System.out.println("Price: " + productData.getPrice());
-            System.out.println("Total: " + productData.getTotal());
-            System.out.println("Point: " + productData.getPoint());
-            System.out.println("---------------------------");
-        }
 
         writefile.writeObjectToFile(ProductList.cart1);
         JOptionPane.showMessageDialog(this,"Save Completed...");        // TODO add your handling code here:

@@ -9,10 +9,8 @@ import java.text.DecimalFormat;
 public class Product implements java.io.Serializable {
     
     private String product;
-    private int productID;
     private int qty;
     private double total;
-    private int point;
     private double price;
 
     /**
@@ -47,16 +45,10 @@ public class Product implements java.io.Serializable {
     /**
      * @return the productID
      */
-    public int getProductID() {
-        return productID;
-    }
 
     /**
      * @param productID the productID to set
      */
-    public void setProductID(int productID) {
-        this.productID = productID;
-    }
 
     /**
      * @return the qty
@@ -84,34 +76,19 @@ public class Product implements java.io.Serializable {
      */
     public void setTotal(double total) {
         this.total = total;
-    }
-
-    /**
-     * @return the point
-     */
-    public int getPoint() {
-        return point;
-    }
-
-    /**
-     * @param point the point to set
-     */
-    public void setPoint(int point) {
-        this.point = point;
-    }
+    }  
     
-    public Product(String product, int productID, int qty,double price, double total, int point){
+  
+    public Product(String product, int qty,double price, double total){
         this.product = product;
-        this.productID = productID;
         this.qty = qty;
         this.price = price;
         this.total = total;
-        this.point = point;
     }
     
     public Object[] toTableRow(int rowNum){
         DecimalFormat df = new DecimalFormat("###0.##");
-        return new Object[]{this, df.format(rowNum), product, df.format(qty), "$"+df.format(price),"$"+df.format(total), df.format(point)};
+        return new Object[]{this, df.format(rowNum), product, df.format(qty), "$"+df.format(price),"$"+df.format(total)};
     }
     
 }

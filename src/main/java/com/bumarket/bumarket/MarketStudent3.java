@@ -268,27 +268,14 @@ public class MarketStudent3 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSize2XLActionPerformed
 
     private void btnBuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseClicked
-        // TODO add your handling code here:
         ProductData user = new ProductData();
-        MarketStudent3 writefile = new MarketStudent3();
-        user.setProductID(1447);
+        MarketBook1 writefile = new MarketBook1();
         user.setProduct("เสื้อเชิ้ตสีขาวเครื่องแบบ ชุดยูนิฟอร์ม ");
         user.setQty(1);
         user.setPrice(119.00);
         user.setTotal(user.getPrice() * user.getQty());
-        user.setPoint(1 + user.getQty());
 
         ProductList.cart1.add(user);
-
-        for (ProductData productData : ProductList.cart1) {
-            System.out.println("ID: " + productData.getProductID());
-            System.out.println("Product: " + productData.getProduct());
-            System.out.println("Qty: " + productData.getQty());
-            System.out.println("Price: " + productData.getPrice());
-            System.out.println("Total: " + productData.getTotal());
-            System.out.println("Point: " + productData.getPoint());
-            System.out.println("---------------------------");
-        }
 
         writefile.writeObjectToFile(ProductList.cart1);
         JOptionPane.showMessageDialog(this,"Save Completed...");
@@ -320,25 +307,13 @@ public class MarketStudent3 extends javax.swing.JFrame {
 
     private void btnAdd_to_cartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAdd_to_cartMouseClicked
         ProductData user = new ProductData();
-        MarketStudent3 writefile = new MarketStudent3();
-        user.setProductID(1447);
+        MarketBook1 writefile = new MarketBook1();
         user.setProduct("เสื้อเชิ้ตสีขาวเครื่องแบบ ชุดยูนิฟอร์ม ");
         user.setQty(1);
         user.setPrice(119.00);
         user.setTotal(user.getPrice() * user.getQty());
-        user.setPoint(1 + user.getQty());
 
         ProductList.cart1.add(user);
-
-        for (ProductData productData : ProductList.cart1) {
-            System.out.println("ID: " + productData.getProductID());
-            System.out.println("Product: " + productData.getProduct());
-            System.out.println("Qty: " + productData.getQty());
-            System.out.println("Price: " + productData.getPrice());
-            System.out.println("Total: " + productData.getTotal());
-            System.out.println("Point: " + productData.getPoint());
-            System.out.println("---------------------------");
-        }
 
         writefile.writeObjectToFile(ProductList.cart1);
         JOptionPane.showMessageDialog(this,"Save Completed...");
@@ -414,7 +389,4 @@ public class MarketStudent3 extends javax.swing.JFrame {
     private javax.swing.JLabel txtUSER;
     // End of variables declaration//GEN-END:variables
 
-    void writeObjectToFile(List<ProductData> cart1) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 }
