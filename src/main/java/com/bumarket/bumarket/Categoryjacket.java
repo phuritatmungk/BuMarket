@@ -100,6 +100,11 @@ public class Categoryjacket extends javax.swing.JFrame {
         btnShirt.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnShirt.setIconTextGap(0);
         btnShirt.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnShirt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnShirtMouseClicked(evt);
+            }
+        });
         btnShirt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnShirtActionPerformed(evt);
@@ -430,17 +435,17 @@ public class Categoryjacket extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnShirtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnShirtActionPerformed
-         new CategoryStudent().setVisible(true);
+         new Categoryshirt().setVisible(true);
          this.dispose();
     }//GEN-LAST:event_btnShirtActionPerformed
 
     private void btnUniformMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnUniformMouseClicked
-        new Category2().setVisible(true);
+        new Categoryjacket().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnUniformMouseClicked
 
     private void btnUniformActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUniformActionPerformed
-         new Categoryshirt().setVisible(true);
+         new CategoryStudent().setVisible(true);
          this.dispose();
     }//GEN-LAST:event_btnUniformActionPerformed
 
@@ -532,6 +537,11 @@ public class Categoryjacket extends javax.swing.JFrame {
     private void btnProduct1_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct1_4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnProduct1_4ActionPerformed
+
+    private void btnShirtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnShirtMouseClicked
+        new Categoryshirt().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnShirtMouseClicked
 
     /**
      * @param args the command line arguments
