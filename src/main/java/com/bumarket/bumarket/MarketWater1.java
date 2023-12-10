@@ -56,6 +56,7 @@ public class MarketWater1 extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Market");
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(230, 230, 230));
@@ -110,7 +111,7 @@ public class MarketWater1 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(btnAddtocart);
-        btnAddtocart.setBounds(455, 400, 138, 40);
+        btnAddtocart.setBounds(455, 400, 137, 40);
 
         btnBuy.setBackground(new java.awt.Color(204, 0, 0));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N

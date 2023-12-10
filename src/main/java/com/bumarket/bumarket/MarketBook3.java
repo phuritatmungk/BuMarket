@@ -61,6 +61,7 @@ public class MarketBook3 extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Market");
         setPreferredSize(new java.awt.Dimension(1280, 720));
         setResizable(false);
         setSize(new java.awt.Dimension(1280, 720));
@@ -130,7 +131,7 @@ public class MarketBook3 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(btnAddtocart);
-        btnAddtocart.setBounds(460, 430, 138, 40);
+        btnAddtocart.setBounds(460, 430, 137, 40);
 
         btnBuy.setBackground(new java.awt.Color(204, 0, 0));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -169,7 +170,7 @@ public class MarketBook3 extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel7.setText("สมุดวาดเขียน MONT MARTE ขนาด A6 80 ");
         jPanel2.add(jLabel7);
-        jLabel7.setBounds(455, 34, 473, 40);
+        jLabel7.setBounds(455, 34, 471, 40);
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, 1090, 500));
 

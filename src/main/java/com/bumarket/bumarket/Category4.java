@@ -74,6 +74,7 @@ public class Category4 extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Market Category");
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(230, 230, 230));

@@ -88,7 +88,6 @@ public class Shoppingcart extends javax.swing.JFrame {
 
         DeleteBtn = new javax.swing.JButton();
         LBTotal = new javax.swing.JLabel();
-        List = new javax.swing.JLabel();
         jSeparator12 = new javax.swing.JSeparator();
         jSeparator11 = new javax.swing.JSeparator();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -100,6 +99,7 @@ public class Shoppingcart extends javax.swing.JFrame {
         Backbutton = new javax.swing.JButton();
         BuyButton = new javax.swing.JButton();
         PayButton = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         jLabel17 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
@@ -113,7 +113,6 @@ public class Shoppingcart extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Shoppingcart");
@@ -128,7 +127,7 @@ public class Shoppingcart extends javax.swing.JFrame {
                 DeleteBtnMouseClicked(evt);
             }
         });
-        getContentPane().add(DeleteBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(662, 170, 140, -1));
+        getContentPane().add(DeleteBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(662, 170, 140, 25));
 
         LBTotal.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         LBTotal.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -136,13 +135,6 @@ public class Shoppingcart extends javax.swing.JFrame {
         LBTotal.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         LBTotal.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         getContentPane().add(LBTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 340, 80, -1));
-
-        List.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        List.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        List.setText("3 รายการ");
-        List.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        List.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        getContentPane().add(List, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 285, 80, -1));
 
         jSeparator12.setForeground(new java.awt.Color(0, 0, 0));
         jSeparator12.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -251,12 +243,26 @@ public class Shoppingcart extends javax.swing.JFrame {
         PayButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         PayButton.setForeground(new java.awt.Color(255, 255, 255));
         PayButton.setText("ชำระเงิน");
+        PayButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PayButtonMouseClicked(evt);
+            }
+        });
         PayButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 PayButtonActionPerformed(evt);
             }
         });
         getContentPane().add(PayButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 380, 240, -1));
+
+        jButton1.setText("Reload");
+        jButton1.setMinimumSize(new java.awt.Dimension(72, 24));
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 170, 135, 25));
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel17.setText("ยอดรวม");
@@ -307,14 +313,6 @@ public class Shoppingcart extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Up.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        jButton1.setText("jButton1");
-        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton1MouseClicked(evt);
-            }
-        });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, -1, -1));
 
         pack();
         setLocationRelativeTo(null);
@@ -367,6 +365,12 @@ public class Shoppingcart extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_DeleteBtnMouseClicked
 
+    private void PayButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PayButtonMouseClicked
+        // TODO add your handling code here:
+        new Checkout().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_PayButtonMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -411,7 +415,6 @@ public class Shoppingcart extends javax.swing.JFrame {
     private javax.swing.JButton ExitButton;
     private javax.swing.JButton Historybutton;
     private javax.swing.JLabel LBTotal;
-    private javax.swing.JLabel List;
     private javax.swing.JButton PayButton;
     private javax.swing.JTable Table;
     private javax.swing.JButton jButton1;

@@ -67,6 +67,7 @@ public class MarketBook1 extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Market");
         setResizable(false);
         setSize(new java.awt.Dimension(1280, 720));
 

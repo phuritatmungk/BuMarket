@@ -65,6 +65,7 @@ public class MarketShirt2 extends javax.swing.JFrame {
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Market");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         iconUniversity.setIcon(new javax.swing.ImageIcon(getClass().getResource("/btn_logo.png"))); // NOI18N
