@@ -228,67 +228,13 @@ public class Forgot_Pass extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    public void changePass() throws IOException {
-        String newPassword = "";
-        boolean checked = true;
-
-        File file = new File("account.txt");
-        File tempFile = new File("account2.txt");
-        BufferedWriter writer = new BufferedWriter(new FileWriter(tempFile));
-        FileReader fr = new FileReader(file);
-        BufferedReader br = new BufferedReader(fr);
-        Object[] lines = br.lines().toArray();
-        String username = txtUser.getText();
-        
-        for(int i = 0; i < lines.length; i++) {  
-            String[] row = lines[i].toString().split(": ");
-            System.out.println(lines[i]);
-            System.out.println(lines[1]);
-            if(Objects.equals((row[0]), username) && checked)
-            {
-                username = row[1];
-                newPassword = String.valueOf(txtNewPass.getPassword());
-                lines[0] = row[0] + " " + newPassword;
-                checked = false;
-            }
-            writer.write(lines[0] + System.getProperty("line.separator"));
-
-            
-            if(row[0].equals("Username"))
-            {
-                // if it's the username field we will get the username
-                username = row[1];
-                // add the username to the all username array
-                userdata.all_usernames.add(username);
-            }
-            else if(row[0].equals("Password"))
-            {
-                // if it's the password field we will get the password
-                newPassword = row[1];
-
-                userdata.all_password.add(newPassword);
-            }
-            if(!username.equals("") && !newPassword.equals(""))
-            {
-                // add the username and the password to the hashmap
-                userdata.usernameANDpassword.put(username, newPassword);
-            }
-        }
-        writer.close();
-        file.delete();
-        boolean successful = tempFile.renameTo(file);
-    }
-    
     public static boolean updatePasswordByUsername(String username, String pass, String newPassword) throws IOException {
         try {
             BufferedReader reader = new BufferedReader(new FileReader("account.txt"));
             StringBuilder content = new StringBuilder();
-            String line;
             Object[] lines = reader.lines().toArray();
-            //while ((line = reader.readLine()) != null) {
             for(int i = 0; i < lines.length; i++) { 
                 String[] parts = lines[i].toString().split(": ");
-                System.out.println(parts[0]);
                 if (parts[1].equals(pass)) {
                     content.append("Password: " + newPassword).append("\n");
                 } else {
@@ -296,7 +242,6 @@ public class Forgot_Pass extends javax.swing.JFrame {
                 }
             }
             reader.close();
-
             BufferedWriter writer = new BufferedWriter(new FileWriter("account.txt"));
             writer.write(content.toString());
             writer.close();
@@ -332,11 +277,17 @@ public class Forgot_Pass extends javax.swing.JFrame {
                         if(uname.equals(username)) {
                             if(userdata.usernameANDpassword.get(uname).equals(password)) {
                                 userExist = true;
-                                if (updatePasswordByUsername(username, password, newpass)) {
-                                    JOptionPane.showMessageDialog(this, "Password has been changed", "Info", JOptionPane.INFORMATION_MESSAGE);
-                                    new Login().setVisible(true);
-                                    this.dispose();
-                                    break;
+                                if(userdata.checkPasswordStrength(newpass) == 3) {
+                                    if (updatePasswordByUsername(username, password, newpass)) {
+                                        JOptionPane.showMessageDialog(this, "Password has been changed", "Info", JOptionPane.INFORMATION_MESSAGE);
+                                        new Login().setVisible(true);
+                                        this.dispose();
+                                        break;
+                                    }
+                                }
+                                else {
+                                    JOptionPane.showMessageDialog(this, "Password must longer than 8 chars and contains special characters", "Warning", JOptionPane.WARNING_MESSAGE);
+                                    txtNewPass.requestFocus();
                                 }
                             }
                         }
