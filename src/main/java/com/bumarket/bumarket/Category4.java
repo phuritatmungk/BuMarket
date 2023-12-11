@@ -17,6 +17,7 @@ public class Category4 extends javax.swing.JFrame {
      */
     public Category4() {
         initComponents();
+        lbId.setText(UserData.globalId);
     }
 
     /**
@@ -67,7 +68,7 @@ public class Category4 extends javax.swing.JFrame {
         jTextField2 = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
+        lbId = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         lbLogout = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
@@ -114,6 +115,7 @@ public class Category4 extends javax.swing.JFrame {
         btnProduct1.setBackground(new java.awt.Color(204, 204, 204));
         btnProduct1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnProduct1.setText("เพิ่มเติม");
+        btnProduct1.setRequestFocusEnabled(false);
         btnProduct1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProduct1MouseClicked(evt);
@@ -123,11 +125,6 @@ public class Category4 extends javax.swing.JFrame {
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 btnProduct1MouseExited(evt);
-            }
-        });
-        btnProduct1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnProduct1ActionPerformed(evt);
             }
         });
         jPanel2.add(btnProduct1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 430, -1, -1));
@@ -141,9 +138,10 @@ public class Category4 extends javax.swing.JFrame {
         jButton12.setText("ประวัติการสั่งซื้อ");
         jButton12.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton12.setContentAreaFilled(false);
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
+        jButton12.setRequestFocusEnabled(false);
+        jButton12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton12MouseClicked(evt);
             }
         });
         jPanel2.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 30, 180, 50));
@@ -198,6 +196,7 @@ public class Category4 extends javax.swing.JFrame {
         btnProduct3.setBackground(new java.awt.Color(204, 204, 204));
         btnProduct3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnProduct3.setText("เพิ่มเติม");
+        btnProduct3.setRequestFocusEnabled(false);
         btnProduct3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProduct3MouseClicked(evt);
@@ -207,11 +206,6 @@ public class Category4 extends javax.swing.JFrame {
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 btnProduct3MouseExited(evt);
-            }
-        });
-        btnProduct3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnProduct3ActionPerformed(evt);
             }
         });
         jPanel2.add(btnProduct3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 430, -1, -1));
@@ -249,6 +243,7 @@ public class Category4 extends javax.swing.JFrame {
         btnProduct4.setBackground(new java.awt.Color(204, 204, 204));
         btnProduct4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnProduct4.setText("เพิ่มเติม");
+        btnProduct4.setRequestFocusEnabled(false);
         btnProduct4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProduct43MouseClicked(evt);
@@ -258,11 +253,6 @@ public class Category4 extends javax.swing.JFrame {
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 btnProduct4MouseExited(evt);
-            }
-        });
-        btnProduct4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnProduct43ActionPerformed(evt);
             }
         });
         jPanel2.add(btnProduct4, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 430, -1, -1));
@@ -300,6 +290,7 @@ public class Category4 extends javax.swing.JFrame {
         btnProduct5.setBackground(new java.awt.Color(204, 204, 204));
         btnProduct5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnProduct5.setText("เพิ่มเติม");
+        btnProduct5.setRequestFocusEnabled(false);
         btnProduct5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProduct53MouseClicked(evt);
@@ -309,11 +300,6 @@ public class Category4 extends javax.swing.JFrame {
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 btnProduct5MouseExited(evt);
-            }
-        });
-        btnProduct5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnProduct53ActionPerformed(evt);
             }
         });
         jPanel2.add(btnProduct5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 430, -1, -1));
@@ -341,18 +327,14 @@ public class Category4 extends javax.swing.JFrame {
         btnPencil.setContentAreaFilled(false);
         btnPencil.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnPencil.setIconTextGap(0);
+        btnPencil.setRequestFocusEnabled(false);
         btnPencil.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnPencil.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnPencilMouseClicked(evt);
             }
         });
-        btnPencil.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPencilActionPerformed(evt);
-            }
-        });
-        jPanel2.add(btnPencil, new org.netbeans.lib.awtextra.AbsoluteConstraints(235, 15, -1, -1));
+        jPanel2.add(btnPencil, new org.netbeans.lib.awtextra.AbsoluteConstraints(235, 15, 118, 78));
 
         btnBook.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnBook.setIcon(new javax.swing.ImageIcon(getClass().getResource("/book.png"))); // NOI18N
@@ -364,15 +346,11 @@ public class Category4 extends javax.swing.JFrame {
         btnBook.setMaximumSize(new java.awt.Dimension(118, 78));
         btnBook.setMinimumSize(new java.awt.Dimension(118, 78));
         btnBook.setPreferredSize(new java.awt.Dimension(118, 78));
+        btnBook.setRequestFocusEnabled(false);
         btnBook.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnBook.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnBookMouseClicked(evt);
-            }
-        });
-        btnBook.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBookActionPerformed(evt);
             }
         });
         jPanel2.add(btnBook, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 15, 118, -1));
@@ -387,15 +365,11 @@ public class Category4 extends javax.swing.JFrame {
         btnPen.setMaximumSize(new java.awt.Dimension(118, 78));
         btnPen.setMinimumSize(new java.awt.Dimension(118, 78));
         btnPen.setPreferredSize(new java.awt.Dimension(118, 78));
+        btnPen.setRequestFocusEnabled(false);
         btnPen.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnPen.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnPenMouseClicked(evt);
-            }
-        });
-        btnPen.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPenActionPerformed(evt);
             }
         });
         jPanel2.add(btnPen, new org.netbeans.lib.awtextra.AbsoluteConstraints(507, 15, 118, 78));
@@ -410,15 +384,11 @@ public class Category4 extends javax.swing.JFrame {
         btnOther.setMaximumSize(new java.awt.Dimension(118, 78));
         btnOther.setMinimumSize(new java.awt.Dimension(118, 78));
         btnOther.setPreferredSize(new java.awt.Dimension(118, 78));
+        btnOther.setRequestFocusEnabled(false);
         btnOther.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnOther.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnOtherMouseClicked(evt);
-            }
-        });
-        btnOther.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnOtherActionPerformed(evt);
             }
         });
         jPanel2.add(btnOther, new org.netbeans.lib.awtextra.AbsoluteConstraints(643, 15, 118, 78));
@@ -429,6 +399,7 @@ public class Category4 extends javax.swing.JFrame {
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, 120, 110));
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Search.png"))); // NOI18N
+        jLabel10.setRequestFocusEnabled(false);
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 37, -1, 30));
 
         jTextField2.setBackground(new java.awt.Color(216, 216, 216));
@@ -438,6 +409,12 @@ public class Category4 extends javax.swing.JFrame {
         jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 35, 410, 34));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shopicon.png"))); // NOI18N
+        jLabel11.setRequestFocusEnabled(false);
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel11MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 35, 50, 40));
 
         jLabel12.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
@@ -445,15 +422,16 @@ public class Category4 extends javax.swing.JFrame {
         jLabel12.setText("My Account");
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 35, -1, -1));
 
-        jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText("XXXXX XXXXX");
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 55, -1, -1));
+        lbId.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lbId.setForeground(new java.awt.Color(255, 255, 255));
+        lbId.setText("XXXXX XXXXX");
+        jPanel1.add(lbId, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 55, -1, -1));
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Account.png"))); // NOI18N
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 10, -1, -1));
 
         lbLogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
+        lbLogout.setRequestFocusEnabled(false);
         lbLogout.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbLogoutMouseClicked(evt);
@@ -465,14 +443,10 @@ public class Category4 extends javax.swing.JFrame {
         jButton2.setBorderPainted(false);
         jButton2.setContentAreaFilled(false);
         jButton2.setFocusable(false);
+        jButton2.setRequestFocusEnabled(false);
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton2MouseClicked(evt);
-            }
-        });
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
             }
         });
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
@@ -498,24 +472,11 @@ public class Category4 extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnProduct1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnProduct1ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
-
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
         // TODO add your handling code here:
         new Home().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton2MouseClicked
-
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-         new Shoppingcart().setVisible(true);
-         this.dispose();
-    }//GEN-LAST:event_jButton12ActionPerformed
 
     private void lbLogoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbLogoutMouseClicked
         // TODO add your handling code here:
@@ -533,37 +494,21 @@ public class Category4 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnProduct3MouseClicked
 
-    private void btnProduct3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnProduct3ActionPerformed
-
     private void btnProduct43MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct43MouseClicked
         // TODO add your handling code here:
         new MarketOther3().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnProduct43MouseClicked
 
-    private void btnProduct43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct43ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnProduct43ActionPerformed
-
     private void btnProduct53MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct53MouseClicked
         new MarketOther4().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnProduct53MouseClicked
 
-    private void btnProduct53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct53ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnProduct53ActionPerformed
-
     private void btnPencilMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPencilMouseClicked
         new Category().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnPencilMouseClicked
-
-    private void btnPencilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPencilActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnPencilActionPerformed
 
     private void btnBookMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBookMouseClicked
         // TODO add your handling code here:
@@ -571,27 +516,15 @@ public class Category4 extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_btnBookMouseClicked
 
-    private void btnBookActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBookActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBookActionPerformed
-
     private void btnPenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPenMouseClicked
         // TODO add your handling code here:
         new Category3().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnPenMouseClicked
 
-    private void btnPenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPenActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnPenActionPerformed
-
     private void btnOtherMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnOtherMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_btnOtherMouseClicked
-
-    private void btnOtherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOtherActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnOtherActionPerformed
 
     private void txtProduct8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtProduct8MouseClicked
         new MarketOther().setVisible(true);
@@ -653,6 +586,18 @@ public class Category4 extends javax.swing.JFrame {
         btnProduct5.setForeground(new Color(0,0,0));
     }//GEN-LAST:event_btnProduct5MouseExited
 
+    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+        // TODO add your handling code here:
+        new Shoppingcart().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel11MouseClicked
+
+    private void jButton12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton12MouseClicked
+        // TODO add your handling code here:
+        new Checkout().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton12MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -703,7 +648,6 @@ public class Category4 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel3;
@@ -722,6 +666,7 @@ public class Category4 extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator7;
     private javax.swing.JSeparator jSeparator9;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JLabel lbId;
     private javax.swing.JLabel lbLogout;
     private javax.swing.JLabel txtProduct1;
     private javax.swing.JLabel txtProduct10;

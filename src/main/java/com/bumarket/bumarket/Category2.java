@@ -17,6 +17,7 @@ public class Category2 extends javax.swing.JFrame {
      */
     public Category2() {
         initComponents();
+        lbId.setText(UserData.globalId);
     }
 
     /**
@@ -70,7 +71,7 @@ public class Category2 extends javax.swing.JFrame {
         jTextField2 = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
+        lbId = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         lbLogout = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
@@ -118,6 +119,7 @@ public class Category2 extends javax.swing.JFrame {
         btnProduct1.setBackground(new java.awt.Color(204, 204, 204));
         btnProduct1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnProduct1.setText("เพิ่มเติม");
+        btnProduct1.setRequestFocusEnabled(false);
         btnProduct1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProduct1MouseClicked(evt);
@@ -145,9 +147,10 @@ public class Category2 extends javax.swing.JFrame {
         jButton12.setText("ประวัติการสั่งซื้อ");
         jButton12.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton12.setContentAreaFilled(false);
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
+        jButton12.setRequestFocusEnabled(false);
+        jButton12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton12MouseClicked(evt);
             }
         });
         jPanel2.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 30, 180, 50));
@@ -218,6 +221,7 @@ public class Category2 extends javax.swing.JFrame {
         btnProduct3.setBackground(new java.awt.Color(204, 204, 204));
         btnProduct3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnProduct3.setText("เพิ่มเติม");
+        btnProduct3.setRequestFocusEnabled(false);
         btnProduct3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProduct3MouseClicked(evt);
@@ -277,6 +281,7 @@ public class Category2 extends javax.swing.JFrame {
         btnProduct4.setBackground(new java.awt.Color(204, 204, 204));
         btnProduct4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnProduct4.setText("เพิ่มเติม");
+        btnProduct4.setRequestFocusEnabled(false);
         btnProduct4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProduct43MouseClicked(evt);
@@ -336,6 +341,7 @@ public class Category2 extends javax.swing.JFrame {
         btnProduct5.setBackground(new java.awt.Color(204, 204, 204));
         btnProduct5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnProduct5.setText("เพิ่มเติม");
+        btnProduct5.setRequestFocusEnabled(false);
         btnProduct5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProduct53MouseClicked(evt);
@@ -369,6 +375,7 @@ public class Category2 extends javax.swing.JFrame {
         btnPencil.setContentAreaFilled(false);
         btnPencil.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnPencil.setIconTextGap(0);
+        btnPencil.setRequestFocusEnabled(false);
         btnPencil.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnPencil.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -380,7 +387,7 @@ public class Category2 extends javax.swing.JFrame {
                 btnPencilActionPerformed(evt);
             }
         });
-        jPanel2.add(btnPencil, new org.netbeans.lib.awtextra.AbsoluteConstraints(235, 15, -1, -1));
+        jPanel2.add(btnPencil, new org.netbeans.lib.awtextra.AbsoluteConstraints(235, 15, 118, 78));
 
         btnBook.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnBook.setIcon(new javax.swing.ImageIcon(getClass().getResource("/book.png"))); // NOI18N
@@ -392,6 +399,7 @@ public class Category2 extends javax.swing.JFrame {
         btnBook.setMaximumSize(new java.awt.Dimension(118, 78));
         btnBook.setMinimumSize(new java.awt.Dimension(118, 78));
         btnBook.setPreferredSize(new java.awt.Dimension(118, 78));
+        btnBook.setRequestFocusEnabled(false);
         btnBook.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnBook.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -415,6 +423,7 @@ public class Category2 extends javax.swing.JFrame {
         btnPen.setMaximumSize(new java.awt.Dimension(118, 78));
         btnPen.setMinimumSize(new java.awt.Dimension(118, 78));
         btnPen.setPreferredSize(new java.awt.Dimension(118, 78));
+        btnPen.setRequestFocusEnabled(false);
         btnPen.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnPen.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -438,6 +447,7 @@ public class Category2 extends javax.swing.JFrame {
         btnOther.setMaximumSize(new java.awt.Dimension(118, 78));
         btnOther.setMinimumSize(new java.awt.Dimension(118, 78));
         btnOther.setPreferredSize(new java.awt.Dimension(118, 78));
+        btnOther.setRequestFocusEnabled(false);
         btnOther.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnOther.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -466,6 +476,12 @@ public class Category2 extends javax.swing.JFrame {
         jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 35, 410, 34));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shopicon.png"))); // NOI18N
+        jLabel11.setRequestFocusEnabled(false);
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel11MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 35, 50, 40));
 
         jLabel12.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
@@ -473,15 +489,16 @@ public class Category2 extends javax.swing.JFrame {
         jLabel12.setText("My Account");
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 35, -1, -1));
 
-        jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText("XXXXX XXXXX");
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 55, -1, -1));
+        lbId.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lbId.setForeground(new java.awt.Color(255, 255, 255));
+        lbId.setText("XXXXX XXXXX");
+        jPanel1.add(lbId, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 55, -1, -1));
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Account.png"))); // NOI18N
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 10, -1, -1));
 
         lbLogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
+        lbLogout.setRequestFocusEnabled(false);
         lbLogout.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbLogoutMouseClicked(evt);
@@ -493,6 +510,7 @@ public class Category2 extends javax.swing.JFrame {
         jButton2.setBorder(null);
         jButton2.setBorderPainted(false);
         jButton2.setContentAreaFilled(false);
+        jButton2.setRequestFocusEnabled(false);
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton2MouseClicked(evt);
@@ -539,11 +557,6 @@ public class Category2 extends javax.swing.JFrame {
         new Home().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton2MouseClicked
-
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-         new Shoppingcart().setVisible(true);
-         this.dispose();
-    }//GEN-LAST:event_jButton12ActionPerformed
 
     private void lbLogoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbLogoutMouseClicked
         // TODO add your handling code here:
@@ -685,6 +698,18 @@ public class Category2 extends javax.swing.JFrame {
         btnProduct3.setForeground(new Color(0,0,0));
     }//GEN-LAST:event_btnProduct3MouseExited
 
+    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+        // TODO add your handling code here:
+        new Shoppingcart().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel11MouseClicked
+
+    private void jButton12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton12MouseClicked
+        // TODO add your handling code here:
+        new Checkout().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton12MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -735,7 +760,6 @@ public class Category2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel3;
@@ -754,6 +778,7 @@ public class Category2 extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator7;
     private javax.swing.JSeparator jSeparator9;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JLabel lbId;
     private javax.swing.JLabel lbLogout;
     private javax.swing.JLabel txtProduct1;
     private javax.swing.JLabel txtProduct10;

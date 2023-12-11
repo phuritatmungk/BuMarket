@@ -17,6 +17,7 @@ public class CategoryWater extends javax.swing.JFrame {
      */
     public CategoryWater() {
         initComponents();
+        lbId.setText(UserData.globalId);
     }
 
     /**
@@ -65,7 +66,7 @@ public class CategoryWater extends javax.swing.JFrame {
         txtSearch = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
+        lbId = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         lbLogout = new javax.swing.JLabel();
         btnBack = new javax.swing.JButton();
@@ -101,15 +102,11 @@ public class CategoryWater extends javax.swing.JFrame {
         btnSnacks.setMaximumSize(new java.awt.Dimension(118, 78));
         btnSnacks.setMinimumSize(new java.awt.Dimension(118, 78));
         btnSnacks.setPreferredSize(new java.awt.Dimension(118, 78));
+        btnSnacks.setRequestFocusEnabled(false);
         btnSnacks.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnSnacks.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnSnacksMouseClicked(evt);
-            }
-        });
-        btnSnacks.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSnacksActionPerformed(evt);
             }
         });
         jPanel2.add(btnSnacks, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, -1, -1));
@@ -124,15 +121,11 @@ public class CategoryWater extends javax.swing.JFrame {
         btnWater.setMaximumSize(new java.awt.Dimension(118, 78));
         btnWater.setMinimumSize(new java.awt.Dimension(118, 78));
         btnWater.setPreferredSize(new java.awt.Dimension(118, 78));
+        btnWater.setRequestFocusEnabled(false);
         btnWater.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnWater.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnWaterMouseClicked(evt);
-            }
-        });
-        btnWater.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnWaterActionPerformed(evt);
             }
         });
         jPanel2.add(btnWater, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 20, 118, -1));
@@ -149,6 +142,7 @@ public class CategoryWater extends javax.swing.JFrame {
         btnProduct1.setBackground(new java.awt.Color(204, 204, 204));
         btnProduct1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnProduct1.setText("เพิ่มเติม");
+        btnProduct1.setRequestFocusEnabled(false);
         btnProduct1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProduct1MouseClicked(evt);
@@ -158,11 +152,6 @@ public class CategoryWater extends javax.swing.JFrame {
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 btnProduct1MouseExited(evt);
-            }
-        });
-        btnProduct1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnProduct1ActionPerformed(evt);
             }
         });
         jPanel2.add(btnProduct1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 430, -1, -1));
@@ -176,9 +165,10 @@ public class CategoryWater extends javax.swing.JFrame {
         btnShoppingcart.setText("ประวัติการสั่งซื้อ");
         btnShoppingcart.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnShoppingcart.setContentAreaFilled(false);
-        btnShoppingcart.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnShoppingcartActionPerformed(evt);
+        btnShoppingcart.setRequestFocusEnabled(false);
+        btnShoppingcart.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnShoppingcartMouseClicked(evt);
             }
         });
         jPanel2.add(btnShoppingcart, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 30, 180, 50));
@@ -226,6 +216,7 @@ public class CategoryWater extends javax.swing.JFrame {
         btnProduct3.setBackground(new java.awt.Color(204, 204, 204));
         btnProduct3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnProduct3.setText("เพิ่มเติม");
+        btnProduct3.setRequestFocusEnabled(false);
         btnProduct3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProduct3MouseClicked(evt);
@@ -235,11 +226,6 @@ public class CategoryWater extends javax.swing.JFrame {
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 btnProduct3MouseExited(evt);
-            }
-        });
-        btnProduct3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnProduct3ActionPerformed(evt);
             }
         });
         jPanel2.add(btnProduct3, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 430, -1, -1));
@@ -277,6 +263,7 @@ public class CategoryWater extends javax.swing.JFrame {
         btnProduct4.setBackground(new java.awt.Color(204, 204, 204));
         btnProduct4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnProduct4.setText("เพิ่มเติม");
+        btnProduct4.setRequestFocusEnabled(false);
         btnProduct4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProduct43MouseClicked(evt);
@@ -286,11 +273,6 @@ public class CategoryWater extends javax.swing.JFrame {
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 btnProduct4MouseExited(evt);
-            }
-        });
-        btnProduct4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnProduct43ActionPerformed(evt);
             }
         });
         jPanel2.add(btnProduct4, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 430, -1, -1));
@@ -328,6 +310,7 @@ public class CategoryWater extends javax.swing.JFrame {
         btnProduct5.setBackground(new java.awt.Color(204, 204, 204));
         btnProduct5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnProduct5.setText("เพิ่มเติม");
+        btnProduct5.setRequestFocusEnabled(false);
         btnProduct5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProduct53MouseClicked(evt);
@@ -337,11 +320,6 @@ public class CategoryWater extends javax.swing.JFrame {
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 btnProduct5MouseExited(evt);
-            }
-        });
-        btnProduct5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnProduct53ActionPerformed(evt);
             }
         });
         jPanel2.add(btnProduct5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 430, -1, -1));
@@ -381,6 +359,7 @@ public class CategoryWater extends javax.swing.JFrame {
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, 120, 110));
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Search.png"))); // NOI18N
+        jLabel10.setRequestFocusEnabled(false);
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 37, -1, 30));
 
         txtSearch.setBackground(new java.awt.Color(216, 216, 216));
@@ -390,6 +369,12 @@ public class CategoryWater extends javax.swing.JFrame {
         jPanel1.add(txtSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 35, 410, 34));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shopicon.png"))); // NOI18N
+        jLabel11.setRequestFocusEnabled(false);
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel11MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 35, 50, 40));
 
         jLabel12.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
@@ -397,15 +382,16 @@ public class CategoryWater extends javax.swing.JFrame {
         jLabel12.setText("My Account");
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 35, -1, -1));
 
-        jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText("XXXXX XXXXX");
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 55, -1, -1));
+        lbId.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lbId.setForeground(new java.awt.Color(255, 255, 255));
+        lbId.setText("XXXXX XXXXX");
+        jPanel1.add(lbId, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 55, -1, -1));
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Account.png"))); // NOI18N
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 10, -1, -1));
 
         lbLogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
+        lbLogout.setRequestFocusEnabled(false);
         lbLogout.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbLogoutMouseClicked(evt);
@@ -417,14 +403,10 @@ public class CategoryWater extends javax.swing.JFrame {
         btnBack.setBorderPainted(false);
         btnBack.setContentAreaFilled(false);
         btnBack.setFocusable(false);
+        btnBack.setRequestFocusEnabled(false);
         btnBack.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnBackMouseClicked(evt);
-            }
-        });
-        btnBack.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBackActionPerformed(evt);
             }
         });
         jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
@@ -450,31 +432,14 @@ public class CategoryWater extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnSnacksActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSnacksActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnSnacksActionPerformed
-
     private void btnWaterMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnWaterMouseClicked
 
     }//GEN-LAST:event_btnWaterMouseClicked
-
-    private void btnWaterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnWaterActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnWaterActionPerformed
 
     private void btnProduct1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct1MouseClicked
         new MarketWater1().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnProduct1MouseClicked
-
-    private void btnProduct1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnProduct1ActionPerformed
-
-    private void btnShoppingcartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnShoppingcartActionPerformed
-        new Shoppingcart().setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btnShoppingcartActionPerformed
 
     private void lbLogoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbLogoutMouseClicked
         // TODO add your handling code here:
@@ -488,10 +453,6 @@ public class CategoryWater extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_btnBackMouseClicked
 
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBackActionPerformed
-
     private void btnSnacksMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSnacksMouseClicked
         // TODO add your handling code here:
         new CategoryFood().setVisible(true);
@@ -504,28 +465,16 @@ public class CategoryWater extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_btnProduct3MouseClicked
 
-    private void btnProduct3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnProduct3ActionPerformed
-
     private void btnProduct43MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct43MouseClicked
         // TODO add your handling code here:
         new MarketWater3().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnProduct43MouseClicked
 
-    private void btnProduct43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct43ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnProduct43ActionPerformed
-
     private void btnProduct53MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct53MouseClicked
         new MarketWater4().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnProduct53MouseClicked
-
-    private void btnProduct53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct53ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnProduct53ActionPerformed
 
     private void txtProduct12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtProduct12MouseClicked
         new MarketWater1().setVisible(true);
@@ -587,6 +536,18 @@ public class CategoryWater extends javax.swing.JFrame {
        btnProduct5.setForeground(new Color(0,0,0));
     }//GEN-LAST:event_btnProduct5MouseExited
 
+    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+        // TODO add your handling code here:
+        new Shoppingcart().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel11MouseClicked
+
+    private void btnShoppingcartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnShoppingcartMouseClicked
+        // TODO add your handling code here:
+        new Checkout().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnShoppingcartMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -635,7 +596,6 @@ public class CategoryWater extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel17;
@@ -653,6 +613,7 @@ public class CategoryWater extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JSeparator jSeparator9;
+    private javax.swing.JLabel lbId;
     private javax.swing.JLabel lbLogout;
     private javax.swing.JLabel txtProduct1;
     private javax.swing.JLabel txtProduct10;

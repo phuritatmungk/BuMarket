@@ -18,6 +18,7 @@ public class MarketFood4 extends javax.swing.JFrame {
      */
     public MarketFood4() {
         initComponents();
+        lbId.setText(UserData.globalId);
     }
 
     /**
@@ -41,7 +42,7 @@ public class MarketFood4 extends javax.swing.JFrame {
         btnAddtocart2 = new javax.swing.JButton();
         btnBuy2 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
-        jSpinner3 = new javax.swing.JSpinner();
+        jSpinner1 = new javax.swing.JSpinner();
         jLabel42 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
@@ -66,7 +67,7 @@ public class MarketFood4 extends javax.swing.JFrame {
         jTextField2 = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
+        lbId = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
@@ -123,6 +124,7 @@ public class MarketFood4 extends javax.swing.JFrame {
         btnAddtocart2.setBackground(new java.awt.Color(204, 204, 204));
         btnAddtocart2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnAddtocart2.setText("หยิบใส่ตระกร้า");
+        btnAddtocart2.setRequestFocusEnabled(false);
         btnAddtocart2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnAddtocart2MouseClicked(evt);
@@ -140,6 +142,7 @@ public class MarketFood4 extends javax.swing.JFrame {
         btnBuy2.setBackground(new java.awt.Color(204, 204, 204));
         btnBuy2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnBuy2.setText("ซื้อสินค้า");
+        btnBuy2.setRequestFocusEnabled(false);
         btnBuy2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnBuy2MouseClicked(evt);
@@ -159,9 +162,9 @@ public class MarketFood4 extends javax.swing.JFrame {
         jPanel6.add(jLabel8);
         jLabel8.setBounds(460, 350, 70, 30);
 
-        jSpinner3.setModel(new javax.swing.SpinnerNumberModel(1, 1, null, 1));
-        jPanel6.add(jSpinner3);
-        jSpinner3.setBounds(530, 350, 120, 30);
+        jSpinner1.setModel(new javax.swing.SpinnerNumberModel(1, 1, null, 1));
+        jPanel6.add(jSpinner1);
+        jSpinner1.setBounds(530, 350, 120, 30);
 
         jLabel42.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel42.setText("คำอธิบาย");
@@ -273,6 +276,7 @@ public class MarketFood4 extends javax.swing.JFrame {
         jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, 120, 110));
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Search.png"))); // NOI18N
+        jLabel14.setRequestFocusEnabled(false);
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 37, -1, 30));
 
         jTextField2.setBackground(new java.awt.Color(216, 216, 216));
@@ -282,6 +286,12 @@ public class MarketFood4 extends javax.swing.JFrame {
         jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 35, 410, 34));
 
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shopicon.png"))); // NOI18N
+        jLabel15.setRequestFocusEnabled(false);
+        jLabel15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel15MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 35, 50, 40));
 
         jLabel16.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
@@ -289,15 +299,16 @@ public class MarketFood4 extends javax.swing.JFrame {
         jLabel16.setText("My Account");
         jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 35, -1, -1));
 
-        jLabel21.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel21.setText("XXXXX XXXXX");
-        jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 55, -1, -1));
+        lbId.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lbId.setForeground(new java.awt.Color(255, 255, 255));
+        lbId.setText("XXXXX XXXXX");
+        jPanel1.add(lbId, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 55, -1, -1));
 
         jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Account.png"))); // NOI18N
         jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 10, -1, -1));
 
         jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
+        jLabel23.setRequestFocusEnabled(false);
         jPanel1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 40, -1, -1));
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Back.png"))); // NOI18N
@@ -305,6 +316,7 @@ public class MarketFood4 extends javax.swing.JFrame {
         jButton2.setBorderPainted(false);
         jButton2.setContentAreaFilled(false);
         jButton2.setFocusable(false);
+        jButton2.setRequestFocusEnabled(false);
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton2MouseClicked(evt);
@@ -332,30 +344,26 @@ public class MarketFood4 extends javax.swing.JFrame {
     private void btnAddtocart2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddtocart2MouseClicked
         // TODO add your handling code here:
         ProductData user = new ProductData();
-        MarketBook1 writefile = new MarketBook1();
         user.setProduct("ตะวัน ข้าวเกรียบ รสต้นตำรับ 56 ก. ");
-        user.setQty(1);
+        user.setQty(((Number) jSpinner1.getValue()).intValue());
         user.setPrice(20);
         user.setTotal(user.getPrice() * user.getQty());
 
         ProductList.cart1.add(user);
-
-        writefile.writeObjectToFile(ProductList.cart1);
+        
         JOptionPane.showMessageDialog(this,"Save Completed...");
     }//GEN-LAST:event_btnAddtocart2MouseClicked
 
     private void btnBuy2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuy2MouseClicked
         // TODO add your handling code here:
         ProductData user = new ProductData();
-        MarketBook1 writefile = new MarketBook1();
         user.setProduct("ตะวัน ข้าวเกรียบ รสต้นตำรับ 56 ก. ");
-        user.setQty(1);
+        user.setQty(((Number) jSpinner1.getValue()).intValue());
         user.setTotal(user.getPrice() * user.getQty());
         user.setPrice(20);
 
         ProductList.cart1.add(user);
 
-        writefile.writeObjectToFile(ProductList.cart1);
         JOptionPane.showMessageDialog(this,"Save Completed...");
         new Shoppingcart().setVisible(true);
         this.dispose();
@@ -398,6 +406,12 @@ public class MarketFood4 extends javax.swing.JFrame {
         btnAddtocart2.setBackground(new Color(204,204,204));
         btnAddtocart2.setForeground(new Color(0,0,0));
     }//GEN-LAST:event_btnAddtocart2MouseExited
+
+    private void jLabel15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel15MouseClicked
+        // TODO add your handling code here:
+        new Shoppingcart().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel15MouseClicked
 
     /**
      * @param args the command line arguments
@@ -449,7 +463,6 @@ public class MarketFood4 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
@@ -473,9 +486,10 @@ public class MarketFood4 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
-    private javax.swing.JSpinner jSpinner3;
+    private javax.swing.JSpinner jSpinner1;
     private javax.swing.JSpinner jSpinner4;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JLabel lbId;
     private java.awt.Scrollbar scrollbar3;
     private java.awt.Scrollbar scrollbar4;
     // End of variables declaration//GEN-END:variables

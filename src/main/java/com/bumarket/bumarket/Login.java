@@ -72,7 +72,6 @@ public class Login extends javax.swing.JFrame {
         });
         jPanel6.add(eye_hide, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 85, -1, -1));
 
-        eye.setForeground(new java.awt.Color(0, 0, 0));
         eye.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eye.png"))); // NOI18N
         eye.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
@@ -122,6 +121,7 @@ public class Login extends javax.swing.JFrame {
         ConfirmBtn.setForeground(new java.awt.Color(255, 255, 255));
         ConfirmBtn.setText("Login");
         ConfirmBtn.setBorderPainted(false);
+        ConfirmBtn.setRequestFocusEnabled(false);
         ConfirmBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ConfirmBtnActionPerformed(evt);
@@ -136,7 +136,7 @@ public class Login extends javax.swing.JFrame {
         ForgetPassBtn.setBackground(new java.awt.Color(208, 204, 204));
         ForgetPassBtn.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         ForgetPassBtn.setForeground(new java.awt.Color(255, 153, 0));
-        ForgetPassBtn.setText("Forget Password ?");
+        ForgetPassBtn.setText("Change Password");
         ForgetPassBtn.setBorder(null);
         ForgetPassBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
