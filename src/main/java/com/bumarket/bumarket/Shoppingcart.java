@@ -47,7 +47,6 @@ public class Shoppingcart extends javax.swing.JFrame {
         });
         
     } 
-
     
     private void sumAmount() {
         int total = 0;
@@ -80,6 +79,15 @@ public class Shoppingcart extends javax.swing.JFrame {
             System.err.println("failed to read" + filePath + ", " + ex);
         }
         return null;
+    }
+    
+    private void centerAlignTextInTable() {
+        DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
+        centerRenderer.setHorizontalAlignment(SwingConstants.CENTER);
+
+        for (int i = 0; i < Table.getColumnCount(); i++) {
+            Table.getColumnModel().getColumn(i).setCellRenderer(centerRenderer);
+        }
     }
 
     @SuppressWarnings("unchecked")
@@ -348,6 +356,7 @@ public class Shoppingcart extends javax.swing.JFrame {
         model.getDataVector().removeAllElements();
         model.fireTableDataChanged();
         for(ProductData xRow : productList) {
+            centerAlignTextInTable();
             model.addRow(new Product(xRow.getProduct(), xRow.getQty(), xRow.getPrice(), xRow.getTotal()).toTableRow(Table.getRowCount() + 1));
             sumAmount();
         }
