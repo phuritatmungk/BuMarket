@@ -29,7 +29,6 @@ public class Home extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        BPlabel = new javax.swing.JLabel();
         Cartbutton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
@@ -63,14 +62,6 @@ public class Home extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        BPlabel.setFont(new java.awt.Font("Times New Roman", 1, 13)); // NOI18N
-        BPlabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        BPlabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bulogo (Custom).png"))); // NOI18N
-        BPlabel.setText("0.00 BP");
-        BPlabel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        BPlabel.setRequestFocusEnabled(false);
-        jPanel1.add(BPlabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 180, 180, 50));
-
         Cartbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shopicon.png"))); // NOI18N
         Cartbutton.setBorder(null);
         Cartbutton.setContentAreaFilled(false);
@@ -83,11 +74,11 @@ public class Home extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setText("BU Market");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 240, 110, 30));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 170, 110, 30));
 
         jSeparator1.setBackground(new java.awt.Color(121, 121, 121));
         jSeparator1.setForeground(new java.awt.Color(121, 121, 121));
-        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 280, 460, 10));
+        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 210, 460, 10));
 
         jSeparator3.setBackground(new java.awt.Color(121, 121, 121));
         jSeparator3.setForeground(new java.awt.Color(121, 121, 121));
@@ -111,7 +102,7 @@ public class Home extends javax.swing.JFrame {
                 jButton12MouseClicked(evt);
             }
         });
-        jPanel1.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 180, 180, 50));
+        jPanel1.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 360, 240, 50));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/advert 2.jpg"))); // NOI18N
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 440, 190, 200));
@@ -177,7 +168,7 @@ public class Home extends javax.swing.JFrame {
                 btnClothesActionPerformed(evt);
             }
         });
-        jPanel1.add(btnClothes, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 300, 100, 110));
+        jPanel1.add(btnClothes, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 230, 100, 110));
 
         btnStationery.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btnStationery.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pngtreevector-stationery-icon-41.png"))); // NOI18N
@@ -197,7 +188,7 @@ public class Home extends javax.swing.JFrame {
                 btnStationeryActionPerformed(evt);
             }
         });
-        jPanel1.add(btnStationery, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 300, 100, 110));
+        jPanel1.add(btnStationery, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 230, 100, 110));
 
         btnSnacksanddrinks.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btnSnacksanddrinks.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Picture3 (1).png"))); // NOI18N
@@ -217,7 +208,7 @@ public class Home extends javax.swing.JFrame {
                 btnSnacksanddrinksActionPerformed(evt);
             }
         });
-        jPanel1.add(btnSnacksanddrinks, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 300, 100, 110));
+        jPanel1.add(btnSnacksanddrinks, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 230, 100, 110));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Up.png"))); // NOI18N
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 1380, 760));
@@ -309,7 +300,6 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel BPlabel;
     private javax.swing.JButton Cartbutton;
     private javax.swing.JButton btnClothes;
     private javax.swing.JButton btnSnacksanddrinks;
