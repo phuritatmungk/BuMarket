@@ -282,7 +282,7 @@ public class MarketShirt2 extends javax.swing.JFrame {
     private void btnBuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseClicked
         ProductData user = new ProductData();
         user.setProduct("เสื้อเชิ้ตลำลอง แขนยาวผ้าฝ้าย ");
-        user.setQty(1);
+        user.setQty(((Number) jSpinner1.getValue()).intValue());
         user.setPrice(198.00);
         user.setTotal(user.getPrice() * user.getQty());
 
@@ -317,13 +317,15 @@ public class MarketShirt2 extends javax.swing.JFrame {
     private void btnAdd_to_cartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAdd_to_cartMouseClicked
         ProductData user = new ProductData();
         user.setProduct("เสื้อเชิ้ตลำลอง แขนยาวผ้าฝ้าย ");
-        user.setQty(1);
+        user.setQty(((Number) jSpinner1.getValue()).intValue());
         user.setPrice(198.00);
         user.setTotal(user.getPrice() * user.getQty());
 
         ProductList.cart1.add(user);
 
         JOptionPane.showMessageDialog(this,"Save Completed...");
+        //new History().setVisible(true);
+        //this.dispose();
     }//GEN-LAST:event_btnAdd_to_cartMouseClicked
 
     private void btnAdd_to_cartMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAdd_to_cartMouseEntered

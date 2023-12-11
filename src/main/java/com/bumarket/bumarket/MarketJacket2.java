@@ -304,7 +304,7 @@ public class MarketJacket2 extends javax.swing.JFrame {
     private void btnBuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseClicked
         ProductData user = new ProductData();
         user.setProduct("เสื้อแจ็คเก็ตแฟชั่นสไตล์เกาหลี");
-        user.setQty(1);
+        user.setQty(((Number) jSpinner1.getValue()).intValue());
         user.setPrice(274.00);
         user.setTotal(user.getPrice() * user.getQty());
 
@@ -316,7 +316,6 @@ public class MarketJacket2 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBuyMouseClicked
 
     private void lbLogoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbLogoutMouseClicked
-        // TODO add your handling code here:
         new Login().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_lbLogoutMouseClicked
@@ -334,13 +333,15 @@ public class MarketJacket2 extends javax.swing.JFrame {
     private void btnAdd_to_cartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAdd_to_cartMouseClicked
         ProductData user = new ProductData();
         user.setProduct("เสื้อแจ็คเก็ตแฟชั่นสไตล์เกาหลี");
-        user.setQty(1);
+        user.setQty(((Number) jSpinner1.getValue()).intValue());
         user.setPrice(274.00);
         user.setTotal(user.getPrice() * user.getQty());
 
         ProductList.cart1.add(user);
 
         JOptionPane.showMessageDialog(this,"Save Completed...");
+        //new History().setVisible(true);
+        //this.dispose();
     }//GEN-LAST:event_btnAdd_to_cartMouseClicked
 
     private void btnAdd_to_cartMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAdd_to_cartMouseEntered

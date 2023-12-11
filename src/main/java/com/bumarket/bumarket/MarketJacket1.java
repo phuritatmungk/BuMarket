@@ -250,11 +250,6 @@ public class MarketJacket1 extends javax.swing.JFrame {
         btnBuy.setText("ซื้อสินค้า");
         btnBuy.setFocusPainted(false);
         btnBuy.setFocusable(false);
-        btnBuy.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseDragged(java.awt.event.MouseEvent evt) {
-                btnBuyMouseDragged(evt);
-            }
-        });
         btnBuy.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnBuyMouseClicked(evt);
@@ -347,20 +342,16 @@ public class MarketJacket1 extends javax.swing.JFrame {
     private void btnBuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseClicked
         ProductData user = new ProductData();
         user.setProduct("เสื้อแจ็คเก็ตผู้ชายกันลม สำหรับเดินป่า  Men Jacket ");
-        user.setQty(1);
+        user.setQty(((Number) jSpinner1.getValue()).intValue());
         user.setPrice(389.00);
         user.setTotal(user.getPrice() * user.getQty());
-        
         ProductList.cart1.add(user);
 
         JOptionPane.showMessageDialog(this,"Save Completed...");
         new Shoppingcart().setVisible(true);
         this.dispose();
+        
     }//GEN-LAST:event_btnBuyMouseClicked
-
-    private void btnBuyMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseDragged
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBuyMouseDragged
 
     private void btnBuyMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseEntered
         btnBuy.setBackground(Color.red);
@@ -375,13 +366,15 @@ public class MarketJacket1 extends javax.swing.JFrame {
     private void btnAdd_to_cartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAdd_to_cartMouseClicked
         ProductData user = new ProductData();
         user.setProduct("เสื้อแจ็คเก็ตผู้ชายกันลม สำหรับเดินป่า  Men Jacket ");
-        user.setQty(1);
+        user.setQty(((Number) jSpinner1.getValue()).intValue());
         user.setPrice(389.00);
         user.setTotal(user.getPrice() * user.getQty());
-        
         ProductList.cart1.add(user);
         
         JOptionPane.showMessageDialog(this,"Save Completed...");
+        //new History().setVisible(true);
+        //this.dispose();
+        
     }//GEN-LAST:event_btnAdd_to_cartMouseClicked
 
     private void btnAdd_to_cartMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAdd_to_cartMouseEntered
