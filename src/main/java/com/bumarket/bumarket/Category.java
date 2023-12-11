@@ -219,7 +219,7 @@ public class Category extends javax.swing.JFrame {
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel15.setText("฿ 45.00");
+        jLabel15.setText("฿ 50.00");
         jPanel2.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 440, -1, -1));
 
         btnProduct1.setBackground(new java.awt.Color(204, 204, 204));
