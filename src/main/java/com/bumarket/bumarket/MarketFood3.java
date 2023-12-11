@@ -121,20 +121,25 @@ public class MarketFood3 extends javax.swing.JFrame {
         jPanel6.add(jLabel41);
         jLabel41.setBounds(460, 300, 162, 40);
 
+        btnAddtocart2.setBackground(new java.awt.Color(204, 204, 204));
         btnAddtocart2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnAddtocart2.setText("หยิบใส่ตระกร้า");
-        btnAddtocart2.setContentAreaFilled(false);
         btnAddtocart2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnAddtocart2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnAddtocart2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnAddtocart2MouseExited(evt);
             }
         });
         jPanel6.add(btnAddtocart2);
         btnAddtocart2.setBounds(460, 400, 137, 40);
 
-        btnBuy1.setBackground(new java.awt.Color(153, 153, 153));
+        btnBuy1.setBackground(new java.awt.Color(204, 204, 204));
         btnBuy1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnBuy1.setForeground(new java.awt.Color(255, 255, 255));
         btnBuy1.setText("ซื้อสินค้า");
         btnBuy1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -364,10 +369,12 @@ public class MarketFood3 extends javax.swing.JFrame {
 
     private void btnBuy1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuy1MouseEntered
         btnBuy1.setBackground(Color.red);
+        btnBuy1.setForeground(Color.WHITE);
     }//GEN-LAST:event_btnBuy1MouseEntered
 
     private void btnBuy1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuy1MouseExited
-         btnBuy1.setBackground(new Color(153,153,153));
+        btnBuy1.setBackground(new Color(204,204,204));
+        btnBuy1.setForeground(new Color(0,0,0));
     }//GEN-LAST:event_btnBuy1MouseExited
 
     private void btnBuy1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuy1MouseClicked
@@ -386,6 +393,16 @@ public class MarketFood3 extends javax.swing.JFrame {
         new Shoppingcart().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnBuy1MouseClicked
+
+    private void btnAddtocart2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddtocart2MouseEntered
+        btnAddtocart2.setBackground(Color.red);
+        btnAddtocart2.setForeground(Color.WHITE);
+    }//GEN-LAST:event_btnAddtocart2MouseEntered
+
+    private void btnAddtocart2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddtocart2MouseExited
+        btnAddtocart2.setBackground(new Color(204,204,204));
+        btnAddtocart2.setForeground(new Color(0,0,0));
+    }//GEN-LAST:event_btnAddtocart2MouseExited
 
     /**
      * @param args the command line arguments

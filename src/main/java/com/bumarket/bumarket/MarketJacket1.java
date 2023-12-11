@@ -275,19 +275,24 @@ public class MarketJacket1 extends javax.swing.JFrame {
         jSpinner1.setModel(new javax.swing.SpinnerNumberModel(1, 1, null, 1));
         jPanel1.add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 440, 120, 30));
 
+        btnAdd_to_cart.setBackground(new java.awt.Color(204, 204, 204));
         btnAdd_to_cart.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnAdd_to_cart.setText("หยิบใส่ตระกร้า");
-        btnAdd_to_cart.setContentAreaFilled(false);
         btnAdd_to_cart.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnAdd_to_cartMouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnAdd_to_cartMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnAdd_to_cartMouseExited(evt);
+            }
         });
         jPanel1.add(btnAdd_to_cart, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 490, -1, 40));
 
-        btnBuy.setBackground(new java.awt.Color(153, 153, 153));
+        btnBuy.setBackground(new java.awt.Color(204, 204, 204));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnBuy.setForeground(new java.awt.Color(255, 255, 255));
         btnBuy.setText("ซื้อสินค้า");
         btnBuy.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
@@ -674,11 +679,13 @@ public class MarketJacket1 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBuyMouseDragged
 
     private void btnBuyMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseEntered
-      btnBuy.setBackground(Color.red);
+        btnBuy.setBackground(Color.red);
+        btnBuy.setForeground(Color.WHITE);
     }//GEN-LAST:event_btnBuyMouseEntered
 
     private void btnBuyMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseExited
-        btnBuy.setBackground(new Color(153,153,153));
+        btnBuy.setBackground(new Color(204,204,204));
+        btnBuy.setForeground(new Color(0,0,0));;
     }//GEN-LAST:event_btnBuyMouseExited
 
     private void btnAdd_to_cartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAdd_to_cartMouseClicked
@@ -694,6 +701,16 @@ public class MarketJacket1 extends javax.swing.JFrame {
         writefile.writeObjectToFile(ProductList.cart1);
         JOptionPane.showMessageDialog(this,"Save Completed...");
     }//GEN-LAST:event_btnAdd_to_cartMouseClicked
+
+    private void btnAdd_to_cartMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAdd_to_cartMouseEntered
+        btnAdd_to_cart.setBackground(Color.red);
+        btnAdd_to_cart.setForeground(Color.WHITE);
+    }//GEN-LAST:event_btnAdd_to_cartMouseEntered
+
+    private void btnAdd_to_cartMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAdd_to_cartMouseExited
+          btnAdd_to_cart.setBackground(new Color(204,204,204));
+         btnAdd_to_cart.setForeground(new Color(0,0,0));
+    }//GEN-LAST:event_btnAdd_to_cartMouseExited
 
     /**
      * @param args the command line arguments

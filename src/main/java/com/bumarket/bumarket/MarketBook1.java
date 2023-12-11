@@ -110,18 +110,23 @@ public class MarketBook1 extends javax.swing.JFrame {
         jLabel30.setForeground(new java.awt.Color(204, 0, 0));
         jLabel30.setText("฿292.00");
 
+        btnAddtocart.setBackground(new java.awt.Color(204, 204, 204));
         btnAddtocart.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnAddtocart.setText("หยิบใส่ตระกร้า");
-        btnAddtocart.setContentAreaFilled(false);
         btnAddtocart.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnAddtocartMouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnAddtocartMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnAddtocartMouseExited(evt);
+            }
         });
 
-        btnBuy.setBackground(new java.awt.Color(153, 153, 153));
+        btnBuy.setBackground(new java.awt.Color(204, 204, 204));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnBuy.setForeground(new java.awt.Color(255, 255, 255));
         btnBuy.setText("ซื้อสินค้า");
         btnBuy.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -259,6 +264,7 @@ public class MarketBook1 extends javax.swing.JFrame {
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Search.png"))); // NOI18N
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 30, -1, -1));
 
+        jLabel16.setBackground(new java.awt.Color(255, 255, 255));
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Up.png"))); // NOI18N
         jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
@@ -303,10 +309,12 @@ public class MarketBook1 extends javax.swing.JFrame {
 
     private void btnBuyMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseEntered
         btnBuy.setBackground(Color.red);
+        btnBuy.setForeground(Color.WHITE);
     }//GEN-LAST:event_btnBuyMouseEntered
 
     private void btnBuyMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseExited
-        btnBuy.setBackground(new Color(153,153,153));
+        btnBuy.setBackground(new Color(204,204,204));
+        btnBuy.setForeground(new Color(0,0,0));
     }//GEN-LAST:event_btnBuyMouseExited
 
     private void btnAddtocartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddtocartMouseClicked
@@ -321,6 +329,16 @@ public class MarketBook1 extends javax.swing.JFrame {
         writefile.writeObjectToFile(ProductList.cart1);
         JOptionPane.showMessageDialog(this,"Save Completed...");
     }//GEN-LAST:event_btnAddtocartMouseClicked
+
+    private void btnAddtocartMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddtocartMouseEntered
+        btnAddtocart.setBackground(Color.red);
+        btnAddtocart.setForeground(Color.WHITE);
+    }//GEN-LAST:event_btnAddtocartMouseEntered
+
+    private void btnAddtocartMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddtocartMouseExited
+        btnAddtocart.setBackground(new Color(204,204,204));
+        btnAddtocart.setForeground(new Color(0,0,0));
+    }//GEN-LAST:event_btnAddtocartMouseExited
 
     public boolean writeObjectToFile(List<ProductData> pListData) {
         String filePath = "products.bin";
