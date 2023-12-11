@@ -134,8 +134,9 @@ public class Home extends javax.swing.JFrame {
 
         lbId.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         lbId.setForeground(new java.awt.Color(255, 255, 255));
+        lbId.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lbId.setText("XXXXX XXXXX");
-        jPanel1.add(lbId, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 55, -1, -1));
+        jPanel1.add(lbId, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 60, -1, 20));
 
         lbLogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
         lbLogout.addMouseListener(new java.awt.event.MouseAdapter() {
