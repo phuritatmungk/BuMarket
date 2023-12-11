@@ -18,6 +18,9 @@ public class UserData implements java.io.Serializable {
     ArrayList<String> all_usernames = new ArrayList<>();
     ArrayList<String> all_password = new ArrayList<>();
     ArrayList<String> all_userid = new ArrayList<>();
+    public static String globalId = "";
+    public static ArrayList<String> all_globalid = new ArrayList<>();
+    public static Map<String, String> usernameANDId = new HashMap<>();
     
     public void getUsers() {
         File file = new File("account.txt");
@@ -59,6 +62,32 @@ public class UserData implements java.io.Serializable {
             }
         } catch (FileNotFoundException ex) {
             System.out.println("File not found!");
+        }
+    }
+    
+    public static boolean checkId(String user) throws IOException {
+        String username = "";
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader("account.txt"));
+            Object[] lines = reader.lines().toArray();
+            for(int i = 0; i < lines.length; i++) { 
+                String[] row = lines[i].toString().split(": ");
+                if(row[0].equals("Student ID")) {
+                    globalId = row[1];
+                    all_globalid.add(globalId);
+                }
+                if(row[0].equals("Username")) {
+                    username = row[1];
+                }
+                if(username.equals(user) && !globalId.equals("")) {
+                    usernameANDId.put(username, globalId);
+                }
+            }
+            reader.close();
+            return true;
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw e;
         }
     }
     

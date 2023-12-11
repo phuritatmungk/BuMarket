@@ -247,6 +247,9 @@ public class Login extends javax.swing.JFrame {
                     System.out.println(uname);
                     if(uname.equals(username)) {
                         if(userdata.usernameANDpassword.get(uname).equals(password)) {
+                            userdata.checkId(username);
+                            userdata.globalId = userdata.usernameANDId.get(uname);
+                            System.out.println(userdata.globalId);
                             userExist = true;
                             System.out.println("Welcome To The Application");
                             new Home().setVisible(true);

@@ -249,8 +249,8 @@ public class Forgot_Pass extends javax.swing.JFrame {
         } catch (IOException e) {
             e.printStackTrace();
             throw e;
+        }
     }
-}
     
     private void SignInBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SignInBtnMouseClicked
         // TODO add your handling code here:

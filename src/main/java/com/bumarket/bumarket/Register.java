@@ -308,7 +308,6 @@ public class Register extends javax.swing.JFrame {
                                 }
                                 else {
                                     if(!userdata.checkIfUsernameExist(username)) {
-                                        fw.write("Student ID: " + id);
                                         fw.write(System.getProperty("line.separator"));
                                         fw.write("Username: " + username);
                                         fw.write(System.getProperty("line.separator"));
@@ -317,6 +316,8 @@ public class Register extends javax.swing.JFrame {
                                         fw.write("Lastname: " + lname.substring(0,1).toUpperCase() + lname.substring(1).toLowerCase());
                                         fw.write(System.getProperty("line.separator"));
                                         fw.write("Password: " + password);
+                                        fw.write(System.getProperty("line.separator"));
+                                        fw.write("Student ID: " + id);
                                         fw.write(System.getProperty("line.separator"));
                                         fw.close();
 

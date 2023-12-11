@@ -17,6 +17,7 @@ public class Home extends javax.swing.JFrame {
      */
     public Home() {
         initComponents();
+        lbId.setText(UserData.globalId);
     }
 
     /**
@@ -45,7 +46,7 @@ public class Home extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
+        lbId = new javax.swing.JLabel();
         lbLogout = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
         btnClothes = new javax.swing.JButton();
@@ -131,10 +132,10 @@ public class Home extends javax.swing.JFrame {
         jLabel15.setText("My Account");
         jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 35, -1, -1));
 
-        jLabel16.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel16.setText("XXXXX XXXXX");
-        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 55, -1, -1));
+        lbId.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lbId.setForeground(new java.awt.Color(255, 255, 255));
+        lbId.setText("XXXXX XXXXX");
+        jPanel1.add(lbId, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 55, -1, -1));
 
         lbLogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
         lbLogout.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -310,7 +311,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -323,6 +323,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JLabel lbId;
     private javax.swing.JLabel lbLogout;
     // End of variables declaration//GEN-END:variables
 }
