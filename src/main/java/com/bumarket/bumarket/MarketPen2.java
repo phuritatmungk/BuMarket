@@ -114,20 +114,25 @@ public class MarketPen2 extends javax.swing.JFrame {
         jPanel2.add(jLabel30);
         jLabel30.setBounds(455, 304, 162, 40);
 
+        btnAddtocart.setBackground(new java.awt.Color(204, 204, 204));
         btnAddtocart.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnAddtocart.setText("หยิบใส่ตระกร้า");
-        btnAddtocart.setContentAreaFilled(false);
         btnAddtocart.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnAddtocartMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnAddtocartMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnAddtocartMouseExited(evt);
             }
         });
         jPanel2.add(btnAddtocart);
         btnAddtocart.setBounds(455, 400, 137, 40);
 
-        btnBuy.setBackground(new java.awt.Color(153, 153, 153));
+        btnBuy.setBackground(new java.awt.Color(204, 204, 204));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        btnBuy.setForeground(new java.awt.Color(255, 255, 255));
         btnBuy.setText("ซื้อสินค้า");
         btnBuy.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -267,11 +272,23 @@ public class MarketPen2 extends javax.swing.JFrame {
 
     private void btnBuyMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseEntered
         btnBuy.setBackground(Color.red);
+        btnBuy.setForeground(Color.WHITE);
     }//GEN-LAST:event_btnBuyMouseEntered
 
     private void btnBuyMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseExited
-         btnBuy.setBackground(new Color(153,153,153));
+        btnBuy.setBackground(new Color(204,204,204));
+        btnBuy.setForeground(new Color(0,0,0));
     }//GEN-LAST:event_btnBuyMouseExited
+
+    private void btnAddtocartMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddtocartMouseEntered
+        btnAddtocart.setBackground(Color.red);
+        btnAddtocart.setForeground(Color.WHITE);
+    }//GEN-LAST:event_btnAddtocartMouseEntered
+
+    private void btnAddtocartMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddtocartMouseExited
+        btnAddtocart.setBackground(new Color(204,204,204));
+        btnAddtocart.setForeground(new Color(0,0,0));
+    }//GEN-LAST:event_btnAddtocartMouseExited
 
     /**
      * @param args the command line arguments

@@ -6,6 +6,7 @@ package com.bumarket.bumarket;
 
 import java.awt.*;
 import java.io.*;
+import java.util.regex.Pattern;
 import javax.swing.*;
 
 /**
@@ -286,68 +287,61 @@ public class Register extends javax.swing.JFrame {
         String id = txtId.getText().trim();
         String confirm_pwd = String.valueOf(txtConfirmPass.getPassword()).trim();
         try {
-            
             File file = new File("account.txt");
-
-            // file = the file we want to write on
-            // true = we wan to append the text on it
             FileWriter fw = new FileWriter(file, true);
-            
-            // we need to check if the textfields are empty
-            // we need to check if the confirmation password equal the password
-            // we need to check if the username already exist
-          
-            // check if the textfields are empty
-            if(username.equals("Username") || password.equals("Password") || fname.equals("First Name") || lname.equals("Last Name") || id.equals("Student ID"))
-            {
+            if(username.equals("Username") || password.equals("Password") || fname.equals("First Name") || lname.equals("Last Name") || id.equals("Student ID")) {
                 JOptionPane.showMessageDialog(this, "One or Both fields are empty", "Warning", JOptionPane.WARNING_MESSAGE);
             }
-            else{
-                // confirmation password
-                if(password.equals(confirm_pwd))
-                {
-                    // check if the username already exist
+            else {
+                if(password.equals(confirm_pwd)) {
                     userdata.getUsers();
-                    if(!userdata.checkIfUseridExist(id))
-                    {
-                        if(!id.matches("[0-9]*")) {
-                            JOptionPane.showMessageDialog(this, "Student ID must contains only numbers", "Warning", JOptionPane.WARNING_MESSAGE);
+                    if(!userdata.checkIfUseridExist(id)) {
+                        if(!id.matches("[0-9]+") || id.length() < 10 || id.length() > 10) {
+                            JOptionPane.showMessageDialog(this, "Student ID must contains only numbers and have only 10 digits", "Warning", JOptionPane.WARNING_MESSAGE);
+                            txtId.requestFocus();
                         }
                         else {
-                            if(!userdata.checkIfUsernameExist(username)) {
-                                fw.write("Student ID: " + id);
-                                fw.write(System.getProperty("line.separator"));
-                                fw.write("Username: " + username);
-                                fw.write(System.getProperty("line.separator"));
-                                fw.write("Firstname: " + fname.substring(0,1).toUpperCase() + fname.substring(1).toLowerCase());
-                                fw.write(System.getProperty("line.separator"));
-                                fw.write("Lastname: " + lname.substring(0,1).toUpperCase() + lname.substring(1).toLowerCase());
-                                fw.write(System.getProperty("line.separator"));
-                                fw.write("Password: " + password);
-                                fw.write(System.getProperty("line.separator"));
-                                fw.write("---");
-                                fw.write(System.getProperty("line.separator"));
-                                fw.close(); 
-                                // populate the array and hashmap
+                            if(userdata.checkPasswordStrength(password) == 3) {
+                                if(!fname.matches("[A-Za-z]+") || !lname.matches("[A-Za-z]+")) {
+                                    JOptionPane.showMessageDialog(this, "Firstname and Lastname must contains only letters", "Warning", JOptionPane.WARNING_MESSAGE);
+                                    txtFName.requestFocus();
+                                }
+                                else {
+                                    if(!userdata.checkIfUsernameExist(username)) {
+                                        fw.write("Student ID: " + id);
+                                        fw.write(System.getProperty("line.separator"));
+                                        fw.write("Username: " + username);
+                                        fw.write(System.getProperty("line.separator"));
+                                        fw.write("Firstname: " + fname.substring(0,1).toUpperCase() + fname.substring(1).toLowerCase());
+                                        fw.write(System.getProperty("line.separator"));
+                                        fw.write("Lastname: " + lname.substring(0,1).toUpperCase() + lname.substring(1).toLowerCase());
+                                        fw.write(System.getProperty("line.separator"));
+                                        fw.write("Password: " + password);
+                                        fw.write(System.getProperty("line.separator"));
+                                        fw.close();
 
-                                JOptionPane.showMessageDialog(this, "Register Successfully", "Info", JOptionPane.INFORMATION_MESSAGE);
-                                new Login().setVisible(true);
-                                this.dispose();
+                                        JOptionPane.showMessageDialog(this, "Register Successfully", "Info", JOptionPane.INFORMATION_MESSAGE);
+                                        new Login().setVisible(true);
+                                        this.dispose();
+                                    }
+                                    else {
+                                        JOptionPane.showMessageDialog(this, "This Username Already Exist, Try Another One", "Warning", JOptionPane.WARNING_MESSAGE);
+                                        txtUser.requestFocus();
+                                    } 
+                                }
                             }
                             else {
-                                JOptionPane.showMessageDialog(this, "This Username Already Exist, Try Another One", "Warning", JOptionPane.WARNING_MESSAGE);
-                                txtUser.requestFocus();
+                                JOptionPane.showMessageDialog(this, "Password must longer than 8 chars and contains special characters", "Warning", JOptionPane.WARNING_MESSAGE);
+                                txtPass.requestFocus();
                             }
                         }
                     }
-                    else
-                    {
+                    else {
                        JOptionPane.showMessageDialog(this, "This Student Id Already Exist", "Warning", JOptionPane.WARNING_MESSAGE);
                        txtId.requestFocus();
                     }
                 }
-                else
-                {
+                else {
                     JOptionPane.showMessageDialog(this, "Password Doesn't Match", "Warning", JOptionPane.WARNING_MESSAGE);
                     txtConfirmPass.requestFocus();
                 }
@@ -357,7 +351,6 @@ public class Register extends javax.swing.JFrame {
         } catch (IOException ex) {
             JOptionPane.showMessageDialog(this, "Failed to Register", "Error", JOptionPane.ERROR_MESSAGE);
         }
-        
     }//GEN-LAST:event_RegisterBtnMouseClicked
 
     private void txtIdFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtIdFocusGained
