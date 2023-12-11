@@ -325,9 +325,7 @@ public class Register extends javax.swing.JFrame {
                                 fw.write(System.getProperty("line.separator"));
                                 fw.write("Password: " + password);
                                 fw.write(System.getProperty("line.separator"));
-                                fw.write("---");
-                                fw.write(System.getProperty("line.separator"));
-                                fw.close(); 
+                                fw.close();
                                 // populate the array and hashmap
 
                                 JOptionPane.showMessageDialog(this, "Register Successfully", "Info", JOptionPane.INFORMATION_MESSAGE);
