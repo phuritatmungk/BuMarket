@@ -73,6 +73,7 @@ public class CategoryStudent extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Market Category");
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(230, 230, 230));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());

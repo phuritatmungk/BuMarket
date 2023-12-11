@@ -78,6 +78,7 @@ public class Register extends javax.swing.JFrame {
         RegisterBtn.setForeground(new java.awt.Color(255, 255, 255));
         RegisterBtn.setText("Register");
         RegisterBtn.setToolTipText("");
+        RegisterBtn.setRequestFocusEnabled(false);
         RegisterBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 RegisterBtnMouseClicked(evt);
@@ -228,7 +229,6 @@ public class Register extends javax.swing.JFrame {
         });
         jPanel3.add(eye_hide, new org.netbeans.lib.awtextra.AbsoluteConstraints(245, 187, -1, -1));
 
-        eye.setForeground(new java.awt.Color(0, 0, 0));
         eye.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eye.png"))); // NOI18N
         eye.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
@@ -245,7 +245,6 @@ public class Register extends javax.swing.JFrame {
         });
         jPanel3.add(eye_hide2, new org.netbeans.lib.awtextra.AbsoluteConstraints(245, 229, -1, -1));
 
-        eye1.setForeground(new java.awt.Color(0, 0, 0));
         eye1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/eye.png"))); // NOI18N
         eye1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {

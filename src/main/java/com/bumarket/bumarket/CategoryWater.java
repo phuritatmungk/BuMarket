@@ -109,7 +109,7 @@ public class CategoryWater extends javax.swing.JFrame {
                 btnSnacksMouseClicked(evt);
             }
         });
-        jPanel2.add(btnSnacks, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, -1, -1));
+        jPanel2.add(btnSnacks, new org.netbeans.lib.awtextra.AbsoluteConstraints(235, 20, 120, -1));
 
         btnWater.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnWater.setIcon(new javax.swing.ImageIcon(getClass().getResource("/waterIcon.png"))); // NOI18N
@@ -128,7 +128,7 @@ public class CategoryWater extends javax.swing.JFrame {
                 btnWaterMouseClicked(evt);
             }
         });
-        jPanel2.add(btnWater, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 20, 118, -1));
+        jPanel2.add(btnWater, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 20, 118, -1));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel3.setText("ขนม/เครื่องดื่ม");

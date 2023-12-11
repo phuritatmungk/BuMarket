@@ -180,9 +180,9 @@ public class Shoppingcart extends javax.swing.JFrame {
         Historybutton.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Historybutton.setContentAreaFilled(false);
         Historybutton.setPreferredSize(new java.awt.Dimension(177, 39));
-        Historybutton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                HistorybuttonActionPerformed(evt);
+        Historybutton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                HistorybuttonMouseClicked(evt);
             }
         });
         getContentPane().add(Historybutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 170, 240, 50));
@@ -298,11 +298,6 @@ public class Shoppingcart extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_BackbuttonMouseClicked
 
-    private void HistorybuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HistorybuttonActionPerformed
-        new Shoppingcart().setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_HistorybuttonActionPerformed
-
     private void DeleteBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DeleteBtnMouseClicked
         DefaultTableModel model = (DefaultTableModel) Table.getModel();
         int selectedRow = Table.getSelectedRow();
@@ -336,6 +331,12 @@ public class Shoppingcart extends javax.swing.JFrame {
         new Checkout().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_PayButtonMouseClicked
+
+    private void HistorybuttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HistorybuttonMouseClicked
+        // TODO add your handling code here:
+        new History().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_HistorybuttonMouseClicked
 
     /**
      * @param args the command line arguments

@@ -308,7 +308,7 @@ public class Checkout extends javax.swing.JFrame {
     }//GEN-LAST:event_CartbuttonMouseClicked
 
     private void AcceptMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AcceptMouseClicked
-        int result = JOptionPane.showConfirmDialog(null, "Are you Sure", "Confirm", JOptionPane.YES_NO_OPTION);
+        int result = JOptionPane.showConfirmDialog(null, "Are you Sure?", "Confirm", JOptionPane.YES_NO_OPTION);
         if (result == JOptionPane.YES_OPTION) {
             String amount = "";
             boolean validInput = false;
