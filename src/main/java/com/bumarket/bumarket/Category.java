@@ -384,6 +384,7 @@ public class Category extends javax.swing.JFrame {
         btnBook.setMaximumSize(new java.awt.Dimension(118, 78));
         btnBook.setMinimumSize(new java.awt.Dimension(118, 78));
         btnBook.setPreferredSize(new java.awt.Dimension(118, 78));
+        btnBook.setRequestFocusEnabled(false);
         btnBook.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnBook.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

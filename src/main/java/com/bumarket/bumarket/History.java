@@ -4,51 +4,34 @@ package com.bumarket.bumarket;
 import javax.swing.*;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
-import java.awt.*;
-import java.io.DataInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
+
 
 public class History extends javax.swing.JFrame {
 
     public History() {
         initComponents();
-        table.getTableHeader().setFont(new Font("Tahoma", Font.BOLD, 12));
-        table.getTableHeader().setOpaque(false);
-        table.getTableHeader().setBackground(new Color(255, 255, 255));
-        table.getTableHeader().setForeground(new Color(0, 0, 0));
-        table.setRowHeight(25);
-        centerAlignTextInTable();
-        loadBinaryDataIntoTable("product.bin");
+
+        AcceptAmount_Data();
         
     }
-    private void loadBinaryDataIntoTable(String fileName) {
-        DefaultTableModel model = (DefaultTableModel) table.getModel();
-
-        try (DataInputStream dis = new DataInputStream(new FileInputStream(new File(fileName)))) {
-            int dataSize = dis.available();
-            byte[] binaryData = new byte[dataSize];
-            dis.readFully(binaryData);
-
-            // Clear existing rows
-            model.setRowCount(0);
-
-            // Populate table with binary data
-            for (int i = 0; i < binaryData.length; i++) {
-                model.addRow(new Object[]{i + 1, binaryData[i]});
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
+    
+    private void AcceptAmount_Data() {
+        DefaultTableModel model = (DefaultTableModel) Table.getModel();
+        model.getDataVector().removeAllElements();
+        model.fireTableDataChanged();
+        for(ProductData xRow : ProductList.history) {
+            centerAlignTextInTable();
+            model.addRow(new Product(xRow.getProduct(), xRow.getQty(), xRow.getPrice(), xRow.getTotal()).toTableRow(Table.getRowCount() + 1));
         }
     }
+
     
     private void centerAlignTextInTable() {
         DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
         centerRenderer.setHorizontalAlignment(SwingConstants.CENTER);
 
-        for (int i = 0; i < table.getColumnCount(); i++) {
-            table.getColumnModel().getColumn(i).setCellRenderer(centerRenderer);
+        for (int i = 0; i < Table.getColumnCount(); i++) {
+            Table.getColumnModel().getColumn(i).setCellRenderer(centerRenderer);
         }
     }
     
@@ -58,8 +41,8 @@ public class History extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane2 = new javax.swing.JScrollPane();
-        table = new javax.swing.JTable();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        Table = new javax.swing.JTable();
         jLabel9 = new javax.swing.JLabel();
         Backbutton = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
@@ -77,40 +60,43 @@ public class History extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        table.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        table.setModel(new javax.swing.table.DefaultTableModel(
+        Table.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Table.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        Table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "No", "Name", "Amount", "Price"
+                "Data", "Number", "Product", "Quantity", "Price", "Total"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false
+                true, false, false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
                 return canEdit [columnIndex];
             }
         });
-        table.setRowHeight(40);
-        table.setShowGrid(true);
-        table.setShowHorizontalLines(true);
-        table.getTableHeader().setReorderingAllowed(false);
-        jScrollPane2.setViewportView(table);
-        if (table.getColumnModel().getColumnCount() > 0) {
-            table.getColumnModel().getColumn(0).setResizable(false);
-            table.getColumnModel().getColumn(0).setPreferredWidth(1);
-            table.getColumnModel().getColumn(1).setResizable(false);
-            table.getColumnModel().getColumn(1).setPreferredWidth(550);
-            table.getColumnModel().getColumn(2).setResizable(false);
-            table.getColumnModel().getColumn(2).setPreferredWidth(10);
-            table.getColumnModel().getColumn(3).setResizable(false);
-            table.getColumnModel().getColumn(3).setPreferredWidth(10);
+        Table.getTableHeader().setReorderingAllowed(false);
+        jScrollPane1.setViewportView(Table);
+        if (Table.getColumnModel().getColumnCount() > 0) {
+            Table.getColumnModel().getColumn(0).setMinWidth(0);
+            Table.getColumnModel().getColumn(0).setPreferredWidth(0);
+            Table.getColumnModel().getColumn(0).setMaxWidth(0);
+            Table.getColumnModel().getColumn(1).setResizable(false);
+            Table.getColumnModel().getColumn(1).setPreferredWidth(1);
+            Table.getColumnModel().getColumn(2).setResizable(false);
+            Table.getColumnModel().getColumn(2).setPreferredWidth(300);
+            Table.getColumnModel().getColumn(3).setResizable(false);
+            Table.getColumnModel().getColumn(3).setPreferredWidth(1);
+            Table.getColumnModel().getColumn(4).setResizable(false);
+            Table.getColumnModel().getColumn(4).setPreferredWidth(1);
+            Table.getColumnModel().getColumn(5).setResizable(false);
+            Table.getColumnModel().getColumn(5).setPreferredWidth(1);
         }
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 940, 370));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 210, 990, 410));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel9.setText("ประวัติการสั่งชื้อ");
@@ -122,11 +108,6 @@ public class History extends javax.swing.JFrame {
         Backbutton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 BackbuttonMouseClicked(evt);
-            }
-        });
-        Backbutton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BackbuttonActionPerformed(evt);
             }
         });
         getContentPane().add(Backbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, -1));
@@ -176,10 +157,6 @@ public class History extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void BackbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackbuttonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_BackbuttonActionPerformed
-
     private void BackbuttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BackbuttonMouseClicked
         new Home().setVisible(true);
         this.dispose();
@@ -223,6 +200,7 @@ public class History extends javax.swing.JFrame {
     private javax.swing.JButton Backbutton;
     private javax.swing.JButton Cartbutton;
     private javax.swing.JButton ExitButton;
+    private javax.swing.JTable Table;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
@@ -231,9 +209,8 @@ public class History extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTable table;
     // End of variables declaration//GEN-END:variables
 }
 

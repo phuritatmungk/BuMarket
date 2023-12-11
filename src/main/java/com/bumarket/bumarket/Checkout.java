@@ -7,14 +7,12 @@ package com.bumarket.bumarket;
 import java.awt.Color;
 import java.awt.Component;
 import java.io.BufferedWriter;
-import java.io.FileInputStream;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.Writer;
 import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.SwingConstants;
@@ -31,42 +29,42 @@ public class Checkout extends javax.swing.JFrame {
     /**
      * Creates new form Checkout
      */
-    List<ProductData> productList = new ArrayList<>();
+    public int total = 0;
     
     public Checkout() {
         initComponents();
         
-        Shoppingcart_Data();
+        AcceptAmount_Data();
     }
-    private void Shoppingcart_Data() {
-           Table.getColumnModel().getColumn(3).setCellEditor(new QtyCellEdit(new EventCellInputChange(){
-               @Override
-               public void inputChanged() {
-                   sumAmount();
-               }
-           }));
-           Table.getColumnModel().getColumn(3).setCellRenderer(new DefaultTableCellRenderer() {
-               @Override
-               public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
-                   super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
-                   setHorizontalAlignment(SwingConstants.CENTER);
-                   return this;
-               }
-           });
-           productList = readObjectFromFile();
-           DefaultTableModel model = (DefaultTableModel) Table.getModel();
-           model.getDataVector().removeAllElements();
-           model.fireTableDataChanged();
-           for(ProductData xRow : productList) {
-               centerAlignTextInTable();
-               model.addRow(new Product(xRow.getProduct(), xRow.getQty(), xRow.getPrice(), xRow.getTotal()).toTableRow(Table.getRowCount() + 1));
+    
+    private void AcceptAmount_Data() {
+        
+        Table.getColumnModel().getColumn(3).setCellEditor(new QtyCellEdit(new EventCellInputChange(){
+            @Override
+            public void inputChanged() {
                sumAmount();
+            }
+        }));
+        Table.getColumnModel().getColumn(3).setCellRenderer(new DefaultTableCellRenderer() {
+            @Override
+            public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
+                super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
+                setHorizontalAlignment(SwingConstants.CENTER);
+                return this;
+            }
+        });
+        DefaultTableModel model = (DefaultTableModel) Table.getModel();
+        model.getDataVector().removeAllElements();
+        model.fireTableDataChanged();
+        for(ProductData xRow : ProductList.cart1) {
+            centerAlignTextInTable();
+            model.addRow(new Product(xRow.getProduct(), xRow.getQty(), xRow.getPrice(), xRow.getTotal()).toTableRow(Table.getRowCount() + 1));
+            sumAmount();
            }
 
        } 
 
     private void sumAmount() {
-        int total = 0;
         int Bp = 0;
         for (int i = 0; i < Table.getRowCount(); i++) {
             Product item = (Product) Table.getValueAt(i, 0);
@@ -74,27 +72,6 @@ public class Checkout extends javax.swing.JFrame {
         }
         DecimalFormat df = new DecimalFormat("THB #,##0.00");
         LBTotal.setText(df.format(total));
-    }
-
-    public List<ProductData> readObjectFromFile() {
-        String filePath = "products.bin";
-        try {
-            FileInputStream file = new FileInputStream(filePath);
-            ObjectInputStream reader = new ObjectInputStream(file);
-
-            while(true) {
-                try {
-                    List<ProductData> obj = (List<ProductData>)reader.readObject();
-                    return obj;
-                } catch(Exception ex) {
-                    System.err.println("end of reader file ");
-                    break;
-                }
-            }
-        } catch (Exception ex) {
-           System.err.println("failed to read" + filePath + ", " + ex);
-        }
-        return null;
     }
 
     private void centerAlignTextInTable() {
@@ -326,7 +303,53 @@ public class Checkout extends javax.swing.JFrame {
     }//GEN-LAST:event_CartbuttonMouseClicked
 
     private void AcceptMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AcceptMouseClicked
-        
+        int result = JOptionPane.showConfirmDialog(null, "Are you Sure", "Confirm", JOptionPane.YES_NO_OPTION);
+        if (result == JOptionPane.YES_OPTION) {
+            String amount = "";
+            boolean validInput = false;
+
+            while (!validInput) {
+                amount = JOptionPane.showInputDialog("Please Enter Your Amount");
+
+                if (amount == null) {
+                    break;
+                }
+                
+                if (amount.matches("[0-9]+")) {
+                    int Cal_Amount = Integer.parseInt(amount);
+                    if (Cal_Amount >= total){
+                        try {
+                            int All_total = Cal_Amount - total;
+                            JOptionPane.showMessageDialog(null, "Change Money :" + All_total);
+                            JOptionPane.showMessageDialog(null, "Thank you for using the Service.");
+                            File file = new File("summarize.txt");
+                            FileWriter fw = new FileWriter(file, true);
+                            fw.write("Cash : " + amount);
+                            fw.write(System.getProperty("line.separator"));
+                            fw.write("Net Total : " + total);
+                            fw.write(System.getProperty("line.separator"));
+                            fw.write("Change Money : " + All_total);
+                            fw.write(System.getProperty("line.separator"));
+                            fw.write("-------------------------------------");
+                            fw.write(System.getProperty("line.separator"));
+                            fw.close();
+                            validInput = true;
+                            ProductList.history.addAll(ProductList.cart1);
+                            ProductList.cart1.clear();
+                            new Home().setVisible(true);
+                            this.dispose();
+                        } catch (IOException ex) {
+                            Logger.getLogger(Checkout.class.getName()).log(Level.SEVERE, null, ex);
+                        }
+                        
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Please Put Your Money Than Order");
+                    }
+                } else {
+                    JOptionPane.showMessageDialog(null, "Please Enter Only Number");
+                }
+            }
+        }
     }//GEN-LAST:event_AcceptMouseClicked
 
     /**

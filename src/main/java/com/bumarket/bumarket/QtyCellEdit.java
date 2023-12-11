@@ -76,7 +76,10 @@ public class QtyCellEdit extends DefaultCellEditor {
             DecimalFormat df = new DecimalFormat("###0.##");
             item.setQty(qty);
             item.setTotal(item.getPrice()* qty);
-            table.setValueAt("$ " + df.format(item.getTotal()), row, 5);
+            table.setValueAt("THB " + df.format(item.getTotal()), row, 5);
+            ProductData cartProduct = ProductList.cart1.get(row);
+            cartProduct.setQty(qty);
+            cartProduct.setTotal(item.getTotal());
 
             event.inputChanged();
         }

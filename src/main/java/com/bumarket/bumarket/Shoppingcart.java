@@ -6,11 +6,7 @@ package com.bumarket.bumarket;
 
 import java.awt.Color;
 import java.awt.Component;
-import java.io.FileInputStream;
-import java.io.ObjectInputStream;
 import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.List;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.SwingConstants;
@@ -22,8 +18,6 @@ import javax.swing.table.DefaultTableModel;
  * @author pongs
  */
 public class Shoppingcart extends javax.swing.JFrame {
-    
-    List<ProductData> productList = new ArrayList<>();
 
     public Shoppingcart() {
         initComponents();
@@ -45,11 +39,10 @@ public class Shoppingcart extends javax.swing.JFrame {
                 return this;
             }
         });
-        productList = readObjectFromFile();
         DefaultTableModel model = (DefaultTableModel) Table.getModel();
         model.getDataVector().removeAllElements();
         model.fireTableDataChanged();
-        for(ProductData xRow : productList) {
+        for(ProductData xRow : ProductList.cart1) {
             centerAlignTextInTable();
             model.addRow(new Product(xRow.getProduct(), xRow.getQty(), xRow.getPrice(), xRow.getTotal()).toTableRow(Table.getRowCount() + 1));
             sumAmount();
@@ -66,27 +59,6 @@ public class Shoppingcart extends javax.swing.JFrame {
         DecimalFormat df = new DecimalFormat("THB #,##0.00");
         LBTotal.setText(df.format(total));
         lblist.setText(count  + " รายการ");
-    }
-     
-    public List<ProductData> readObjectFromFile() {
-        String filePath = "products.bin";
-        try {
-            FileInputStream file = new FileInputStream(filePath);
-            ObjectInputStream reader = new ObjectInputStream(file);
-            
-            while(true) {
-                try {
-                    List<ProductData> obj = (List<ProductData>)reader.readObject();
-                    return obj;
-                } catch(Exception ex) {
-                    System.err.println("end of reader file ");
-                    break;
-                }
-            }
-        } catch (Exception ex) {
-            System.err.println("failed to read" + filePath + ", " + ex);
-        }
-        return null;
     }
     
     private void centerAlignTextInTable() {
@@ -137,7 +109,7 @@ public class Shoppingcart extends javax.swing.JFrame {
 
         lblist.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         lblist.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lblist.setText("3 รายการ");
+        lblist.setText("0 รายการ");
         getContentPane().add(lblist, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 250, 80, -1));
 
         DeleteBtn.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -333,8 +305,16 @@ public class Shoppingcart extends javax.swing.JFrame {
 
     private void DeleteBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DeleteBtnMouseClicked
         DefaultTableModel model = (DefaultTableModel) Table.getModel();
-        if(Table.getSelectedRowCount() == 1) {
-            model.removeRow(Table.getSelectedRow());
+        int selectedRow = Table.getSelectedRow();
+
+        if (selectedRow != -1) {
+            ProductData deletedProduct = ProductList.cart1.get(selectedRow);
+
+            model.removeRow(selectedRow);
+
+            ProductList.cart1.remove(selectedRow);
+
+            sumAmount();
         }else{
             if (Table.getRowCount()==0){
 

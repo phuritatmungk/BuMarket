@@ -5,7 +5,7 @@
 package com.bumarket.bumarket;
 
 
-import javax.swing.JSpinner;
+
 
 /**
  *
@@ -83,6 +83,8 @@ public class ProductData implements java.io.Serializable {
     public void setTotal(double total) {
         this.total = total;
     }
+    
+    
 
     /**
      * @return the point

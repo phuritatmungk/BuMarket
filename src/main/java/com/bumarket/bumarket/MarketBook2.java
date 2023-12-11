@@ -93,7 +93,7 @@ public class MarketBook2 extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel2.setText(" ขนาด A4 115 แกรม 50 แผ่น");
         jPanel2.add(jLabel2);
-        jLabel2.setBounds(450, 70, 320, 40);
+        jLabel2.setBounds(450, 70, 322, 40);
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -137,7 +137,7 @@ public class MarketBook2 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(btnAddtocart);
-        btnAddtocart.setBounds(460, 430, 137, 40);
+        btnAddtocart.setBounds(460, 430, 138, 40);
 
         btnBuy.setBackground(new java.awt.Color(153, 153, 153));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -182,7 +182,7 @@ public class MarketBook2 extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel7.setText("สมุดวาดเขียน MONT MARTE กระดาษน้ำตาล");
         jPanel2.add(jLabel7);
-        jLabel7.setBounds(455, 34, 487, 40);
+        jLabel7.setBounds(455, 34, 486, 40);
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, 1090, 500));
 
