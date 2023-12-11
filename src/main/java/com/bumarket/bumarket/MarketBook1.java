@@ -18,6 +18,7 @@ public class MarketBook1 extends javax.swing.JFrame {
     
     public MarketBook1() {
         initComponents();
+        lbId.setText(UserData.globalId);
     }
 
     /**
@@ -52,7 +53,7 @@ public class MarketBook1 extends javax.swing.JFrame {
         jTextField2 = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
+        lbId = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
@@ -113,6 +114,7 @@ public class MarketBook1 extends javax.swing.JFrame {
         btnAddtocart.setBackground(new java.awt.Color(204, 204, 204));
         btnAddtocart.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnAddtocart.setText("หยิบใส่ตระกร้า");
+        btnAddtocart.setRequestFocusEnabled(false);
         btnAddtocart.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnAddtocartMouseClicked(evt);
@@ -128,6 +130,7 @@ public class MarketBook1 extends javax.swing.JFrame {
         btnBuy.setBackground(new java.awt.Color(204, 204, 204));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnBuy.setText("ซื้อสินค้า");
+        btnBuy.setRequestFocusEnabled(false);
         btnBuy.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnBuyMouseClicked(evt);
@@ -226,6 +229,11 @@ public class MarketBook1 extends javax.swing.JFrame {
         jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 35, 410, 34));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shopicon.png"))); // NOI18N
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel11MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 35, 50, 40));
 
         jLabel12.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
@@ -233,10 +241,10 @@ public class MarketBook1 extends javax.swing.JFrame {
         jLabel12.setText("My Account");
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 35, -1, -1));
 
-        jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText("XXXXX XXXXX");
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 55, -1, -1));
+        lbId.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lbId.setForeground(new java.awt.Color(255, 255, 255));
+        lbId.setText("XXXXX XXXXX");
+        jPanel1.add(lbId, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 55, -1, -1));
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Account.png"))); // NOI18N
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 10, -1, -1));
@@ -249,14 +257,10 @@ public class MarketBook1 extends javax.swing.JFrame {
         jButton2.setBorderPainted(false);
         jButton2.setContentAreaFilled(false);
         jButton2.setFocusable(false);
+        jButton2.setRequestFocusEnabled(false);
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton2MouseClicked(evt);
-            }
-        });
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
             }
         });
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
@@ -288,10 +292,6 @@ public class MarketBook1 extends javax.swing.JFrame {
         new Category2().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton2MouseClicked
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
 
     private void btnBuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseClicked
         ProductData user = new ProductData();
@@ -339,6 +339,12 @@ public class MarketBook1 extends javax.swing.JFrame {
         btnAddtocart.setBackground(new Color(204,204,204));
         btnAddtocart.setForeground(new Color(0,0,0));
     }//GEN-LAST:event_btnAddtocartMouseExited
+
+    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+        // TODO add your handling code here:
+        new Shoppingcart().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel11MouseClicked
 
     public boolean writeObjectToFile(List<ProductData> pListData) {
         String filePath = "products.bin";
@@ -399,7 +405,6 @@ public class MarketBook1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
@@ -420,6 +425,7 @@ public class MarketBook1 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JLabel lbId;
     private java.awt.Scrollbar scrollbar1;
     // End of variables declaration//GEN-END:variables
 }

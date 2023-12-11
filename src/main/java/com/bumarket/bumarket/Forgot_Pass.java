@@ -71,7 +71,7 @@ public class Forgot_Pass extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Forgot Password Page");
+        setTitle("Change Password Page");
         setBackground(new java.awt.Color(255, 255, 255));
         setResizable(false);
         setSize(new java.awt.Dimension(1280, 720));
@@ -86,6 +86,7 @@ public class Forgot_Pass extends javax.swing.JFrame {
         ConfirmBtn3.setForeground(new java.awt.Color(255, 255, 255));
         ConfirmBtn3.setText("Confirm");
         ConfirmBtn3.setBorderPainted(false);
+        ConfirmBtn3.setRequestFocusEnabled(false);
         ConfirmBtn3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ConfirmBtnMouseClicked(evt);
@@ -103,6 +104,7 @@ public class Forgot_Pass extends javax.swing.JFrame {
         SignInBtn.setForeground(new java.awt.Color(255, 153, 0));
         SignInBtn.setText("Sign In");
         SignInBtn.setBorder(null);
+        SignInBtn.setRequestFocusEnabled(false);
         SignInBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 SignInBtnMouseClicked(evt);

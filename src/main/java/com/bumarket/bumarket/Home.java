@@ -66,6 +66,7 @@ public class Home extends javax.swing.JFrame {
         Cartbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shopicon.png"))); // NOI18N
         Cartbutton.setBorder(null);
         Cartbutton.setContentAreaFilled(false);
+        Cartbutton.setRequestFocusEnabled(false);
         Cartbutton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 CartbuttonMouseClicked(evt);
@@ -139,6 +140,7 @@ public class Home extends javax.swing.JFrame {
         jPanel1.add(lbId, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 60, -1, 20));
 
         lbLogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
+        lbLogout.setRequestFocusEnabled(false);
         lbLogout.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbLogoutMouseClicked(evt);
@@ -164,6 +166,7 @@ public class Home extends javax.swing.JFrame {
         btnClothes.setContentAreaFilled(false);
         btnClothes.setFocusPainted(false);
         btnClothes.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnClothes.setRequestFocusEnabled(false);
         btnClothes.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnClothes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -179,6 +182,7 @@ public class Home extends javax.swing.JFrame {
         btnStationery.setContentAreaFilled(false);
         btnStationery.setFocusPainted(false);
         btnStationery.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnStationery.setRequestFocusEnabled(false);
         btnStationery.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnStationery.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -199,6 +203,7 @@ public class Home extends javax.swing.JFrame {
         btnSnacksanddrinks.setContentAreaFilled(false);
         btnSnacksanddrinks.setFocusPainted(false);
         btnSnacksanddrinks.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnSnacksanddrinks.setRequestFocusEnabled(false);
         btnSnacksanddrinks.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnSnacksanddrinks.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

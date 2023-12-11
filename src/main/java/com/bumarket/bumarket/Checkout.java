@@ -131,6 +131,7 @@ public class Checkout extends javax.swing.JFrame {
         Accept.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         Accept.setForeground(new java.awt.Color(255, 255, 255));
         Accept.setText("ยืนยัน");
+        Accept.setRequestFocusEnabled(false);
         Accept.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 AcceptMouseClicked(evt);
@@ -147,6 +148,7 @@ public class Checkout extends javax.swing.JFrame {
         BuyButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         BuyButton.setText("เลือกซื้อสินค้าต่อ");
         BuyButton.setContentAreaFilled(false);
+        BuyButton.setRequestFocusEnabled(false);
         BuyButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 BuyButtonMouseClicked(evt);
@@ -210,12 +212,13 @@ public class Checkout extends javax.swing.JFrame {
         Backbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Back.png"))); // NOI18N
         Backbutton.setBorder(null);
         Backbutton.setContentAreaFilled(false);
+        Backbutton.setRequestFocusEnabled(false);
         Backbutton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 BackbuttonMouseClicked(evt);
             }
         });
-        getContentPane().add(Backbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, -1));
+        getContentPane().add(Backbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/btn_logo.png"))); // NOI18N
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, 120, 110));
@@ -232,6 +235,7 @@ public class Checkout extends javax.swing.JFrame {
         Cartbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shopicon.png"))); // NOI18N
         Cartbutton.setBorder(null);
         Cartbutton.setContentAreaFilled(false);
+        Cartbutton.setRequestFocusEnabled(false);
         Cartbutton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 CartbuttonMouseClicked(evt);
@@ -255,6 +259,7 @@ public class Checkout extends javax.swing.JFrame {
         ExitButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
         ExitButton.setBorder(null);
         ExitButton.setContentAreaFilled(false);
+        ExitButton.setRequestFocusEnabled(false);
         getContentPane().add(ExitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 35, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Up.png"))); // NOI18N

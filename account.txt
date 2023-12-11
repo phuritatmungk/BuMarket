@@ -13,3 +13,8 @@ Firstname: Sadad
 Lastname: Dsadas
 Password: 1234
 Student ID: 234
+Username: Krittin
+Firstname: Dsa
+Lastname: Dsa
+Password: Krittin12_
+Student ID: 1234567890

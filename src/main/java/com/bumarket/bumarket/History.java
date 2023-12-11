@@ -10,7 +10,7 @@ public class History extends javax.swing.JFrame {
 
     public History() {
         initComponents();
-
+        lbId.setText(UserData.globalId);
         AcceptAmount_Data();
         
     }
@@ -50,7 +50,7 @@ public class History extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         Cartbutton = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        lbId = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         ExitButton = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
@@ -105,12 +105,13 @@ public class History extends javax.swing.JFrame {
         Backbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Back.png"))); // NOI18N
         Backbutton.setBorder(null);
         Backbutton.setContentAreaFilled(false);
+        Backbutton.setRequestFocusEnabled(false);
         Backbutton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 BackbuttonMouseClicked(evt);
             }
         });
-        getContentPane().add(Backbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, -1));
+        getContentPane().add(Backbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/btn_logo.png"))); // NOI18N
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, 120, 110));
@@ -127,6 +128,7 @@ public class History extends javax.swing.JFrame {
         Cartbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shopicon.png"))); // NOI18N
         Cartbutton.setBorder(null);
         Cartbutton.setContentAreaFilled(false);
+        Cartbutton.setRequestFocusEnabled(false);
         getContentPane().add(Cartbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 25, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
@@ -134,10 +136,10 @@ public class History extends javax.swing.JFrame {
         jLabel7.setText("My Account");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 35, -1, -1));
 
-        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("XXXXX XXXXX");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 55, -1, -1));
+        lbId.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lbId.setForeground(new java.awt.Color(255, 255, 255));
+        lbId.setText("XXXXX XXXXX");
+        getContentPane().add(lbId, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 55, -1, -1));
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Account.png"))); // NOI18N
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 10, -1, -1));
@@ -145,6 +147,7 @@ public class History extends javax.swing.JFrame {
         ExitButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
         ExitButton.setBorder(null);
         ExitButton.setContentAreaFilled(false);
+        ExitButton.setRequestFocusEnabled(false);
         getContentPane().add(ExitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 35, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Down.png"))); // NOI18N
@@ -207,10 +210,10 @@ public class History extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel lbId;
     // End of variables declaration//GEN-END:variables
 }
 
