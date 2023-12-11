@@ -19,6 +19,7 @@ public class MarketStudent3 extends javax.swing.JFrame {
      */
     public MarketStudent3() {
         initComponents();
+        txtUSER.setText(UserData.globalId);
     }
 
     /**
@@ -61,10 +62,14 @@ public class MarketStudent3 extends javax.swing.JFrame {
         txtSearch = new javax.swing.JTextField();
         Cart = new javax.swing.JLabel();
         txtUSER = new javax.swing.JLabel();
+        lbLogout = new javax.swing.JLabel();
+        iconUSER = new javax.swing.JLabel();
+        txtAccount = new javax.swing.JLabel();
         background = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Market");
+        setMaximumSize(new java.awt.Dimension(1280, 720));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -117,6 +122,8 @@ public class MarketStudent3 extends javax.swing.JFrame {
         btnWhite.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnWhite.setText("สีขาว");
         btnWhite.setContentAreaFilled(false);
+        btnWhite.setFocusPainted(false);
+        btnWhite.setFocusable(false);
         jPanel1.add(btnWhite, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 360, -1, 30));
 
         txtSize.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -126,31 +133,21 @@ public class MarketStudent3 extends javax.swing.JFrame {
         btnSizeM.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnSizeM.setText("M");
         btnSizeM.setContentAreaFilled(false);
-        btnSizeM.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSizeMActionPerformed(evt);
-            }
-        });
+        btnSizeM.setFocusPainted(false);
+        btnSizeM.setFocusable(false);
         jPanel1.add(btnSizeM, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 400, 50, 30));
 
         btnSizeL.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnSizeL.setText("L");
         btnSizeL.setContentAreaFilled(false);
-        btnSizeL.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSizeLActionPerformed(evt);
-            }
-        });
+        btnSizeL.setFocusPainted(false);
+        btnSizeL.setFocusable(false);
         jPanel1.add(btnSizeL, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 400, 50, 30));
 
         btnSize2XL.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnSize2XL.setText("2XL");
         btnSize2XL.setContentAreaFilled(false);
-        btnSize2XL.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSize2XLActionPerformed(evt);
-            }
-        });
+        btnSize2XL.setFocusable(false);
         jPanel1.add(btnSize2XL, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 400, 60, 30));
 
         txtAmount.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -169,6 +166,7 @@ public class MarketStudent3 extends javax.swing.JFrame {
         btnBuy.setBackground(new java.awt.Color(204, 204, 204));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnBuy.setText("ซื้อสินค้า");
+        btnBuy.setFocusable(false);
         btnBuy.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnBuyMouseClicked(evt);
@@ -185,6 +183,7 @@ public class MarketStudent3 extends javax.swing.JFrame {
         btnAdd_to_cart.setBackground(new java.awt.Color(204, 204, 204));
         btnAdd_to_cart.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnAdd_to_cart.setText("หยิบใส่ตระกร้า");
+        btnAdd_to_cart.setFocusable(false);
         btnAdd_to_cart.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnAdd_to_cartMouseClicked(evt);
@@ -210,11 +209,8 @@ public class MarketStudent3 extends javax.swing.JFrame {
         btnSizeXL1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnSizeXL1.setText("XL");
         btnSizeXL1.setContentAreaFilled(false);
-        btnSizeXL1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSizeXL1ActionPerformed(evt);
-            }
-        });
+        btnSizeXL1.setFocusPainted(false);
+        btnSizeXL1.setFocusable(false);
         jPanel1.add(btnSizeXL1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 400, 50, 30));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, 1090, 540));
@@ -222,14 +218,11 @@ public class MarketStudent3 extends javax.swing.JFrame {
         btnBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Back.png"))); // NOI18N
         btnBack.setBorder(null);
         btnBack.setContentAreaFilled(false);
+        btnBack.setFocusPainted(false);
+        btnBack.setFocusable(false);
         btnBack.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnBackMouseClicked(evt);
-            }
-        });
-        btnBack.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBackActionPerformed(evt);
             }
         });
         getContentPane().add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 90, 80));
@@ -247,55 +240,55 @@ public class MarketStudent3 extends javax.swing.JFrame {
         getContentPane().add(txtSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 35, 410, 30));
 
         Cart.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shopicon.png"))); // NOI18N
+        Cart.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CartMouseClicked(evt);
+            }
+        });
         getContentPane().add(Cart, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 35, 50, 40));
 
         txtUSER.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         txtUSER.setForeground(new java.awt.Color(255, 255, 255));
+        txtUSER.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         txtUSER.setText("XXXXX XXXXX");
-        getContentPane().add(txtUSER, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 55, -1, 20));
+        getContentPane().add(txtUSER, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 60, -1, 20));
+
+        lbLogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
+        lbLogout.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbLogoutMouseClicked(evt);
+            }
+        });
+        getContentPane().add(lbLogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 40, -1, 30));
+
+        iconUSER.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Account.png"))); // NOI18N
+        getContentPane().add(iconUSER, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 10, -1, 70));
+
+        txtAccount.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        txtAccount.setForeground(new java.awt.Color(255, 255, 255));
+        txtAccount.setText("My Account");
+        getContentPane().add(txtAccount, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 35, -1, 20));
 
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Up.png"))); // NOI18N
         getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnSizeMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSizeMActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnSizeMActionPerformed
-
-    private void btnSizeLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSizeLActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnSizeLActionPerformed
-
-    private void btnSize2XLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSize2XLActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnSize2XLActionPerformed
 
     private void btnBuyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBuyMouseClicked
         ProductData user = new ProductData();
-        MarketBook1 writefile = new MarketBook1();
         user.setProduct("เสื้อเชิ้ตสีขาวเครื่องแบบ ชุดยูนิฟอร์ม ");
-        user.setQty(1);
+        user.setQty(((Number) jSpinner1.getValue()).intValue());
         user.setPrice(119.00);
         user.setTotal(user.getPrice() * user.getQty());
 
         ProductList.cart1.add(user);
 
-        writefile.writeObjectToFile(ProductList.cart1);
         JOptionPane.showMessageDialog(this,"Save Completed...");
         new Shoppingcart().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnBuyMouseClicked
-
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
-        new CategoryStudent().setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btnBackActionPerformed
-
-    private void btnSizeXL1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSizeXL1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnSizeXL1ActionPerformed
 
     private void btnBackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackMouseClicked
         new CategoryStudent().setVisible(true);
@@ -314,16 +307,16 @@ public class MarketStudent3 extends javax.swing.JFrame {
 
     private void btnAdd_to_cartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAdd_to_cartMouseClicked
         ProductData user = new ProductData();
-        MarketBook1 writefile = new MarketBook1();
         user.setProduct("เสื้อเชิ้ตสีขาวเครื่องแบบ ชุดยูนิฟอร์ม ");
-        user.setQty(1);
+        user.setQty(((Number) jSpinner1.getValue()).intValue());
         user.setPrice(119.00);
         user.setTotal(user.getPrice() * user.getQty());
 
         ProductList.cart1.add(user);
 
-        writefile.writeObjectToFile(ProductList.cart1);
         JOptionPane.showMessageDialog(this,"Save Completed...");
+        //new History().setVisible(true);
+        //this.dispose();
     }//GEN-LAST:event_btnAdd_to_cartMouseClicked
 
     private void btnAdd_to_cartMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAdd_to_cartMouseEntered
@@ -335,6 +328,16 @@ public class MarketStudent3 extends javax.swing.JFrame {
         btnAdd_to_cart.setBackground(new Color(204,204,204));
         btnAdd_to_cart.setForeground(new Color(0,0,0));
     }//GEN-LAST:event_btnAdd_to_cartMouseExited
+
+    private void lbLogoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbLogoutMouseClicked
+        new Login().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_lbLogoutMouseClicked
+
+    private void CartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CartMouseClicked
+        new Shoppingcart().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_CartMouseClicked
 
     /**
      * @param args the command line arguments
@@ -386,15 +389,18 @@ public class MarketStudent3 extends javax.swing.JFrame {
     private javax.swing.JButton btnSizeM;
     private javax.swing.JButton btnSizeXL1;
     private javax.swing.JButton btnWhite;
+    private javax.swing.JLabel iconUSER;
     private javax.swing.JLabel iconUniversity;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JSpinner jSpinner1;
+    private javax.swing.JLabel lbLogout;
     private javax.swing.JLabel txt2;
     private javax.swing.JLabel txt3;
     private javax.swing.JLabel txt6;
     private javax.swing.JLabel txt7;
     private javax.swing.JLabel txt8;
+    private javax.swing.JLabel txtAccount;
     private javax.swing.JLabel txtAmount;
     private javax.swing.JLabel txtColor;
     private javax.swing.JLabel txtDescription;

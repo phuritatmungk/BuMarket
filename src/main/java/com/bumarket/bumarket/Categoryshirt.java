@@ -17,6 +17,7 @@ public class Categoryshirt extends javax.swing.JFrame {
      */
     public Categoryshirt() {
         initComponents();
+        txtUSER.setText(UserData.globalId);
     }
 
     /**
@@ -73,7 +74,6 @@ public class Categoryshirt extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Market Category");
-        setPreferredSize(new java.awt.Dimension(1280, 720));
         setResizable(false);
         setSize(new java.awt.Dimension(1280, 720));
 
@@ -81,6 +81,8 @@ public class Categoryshirt extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setMinimumSize(new java.awt.Dimension(1194, 470));
+        jPanel2.setPreferredSize(new java.awt.Dimension(1194, 470));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jSeparator5.setForeground(new java.awt.Color(121, 121, 121));
@@ -101,6 +103,7 @@ public class Categoryshirt extends javax.swing.JFrame {
         btnShirt.setText("เสื้อผ้า");
         btnShirt.setBorder(null);
         btnShirt.setContentAreaFilled(false);
+        btnShirt.setFocusPainted(false);
         btnShirt.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnShirt.setIconTextGap(0);
         btnShirt.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -116,6 +119,7 @@ public class Categoryshirt extends javax.swing.JFrame {
         btnUniform.setText("ชุดนักศึกษา");
         btnUniform.setBorder(null);
         btnUniform.setContentAreaFilled(false);
+        btnUniform.setFocusPainted(false);
         btnUniform.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnUniform.setIconTextGap(0);
         btnUniform.setMaximumSize(new java.awt.Dimension(118, 78));
@@ -127,11 +131,6 @@ public class Categoryshirt extends javax.swing.JFrame {
                 btnUniformMouseClicked(evt);
             }
         });
-        btnUniform.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUniformActionPerformed(evt);
-            }
-        });
         jPanel2.add(btnUniform, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 10, 118, 90));
 
         btnJackets.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -139,6 +138,8 @@ public class Categoryshirt extends javax.swing.JFrame {
         btnJackets.setText("เสื้อแจ็คเก็ต");
         btnJackets.setBorder(null);
         btnJackets.setContentAreaFilled(false);
+        btnJackets.setFocusPainted(false);
+        btnJackets.setFocusable(false);
         btnJackets.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnJackets.setIconTextGap(0);
         btnJackets.setMaximumSize(new java.awt.Dimension(118, 78));
@@ -148,11 +149,6 @@ public class Categoryshirt extends javax.swing.JFrame {
         btnJackets.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnJacketsMouseClicked(evt);
-            }
-        });
-        btnJackets.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnJacketsActionPerformed(evt);
             }
         });
         jPanel2.add(btnJackets, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 10, 118, 90));
@@ -171,9 +167,10 @@ public class Categoryshirt extends javax.swing.JFrame {
         btnHistory.setText("ประวัติการสั่งซื้อ");
         btnHistory.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnHistory.setContentAreaFilled(false);
-        btnHistory.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnHistoryActionPerformed(evt);
+        btnHistory.setFocusPainted(false);
+        btnHistory.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnHistoryMouseClicked(evt);
             }
         });
         jPanel2.add(btnHistory, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 30, 180, 50));
@@ -254,6 +251,9 @@ public class Categoryshirt extends javax.swing.JFrame {
         btnProduct1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shirts.jpg"))); // NOI18N
         btnProduct1.setToolTipText("");
         btnProduct1.setBorder(null);
+        btnProduct1.setContentAreaFilled(false);
+        btnProduct1.setFocusPainted(false);
+        btnProduct1.setFocusable(false);
         btnProduct1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnProduct1ActionPerformed(evt);
@@ -264,6 +264,9 @@ public class Categoryshirt extends javax.swing.JFrame {
         btnProduct2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shirt4.jpg"))); // NOI18N
         btnProduct2.setToolTipText("");
         btnProduct2.setBorder(null);
+        btnProduct2.setContentAreaFilled(false);
+        btnProduct2.setFocusPainted(false);
+        btnProduct2.setFocusable(false);
         btnProduct2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProduct2MouseClicked(evt);
@@ -274,6 +277,9 @@ public class Categoryshirt extends javax.swing.JFrame {
         btnProduct3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shirt3.jpg"))); // NOI18N
         btnProduct3.setToolTipText("");
         btnProduct3.setBorder(null);
+        btnProduct3.setContentAreaFilled(false);
+        btnProduct3.setFocusPainted(false);
+        btnProduct3.setFocusable(false);
         btnProduct3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProduct3MouseClicked(evt);
@@ -284,6 +290,9 @@ public class Categoryshirt extends javax.swing.JFrame {
         btnProduct4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shirt6.jpg"))); // NOI18N
         btnProduct4.setToolTipText("");
         btnProduct4.setBorder(null);
+        btnProduct4.setContentAreaFilled(false);
+        btnProduct4.setFocusPainted(false);
+        btnProduct4.setFocusable(false);
         btnProduct4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProduct4MouseClicked(evt);
@@ -294,6 +303,8 @@ public class Categoryshirt extends javax.swing.JFrame {
         btnProduct1_1.setBackground(new java.awt.Color(204, 204, 204));
         btnProduct1_1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnProduct1_1.setText("เพิ่มเติม");
+        btnProduct1_1.setFocusPainted(false);
+        btnProduct1_1.setFocusable(false);
         btnProduct1_1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProduct1_1MouseClicked(evt);
@@ -305,16 +316,13 @@ public class Categoryshirt extends javax.swing.JFrame {
                 btnProduct1_1MouseExited(evt);
             }
         });
-        btnProduct1_1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnProduct1_1ActionPerformed(evt);
-            }
-        });
         jPanel2.add(btnProduct1_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 410, -1, -1));
 
         btnProduct1_2.setBackground(new java.awt.Color(204, 204, 204));
         btnProduct1_2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnProduct1_2.setText("เพิ่มเติม");
+        btnProduct1_2.setFocusPainted(false);
+        btnProduct1_2.setFocusable(false);
         btnProduct1_2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProduct1_2MouseClicked(evt);
@@ -326,16 +334,13 @@ public class Categoryshirt extends javax.swing.JFrame {
                 btnProduct1_2MouseExited(evt);
             }
         });
-        btnProduct1_2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnProduct1_2ActionPerformed(evt);
-            }
-        });
         jPanel2.add(btnProduct1_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 410, -1, -1));
 
         btnProduct1_3.setBackground(new java.awt.Color(204, 204, 204));
         btnProduct1_3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnProduct1_3.setText("เพิ่มเติม");
+        btnProduct1_3.setFocusPainted(false);
+        btnProduct1_3.setFocusable(false);
         btnProduct1_3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProduct1_3MouseClicked(evt);
@@ -347,16 +352,13 @@ public class Categoryshirt extends javax.swing.JFrame {
                 btnProduct1_3MouseExited(evt);
             }
         });
-        btnProduct1_3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnProduct1_3ActionPerformed(evt);
-            }
-        });
         jPanel2.add(btnProduct1_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 410, -1, -1));
 
         btnProduct1_4.setBackground(new java.awt.Color(204, 204, 204));
         btnProduct1_4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnProduct1_4.setText("เพิ่มเติม");
+        btnProduct1_4.setFocusPainted(false);
+        btnProduct1_4.setFocusable(false);
         btnProduct1_4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProduct1_4MouseClicked(evt);
@@ -368,14 +370,9 @@ public class Categoryshirt extends javax.swing.JFrame {
                 btnProduct1_4MouseExited(evt);
             }
         });
-        btnProduct1_4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnProduct1_4ActionPerformed(evt);
-            }
-        });
         jPanel2.add(btnProduct1_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 410, -1, -1));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, -1, 500));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, -1, 564));
 
         iconUniversity.setIcon(new javax.swing.ImageIcon(getClass().getResource("/btn_logo.png"))); // NOI18N
         jPanel1.add(iconUniversity, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, 120, 110));
@@ -395,14 +392,14 @@ public class Categoryshirt extends javax.swing.JFrame {
         btnClose.setContentAreaFilled(false);
         btnClose.setFocusPainted(false);
         btnClose.setFocusable(false);
-        btnClose.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCloseActionPerformed(evt);
-            }
-        });
         jPanel1.add(btnClose, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 30, 60, 40));
 
         Cart.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shopicon.png"))); // NOI18N
+        Cart.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CartMouseClicked(evt);
+            }
+        });
         jPanel1.add(Cart, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 35, 50, 40));
 
         txtAccount.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
@@ -412,8 +409,10 @@ public class Categoryshirt extends javax.swing.JFrame {
 
         txtUSER.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         txtUSER.setForeground(new java.awt.Color(255, 255, 255));
+        txtUSER.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         txtUSER.setText("XXXXX XXXXX");
-        jPanel1.add(txtUSER, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 55, -1, -1));
+        txtUSER.setToolTipText("");
+        jPanel1.add(txtUSER, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 60, -1, -1));
 
         iconUSER.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Account.png"))); // NOI18N
         jPanel1.add(iconUSER, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 10, -1, -1));
@@ -421,14 +420,11 @@ public class Categoryshirt extends javax.swing.JFrame {
         btnBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Back.png"))); // NOI18N
         btnBack.setBorder(null);
         btnBack.setContentAreaFilled(false);
+        btnBack.setFocusPainted(false);
+        btnBack.setFocusable(false);
         btnBack.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnBackMouseClicked(evt);
-            }
-        });
-        btnBack.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBackActionPerformed(evt);
             }
         });
         jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
@@ -458,24 +454,14 @@ public class Categoryshirt extends javax.swing.JFrame {
     }//GEN-LAST:event_btnShirtActionPerformed
 
     private void btnUniformMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnUniformMouseClicked
-        new Category2().setVisible(true);
+        new CategoryStudent().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnUniformMouseClicked
 
-    private void btnUniformActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUniformActionPerformed
-         new CategoryStudent().setVisible(true);
-         this.dispose();
-    }//GEN-LAST:event_btnUniformActionPerformed
-
     private void btnJacketsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnJacketsMouseClicked
-        new Category3().setVisible(true);
+        new Categoryjacket().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnJacketsMouseClicked
-
-    private void btnJacketsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJacketsActionPerformed
-         new Categoryjacket().setVisible(true);
-         this.dispose();// TODO add your handling code here:
-    }//GEN-LAST:event_btnJacketsActionPerformed
 
     private void btnBackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackMouseClicked
         // TODO add your handling code here:
@@ -483,32 +469,15 @@ public class Categoryshirt extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_btnBackMouseClicked
 
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBackActionPerformed
-
-    private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCloseActionPerformed
-
     private void btnProduct1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct1ActionPerformed
          new MarketShirt1().setVisible(true);
          this.dispose();
     }//GEN-LAST:event_btnProduct1ActionPerformed
 
-    private void btnHistoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHistoryActionPerformed
-         new Shoppingcart().setVisible(true);
-         this.dispose();
-    }//GEN-LAST:event_btnHistoryActionPerformed
-
     private void btnProduct1_1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct1_1MouseClicked
          new MarketShirt4().setVisible(true);
          this.dispose();
     }//GEN-LAST:event_btnProduct1_1MouseClicked
-
-    private void btnProduct1_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct1_1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnProduct1_1ActionPerformed
 
     private void btnProduct2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct2MouseClicked
          new MarketShirt2().setVisible(true);
@@ -530,27 +499,15 @@ public class Categoryshirt extends javax.swing.JFrame {
          this.dispose();
     }//GEN-LAST:event_btnProduct1_2MouseClicked
 
-    private void btnProduct1_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct1_2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnProduct1_2ActionPerformed
-
     private void btnProduct1_3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct1_3MouseClicked
          new MarketShirt2().setVisible(true);
          this.dispose();
     }//GEN-LAST:event_btnProduct1_3MouseClicked
 
-    private void btnProduct1_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct1_3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnProduct1_3ActionPerformed
-
     private void btnProduct1_4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct1_4MouseClicked
         new MarketShirt3().setVisible(true);
          this.dispose();
     }//GEN-LAST:event_btnProduct1_4MouseClicked
-
-    private void btnProduct1_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProduct1_4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnProduct1_4ActionPerformed
 
     private void btnProduct1_2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProduct1_2MouseEntered
        btnProduct1_2.setBackground(Color.red);
@@ -591,6 +548,16 @@ public class Categoryshirt extends javax.swing.JFrame {
         btnProduct1_1.setBackground(new Color(204,204,204));
         btnProduct1_1.setForeground(new Color(0,0,0));
     }//GEN-LAST:event_btnProduct1_1MouseExited
+
+    private void CartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CartMouseClicked
+        new Shoppingcart().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_CartMouseClicked
+
+    private void btnHistoryMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHistoryMouseClicked
+        new History().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnHistoryMouseClicked
 
     /**
      * @param args the command line arguments
