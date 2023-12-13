@@ -5,7 +5,6 @@
 package com.bumarket.bumarket;
 
 import java.awt.Color;
-import java.util.List;
 import javax.swing.JOptionPane;
 
 /**

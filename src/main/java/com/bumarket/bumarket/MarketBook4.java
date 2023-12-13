@@ -139,7 +139,7 @@ public class MarketBook4 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(btnAddtocart);
-        btnAddtocart.setBounds(460, 430, 137, 40);
+        btnAddtocart.setBounds(460, 430, 138, 40);
 
         btnBuy.setBackground(new java.awt.Color(204, 204, 204));
         btnBuy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N

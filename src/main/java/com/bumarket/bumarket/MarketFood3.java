@@ -138,7 +138,7 @@ public class MarketFood3 extends javax.swing.JFrame {
             }
         });
         jPanel6.add(btnAddtocart2);
-        btnAddtocart2.setBounds(460, 400, 137, 40);
+        btnAddtocart2.setBounds(460, 400, 138, 40);
 
         btnBuy1.setBackground(new java.awt.Color(204, 204, 204));
         btnBuy1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
@@ -233,7 +233,7 @@ public class MarketFood3 extends javax.swing.JFrame {
             }
         });
         jPanel8.add(btnAddtocart3);
-        btnAddtocart3.setBounds(460, 400, 137, 40);
+        btnAddtocart3.setBounds(460, 400, 138, 40);
 
         btnBuy3.setBackground(new java.awt.Color(204, 0, 0));
         btnBuy3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
