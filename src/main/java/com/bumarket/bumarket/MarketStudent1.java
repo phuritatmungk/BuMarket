@@ -141,6 +141,7 @@ public class MarketStudent1 extends javax.swing.JFrame {
         btnShirt_and_Pants.setContentAreaFilled(false);
         btnShirt_and_Pants.setFocusPainted(false);
         btnShirt_and_Pants.setFocusable(false);
+        btnShirt_and_Pants.setRequestFocusEnabled(false);
         jPanel1.add(btnShirt_and_Pants, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 360, -1, 30));
 
         btnShirt.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -148,6 +149,7 @@ public class MarketStudent1 extends javax.swing.JFrame {
         btnShirt.setContentAreaFilled(false);
         btnShirt.setFocusPainted(false);
         btnShirt.setFocusable(false);
+        btnShirt.setRequestFocusEnabled(false);
         jPanel1.add(btnShirt, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 360, -1, 30));
 
         btnTrousers.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -155,6 +157,7 @@ public class MarketStudent1 extends javax.swing.JFrame {
         btnTrousers.setContentAreaFilled(false);
         btnTrousers.setFocusPainted(false);
         btnTrousers.setFocusable(false);
+        btnTrousers.setRequestFocusEnabled(false);
         jPanel1.add(btnTrousers, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 360, -1, 30));
 
         txtSize.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -166,6 +169,7 @@ public class MarketStudent1 extends javax.swing.JFrame {
         btnSizeS.setContentAreaFilled(false);
         btnSizeS.setFocusPainted(false);
         btnSizeS.setFocusable(false);
+        btnSizeS.setRequestFocusEnabled(false);
         jPanel1.add(btnSizeS, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 400, 50, 30));
 
         btnSizeM.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -173,6 +177,7 @@ public class MarketStudent1 extends javax.swing.JFrame {
         btnSizeM.setContentAreaFilled(false);
         btnSizeM.setFocusPainted(false);
         btnSizeM.setFocusable(false);
+        btnSizeM.setRequestFocusEnabled(false);
         jPanel1.add(btnSizeM, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 400, 50, 30));
 
         btnSizeL.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -180,6 +185,7 @@ public class MarketStudent1 extends javax.swing.JFrame {
         btnSizeL.setContentAreaFilled(false);
         btnSizeL.setFocusPainted(false);
         btnSizeL.setFocusable(false);
+        btnSizeL.setRequestFocusEnabled(false);
         jPanel1.add(btnSizeL, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 400, 50, 30));
 
         btnSizeXL.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -187,6 +193,7 @@ public class MarketStudent1 extends javax.swing.JFrame {
         btnSizeXL.setContentAreaFilled(false);
         btnSizeXL.setFocusPainted(false);
         btnSizeXL.setFocusable(false);
+        btnSizeXL.setRequestFocusEnabled(false);
         jPanel1.add(btnSizeXL, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 400, 50, 30));
 
         btnSize2XL.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -194,6 +201,7 @@ public class MarketStudent1 extends javax.swing.JFrame {
         btnSize2XL.setContentAreaFilled(false);
         btnSize2XL.setFocusPainted(false);
         btnSize2XL.setFocusable(false);
+        btnSize2XL.setRequestFocusEnabled(false);
         jPanel1.add(btnSize2XL, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 400, 60, 30));
 
         btnSize3XL.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -201,6 +209,7 @@ public class MarketStudent1 extends javax.swing.JFrame {
         btnSize3XL.setContentAreaFilled(false);
         btnSize3XL.setFocusPainted(false);
         btnSize3XL.setFocusable(false);
+        btnSize3XL.setRequestFocusEnabled(false);
         jPanel1.add(btnSize3XL, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 400, 60, 30));
 
         txtAmount.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -215,6 +224,7 @@ public class MarketStudent1 extends javax.swing.JFrame {
         btnAdd_to_cart.setText("หยิบใส่ตระกร้า");
         btnAdd_to_cart.setFocusPainted(false);
         btnAdd_to_cart.setFocusable(false);
+        btnAdd_to_cart.setRequestFocusEnabled(false);
         btnAdd_to_cart.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnAdd_to_cartMouseClicked(evt);
@@ -233,6 +243,7 @@ public class MarketStudent1 extends javax.swing.JFrame {
         btnBuy.setText("ซื้อสินค้า");
         btnBuy.setFocusPainted(false);
         btnBuy.setFocusable(false);
+        btnBuy.setRequestFocusEnabled(false);
         btnBuy.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnBuyMouseClicked(evt);
@@ -253,6 +264,7 @@ public class MarketStudent1 extends javax.swing.JFrame {
         btnBack.setContentAreaFilled(false);
         btnBack.setFocusPainted(false);
         btnBack.setFocusable(false);
+        btnBack.setRequestFocusEnabled(false);
         btnBack.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnBackMouseClicked(evt);
@@ -273,6 +285,7 @@ public class MarketStudent1 extends javax.swing.JFrame {
         getContentPane().add(txtSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 35, 410, 30));
 
         Cart.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shopicon.png"))); // NOI18N
+        Cart.setRequestFocusEnabled(false);
         Cart.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 CartMouseClicked(evt);
@@ -295,6 +308,7 @@ public class MarketStudent1 extends javax.swing.JFrame {
         getContentPane().add(iconUSER, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 10, -1, 70));
 
         lbLogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
+        lbLogout.setRequestFocusEnabled(false);
         lbLogout.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbLogoutMouseClicked(evt);

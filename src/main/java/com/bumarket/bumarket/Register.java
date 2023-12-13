@@ -96,6 +96,7 @@ public class Register extends javax.swing.JFrame {
         SignInBtn.setForeground(new java.awt.Color(255, 153, 0));
         SignInBtn.setText("Sign In");
         SignInBtn.setBorder(null);
+        SignInBtn.setRequestFocusEnabled(false);
         SignInBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 SignInBtnMouseClicked(evt);

@@ -114,6 +114,7 @@ public class Shoppingcart extends javax.swing.JFrame {
 
         DeleteBtn.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         DeleteBtn.setText("Delete");
+        DeleteBtn.setRequestFocusEnabled(false);
         DeleteBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 DeleteBtnMouseClicked(evt);
@@ -190,16 +191,19 @@ public class Shoppingcart extends javax.swing.JFrame {
         ExitButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
         ExitButton.setBorder(null);
         ExitButton.setContentAreaFilled(false);
+        ExitButton.setRequestFocusEnabled(false);
         getContentPane().add(ExitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 35, -1, -1));
 
         Cartbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shopicon.png"))); // NOI18N
         Cartbutton.setBorder(null);
         Cartbutton.setContentAreaFilled(false);
+        Cartbutton.setRequestFocusEnabled(false);
         getContentPane().add(Cartbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 25, -1, -1));
 
         Backbutton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Back.png"))); // NOI18N
         Backbutton.setBorder(null);
         Backbutton.setContentAreaFilled(false);
+        Backbutton.setRequestFocusEnabled(false);
         Backbutton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 BackbuttonMouseClicked(evt);
@@ -216,12 +220,14 @@ public class Shoppingcart extends javax.swing.JFrame {
         BuyButton.setText("เลือกซื้อสินค้า");
         BuyButton.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         BuyButton.setContentAreaFilled(false);
+        BuyButton.setRequestFocusEnabled(false);
         getContentPane().add(BuyButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 380, 240, 30));
 
         PayButton.setBackground(new java.awt.Color(153, 153, 153));
         PayButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         PayButton.setForeground(new java.awt.Color(255, 255, 255));
         PayButton.setText("ชำระเงิน");
+        PayButton.setRequestFocusEnabled(false);
         PayButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 PayButtonMouseClicked(evt);

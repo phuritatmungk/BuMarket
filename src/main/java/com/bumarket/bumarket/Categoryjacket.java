@@ -109,6 +109,7 @@ public class Categoryjacket extends javax.swing.JFrame {
         btnShirt.setFocusable(false);
         btnShirt.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnShirt.setIconTextGap(0);
+        btnShirt.setRequestFocusEnabled(false);
         btnShirt.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnShirt.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -129,6 +130,7 @@ public class Categoryjacket extends javax.swing.JFrame {
         btnUniform.setMaximumSize(new java.awt.Dimension(118, 78));
         btnUniform.setMinimumSize(new java.awt.Dimension(118, 78));
         btnUniform.setPreferredSize(new java.awt.Dimension(118, 78));
+        btnUniform.setRequestFocusEnabled(false);
         btnUniform.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnUniform.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -149,6 +151,7 @@ public class Categoryjacket extends javax.swing.JFrame {
         btnJackets.setMaximumSize(new java.awt.Dimension(118, 78));
         btnJackets.setMinimumSize(new java.awt.Dimension(118, 78));
         btnJackets.setPreferredSize(new java.awt.Dimension(118, 78));
+        btnJackets.setRequestFocusEnabled(false);
         btnJackets.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnJackets.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -173,6 +176,7 @@ public class Categoryjacket extends javax.swing.JFrame {
         btnHistory.setContentAreaFilled(false);
         btnHistory.setFocusPainted(false);
         btnHistory.setFocusable(false);
+        btnHistory.setRequestFocusEnabled(false);
         btnHistory.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnHistoryMouseClicked(evt);
@@ -306,6 +310,7 @@ public class Categoryjacket extends javax.swing.JFrame {
         btnProduct1_1.setText("เพิ่มเติม");
         btnProduct1_1.setFocusPainted(false);
         btnProduct1_1.setFocusable(false);
+        btnProduct1_1.setRequestFocusEnabled(false);
         btnProduct1_1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProduct1_1MouseClicked(evt);
@@ -324,6 +329,7 @@ public class Categoryjacket extends javax.swing.JFrame {
         btnProduct1_2.setText("เพิ่มเติม");
         btnProduct1_2.setFocusPainted(false);
         btnProduct1_2.setFocusable(false);
+        btnProduct1_2.setRequestFocusEnabled(false);
         btnProduct1_2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProduct1_2MouseClicked(evt);
@@ -342,6 +348,7 @@ public class Categoryjacket extends javax.swing.JFrame {
         btnProduct1_3.setText("เพิ่มเติม");
         btnProduct1_3.setFocusPainted(false);
         btnProduct1_3.setFocusable(false);
+        btnProduct1_3.setRequestFocusEnabled(false);
         btnProduct1_3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProduct1_3MouseClicked(evt);
@@ -360,6 +367,7 @@ public class Categoryjacket extends javax.swing.JFrame {
         btnProduct1_4.setText("เพิ่มเติม");
         btnProduct1_4.setFocusPainted(false);
         btnProduct1_4.setFocusable(false);
+        btnProduct1_4.setRequestFocusEnabled(false);
         btnProduct1_4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnProduct1_4MouseClicked(evt);

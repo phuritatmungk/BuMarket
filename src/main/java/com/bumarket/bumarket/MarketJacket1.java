@@ -158,6 +158,7 @@ public class MarketJacket1 extends javax.swing.JFrame {
         btnBlue.setContentAreaFilled(false);
         btnBlue.setFocusPainted(false);
         btnBlue.setFocusable(false);
+        btnBlue.setRequestFocusEnabled(false);
         jPanel1.add(btnBlue, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 360, -1, 30));
 
         btnBlack.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -165,6 +166,7 @@ public class MarketJacket1 extends javax.swing.JFrame {
         btnBlack.setContentAreaFilled(false);
         btnBlack.setFocusPainted(false);
         btnBlack.setFocusable(false);
+        btnBlack.setRequestFocusEnabled(false);
         jPanel1.add(btnBlack, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 360, -1, 30));
 
         btnRed.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -172,6 +174,7 @@ public class MarketJacket1 extends javax.swing.JFrame {
         btnRed.setContentAreaFilled(false);
         btnRed.setFocusPainted(false);
         btnRed.setFocusable(false);
+        btnRed.setRequestFocusEnabled(false);
         jPanel1.add(btnRed, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 360, -1, 30));
 
         btnGrey.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -179,6 +182,7 @@ public class MarketJacket1 extends javax.swing.JFrame {
         btnGrey.setContentAreaFilled(false);
         btnGrey.setFocusPainted(false);
         btnGrey.setFocusable(false);
+        btnGrey.setRequestFocusEnabled(false);
         jPanel1.add(btnGrey, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 360, -1, 30));
 
         txtSize.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -190,6 +194,7 @@ public class MarketJacket1 extends javax.swing.JFrame {
         btnSizeM.setContentAreaFilled(false);
         btnSizeM.setFocusPainted(false);
         btnSizeM.setFocusable(false);
+        btnSizeM.setRequestFocusEnabled(false);
         jPanel1.add(btnSizeM, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 400, 50, 30));
 
         btnSizeL.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -197,6 +202,7 @@ public class MarketJacket1 extends javax.swing.JFrame {
         btnSizeL.setContentAreaFilled(false);
         btnSizeL.setFocusPainted(false);
         btnSizeL.setFocusable(false);
+        btnSizeL.setRequestFocusEnabled(false);
         jPanel1.add(btnSizeL, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 400, 50, 30));
 
         btnSizeXL.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -204,6 +210,7 @@ public class MarketJacket1 extends javax.swing.JFrame {
         btnSizeXL.setContentAreaFilled(false);
         btnSizeXL.setFocusPainted(false);
         btnSizeXL.setFocusable(false);
+        btnSizeXL.setRequestFocusEnabled(false);
         jPanel1.add(btnSizeXL, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 400, 50, 30));
 
         btnSize2XL.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -211,6 +218,7 @@ public class MarketJacket1 extends javax.swing.JFrame {
         btnSize2XL.setContentAreaFilled(false);
         btnSize2XL.setFocusPainted(false);
         btnSize2XL.setFocusable(false);
+        btnSize2XL.setRequestFocusEnabled(false);
         jPanel1.add(btnSize2XL, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 400, 50, 30));
 
         btnSize3XL.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -218,6 +226,7 @@ public class MarketJacket1 extends javax.swing.JFrame {
         btnSize3XL.setContentAreaFilled(false);
         btnSize3XL.setFocusPainted(false);
         btnSize3XL.setFocusable(false);
+        btnSize3XL.setRequestFocusEnabled(false);
         jPanel1.add(btnSize3XL, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 400, 60, 30));
 
         txtAmount.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -232,6 +241,7 @@ public class MarketJacket1 extends javax.swing.JFrame {
         btnAdd_to_cart.setText("หยิบใส่ตระกร้า");
         btnAdd_to_cart.setFocusPainted(false);
         btnAdd_to_cart.setFocusable(false);
+        btnAdd_to_cart.setRequestFocusEnabled(false);
         btnAdd_to_cart.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnAdd_to_cartMouseClicked(evt);
@@ -250,6 +260,7 @@ public class MarketJacket1 extends javax.swing.JFrame {
         btnBuy.setText("ซื้อสินค้า");
         btnBuy.setFocusPainted(false);
         btnBuy.setFocusable(false);
+        btnBuy.setRequestFocusEnabled(false);
         btnBuy.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btnBuyMouseClicked(evt);
@@ -270,6 +281,7 @@ public class MarketJacket1 extends javax.swing.JFrame {
         btnBack.setContentAreaFilled(false);
         btnBack.setFocusPainted(false);
         btnBack.setFocusable(false);
+        btnBack.setRequestFocusEnabled(false);
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
@@ -290,6 +302,7 @@ public class MarketJacket1 extends javax.swing.JFrame {
         getContentPane().add(txtSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 35, 410, 30));
 
         Cart.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Shopicon.png"))); // NOI18N
+        Cart.setRequestFocusEnabled(false);
         Cart.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 CartMouseClicked(evt);
@@ -312,6 +325,7 @@ public class MarketJacket1 extends javax.swing.JFrame {
         getContentPane().add(iconUSER, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 10, -1, 70));
 
         lbLogout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Exit.png"))); // NOI18N
+        lbLogout.setRequestFocusEnabled(false);
         lbLogout.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbLogoutMouseClicked(evt);
@@ -322,6 +336,7 @@ public class MarketJacket1 extends javax.swing.JFrame {
         background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Up.png"))); // NOI18N
         background.setDoubleBuffered(true);
         background.setOpaque(true);
+        background.setRequestFocusEnabled(false);
         getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         pack();
