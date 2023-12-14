@@ -14,7 +14,7 @@ import javax.swing.*;
  *
  * @author chait
  */
-public class Forgot_Pass extends javax.swing.JFrame {
+public class Change_pass extends javax.swing.JFrame {
     
     private final UserData userdata;
     Map<String, String> usernameANDpassword = new HashMap<>();
@@ -22,7 +22,7 @@ public class Forgot_Pass extends javax.swing.JFrame {
     ArrayList<String> all_password = new ArrayList<>();
     ArrayList<String> all_userid = new ArrayList<>();
 
-    public Forgot_Pass() {
+    public Change_pass() {
         initComponents();
         userdata = new UserData();
         eye_hide.setVisible(false);
@@ -305,7 +305,7 @@ public class Forgot_Pass extends javax.swing.JFrame {
                 }
             }
         } catch (IOException ex) {
-            Logger.getLogger(Forgot_Pass.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Change_pass.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_ConfirmBtnMouseClicked
 
@@ -390,21 +390,23 @@ public class Forgot_Pass extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Forgot_Pass.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Change_pass.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Forgot_Pass.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Change_pass.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Forgot_Pass.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Change_pass.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Forgot_Pass.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Change_pass.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Forgot_Pass().setVisible(true);
+                new Change_pass().setVisible(true);
             }
         });
     }

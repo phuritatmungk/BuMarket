@@ -188,7 +188,7 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_SignUpBtnActionPerformed
 
     private void ForgetPassBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ForgetPassBtnActionPerformed
-        new Forgot_Pass().setVisible(true);
+        new Change_pass().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_ForgetPassBtnActionPerformed
 

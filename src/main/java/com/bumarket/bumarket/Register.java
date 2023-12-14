@@ -307,7 +307,6 @@ public class Register extends javax.swing.JFrame {
                                 }
                                 else {
                                     if(!userdata.checkIfUsernameExist(username)) {
-                                        fw.write(System.getProperty("line.separator"));
                                         fw.write("Username: " + username);
                                         fw.write(System.getProperty("line.separator"));
                                         fw.write("Firstname: " + fname.substring(0,1).toUpperCase() + fname.substring(1).toLowerCase());
